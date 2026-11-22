@@ -1,6 +1,6 @@
 # CAE English – Product Specification (MVP)
 
-Status: DRAFT, awaiting owner approval. Date: 2026-11-22.
+Status: APPROVED by owner 2026-11-22. Open questions (section 11) unanswered; architecture uses defaults: local run on this PC, UI suitable for paper and digital exam, Speaking in P2.
 
 ## 1. Goal
 Help the owner pass Cambridge C1 Advanced (CAE) within about one month. The app focuses on exam score impact: lots of auto-scored practice with explanations, plus structured self-assessment for Writing and Speaking that uses the owner's existing Claude Pro chat (no paid API).
