@@ -281,3 +281,16 @@ a.part-tile:hover { border-color: var(--c-primary); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+
+/* T14: Part 4 (KWT) and Part 7 (gapped text) */
+.kwt-list { list-style: none; padding: 0; max-width: 42rem; }
+.kwt { padding: var(--s-4); border: 1px solid var(--c-border, currentColor); border-radius: var(--radius); }
+.kwt__key { text-transform: uppercase; letter-spacing: 0.04em; }
+.kwt__line { line-height: 2.6; }
+.kwt__input { width: 16rem; max-width: 100%; }
+.kwt.is-correct, .kwt.is-incorrect { border: 2px solid currentColor; }
+.kwt.is-incorrect { border-style: dashed; }
+.para-list { display: grid; grid-template-columns: max-content 1fr; gap: var(--s-2) var(--s-3); max-width: 42rem; }
+.para-list dt { font-weight: 700; }
+.para-list dd { margin: 0; }
+.gap.is-duplicate { outline: 2px dashed currentColor; outline-offset: 2px; }

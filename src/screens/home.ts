@@ -1,5 +1,5 @@
 import { setsFor } from '../content/loader';
-import { daysToExam, isGapSet, lastScore } from '../domain/drill';
+import { daysToExam, isDrillSet, lastScore } from '../domain/drill';
 import type { Store } from '../storage/store';
 import { labelBadge } from '../ui/components';
 import { h } from '../ui/h';
@@ -16,8 +16,8 @@ export const PARTS: Record<number, string> = {
   8: 'Multiple matching',
 };
 
-/** A part is playable when it has content and a drill screen (Parts 4 and 7 come with T14). */
-const playableSets = (part: number) => setsFor('rue', part).filter(isGapSet);
+/** A part is playable when it has content and a drill screen. */
+const playableSets = (part: number) => setsFor('rue', part).filter(isDrillSet);
 
 export function homeScreen(store: Store): ReturnType<Route['render']> {
   const days = daysToExam(store.get().settings.examDate, new Date());

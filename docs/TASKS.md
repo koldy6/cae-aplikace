@@ -79,12 +79,12 @@ Depends on: T12.
 - For each question show my answer, the correct answer or accepted answers, the EN and CZ explanations (`lang` attributes), the tag and the label. Add "Myslím, že je to správně" for open answers (sets `selfMarked`) and "Nahlásit chybu" (stores an issue note).
 - AC: US2 criteria are met. The state is shown with text and icon (not colour only). Self-marking updates the stored score. The report-issue note is saved in `issues`.
 
-### T14 Drill: Part 4 KWT and Part 7 gapped text (dev)
+### T14 Drill: Part 4 KWT and Part 7 gapped text (dev) — ✅ DONE 2026-11-23
 Depends on: T12, T13, T06.
 - Part 4: sentence 1, the key word in bold via a CSS class, and an input between `before` and `after`, with a live word count hint (3-6). Part 7: a `<select>` per gap listing A-G, the paragraphs shown below, and duplicates allowed in input but flagged.
 - AC: KWT review shows marks 0/1/2 and the `fullAnswers`. Part 7 is scored 2 marks per gap. Both parts are fully operable with the keyboard.
 
-### T15 Weak-area module (dev)
+### T15 Weak-area module (dev) — ✅ DONE 2026-11-23
 Depends on: T07, T08.
 - Write `domain/weakAreas.ts`: accuracy per (paper, part, type), eligible when n >= 10, weakest 3, error log = latest attempt wrong, and 7-day activity.
 - AC: `tests/weakAreas.test.ts` is green for all cases in section 10, including partial KWT marks.

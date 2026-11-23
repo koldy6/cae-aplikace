@@ -57,3 +57,24 @@ describe('daysToExam / lastScore', () => {
     expect(lastScore([], p1.id)).toBeNull();
   });
 });
+
+describe('Part 4 and Part 7 attempts', () => {
+  const at = new Date().toISOString();
+  it('stores KWT marks 0/1/2 in attempt.marks with maxMarks 2', () => {
+    const p4 = setsFor('rue', 4)[0] as Extract<ReturnType<typeof setsFor>[number], { part: 4 }>;
+    const [i1, i2, i3] = p4.items;
+    const a = buildAttempts(p4, { 1: i1!.fullAnswers[0]!, 2: i2!.parts[0]!.accepted[0] ?? '', 3: '' }, 's4', at);
+    expect(a).toHaveLength(6);
+    expect(a[0]).toMatchObject({ part: 4, marks: 2, maxMarks: 2, questionId: `${p4.id}#1` });
+    expect(a[2]!.marks).toBe(0);
+    expect(i3).toBeDefined();
+    expect(recomputeSession(newSession(p4, 's4', at), a).maxMarks).toBe(12);
+  });
+  it('scores Part 7 as 2 marks per correct gap', () => {
+    const p7 = setsFor('rue', 7)[0] as Extract<ReturnType<typeof setsFor>[number], { part: 7 }>;
+    const answers = Object.fromEntries(p7.questions.map((q, i) => [q.n, i < 2 ? q.answer : '']));
+    const a = buildAttempts(p7, answers, 's7', at);
+    const s = recomputeSession(newSession(p7, 's7', at), a);
+    expect([s.marks, s.maxMarks]).toEqual([4, 12]);
+  });
+});

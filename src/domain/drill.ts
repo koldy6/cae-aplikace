@@ -1,6 +1,6 @@
-import type { ContentSet, Rue1Set, Rue2Set, Rue3Set } from '../content/types';
+import type { ContentSet, Rue1Set, Rue2Set, Rue3Set, Rue4Set, Rue7Set } from '../content/types';
 import type { Attempt, Session } from '../storage/store';
-import { maxMarks, scoreLetter, scoreOpen } from './scoring';
+import { kwtScore, maxMarks, scoreLetter, scoreOpen } from './scoring';
 
 export type Seg = { t: 'text'; value: string } | { t: 'gap'; n: number };
 
@@ -26,8 +26,14 @@ export function parseGapText(text: string): Seg[][] {
 export type GapSet = Rue1Set | Rue2Set | Rue3Set;
 export type GapQuestion = GapSet['questions'][number];
 
-/** Parts with a drill screen so far (T14 adds 4 and 7). */
+/** Parts 1-3: gaps in a text. */
 export const isGapSet = (s: ContentSet): s is GapSet => s.part === 1 || s.part === 2 || s.part === 3;
+
+/** Every set that has a drill screen (Parts 1-4 and 7). */
+export type DrillSet = GapSet | Rue4Set | Rue7Set;
+export type DrillQuestion = GapQuestion | Rue4Set['items'][number] | Rue7Set['questions'][number];
+export const isDrillSet = (s: ContentSet): s is DrillSet => s.part === 1 || s.part === 2 || s.part === 3 || s.part === 4 || s.part === 7;
+export const questionsOf = (s: DrillSet): DrillQuestion[] => (s.part === 4 ? s.items : s.questions);
 
 /** Open answers can be self-marked. */
 export const isOpen = (part: number): boolean => part === 2 || part === 3;
@@ -35,15 +41,22 @@ export const isOpen = (part: number): boolean => part === 2 || part === 3;
 export const scoreGap = (q: GapQuestion, given: string): 0 | 1 =>
   'answer' in q ? scoreLetter(given, q.answer) : scoreOpen(given, q.answers);
 
+/** Marks for one answer: Parts 1-3 are 0/1, Part 4 (KWT) 0/1/2, Part 7 is 2 per correct gap. */
+export function scoreAny(set: DrillSet, q: DrillQuestion, given: string): 0 | 1 | 2 {
+  if (set.part === 4) return kwtScore(given, q as Rue4Set['items'][number]);
+  if (set.part === 7) return scoreLetter(given, (q as Rue7Set['questions'][number]).answer) === 1 ? 2 : 0;
+  return scoreGap(q as GapQuestion, given);
+}
+
 export const questionId = (setId: string, n: number): string => `${setId}#${n}`;
 
 export function buildAttempts(
-  set: GapSet,
+  set: DrillSet,
   answers: Record<number, string>,
   sessionId: string,
   at: string,
 ): Attempt[] {
-  return set.questions.map((q) => {
+  return questionsOf(set).map((q) => {
     const answer = answers[q.n] ?? '';
     return {
       id: `${sessionId}-${q.n}`,
@@ -54,7 +67,7 @@ export function buildAttempts(
       part: set.part,
       type: q.type,
       answer,
-      marks: scoreGap(q, answer),
+      marks: scoreAny(set, q, answer),
       maxMarks: maxMarks(set.part),
       at,
     };
@@ -78,7 +91,7 @@ export function recomputeSession(session: Session, attempts: Attempt[]): Session
   };
 }
 
-export const newSession = (set: GapSet, id: string, at: string): Session => ({
+export const newSession = (set: DrillSet, id: string, at: string): Session => ({
   id,
   kind: 'drill',
   setIds: [set.id],
