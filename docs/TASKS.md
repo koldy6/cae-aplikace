@@ -12,24 +12,26 @@ Milestones:
 
 ## Week 1 – P1 core
 
-### T01 Project scaffold (dev)
+### T01 Project scaffold (dev) — ✅ DONE 2026-11-23 (zod 4.6.7, vite 8.3.8, vitest 5.1.1, typescript 6.0.3)
 Depends on: owner approval of ARCHITECTURE.md and of the npm install (4 packages, section 2).
 - Create `package.json`, `tsconfig.json` (strict, noEmit, moduleResolution bundler), `vite.config.ts` (including the build-only CSP plugin), `index.html` (`lang`, viewport, CSP placeholder), `.gitignore`, and an empty `src/main.ts`.
 - Add the scripts `dev`, `build`, `preview`, `test`, `check`.
 - AC: `npm run dev`, `npm run build`, `npm run preview` and `npm test` all run from `C:\claude ai workspace\firma-na-aplikace\projects\cae-english` (path with spaces). A placeholder test passes. The built `index.html` contains the CSP meta tag. The lockfile is committed and `node_modules`/`dist` are ignored.
 
-### T02 Question-type tags and content guide (edu)
+### T02 Question-type tags and content guide (edu) — ✅ DONE 2026-11-23 (A7 kept as app convention, see CONTENT_GUIDE.md)
 Depends on: none (can run in parallel with T01).
 - Write `docs/CONTENT_GUIDE.md`: the tag list per part (for example Part 1 `collocation`, `fixed-phrase`, `phrasal-verb`, `linking`, `meaning-in-context`, `dependent-preposition`), the explanation style (EN + CZ, 1-3 sentences), the rules for distractors, how to split KWT items into 2 marked parts, the allowed wording for labels, and the forbidden wording.
 - Confirm or reject assumption A7 (KWT over 6 words = 0, contractions count 2).
 - AC: tags exist for every part (R&UoE 1-8, Listening 1-4). Each tag has a one-line definition. A7 decision is recorded. Every factual claim about the format cites a SPEC section.
 
 ### T03 Content schema, R&UoE Parts 1-4 and 7 (dev)
+- Note from T02: in the KWT example (ARCHITECTURE §5.3) do not make the bare key word a marked part; split e.g. `["unless you"]` / `["promise"]`.
 Depends on: T01, T02.
 - Write `src/content/schema.ts` (common fields plus Parts 1, 2, 3, 4 and 7), `tags.ts` and `types.ts` (z.infer).
 - AC: Zod schemas match ARCHITECTURE section 5.3, including the cross-field rules. Types are exported. There is one hand-written valid sample file per part in `src/content/data/`.
 
 ### T04 Content validation test and loader (dev)
+- Note from T02: forbidden words ("official", "authentic", "past paper") are checked only in `title`, `topic` and label fields, not in passage text.
 Depends on: T03.
 - Write `tests/content.test.ts` (global checks: unique ids, file name = id, tags, no `<`/`>`, forbidden wording) and `src/content/loader.ts` (`import.meta.glob`, index by paper/part).
 - AC: each sample file passes. A test fixture with one deliberately broken file per rule (wrong option count, 7 gaps, KWT without the key word, a 2-word Part 2 answer, a duplicate id, an `<b>` tag, "real exam" wording) fails with a readable message that names the file. The loader returns sets grouped by part.
@@ -124,6 +126,7 @@ Depends on: T01.
 - AC: works in Chrome and Edge on Windows (manual). The fallback message plus script appears when unsupported. Settings store the voice and rate. No uncaught errors when there are no voices.
 
 ### T23 Listening schema plus content batch 4 (Parts 1 and 2) (dev schema, edu content)
+- Note from T02: Listening Part 4 schema needs `task1.type` and `task2.type` tag fields.
 Depends on: T02, T04.
 - Dev adds the Listening 1-4 schemas and fixtures (section 5.4). Edu writes 2 sets of Listening Part 1 and 2 sets of Part 2 (scripts written for TTS: short sentences, labelled speakers).
 - AC: the schema rules are enforced (3 options in Part 1, 4 in Part 3, 2x8 in Part 4, 1-3 words in Part 2). The content passes the tests.
