@@ -20,3 +20,6 @@ export function buildIndex(raws: unknown[]): ContentIndex {
 export const content: ContentIndex = buildIndex(Object.values(files));
 
 export const setsFor = (paper: string, part: number): ContentSet[] => content[paper]?.[part] ?? [];
+
+export const setById = (id: string): ContentSet | undefined =>
+  Object.values(content).flatMap((parts) => Object.values(parts).flat()).find((s) => s.id === id);

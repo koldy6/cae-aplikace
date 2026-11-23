@@ -1,0 +1,108 @@
+import type { ContentSet, Rue1Set, Rue2Set, Rue3Set } from '../content/types';
+import type { Attempt, Session } from '../storage/store';
+import { maxMarks, scoreLetter, scoreOpen } from './scoring';
+
+export type Seg = { t: 'text'; value: string } | { t: 'gap'; n: number };
+
+/** Split a gap text into paragraphs (blank line) of text and `[[n]]` gap segments. */
+export function parseGapText(text: string): Seg[][] {
+  return text
+    .split(/\n\n+/)
+    .map((p) => p.trim())
+    .filter(Boolean)
+    .map((p) => {
+      const segs: Seg[] = [];
+      let last = 0;
+      for (const m of p.matchAll(/\[\[(\d+)\]\]/g)) {
+        if (m.index > last) segs.push({ t: 'text', value: p.slice(last, m.index) });
+        segs.push({ t: 'gap', n: Number(m[1]) });
+        last = m.index + m[0].length;
+      }
+      if (last < p.length) segs.push({ t: 'text', value: p.slice(last) });
+      return segs;
+    });
+}
+
+export type GapSet = Rue1Set | Rue2Set | Rue3Set;
+export type GapQuestion = GapSet['questions'][number];
+
+/** Parts with a drill screen so far (T14 adds 4 and 7). */
+export const isGapSet = (s: ContentSet): s is GapSet => s.part === 1 || s.part === 2 || s.part === 3;
+
+/** Open answers can be self-marked. */
+export const isOpen = (part: number): boolean => part === 2 || part === 3;
+
+export const scoreGap = (q: GapQuestion, given: string): 0 | 1 =>
+  'answer' in q ? scoreLetter(given, q.answer) : scoreOpen(given, q.answers);
+
+export const questionId = (setId: string, n: number): string => `${setId}#${n}`;
+
+export function buildAttempts(
+  set: GapSet,
+  answers: Record<number, string>,
+  sessionId: string,
+  at: string,
+): Attempt[] {
+  return set.questions.map((q) => {
+    const answer = answers[q.n] ?? '';
+    return {
+      id: `${sessionId}-${q.n}`,
+      sessionId,
+      questionId: questionId(set.id, q.n),
+      setId: set.id,
+      paper: set.paper,
+      part: set.part,
+      type: q.type,
+      answer,
+      marks: scoreGap(q, answer),
+      maxMarks: maxMarks(set.part),
+      at,
+    };
+  });
+}
+
+/** Rebuild the session totals from its attempts (used on submit and after self-marking). */
+export function recomputeSession(session: Session, attempts: Attempt[]): Session {
+  const mine = attempts.filter((a) => a.sessionId === session.id);
+  const perPart: Session['perPart'] = {};
+  for (const a of mine) {
+    const p = (perPart[`${a.paper}:${a.part}`] ??= { marks: 0, maxMarks: 0 });
+    p.marks += a.marks;
+    p.maxMarks += a.maxMarks;
+  }
+  return {
+    ...session,
+    marks: mine.reduce((s, a) => s + a.marks, 0),
+    maxMarks: mine.reduce((s, a) => s + a.maxMarks, 0),
+    perPart,
+  };
+}
+
+export const newSession = (set: GapSet, id: string, at: string): Session => ({
+  id,
+  kind: 'drill',
+  setIds: [set.id],
+  startedAt: at,
+  finishedAt: at,
+  marks: 0,
+  maxMarks: 0,
+  perPart: {},
+});
+
+/** "I think this is correct": full marks, flagged so stats can show it. */
+export const selfMarkAttempt = (a: Attempt): Attempt => ({ ...a, marks: a.maxMarks, selfMarked: true });
+
+/** Whole days from `now` to the exam date (YYYY-MM-DD, local). Null if unset/invalid; negative if past. */
+export function daysToExam(examDate: string | null, now: Date): number | null {
+  const m = examDate ? /^(\d{4})-(\d{2})-(\d{2})$/.exec(examDate) : null;
+  if (!m) return null;
+  const exam = Date.UTC(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+  const today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+  return Math.round((exam - today) / 86_400_000);
+}
+
+/** Most recent score for a set, e.g. "7/8", or null. */
+export function lastScore(sessions: Session[], setId: string): string | null {
+  const s = sessions.filter((x) => x.setIds.includes(setId)).sort((a, b) => b.startedAt.localeCompare(a.startedAt))[0];
+  return s ? `${s.marks}/${s.maxMarks}` : null;
+}

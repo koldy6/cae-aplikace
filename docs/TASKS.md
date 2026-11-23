@@ -60,21 +60,21 @@ Depends on: none (can run in parallel with T03-T08).
 - Produce `src/styles/main.css`: colour tokens at AA contrast, type scale, spacing, focus ring, buttons, badges (two label types), correct/incorrect styles with icon and text, mobile-first layout plus a 900 px breakpoint, `prefers-reduced-motion`. Add short text sketches of the home, drill, review and weak-area screens in `docs/CONTENT_GUIDE.md` or as comments in the CSS (no extra report file).
 - AC: contrast ratios are listed next to the tokens (all 4.5:1 or above). No external fonts or CDNs. Touch targets are 44 px or larger.
 
-### T10 UI shell: h(), router, layout, label/notice (dev)
+### T10 UI shell: h(), router, layout, label/notice (dev) — ✅ DONE 2026-11-23
 Depends on: T01, T09.
 - Write `ui/h.ts` (textContent only), the hash router with focus on `<h1>` after navigation, the layout (header, nav, main, footer notice "Not official Cambridge material"), the `labelBadge` component, and `tests/noHtmlSinks.test.ts`.
 - AC: navigating between 3 stub screens works with the keyboard and the browser back button. The guard test fails if `innerHTML` is added anywhere in `src/`. The footer notice appears on every screen (F5/US4).
 
-### T11 Home, part picker and set list (dev)
+### T11 Home, part picker and set list (dev) — ✅ DONE 2026-11-23
 Depends on: T04, T08, T10.
 - AC: the home screen shows tiles for R&UoE Parts 1-8 (parts with no content are marked "připravujeme"). Tap a part, then choose a set (with label badge and last score), then the drill. That is 2 taps or fewer (US1). Days to the exam are shown once the exam date is set (a small settings field with the date).
 
-### T12 Drill screen for R&UoE Parts 1-3 (dev)
+### T12 Drill screen for R&UoE Parts 1-3 (dev) — ✅ DONE 2026-11-23 (checked at 360 px)
 Depends on: T07, T11, T05 (or sample files).
 - Render the gap text (parse `\n\n` and `[[n]]`). Part 1 uses a `<select>` A-D per gap. Parts 2 and 3 use an `<input>` with the stem word shown for Part 3. Submit scores the drill and saves the session and attempts.
 - AC: a score "x/y" is shown and announced via `aria-live`. Attempts are stored with part and type. Every gap has an accessible label. The drill works at 360 px width.
 
-### T13 Review screen with self-mark and report issue (dev)
+### T13 Review screen with self-mark and report issue (dev) — ✅ DONE 2026-11-23
 Depends on: T12.
 - For each question show my answer, the correct answer or accepted answers, the EN and CZ explanations (`lang` attributes), the tag and the label. Add "Myslím, že je to správně" for open answers (sets `selfMarked`) and "Nahlásit chybu" (stores an issue note).
 - AC: US2 criteria are met. The state is shown with text and icon (not colour only). Self-marking updates the stored score. The report-issue note is saved in `issues`.
