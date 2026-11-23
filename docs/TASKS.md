@@ -24,13 +24,13 @@ Depends on: none (can run in parallel with T01).
 - Confirm or reject assumption A7 (KWT over 6 words = 0, contractions count 2).
 - AC: tags exist for every part (R&UoE 1-8, Listening 1-4). Each tag has a one-line definition. A7 decision is recorded. Every factual claim about the format cites a SPEC section.
 
-### T03 Content schema, R&UoE Parts 1-4 and 7 (dev)
+### T03 Content schema, R&UoE Parts 1-4 and 7 (dev) — ✅ DONE 2026-11-23
 - Note from T02: in the KWT example (ARCHITECTURE §5.3) do not make the bare key word a marked part; split e.g. `["unless you"]` / `["promise"]`.
 Depends on: T01, T02.
 - Write `src/content/schema.ts` (common fields plus Parts 1, 2, 3, 4 and 7), `tags.ts` and `types.ts` (z.infer).
 - AC: Zod schemas match ARCHITECTURE section 5.3, including the cross-field rules. Types are exported. There is one hand-written valid sample file per part in `src/content/data/`.
 
-### T04 Content validation test and loader (dev)
+### T04 Content validation test and loader (dev) — ✅ DONE 2026-11-23
 - Note from T02: forbidden words ("official", "authentic", "past paper") are checked only in `title`, `topic` and label fields, not in passage text.
 Depends on: T03.
 - Write `tests/content.test.ts` (global checks: unique ids, file name = id, tags, no `<`/`>`, forbidden wording) and `src/content/loader.ts` (`import.meta.glob`, index by paper/part).

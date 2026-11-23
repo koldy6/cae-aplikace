@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "bad-kwt-key-alone",
+  "paper": "rue",
+  "part": 4,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Sample: transformations",
+  "topic": "grammar",
+  "difficulty": 2,
+  "reviewed": false,
+  "items": [
+    {
+      "n": 1,
+      "sentence1": "I will only lend you the car if you promise to drive carefully.",
+      "keyWord": "UNLESS",
+      "before": "I won't lend you the car",
+      "after": "to drive carefully.",
+      "parts": [
+        {
+          "accepted": [
+            "unless"
+          ]
+        },
+        {
+          "accepted": [
+            "promise"
+          ]
+        }
+      ],
+      "fullAnswers": [
+        "unless you promise"
+      ],
+      "type": "conditional",
+      "explanation": {
+        "en": "Part 1: \"unless you\" replaces \"if you ... only\". Part 2: \"promise\" completes the clause.",
+        "cs": "Část 1: \"unless you\". Část 2: \"promise\"."
+      }
+    },
+    {
+      "n": 2,
+      "sentence1": "They decided to postpone the meeting quite suddenly.",
+      "keyWord": "DECISION",
+      "before": "They made",
+      "after": "the meeting.",
+      "parts": [
+        {
+          "accepted": [
+            "a sudden decision"
+          ]
+        },
+        {
+          "accepted": [
+            "to postpone",
+            "to put off"
+          ]
+        }
+      ],
+      "fullAnswers": [
+        "a sudden decision to postpone",
+        "a sudden decision to put off"
+      ],
+      "type": "nominalisation",
+      "explanation": {
+        "en": "Part 1: \"a sudden decision\" (adjective replaces adverb). Part 2: \"to postpone\" after the noun.",
+        "cs": "Část 1: \"a sudden decision\". Část 2: \"to postpone\"."
+      }
+    },
+    {
+      "n": 3,
+      "sentence1": "People say that the old bridge is dangerous.",
+      "keyWord": "SAID",
+      "before": "The old bridge",
+      "after": "dangerous.",
+      "parts": [
+        {
+          "accepted": [
+            "is said"
+          ]
+        },
+        {
+          "accepted": [
+            "to be"
+          ]
+        }
+      ],
+      "fullAnswers": [
+        "is said to be"
+      ],
+      "type": "passive",
+      "explanation": {
+        "en": "Part 1: \"is said\". Part 2: \"to be\" + adjective.",
+        "cs": "Část 1: \"is said\". Část 2: \"to be\"."
+      }
+    },
+    {
+      "n": 4,
+      "sentence1": "I regret not studying harder at school.",
+      "keyWord": "WISH",
+      "before": "I",
+      "after": "harder at school.",
+      "parts": [
+        {
+          "accepted": [
+            "wish i"
+          ]
+        },
+        {
+          "accepted": [
+            "had studied"
+          ]
+        }
+      ],
+      "fullAnswers": [
+        "wish I had studied"
+      ],
+      "type": "wish-regret",
+      "explanation": {
+        "en": "Part 1: \"wish I\". Part 2: past perfect \"had studied\" for an unreal past.",
+        "cs": "Část 1: \"wish I\". Část 2: \"had studied\"."
+      }
+    },
+    {
+      "n": 5,
+      "sentence1": "The plumber repaired our sink yesterday.",
+      "keyWord": "HAD",
+      "before": "We",
+      "after": "by the plumber yesterday.",
+      "parts": [
+        {
+          "accepted": [
+            "had our sink"
+          ]
+        },
+        {
+          "accepted": [
+            "repaired"
+          ]
+        }
+      ],
+      "fullAnswers": [
+        "had our sink repaired"
+      ],
+      "type": "causative",
+      "explanation": {
+        "en": "Part 1: \"had our sink\". Part 2: past participle \"repaired\".",
+        "cs": "Část 1: \"had our sink\". Část 2: \"repaired\"."
+      }
+    },
+    {
+      "n": 6,
+      "sentence1": "It was such a boring film that we left early.",
+      "keyWord": "SO",
+      "before": "The film",
+      "after": "we left early.",
+      "parts": [
+        {
+          "accepted": [
+            "was so boring"
+          ]
+        },
+        {
+          "accepted": [
+            "that"
+          ]
+        }
+      ],
+      "fullAnswers": [
+        "was so boring that"
+      ],
+      "type": "linking",
+      "explanation": {
+        "en": "Part 1: \"was so boring\". Part 2: \"that\" introduces the result.",
+        "cs": "Část 1: \"was so boring\". Část 2: \"that\"."
+      }
+    }
+  ]
+}
