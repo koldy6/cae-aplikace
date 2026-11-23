@@ -1,4 +1,7 @@
-export type Params = string[];
+export type Params = (string | undefined)[];
+
+/** Capture groups → params. An unmatched optional group stays undefined (decodeURIComponent would turn it into "undefined"). */
+export const routeParams = (m: RegExpExecArray): Params => m.slice(1).map((p) => (p === undefined ? p : decodeURIComponent(p)));
 export interface Route {
   pattern: RegExp;
   /** Returns the screen content; it must contain exactly one <h1>. */
@@ -22,7 +25,7 @@ export function startRouter(main: HTMLElement, routes: Route[], onRender: (path:
     for (const r of routes) {
       const m = r.pattern.exec(path);
       if (m) {
-        screen = r.render(m.slice(1).map(decodeURIComponent));
+        screen = r.render(routeParams(m));
         break;
       }
     }
