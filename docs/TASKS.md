@@ -89,7 +89,7 @@ Depends on: T07, T08.
 - Write `domain/weakAreas.ts`: accuracy per (paper, part, type), eligible when n >= 10, weakest 3, error log = latest attempt wrong, and 7-day activity.
 - AC: `tests/weakAreas.test.ts` is green for all cases in section 10, including partial KWT marks.
 
-### T16 Progress, weak-area and retry screens (dev)
+### T16 Progress, weak-area and retry screens (dev) — ✅ DONE 2026-11-23
 Depends on: T13, T15.
 - The progress screen lists sessions and per-part accuracy. The weak-area screen shows a table plus the highlighted weakest 3 ("Part 3 word formation: 55%"), with a "too few answers" note below 10. The retry drill uses only questions from the error log (set-based parts show the other gaps read-only).
 - AC: US3 criteria are met. When a retried question is answered correctly, it leaves the error log.

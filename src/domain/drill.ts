@@ -55,8 +55,9 @@ export function buildAttempts(
   answers: Record<number, string>,
   sessionId: string,
   at: string,
+  only?: ReadonlySet<number>,
 ): Attempt[] {
-  return questionsOf(set).map((q) => {
+  return questionsOf(set).filter((q) => !only || only.has(q.n)).map((q) => {
     const answer = answers[q.n] ?? '';
     return {
       id: `${sessionId}-${q.n}`,
@@ -91,9 +92,9 @@ export function recomputeSession(session: Session, attempts: Attempt[]): Session
   };
 }
 
-export const newSession = (set: DrillSet, id: string, at: string): Session => ({
+export const newSession = (set: DrillSet, id: string, at: string, kind: 'drill' | 'retry' = 'drill'): Session => ({
   id,
-  kind: 'drill',
+  kind,
   setIds: [set.id],
   startedAt: at,
   finishedAt: at,

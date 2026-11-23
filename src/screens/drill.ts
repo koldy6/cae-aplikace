@@ -6,6 +6,7 @@ import type { Store } from '../storage/store';
 import { labelBadge } from '../ui/components';
 import { h } from '../ui/h';
 import type { Route } from '../ui/router';
+import { correctShort } from '../domain/progress';
 import { PARTS } from './home';
 
 const notFound = (): ReturnType<Route['render']> => ({
@@ -13,9 +14,9 @@ const notFound = (): ReturnType<Route['render']> => ({
   content: h('div', { class: 'stack' }, h('h1', {}, 'Sada nenalezena'), h('a', { href: '#/' }, 'Zpět na části')),
 });
 
-function saveDrill(store: Store, set: DrillSet, answers: Record<number, string>, sid: string, now: string) {
-  const attempts = buildAttempts(set, answers, sid, now);
-  const session = recomputeSession(newSession(set, sid, now), attempts);
+function saveDrill(store: Store, set: DrillSet, answers: Record<number, string>, sid: string, now: string, retry?: ReadonlySet<number>) {
+  const attempts = buildAttempts(set, answers, sid, now, retry);
+  const session = recomputeSession(newSession(set, sid, now, retry ? 'retry' : 'drill'), attempts);
   store.update((d) => {
     d.sessions.push(session);
     d.attempts.push(...attempts);
@@ -23,7 +24,8 @@ function saveDrill(store: Store, set: DrillSet, answers: Record<number, string>,
   return { session, attempts };
 }
 
-export function drillScreen(store: Store, setId: string): ReturnType<Route['render']> {
+/** `retry`: question numbers to answer again; other gaps are read-only with the correct answer. */
+export function drillScreen(store: Store, setId: string, retry?: ReadonlySet<number>): ReturnType<Route['render']> {
   const set = setById(setId);
   if (!set || !isDrillSet(set)) return notFound();
 
@@ -42,7 +44,8 @@ export function drillScreen(store: Store, setId: string): ReturnType<Route['rend
   }
   dupNote.hidden = true;
 
-  const kwtItems = set.part === 4 ? set.items.map(kwtEl) : [];
+  const active = (n: number): boolean => !retry || retry.has(n);
+  const kwtItems = set.part === 4 ? set.items.filter((i) => active(i.n)).map(kwtEl) : [];
 
   function kwtEl(it: KwtItem): HTMLElement {
     const hint = h('span', { class: 'kwt__hint muted', id: `kwt-hint-${it.n}` });
@@ -79,6 +82,10 @@ export function drillScreen(store: Store, setId: string): ReturnType<Route['rend
     const q = questionsOf(set).find((x) => x.n === n);
     const wrap = h('span', { class: 'gap' }, h('span', { class: 'gap__num', 'aria-hidden': 'true' }, n));
     if (!q) return wrap;
+    if (!active(n)) {
+      wrap.append(h('span', { class: 'gap__fixed' }, correctShort(set, q)), h('span', { class: 'visually-hidden', lang: 'cs' }, ' (již správně, jen ke čtení)'));
+      return wrap;
+    }
     let ctl: HTMLSelectElement | HTMLInputElement;
     if (set.part === 7) {
       ctl = h(
@@ -127,8 +134,8 @@ export function drillScreen(store: Store, setId: string): ReturnType<Route['rend
     const sid = `s-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 6)}`;
     const answers: Record<number, string> = {};
     controls.forEach((c, n) => (answers[n] = c.value));
-    const { session } = saveDrill(store, set, answers, sid, now);
-    questionsOf(set).forEach((q) => {
+    const { session } = saveDrill(store, set, answers, sid, now, retry);
+    questionsOf(set).filter((q) => active(q.n)).forEach((q) => {
       const ok = scoreAny(set, q, answers[q.n] ?? '') === maxMarks(set.part);
       gaps.get(q.n)?.classList.add(ok ? 'is-correct' : 'is-incorrect');
       const c = controls.get(q.n);
@@ -144,7 +151,7 @@ export function drillScreen(store: Store, setId: string): ReturnType<Route['rend
     content: h(
       'div',
       { class: 'stack' },
-      h('h1', {}, `Part ${set.part} – ${set.title}`),
+      h('h1', {}, `${retry ? 'Opakování chyb: ' : ''}Part ${set.part} – ${set.title}`),
       h('p', {}, labelBadge(set.label), ' ', h('span', { class: 'muted' }, PARTS[set.part])),
       h('form', { class: 'drill', onsubmit: onSubmit }, set.part === 4
           ? h('ol', { class: 'kwt-list stack' }, kwtItems)
@@ -154,7 +161,7 @@ export function drillScreen(store: Store, setId: string): ReturnType<Route['rend
           : null,
         actions,
         score),
-      h('a', { href: `#/part/${set.part}` }, 'Zpět na sady'),
+      h('a', { href: retry ? '#/retry' : `#/part/${set.part}` }, retry ? 'Zpět na opakování' : 'Zpět na sady'),
     ),
   };
 }

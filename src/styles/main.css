@@ -294,3 +294,9 @@ a.part-tile:hover { border-color: var(--c-primary); }
 .para-list dt { font-weight: 700; }
 .para-list dd { margin: 0; }
 .gap.is-duplicate { outline: 2px dashed currentColor; outline-offset: 2px; }
+
+/* T16: progress, weak areas, retry */
+.gap__fixed { padding: 0 var(--s-2); border-bottom: 2px solid var(--c-border); color: var(--c-muted); font-style: italic; }
+.week { display: flex; gap: var(--s-2); list-style: none; padding: 0; flex-wrap: wrap; }
+.week li { display: grid; justify-items: center; min-width: 2.75rem; padding: var(--s-1) var(--s-2); background: var(--c-surface); border-radius: var(--radius); }
+.week strong { font-size: var(--fs-md); }
