@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "s-003",
+  "paper": "speaking",
+  "label": "ai-generated",
+  "source": null,
+  "title": "Switching off",
+  "topic": "digital habits and screen time",
+  "difficulty": 2,
+  "reviewed": true,
+  "part1": {
+    "questions": [
+      "What do you do for a living, or what are you studying at the moment?",
+      "How do you usually keep in touch with your friends?",
+      "Is there a piece of technology you couldn't do without? Why?",
+      "What did you enjoy doing most when you were a child?",
+      "Do you prefer reading on paper or on a screen? Why?",
+      "How do you like to spend a weekend when you have no plans?",
+      "Is there anything you would like to spend less time doing?"
+    ]
+  },
+  "part2": {
+    "instructions": "Here are three situations showing people using screens in different settings. Choose two of them and talk about them on your own for about one minute. Compare the two situations and answer the question below. After that, your partner will answer a short question about your situations.",
+    "situations": [
+      "A family of four is sitting around a dinner table, but each person is looking at their own phone. The food on their plates is untouched.",
+      "A teenager is sitting on a bench in a park at night, video-calling a friend who lives abroad. He is laughing and gesturing at the screen.",
+      "In an open-plan office, a woman is working at two large monitors while her phone keeps lighting up with notifications. She is rubbing her eyes."
+    ],
+    "question": "Why might the people be using screens in these situations, and how might it be affecting them?",
+    "partnerQuestion": "In which situation do you think the screen is most useful? Why?"
+  },
+  "part3": {
+    "question": "What can people do to reduce the amount of time they spend in front of screens?",
+    "options": [
+      "turning off notifications",
+      "setting screen-free times of day",
+      "taking up an outdoor hobby",
+      "keeping phones out of the bedroom",
+      "using apps that track screen time"
+    ],
+    "decisionQuestion": "Which two of these would be the easiest for most people to stick to, and why?"
+  },
+  "part4": {
+    "questions": [
+      "Do you think people are becoming too dependent on their phones? Why or why not?",
+      "Should schools limit the use of mobile phones during the school day?",
+      "Some people say technology has made us more connected but lonelier. What do you think?",
+      "Who has more responsibility for reducing screen addiction: technology companies or users themselves?",
+      "How might working from home have changed the balance between screen time and free time?",
+      "Is it realistic to expect children to grow up without smartphones nowadays?"
+    ]
+  },
+  "tipsCs": "Srovnání: In both cases the screen seems to..., but the effect is quite different.\nSpekulace o pocitech: He seems to be thoroughly enjoying... / She looks as though she's under a lot of pressure.\nVyjádření důvodu: This is presumably because... / The most likely explanation is that...\nVážení argumentů: On the one hand... on the other... / That said...\nRozhodnutí: I'd single out... and... because they don't require much willpower."
+}

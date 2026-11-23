@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "s-001",
+  "paper": "speaking",
+  "label": "ai-generated",
+  "source": null,
+  "title": "Taking risks",
+  "topic": "risk-taking and personal challenges",
+  "difficulty": 2,
+  "reviewed": true,
+  "part1": {
+    "questions": [
+      "Where do you live, and what do you like most about the area?",
+      "How do you usually spend your free time during the week?",
+      "Is there anything you have recently started doing for the first time?",
+      "Would you describe yourself as someone who plans ahead, or do you prefer to be spontaneous? Why?",
+      "What kind of weather puts you in a good mood?",
+      "If you could spend a year living in another country, where would you go and why?",
+      "How important is it for you to have a daily routine?"
+    ]
+  },
+  "part2": {
+    "instructions": "Here are three situations showing people taking a risk. Choose two of them and talk about them on your own for about one minute. Compare the two situations and answer the question below. After that, your partner will answer a short question about your situations.",
+    "situations": [
+      "A young woman is halfway up a steep rock face, roped to a partner below. She is reaching for the next handhold while looking down nervously.",
+      "A man in his forties stands in an empty shop he has just rented, surrounded by boxes and paint pots. He has left a secure office job to open his own cafe.",
+      "A student at an airport is hugging her parents goodbye before flying to another continent to study. Her suitcase is beside her and she looks both excited and tearful."
+    ],
+    "question": "Why might the people have decided to take these risks, and how might they be feeling at this moment?",
+    "partnerQuestion": "Which of these risks do you think would be the hardest to take? Why?"
+  },
+  "part3": {
+    "question": "Why do some people choose to take risks in their lives, while others prefer to play it safe?",
+    "options": [
+      "personality and temperament",
+      "the influence of family and upbringing",
+      "financial security",
+      "the desire for recognition or excitement",
+      "age and stage of life"
+    ],
+    "decisionQuestion": "Which of these factors do you think has the greatest influence on whether a person takes risks, and why?"
+  },
+  "part4": {
+    "questions": [
+      "Do you think young people today are encouraged enough to take risks? Why or why not?",
+      "Some people say that failure is the best teacher. To what extent do you agree?",
+      "Should governments do more to protect people from the consequences of risky choices, or is that a matter of personal responsibility?",
+      "How has social media changed the kinds of risks people are willing to take?",
+      "Is it possible to become braver through practice, or is courage something people are born with?",
+      "In what situations might avoiding risk actually be the more dangerous option?"
+    ]
+  },
+  "tipsCs": "Srovnání: Both situations involve..., whereas in the first one... / The key difference is that...\nSpekulace: She might well be feeling... / It looks as if he has... / I'd imagine that...\nVyjádření míry: To some extent... / It largely depends on...\nNázor a souhlas: I'd go along with that, up to a point. / That's a fair point, but...\nRozhodnutí: On balance, I'd say... has the greatest impact because..."
+}

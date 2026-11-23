@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "s-002",
+  "paper": "speaking",
+  "label": "ai-generated",
+  "source": null,
+  "title": "Neighbours and community",
+  "topic": "neighbours and community life",
+  "difficulty": 2,
+  "reviewed": true,
+  "part1": {
+    "questions": [
+      "How long have you lived in your present home?",
+      "How well do you know the people who live near you?",
+      "What do you usually do to relax at the end of a busy day?",
+      "Do you prefer spending time in a big group or with just one or two friends? Why?",
+      "Tell us about a place in your town where you enjoy spending time.",
+      "Is there a skill you would like to learn in the next few years?",
+      "What is the best piece of advice anyone has ever given you?"
+    ]
+  },
+  "part2": {
+    "instructions": "Here are three situations showing neighbours doing things together. Choose two of them and talk about them on your own for about one minute. Compare the two situations and answer the question below. After that, your partner will answer a short question about your situations.",
+    "situations": [
+      "Several residents of a block of flats are digging and planting vegetables in a small shared garden behind the building. An older man is showing a teenager how to plant seedlings.",
+      "On a narrow street that has been closed to traffic, neighbours have set up long tables and are sharing food they have cooked. Children are drawing on the road with chalk.",
+      "A woman is carrying shopping bags up the stairs for her elderly neighbour, who is holding the front door open and smiling."
+    ],
+    "question": "What might the people gain from doing these things, and how might the activities affect the relationships between them?",
+    "partnerQuestion": "Which of these activities would you most like to take part in? Why?"
+  },
+  "part3": {
+    "question": "How could people be encouraged to get to know their neighbours better?",
+    "options": [
+      "a local online group or noticeboard",
+      "shared spaces such as gardens or courtyards",
+      "regular street events",
+      "a scheme for exchanging skills or tools",
+      "welcome visits for new residents"
+    ],
+    "decisionQuestion": "Which of these ideas would be the most effective in a large city, and why?"
+  },
+  "part4": {
+    "questions": [
+      "Why do you think many people in cities hardly know their neighbours?",
+      "Is a strong sense of community more important in some stages of life than others?",
+      "Some people believe that online communities can replace local ones. What is your view?",
+      "Who should be responsible for creating community spaces: local authorities, businesses or residents themselves?",
+      "Can having close neighbours ever be a disadvantage? In what way?",
+      "How might the way people live together change over the next twenty years?"
+    ]
+  },
+  "tipsCs": "Srovnání: What these two situations have in common is... / Unlike the first one, the second...\nSpekulace: They're probably hoping to... / It could be that they've only just met.\nRozvinutí myšlenky: What's more... / Not only that, but...\nNesouhlas zdvořile: I see what you mean, but I'm not entirely convinced. / I'd look at it slightly differently.\nRozhodnutí: If we had to choose one, I'd go for... since..."
+}

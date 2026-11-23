@@ -4,6 +4,7 @@ import { buildWritingPrompt, wordCount, wordState } from '../domain/prompts';
 import type { Store, WritingEntry } from '../storage/store';
 import { labelBadge } from '../ui/components';
 import { h } from '../ui/h';
+import { copyPrompt } from '../ui/copy';
 import type { Route } from '../ui/router';
 
 const fmt = (iso: string): string => new Date(iso).toLocaleString('cs-CZ');
@@ -87,27 +88,7 @@ function taskView(store: Store, task: WritingTask, reference: FormatReference): 
     }, 1000);
   } }, 'Spustit 45min odpočet');
 
-  // ---- copy prompt ----
-  const manual = h('textarea', { class: 'input', id: 'prompt-manual', rows: 8, readonly: true, 'aria-label': 'Prompt ke zkopírování' });
-  const manualWrap = h('div', { class: 'stack', hidden: true },
-    h('p', { class: 'notice', role: 'status' }, 'Automatické kopírování není dostupné. Ctrl+C / podržte a zkopírujte text níže.'), manual);
-  const copyMsg = h('p', { role: 'status' });
-  const copy = async (): Promise<void> => {
-    save();
-    const p = buildWritingPrompt(task, area.value, reference);
-    copyMsg.textContent = '';
-    try {
-      if (!window.isSecureContext || !navigator.clipboard) throw new Error('no clipboard');
-      await navigator.clipboard.writeText(p);
-      manualWrap.hidden = true;
-      copyMsg.textContent = 'Prompt zkopírován. Vlož ho do claude.ai.';
-    } catch {
-      manual.value = p;
-      manualWrap.hidden = false;
-      manual.focus();
-      manual.select();
-    }
-  };
+  const cp = copyPrompt(() => buildWritingPrompt(task, area.value, reference), save);
 
   // ---- feedback: plain text only (textContent via h(), never markup) ----
   const fbArea = h('textarea', { class: 'input', id: 'feedback', rows: 8 });
@@ -145,8 +126,8 @@ function taskView(store: Store, task: WritingTask, reference: FormatReference): 
       task.points.length ? h('ul', {}, task.points.map((p) => h('li', {}, p))) : null),
     h('details', {}, h('summary', {}, 'Plán odpovědi (nápověda)'), h('p', {}, task.modelPlanCs)),
     h('div', {}, h('label', { class: 'field-label', for: 'answer' }, 'Tvoje odpověď'), area, wc, warn, saved),
-    h('div', { class: 'drill__actions' }, timerBtn, clock, h('button', { class: 'btn', type: 'button', onclick: () => void copy() }, 'Zkopírovat prompt')),
-    timerNote, copyMsg, manualWrap,
+    h('div', { class: 'drill__actions' }, timerBtn, clock, cp.button),
+    timerNote, ...cp.extra,
     h('section', { class: 'stack' }, h('h2', {}, 'Zpětná vazba od claude.ai'),
       h('div', {}, h('label', { class: 'field-label', for: 'feedback' }, 'Vlož zpětnou vazbu (uloží se jako prostý text)'), fbArea), fbSave),
     history,

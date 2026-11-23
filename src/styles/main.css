@@ -324,3 +324,6 @@ a.part-tile:hover { border-color: var(--c-primary); }
 .script p { margin: var(--s-1) 0; max-width: 42rem; }
 
 .pre-wrap { white-space: pre-wrap; font: inherit; margin: 0; }
+
+/* T31: mini mock */
+.mock-bar { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s-3); padding: var(--s-2) var(--s-3); background: Canvas; color: CanvasText; border-bottom: 1px solid currentColor; }

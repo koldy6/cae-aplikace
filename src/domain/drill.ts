@@ -99,7 +99,7 @@ export function recomputeSession(session: Session, attempts: Attempt[]): Session
   };
 }
 
-export const newSession = (set: { id: string }, id: string, at: string, kind: 'drill' | 'retry' | 'listening' = 'drill'): Session => ({
+export const newSession = (set: { id: string }, id: string, at: string, kind: 'drill' | 'retry' | 'listening' | 'mock' = 'drill'): Session => ({
   id,
   kind,
   setIds: [set.id],
@@ -124,6 +124,12 @@ export function daysToExam(examDate: string | null, now: Date): number | null {
 
 /** Most recent score for a set, e.g. "7/8", or null. */
 export function lastScore(sessions: Session[], setId: string): string | null {
-  const s = sessions.filter((x) => x.setIds.includes(setId)).sort((a, b) => b.startedAt.localeCompare(a.startedAt))[0];
+  const s = sessions.filter((x) => x.kind !== 'mock' && x.setIds.includes(setId)).sort((a, b) => b.startedAt.localeCompare(a.startedAt))[0];
   return s ? `${s.marks}/${s.maxMarks}` : null;
+}
+
+/** Handle a drill/listening screen gives to a host page (mini mock) that owns submitting. */
+export interface Embedded {
+  answers(): Record<number, string>;
+  lock(): void;
 }

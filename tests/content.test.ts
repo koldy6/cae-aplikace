@@ -112,6 +112,9 @@ describe('broken fixtures fail with a readable message naming the file', () => {
     ['bad-lis-html-in-script', /"<" or ">"/],
     ['bad-lis-speaker', /speaker/],
     ['bad-lis-label-no-source', /requires source/],
+    ['bad-speaking-few-questions', /part1/],
+    ['bad-speaking-two-situations', /situations/],
+    ['bad-speaking-angle', /"<" or ">"/],
   ];
   test.each(cases)('%s', (name, re) => {
     const errors = validate(pick(FIXTURES, `${name}.json`), FIXTURES);

@@ -358,6 +358,20 @@ export const writingSchema = z
     if (v.wordMin > v.wordMax) fail(ctx, 'wordMin must not exceed wordMax', ['wordMin']);
   });
 
+// ---- Speaking (ARCHITECTURE 5.4): one set = all four parts, no `part` field ----
+const strs = (min: number, max: number) => z.array(noAngle).min(min).max(max);
+export const speakingSchema = z
+  .strictObject({
+    ...common,
+    paper: z.literal('speaking'),
+    part1: z.strictObject({ questions: strs(6, 8) }),
+    part2: z.strictObject({ instructions: noAngle, situations: strs(3, 3), question: noAngle, partnerQuestion: noAngle }),
+    part3: z.strictObject({ question: noAngle, options: strs(5, 5), decisionQuestion: noAngle }),
+    part4: z.strictObject({ questions: strs(5, 6) }),
+    tipsCs: noAngle,
+  })
+  .superRefine((v, ctx) => checkSource(ctx, v));
+
 // ---- Reference: official format facts used by prompts (ARCHITECTURE 5.4) ----
 const criterion = z.strictObject({ name: str, descriptionEn: str, descriptionCs: str });
 export const referenceSchema = z.strictObject({
@@ -390,6 +404,7 @@ export const schemas = {
   'listening/4': lis4Schema,
   'writing/1': writingSchema,
   'writing/2': writingSchema,
+  'speaking/undefined': speakingSchema,
   'reference/undefined': referenceSchema,
 } as const;
 export type SchemaKey = keyof typeof schemas;

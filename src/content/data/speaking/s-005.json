@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "s-005",
+  "paper": "speaking",
+  "label": "ai-generated",
+  "source": null,
+  "title": "Working together",
+  "topic": "teamwork and cooperation",
+  "difficulty": 2,
+  "reviewed": true,
+  "part1": {
+    "questions": [
+      "What do you like about the place where you grew up?",
+      "Do you prefer working on your own or as part of a team? Why?",
+      "Tell us about a sport or game you have enjoyed playing.",
+      "How do you usually celebrate your birthday?",
+      "What kind of films or series do you enjoy watching?",
+      "Has anyone you have worked or studied with influenced you a lot? In what way?",
+      "What would your ideal job look like?"
+    ]
+  },
+  "part2": {
+    "instructions": "Here are three situations showing people working together. Choose two of them and talk about them on your own for about one minute. Compare the two situations and answer the question below. After that, your partner will answer a short question about your situations.",
+    "situations": [
+      "In a hospital operating theatre, a team of surgeons and nurses in masks is concentrating on a patient. One nurse is passing an instrument to a surgeon.",
+      "A group of volunteers is pulling a rowing boat up a beach after a race. They are exhausted and soaked, but cheering.",
+      "Four university students are sitting around a laptop in a cafe late at night, surrounded by papers and empty cups, arguing about a project deadline."
+    ],
+    "question": "Why is cooperation important for the people in these situations, and what difficulties might they face?",
+    "partnerQuestion": "Which of these teams do you think is under the most pressure? Why?"
+  },
+  "part3": {
+    "question": "What makes a team work well together?",
+    "options": [
+      "a strong leader",
+      "clearly divided roles",
+      "trust between team members",
+      "a shared goal",
+      "regular honest feedback"
+    ],
+    "decisionQuestion": "Which of these do you think is the hardest to achieve, and why?"
+  },
+  "part4": {
+    "questions": [
+      "Do you think schools put enough emphasis on teaching young people to work in teams?",
+      "Why do some talented individuals find it hard to work as part of a group?",
+      "Some people say that competition brings out the best in people. Others believe cooperation does. What is your view?",
+      "How has remote working affected the way teams communicate?",
+      "Is it always better for a group to reach agreement, or can disagreement be useful?",
+      "Should employers reward teams rather than individuals? Why or why not?"
+    ]
+  },
+  "tipsCs": "Srovnání: The first situation is far more high-stakes than the second. / Whereas the rowers..., the students...\nSpekulace o obtížích: They may well be struggling to... / There's a chance that tensions could arise.\nZdůvodnění: The reason I say that is... / This is mainly down to...\nPřipuštění: Admittedly... / Even so...\nRozhodnutí: For me, the trickiest one to achieve is..., simply because..."
+}

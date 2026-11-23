@@ -150,21 +150,21 @@ Depends on: T26, T10, T08.
 - Write `domain/prompts.ts` (`buildWritingPrompt`) and the writing screen: word count with a warning outside 220-260, optional timer, draft autosave, copy with clipboard fallback, and a paste-feedback textarea (stored and shown as plain text).
 - AC: `tests/prompts.test.ts` is green. US6 is met on desktop. The fallback copy works on the phone over http.
 
-### T28 Speaking content (edu)
+### T28 Speaking content (edu) — ✅ DONE 2026-11-23
 Depends on: T02.
 - AC: 5 sets covering Parts 1-4. Part 2 uses text situation descriptions (A9). The content passes the schema test (dev adds the Speaking schema in T29 if it is not done yet).
 
-### T29 Recorder module plus IndexedDB recordings (dev)
+### T29 Recorder module plus IndexedDB recordings (dev) — ✅ DONE 2026-11-23
 Depends on: T08.
 - Write `media/recorder.ts` (feature detection, mime choice, error mapping) and `storage/recordings.ts` (put/get/delete).
 - AC: manual test on Chrome or Edge: record, stop, reload, play back. Denied and missing mic each show their Czech message with no crash (US7).
 
-### T30 Speaking screen plus speaking prompt (dev)
+### T30 Speaking screen plus speaking prompt (dev) — ✅ DONE 2026-11-23
 Depends on: T28, T29, T27.
 - Show the prompt per part with a timer (part timings from `format.json`), record and play back, a download button per recording, a transcript field, and `buildSpeakingPrompt` with copy.
 - AC: US7 is met. `prompts.test.ts` is extended to cover the 6 speaking criteria and the disclaimer.
 
-### T31 Mini mock (dev)
+### T31 Mini mock (dev) — ✅ DONE 2026-11-23
 Depends on: T18, T24.
 - Write `domain/mock.ts` (set selection, time budget, aggregation) and the mock screen: a countdown that auto-submits, a per-part breakdown, and a saved `mock` session.
 - AC: `tests/mock.test.ts` is green. US8 is met. Only raw scores are shown (no scale or grade).

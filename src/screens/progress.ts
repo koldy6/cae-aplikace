@@ -22,7 +22,8 @@ export function progressScreen(store: Store): Screen {
   const sessionList = sessionsNewestFirst(sessions).map((s) =>
     h('li', { class: 'set-item' },
       h('span', {}, dateText(s.startedAt)),
-      h('strong', { lang: 'en' }, setById(s.setIds[0] ?? '')?.title ?? s.setIds.join(', ')),
+      h('strong', { lang: 'en' }, s.kind === 'mock' ? 'Mini mock' : setById(s.setIds[0] ?? '')?.title ?? s.setIds.join(', ')),
+      s.kind === 'mock' ? h('span', { class: 'tag' }, 'mock (hrubé body)') : null,
       s.kind === 'retry' ? h('span', { class: 'tag' }, 'opakování') : null,
       h('span', { class: 'score' }, `${s.marks}/${s.maxMarks}`),
     ),

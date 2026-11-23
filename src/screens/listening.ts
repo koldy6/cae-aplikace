@@ -1,5 +1,5 @@
 import type { ListeningSet } from '../content/types';
-import { blocksImplicitSubmit, newSession, recomputeSession } from '../domain/drill';
+import { blocksImplicitSubmit, newSession, recomputeSession, type Embedded } from '../domain/drill';
 import { buildListeningAttempts, listeningQuestions, playUnits, scoreListening, scriptGroups, speakerLabel, type LQ } from '../domain/listening';
 import { browserEnv, createPlayer, isSupported, type Player, type Segment, type TtsError } from '../media/tts';
 import type { Store } from '../storage/store';
@@ -25,7 +25,7 @@ const ERRORS: Record<TtsError, string> = {
 };
 
 /** `retry`: question numbers to answer again; the others are shown read-only with the correct answer. */
-export function listeningDrillScreen(store: Store, set: ListeningSet, retry?: ReadonlySet<number>): ReturnType<Route['render']> {
+export function listeningDrillScreen(store: Store, set: ListeningSet, retry?: ReadonlySet<number>, embed?: (e: Embedded) => void): ReturnType<Route['render']> {
   const settings = store.get().settings;
   const qs = listeningQuestions(set);
   const q = (n: number): LQ => qs.find((x) => x.n === n)!;
@@ -160,6 +160,7 @@ export function listeningDrillScreen(store: Store, set: ListeningSet, retry?: Re
 
   const onSubmit = (e: Event): void => {
     e.preventDefault();
+    if (embed) return;
     stopAll();
     bars.forEach((b) => b.refresh());
     const now = new Date().toISOString();
@@ -181,22 +182,26 @@ export function listeningDrillScreen(store: Store, set: ListeningSet, retry?: Re
     score.focus();
   };
 
+  embed?.({
+    answers: () => Object.fromEntries([...controls].map(([n, c]) => [n, c.value])),
+    lock: () => { stopAll(); controls.forEach((c) => (c.disabled = true)); script.hidden = false; },
+  });
   if (!supported) showError('unsupported');
   const form = h('form', { class: 'drill', onsubmit: onSubmit, onkeydown: (e: Event) => {
     const t = e.target as HTMLInputElement;
     if (blocksImplicitSubmit((e as KeyboardEvent).key, t.tagName, t.type)) e.preventDefault();
-  } }, body(), actions, score);
+  } }, body(), embed ? null : actions, embed ? null : score);
 
   return {
     title: set.title,
-    content: h('div', { class: 'stack' },
-      h('h1', {}, retry ? 'Opakování chyb: ' : '', h('span', { lang: 'en' }, `Listening Part ${set.part} – ${set.title}`)),
+    content: h(embed ? 'section' : 'div', { class: 'stack' },
+      h(embed ? 'h2' : 'h1', {}, retry ? 'Opakování chyb: ' : '', h('span', { lang: 'en' }, `Listening Part ${set.part} – ${set.title}`)),
       h('p', {}, labelBadge(set.label), ' ', h('span', { class: 'muted', lang: 'en' }, LISTENING_PARTS[set.part])),
       h('div', { class: 'player-opts' }, h('label', { class: 'field-label', for: 'rate' }, 'Rychlost řeči'), rateSel),
       msg,
       form,
       script,
-      h('a', { href: retry ? '#/retry' : `#/listening/${set.part}` }, retry ? 'Zpět na opakování' : 'Zpět na sady'),
+      embed ? null : h('a', { href: retry ? '#/retry' : `#/listening/${set.part}` }, retry ? 'Zpět na opakování' : 'Zpět na sady'),
     ),
   };
 }

@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1, "id": "bad-speaking-angle", "paper": "speaking", "label": "ai-generated", "source": null,
+  "title": "Bad", "topic": "x", "reviewed": false,
+  "part1": { "questions": ["a?", "b?", "c?", "d?", "e?", "<b>f?</b>"] },
+  "part2": { "instructions": "i", "situations": ["a", "b", "c"], "question": "q", "partnerQuestion": "p" },
+  "part3": { "question": "q", "options": ["a", "b", "c", "d", "e"], "decisionQuestion": "d" },
+  "part4": { "questions": ["a", "b", "c", "d", "e"] },
+  "tipsCs": "t"
+}

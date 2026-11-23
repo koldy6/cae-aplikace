@@ -1,7 +1,7 @@
 import { kwtWordCount } from '../content/schema';
 import { setById } from '../content/loader';
 import { maxMarks, type KwtItem } from '../domain/scoring';
-import { blocksImplicitSubmit, buildAttempts, isDrillSet, newSession, parseGapText, questionsOf, recomputeSession, scoreAny, type DrillSet, type ReadingSet } from '../domain/drill';
+import { blocksImplicitSubmit, buildAttempts, isDrillSet, newSession, parseGapText, questionsOf, recomputeSession, scoreAny, type DrillSet, type Embedded, type ReadingSet } from '../domain/drill';
 import type { Store } from '../storage/store';
 import { labelBadge } from '../ui/components';
 import { h } from '../ui/h';
@@ -24,8 +24,8 @@ function saveDrill(store: Store, set: DrillSet, answers: Record<number, string>,
   return { session, attempts };
 }
 
-/** `retry`: question numbers to answer again; other gaps are read-only with the correct answer. */
-export function drillScreen(store: Store, setId: string, retry?: ReadonlySet<number>): ReturnType<Route['render']> {
+/** `retry`: question numbers to answer again; other gaps are read-only with the correct answer. `embed`: the host page (mini mock) submits; no own buttons or saving. */
+export function drillScreen(store: Store, setId: string, retry?: ReadonlySet<number>, embed?: (e: Embedded) => void): ReturnType<Route['render']> {
   const found = setById(setId);
   if (!found) return notFound();
   const set: DrillSet = found;
@@ -183,6 +183,7 @@ export function drillScreen(store: Store, setId: string, retry?: ReadonlySet<num
 
   const onSubmit = (e: Event): void => {
     e.preventDefault();
+    if (embed) return;
     const now = new Date().toISOString();
     const sid = `s-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 6)}`;
     const answers: Record<number, string> = {};
@@ -200,12 +201,17 @@ export function drillScreen(store: Store, setId: string, retry?: ReadonlySet<num
     score.focus();
   };
 
+  embed?.({
+    answers: () => Object.fromEntries([...controls].map(([n, c]) => [n, c.value])),
+    lock: () => controls.forEach((c) => (c.disabled = true)),
+  });
+
   return {
     title: set.title,
     content: h(
-      'div',
+      embed ? 'section' : 'div',
       { class: 'stack' },
-      h('h1', {}, `${retry ? 'Opakování chyb: ' : ''}`, h('span', { lang: 'en' }, `Part ${set.part} – ${set.title}`)),
+      h(embed ? 'h2' : 'h1', {}, `${retry ? 'Opakování chyb: ' : ''}`, h('span', { lang: 'en' }, `Part ${set.part} – ${set.title}`)),
       h('p', {}, labelBadge(set.label), ' ', h('span', { class: 'muted', lang: 'en' }, PARTS[set.part])),
       h('form', { class: 'drill', onsubmit: onSubmit, onkeydown: (e: Event) => {
         const t = e.target as HTMLInputElement;
@@ -218,9 +224,9 @@ export function drillScreen(store: Store, setId: string, retry?: ReadonlySet<num
         set.part === 7
           ? h('div', { class: 'stack' }, dupNote, h('h2', {}, 'Odstavce'), h('dl', { class: 'para-list', lang: 'en' }, set.paragraphs.flatMap((p) => [h('dt', {}, p.id), h('dd', {}, p.text)])))
           : null,
-        actions,
-        score),
-      h('a', { href: retry ? '#/retry' : `#/part/${set.part}` }, retry ? 'Zpět na opakování' : 'Zpět na sady'),
+        embed ? null : actions,
+        embed ? null : score),
+      embed ? null : h('a', { href: retry ? '#/retry' : `#/part/${set.part}` }, retry ? 'Zpět na opakování' : 'Zpět na sady'),
     ),
   };
 }

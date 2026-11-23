@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "id": "s-004",
+  "paper": "speaking",
+  "label": "ai-generated",
+  "source": null,
+  "title": "Persuasion and advertising",
+  "topic": "advertising and consumer choices",
+  "difficulty": 2,
+  "reviewed": true,
+  "part1": {
+    "questions": [
+      "Where are you from originally?",
+      "What do you enjoy most about the job you do or the subject you study?",
+      "Do you enjoy going shopping, or do you find it a chore? Why?",
+      "Have you ever bought something you later regretted?",
+      "What sort of things do you usually spend your money on?",
+      "Which season of the year do you like best? Why?",
+      "Is there a brand or product you always stay loyal to? Why?"
+    ]
+  },
+  "part2": {
+    "instructions": "Here are three situations showing people trying to persuade others to buy something. Choose two of them and talk about them on your own for about one minute. Compare the two situations and answer the question below. After that, your partner will answer a short question about your situations.",
+    "situations": [
+      "At a busy outdoor market, a stallholder is holding up a ripe melon and calling out to passers-by. A few shoppers have stopped to listen.",
+      "A young woman is filming herself in her bedroom with a ring light, holding a skincare product close to the camera and smiling.",
+      "In a car showroom, a salesman in a suit is opening the door of a new car for a couple, who are listening closely but look unsure."
+    ],
+    "question": "What methods are the people using to persuade others, and how successful might they be?",
+    "partnerQuestion": "Which of these people would you trust most? Why?"
+  },
+  "part3": {
+    "question": "What influences people most when they decide to buy something?",
+    "options": [
+      "price and special offers",
+      "recommendations from friends",
+      "online reviews",
+      "celebrity or influencer endorsements",
+      "the environmental impact of the product"
+    ],
+    "decisionQuestion": "Which of these do you think will become more important in the future, and which less important?"
+  },
+  "part4": {
+    "questions": [
+      "Do you think advertising aimed at children should be restricted? Why?",
+      "How easy is it to tell the difference between honest advice and advertising online?",
+      "Some people say that advertising creates needs that people didn't have before. Would you agree?",
+      "Why do you think some people feel the need to own the latest products?",
+      "Should companies be required to show the environmental cost of what they sell?",
+      "Has the way people shop changed for better or worse in recent years?"
+    ]
+  },
+  "tipsCs": "Srovnání: Both people are trying to..., although they go about it in very different ways.\nSpekulace: I suspect the couple aren't completely convinced. / She's bound to have a lot of followers.\nHodnocení: That approach is far more likely to work with... / It might backfire if...\nNavázání na partnera / sám na sebe: Coming back to what I said earlier... / Building on that...\nRozhodnutí: Looking ahead, I'd expect... to matter more, whereas... will probably lose ground."
+}

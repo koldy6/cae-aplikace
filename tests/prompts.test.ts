@@ -1,7 +1,7 @@
 import { describe, expect, test } from 'vitest';
-import { buildWritingPrompt, wordCount, wordState } from '../src/domain/prompts';
+import { buildSpeakingPrompt, buildWritingPrompt, wordCount, wordState } from '../src/domain/prompts';
 import { referenceSchema, schemaFor, writingSchema } from '../src/content/schema';
-import { formatReference, writingTasks } from '../src/content/loader';
+import { formatReference, speakingSets, writingTasks } from '../src/content/loader';
 
 
 const reference = formatReference()!;
@@ -61,5 +61,30 @@ describe('writing and reference schemas', () => {
     expect(referenceSchema.safeParse({ ...r, writingCriteria: r.writingCriteria.slice(1) }).success).toBe(false);
     expect(referenceSchema.safeParse({ ...r, speakingCriteria: r.speakingCriteria.slice(0, 4) }).success).toBe(false);
     expect(referenceSchema.safeParse({ ...r, timings: { ...r.timings, partOneSeconds: 120 } }).success).toBe(true);
+  });
+});
+
+describe('buildSpeakingPrompt', () => {
+  const set = speakingSets()[0]!;
+  const transcript = 'I think the first photo shows a risk.';
+  test.each([1, 2, 3, 4] as const)('part %i: 6 criteria, disclaimer, transcript, Czech summary', (part) => {
+    const p = buildSpeakingPrompt(set, part, transcript, reference);
+    expect(reference.speakingCriteria).toHaveLength(6);
+    for (const c of reference.speakingCriteria) expect(p).toContain(c.name);
+    expect(p).toContain(reference.notice.en);
+    expect(p).toContain(transcript);
+    expect(p).toContain(`Speaking Part ${part}`);
+    expect(p).toMatch(/in Czech/);
+  });
+  test('contains the part-specific task text', () => {
+    expect(buildSpeakingPrompt(set, 1, 'x', reference)).toContain(set.part1.questions[0]);
+    const p2 = buildSpeakingPrompt(set, 2, 'x', reference);
+    for (const s of set.part2.situations) expect(p2).toContain(s);
+    expect(p2).toContain(set.part2.partnerQuestion);
+    const p3 = buildSpeakingPrompt(set, 3, 'x', reference);
+    for (const o of set.part3.options) expect(p3).toContain(o);
+    expect(p3).toContain(set.part3.decisionQuestion);
+    expect(buildSpeakingPrompt(set, 4, 'x', reference)).toContain(set.part4.questions[0]);
+    expect(buildSpeakingPrompt(set, 1, 'x', reference)).not.toContain(set.part4.questions[0]);
   });
 });

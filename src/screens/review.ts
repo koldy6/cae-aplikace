@@ -28,10 +28,10 @@ function givenText(set: DrillSet, q: DrillQuestion, a: Attempt): string {
   return (set.part === 1 || set.part === 5) && 'options' in q ? `${a.answer} – ${q.options[a.answer as 'A'] ?? ''}` : a.answer;
 }
 
-export function reviewScreen(store: Store, sessionId: string): ReturnType<Route['render']> {
+export function reviewScreen(store: Store, sessionId: string, setId?: string): ReturnType<Route['render']> {
   const session = store.get().sessions.find((s) => s.id === sessionId);
-  const lset = session ? listeningById(session.setIds[0] ?? '') : undefined;
-  const set = lset ? undefined : session ? setById(session.setIds[0] ?? '') : undefined;
+  const lset = session ? listeningById(setId ?? session.setIds[0] ?? '') : undefined;
+  const set = lset ? undefined : session ? setById(setId ?? session.setIds[0] ?? '') : undefined;
   if (!session || (!lset && (!set || !isDrillSet(set))))
     return {
       title: 'Nenalezeno',

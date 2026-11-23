@@ -1,5 +1,5 @@
 import { schemaFor } from './schema';
-import type { ContentSet, FormatReference, ListeningSet, WritingTask } from './types';
+import type { ContentSet, FormatReference, ListeningSet, SpeakingSet, WritingTask } from './types';
 
 // Bundled content was validated by tests/content.test.ts, so it is trusted here.
 // Files whose paper/part has no schema yet (e.g. reference/format.json) are skipped.
@@ -10,7 +10,7 @@ export type ContentIndex = Record<string, Record<number, ContentSet[]>>;
 export function buildIndex(raws: unknown[]): ContentIndex {
   const index: ContentIndex = {};
   for (const raw of raws) {
-    if (!schemaFor(raw) || ['writing', 'reference'].includes((raw as { paper: string }).paper)) continue; // these have their own accessors
+    if (!schemaFor(raw) || ['writing', 'reference', 'speaking'].includes((raw as { paper: string }).paper)) continue; // these have their own accessors
     const set = raw as ContentSet; // listening sets are read via listeningSets()
     ((index[set.paper] ??= {})[set.part] ??= []).push(set);
   }
@@ -30,6 +30,8 @@ export const setById = (id: string): ContentSet | undefined =>
 const all = Object.values(files) as { paper?: string; id?: string }[];
 export const writingTasks: WritingTask[] = (all.filter((r) => r.paper === 'writing') as WritingTask[]).sort((a, b) => a.part - b.part || a.id.localeCompare(b.id));
 export const writingById = (id: string): WritingTask | undefined => writingTasks.find((t) => t.id === id);
+export const speakingSets = (): SpeakingSet[] => (all.filter((r) => r.paper === 'speaking') as SpeakingSet[]).sort((a, b) => a.id.localeCompare(b.id));
+export const speakingById = (id: string): SpeakingSet | undefined => speakingSets().find((s) => s.id === id);
 /** The real `format` file wins over any placeholder. */
 export const formatReference = (): FormatReference | undefined => {
   const refs = all.filter((r) => r.paper === 'reference') as FormatReference[];

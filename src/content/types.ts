@@ -1,5 +1,5 @@
 import type { z } from 'zod';
-import type { rue1Schema, rue2Schema, rue3Schema, rue4Schema, rue5Schema, rue6Schema, rue7Schema, rue8Schema, lis1Schema, lis2Schema, lis3Schema, lis4Schema, writingSchema, referenceSchema } from './schema';
+import type { rue1Schema, rue2Schema, rue3Schema, rue4Schema, rue5Schema, rue6Schema, rue7Schema, rue8Schema, lis1Schema, lis2Schema, lis3Schema, lis4Schema, writingSchema, speakingSchema, referenceSchema } from './schema';
 
 export type Rue1Set = z.infer<typeof rue1Schema>;
 export type Rue2Set = z.infer<typeof rue2Schema>;
@@ -19,3 +19,4 @@ export type ContentSet = Rue1Set | Rue2Set | Rue3Set | Rue4Set | Rue5Set | Rue6S
 export type Explanation = Rue1Set['questions'][number]['explanation'];
 export type WritingTask = z.infer<typeof writingSchema>;
 export type FormatReference = z.infer<typeof referenceSchema>;
+export type SpeakingSet = z.infer<typeof speakingSchema>;
