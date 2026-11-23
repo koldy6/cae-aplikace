@@ -77,6 +77,13 @@ describe('kwtScore', () => {
 
 describe('maxMarks', () => {
   it('is 2 for Parts 4 and 7, else 1', () => {
-    expect([1, 2, 3, 4, 7].map(maxMarks)).toEqual([1, 1, 1, 2, 2]);
+    expect([1, 2, 3, 4, 7].map((p) => maxMarks(p))).toEqual([1, 1, 1, 2, 2]);
+  });
+});
+
+describe('maxMarks for Listening', () => {
+  it('is always 1, R&UoE unchanged', () => {
+    expect([1, 2, 3, 4, 5, 6, 7, 8].map((p) => maxMarks(p, 'listening'))).toEqual([1, 1, 1, 1, 1, 1, 1, 1]);
+    expect(maxMarks(4, 'rue')).toBe(2);
   });
 });

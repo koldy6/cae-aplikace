@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "lis2-001",
+  "paper": "listening",
+  "part": 2,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Sentence completion: making sound effects for films",
+  "topic": "Foley artists and film sound",
+  "difficulty": 2,
+  "reviewed": true,
+  "segments": [
+    { "speaker": "N", "text": "You will hear a sound effects artist called Rosa Field talking about her work in films." },
+    { "speaker": "A", "text": "Hello, everyone, and thank you for having me. My job title is Foley artist. That means I create the everyday sounds you hear in films. Footsteps, doors closing, the rustle of a coat as someone sits down." },
+    { "speaker": "A", "text": "Very few of those sounds are recorded on set. The microphones on set are there for the actors' voices. Everything else is added later, in a studio, by people like me." },
+    { "speaker": "A", "text": "People often assume I trained in music, or perhaps in the theatre. In fact, I started out at a small radio station. I was making tea and answering the phones." },
+    { "speaker": "A", "text": "One day, the man who did the sound effects for a radio drama was ill. There was nobody else around, so I was asked to help." },
+    { "speaker": "A", "text": "The first sound I ever made was a fire. Not a real fire, of course. Most beginners crumple a sheet of paper for that, but it sounds rather dull. I was shown how to use a sheet of cellophane instead." },
+    { "speaker": "A", "text": "You squeeze it slowly, close to the microphone, and it crackles remarkably like flames. I was hooked from that moment." },
+    { "speaker": "A", "text": "These days, I work mostly on feature films. Each film takes me about six weeks. Sorry, I should say eight weeks. Six was the old schedule, before digital editing made directors so much more demanding." },
+    { "speaker": "A", "text": "So what is the most important sound I make? Not explosions, and not doors, although I do plenty of both. It's footsteps." },
+    { "speaker": "A", "text": "Audiences rarely notice them. But if they're missing, a scene feels strangely empty, and nobody can say why. I own over two hundred pairs of shoes for this purpose. My partner jokes that the shoes have their own bedroom. That's only slightly untrue." },
+    { "speaker": "A", "text": "The surface matters just as much as the shoe. In our studio, the floor is divided into squares. There's concrete, wood, gravel, and even a shallow pool of water." },
+    { "speaker": "A", "text": "Wood is easy. Concrete is easy. Gravel is by far the hardest to get right. If you walk on it a fraction too heavily, it sounds like someone eating breakfast cereal." },
+    { "speaker": "A", "text": "Some sounds come from very unexpected objects. For a scene with breaking bones, we don't go anywhere near a hospital. For softer injuries, a cabbage works well. But for bones, I use celery." },
+    { "speaker": "A", "text": "You twist a stick of fresh celery right next to the microphone, and the result is horribly convincing. I can't eat it any more, to be honest." },
+    { "speaker": "A", "text": "People often ask me whether computers will replace us. There are enormous libraries of recorded sounds now. They're very useful for things like traffic or rain." },
+    { "speaker": "A", "text": "But a library can't match an actor's movements exactly. Every actor walks differently. Some drag their feet. Some bounce. So we watch the screen and perform in time with them." },
+    { "speaker": "A", "text": "A colleague of mine describes our work as a kind of dance. I see why, but I'd put it differently. Good Foley is really a kind of acting. You have to understand the character before you can give them a sound." },
+    { "speaker": "A", "text": "If you're thinking about this career, my advice is simple. Don't spend a fortune on equipment, and don't rush into an expensive course." },
+    { "speaker": "A", "text": "Start by listening. Sit in a café, close your eyes, and try to name every sound you hear. That habit, more than anything else, is what trained my ears." },
+    { "speaker": "A", "text": "Right. I've brought a bag of shoes and a bunch of celery with me. Shall we make some noise?" }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "before": "Rosa's career in sound effects began at a",
+      "after": ".",
+      "answers": ["radio station", "small radio station"],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Rosa says 'I started out at a small radio station.' Music and the theatre are only what people 'assume', and she corrects this with 'In fact'.",
+        "cs": "Hudba a divadlo jsou past: jde o to, co si lidé myslí ('People often assume'). Fráze 'In fact' uvádí skutečnost: začínala v rozhlasové stanici."
+      }
+    },
+    {
+      "n": 2,
+      "before": "To create the sound of a fire, Rosa learned to use a sheet of",
+      "after": ".",
+      "answers": ["cellophane"],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Rosa says 'I was shown how to use a sheet of cellophane instead.' Paper is what 'most beginners' use, and she says it 'sounds rather dull'.",
+        "cs": "Papír zmíní jako běžnou volbu začátečníků, ale slovo 'instead' (místo toho) ukazuje, že ona použila celofán."
+      }
+    },
+    {
+      "n": 3,
+      "before": "Rosa now usually spends",
+      "after": "weeks working on each film.",
+      "answers": ["eight", "8"],
+      "type": "self-correction",
+      "explanation": {
+        "en": "Rosa first says 'about six weeks', then corrects herself: 'Sorry, I should say eight weeks.' Six was 'the old schedule'.",
+        "cs": "Typická oprava mluvčího: 'Sorry, I should say...' ruší předchozí údaj. Platí až opravené číslo osm; šest týdnů byl starý harmonogram."
+      }
+    },
+    {
+      "n": 4,
+      "before": "Rosa considers",
+      "after": "to be the most important sounds she creates.",
+      "answers": ["footsteps"],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "She asks 'what is the most important sound I make?' and answers 'Not explosions, and not doors... It's footsteps.'",
+        "cs": "Výbuchy a dveře jsou výslovně vyloučeny slovem 'Not'. Odpověď je 'footsteps' (kroky); tvar v množném čísle odpovídá větě i nahrávce."
+      }
+    },
+    {
+      "n": 5,
+      "before": "According to Rosa, the hardest surface to record is",
+      "after": ".",
+      "answers": ["gravel"],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Rosa says 'Gravel is by far the hardest to get right.' Wood and concrete are both described as 'easy', and water is only listed.",
+        "cs": "V nahrávce zazní čtyři povrchy, ale jen u štěrku (gravel) je 'by far the hardest'. Dřevo a beton jsou 'easy'."
+      }
+    },
+    {
+      "n": 6,
+      "before": "For the sound of breaking bones, Rosa uses",
+      "after": ".",
+      "answers": ["celery", "fresh celery"],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Rosa says 'for bones, I use celery.' The cabbage is for 'softer injuries', so it does not fit this sentence.",
+        "cs": "Zelí (cabbage) je past: používá ho na měkčí zranění. Na lámání kostí slouží řapíkatý celer, jak říká 'But for bones, I use celery'."
+      }
+    },
+    {
+      "n": 7,
+      "before": "Rosa describes good Foley work as a kind of",
+      "after": ".",
+      "answers": ["acting"],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Rosa says 'Good Foley is really a kind of acting.' 'A kind of dance' is her colleague's description, and she says 'I'd put it differently'.",
+        "cs": "Tanec (dance) je názor kolegy. Rosa se od něj odliší frází 'I'd put it differently' a sama mluví o herectví (acting)."
+      }
+    },
+    {
+      "n": 8,
+      "before": "Rosa suggests training your ears by naming the sounds you hear in a",
+      "after": ".",
+      "answers": ["café", "cafe"],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Her advice is 'Sit in a café, close your eyes, and try to name every sound you hear.' Equipment and an expensive course are things she tells you not to spend money on.",
+        "cs": "Vybavení a drahý kurz Rosa nedoporučuje ('Don't spend a fortune...'). Cvičení probíhá v kavárně. Přijímáme i pravopis bez čárky: cafe."
+      }
+    }
+  ]
+}

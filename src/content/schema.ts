@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { RUE_TAGS } from './tags';
+import { LISTENING_TAGS, RUE_TAGS } from './tags';
 
 // ---- helpers -------------------------------------------------------------
 const str = z.string().min(1);
@@ -234,6 +234,105 @@ export const rue8Schema = z
     });
   });
 
+// ---- Listening (ARCHITECTURE 5.4) -------------------------------------------
+const lisBase = { ...common, paper: z.literal('listening') };
+// TTS plays segment by segment, so segments stay short. "<" and ">" are also rejected globally.
+const segment = z.strictObject({
+  speaker: z.enum(['A', 'B', 'N']),
+  text: str.max(300, 'segment text is over 300 characters; split it into shorter sentences').regex(/^[^<>]*$/, 'segment text must not contain "<" or ">"'),
+});
+const segments = z.array(segment).min(1);
+const letter3 = z.enum(['A', 'B', 'C']);
+const distinct = (ctx: Ctx, o: Record<string, string>, n: number, path: (string | number)[]) => {
+  if (new Set(Object.values(o).map(norm)).size !== Object.values(o).length) fail(ctx, `question ${n}: the ${Object.keys(o).length} options must be distinct`, path);
+};
+
+const l1q = z.strictObject({
+  n: z.number().int(),
+  stem: str,
+  options: z.strictObject({ A: str, B: str, C: str }),
+  answer: letter3,
+  type: z.enum(LISTENING_TAGS[1]),
+  explanation,
+});
+export const lis1Schema = z
+  .strictObject({
+    ...lisBase,
+    part: z.literal(1),
+    extracts: z.array(z.strictObject({ intro: str, segments, questions: z.array(l1q).length(2) })).length(3),
+  })
+  .superRefine((v, ctx) => {
+    checkSource(ctx, v);
+    const qs = v.extracts.flatMap((e) => e.questions);
+    if (qs.some((q, i) => q.n !== i + 1)) fail(ctx, `question numbers must be 1..6 in order across the extracts, found: ${qs.map((q) => q.n).join(',')}`, ['extracts']);
+    v.extracts.forEach((e, i) => e.questions.forEach((q, j) => distinct(ctx, q.options, q.n, ['extracts', i, 'questions', j, 'options'])));
+  });
+
+const l2q = z.strictObject({
+  n: z.number().int(),
+  before: z.string(),
+  after: z.string(),
+  answers: z.array(str).min(1),
+  type: z.enum(LISTENING_TAGS[2]),
+  explanation,
+});
+export const lis2Schema = z
+  .strictObject({ ...lisBase, part: z.literal(2), segments, questions: z.array(l2q).length(8) })
+  .superRefine((v, ctx) => {
+    checkSource(ctx, v);
+    checkNumbers(ctx, v.questions.map((q) => q.n), 8);
+    v.questions.forEach((q, i) =>
+      q.answers.forEach((a, j) => {
+        const w = kwtWordCount(a);
+        if (w > 3) fail(ctx, `question ${q.n}: answer "${a}" has ${w} words (1-3 required)`, ['questions', i, 'answers', j]);
+      }),
+    );
+  });
+
+const l3q = z.strictObject({
+  n: z.number().int(),
+  stem: str,
+  options: z.strictObject({ A: str, B: str, C: str, D: str }),
+  answer: letter4,
+  type: z.enum(LISTENING_TAGS[3]),
+  explanation,
+});
+export const lis3Schema = z
+  .strictObject({ ...lisBase, part: z.literal(3), segments, questions: z.array(l3q).length(6) })
+  .superRefine((v, ctx) => {
+    checkSource(ctx, v);
+    checkNumbers(ctx, v.questions.map((q) => q.n), 6);
+    v.questions.forEach((q, i) => distinct(ctx, q.options, q.n, ['questions', i, 'options']));
+  });
+
+const letter8L = z.enum(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']);
+const l4task = z.strictObject({
+  prompt: str,
+  type: z.enum(LISTENING_TAGS[4]),
+  options: z.strictObject({ A: str, B: str, C: str, D: str, E: str, F: str, G: str, H: str }),
+});
+const five = <T extends z.ZodType>(t: T) => z.array(t).length(5);
+export const lis4Schema = z
+  .strictObject({
+    ...lisBase,
+    part: z.literal(4),
+    speakers: five(z.strictObject({ segments })),
+    task1: l4task,
+    task2: l4task,
+    answers1: five(letter8L),
+    answers2: five(letter8L),
+    explanations1: five(explanation),
+    explanations2: five(explanation),
+  })
+  .superRefine((v, ctx) => {
+    checkSource(ctx, v);
+    for (const k of ['1', '2'] as const) {
+      const a = v[`answers${k}`];
+      if (new Set(a).size !== a.length) fail(ctx, `task${k}: the 5 answers must be 5 different options, found: ${a.join('')}`, [`answers${k}`]);
+      distinct(ctx, v[`task${k}`].options, Number(k), [`task${k}`, 'options']);
+    }
+  });
+
 // ---- lookup ---------------------------------------------------------------
 export const schemas = {
   'rue/1': rue1Schema,
@@ -244,6 +343,10 @@ export const schemas = {
   'rue/6': rue6Schema,
   'rue/7': rue7Schema,
   'rue/8': rue8Schema,
+  'listening/1': lis1Schema,
+  'listening/2': lis2Schema,
+  'listening/3': lis3Schema,
+  'listening/4': lis4Schema,
 } as const;
 export type SchemaKey = keyof typeof schemas;
 

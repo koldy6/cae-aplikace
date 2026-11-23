@@ -317,3 +317,7 @@ a.part-tile:hover { border-color: var(--c-primary); }
 @media (min-width: 900px) {
   .split { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; }
 }
+
+/* T24: Listening */
+.player, .player-opts { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-3); }
+.script p { margin: var(--s-1) 0; max-width: 42rem; }

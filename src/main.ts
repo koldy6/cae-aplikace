@@ -1,7 +1,9 @@
 import './styles/main.css';
 import { LocalAdapter } from './storage/localAdapter';
 import { createStore } from './storage/store';
+import { listeningById } from './content/loader';
 import { drillScreen } from './screens/drill';
+import { listeningDrillScreen } from './screens/listening';
 import { homeScreen, partScreen, settingsScreen } from './screens/home';
 import { progressScreen, retryScreen, weakScreen } from './screens/progress';
 import { reviewScreen } from './screens/review';
@@ -34,7 +36,8 @@ const routes: Route[] = [
   { pattern: /^\/$/, render: () => homeScreen(store) },
   { pattern: /^\/settings$/, render: () => settingsScreen(store) },
   { pattern: /^\/part\/(\d+)$/, render: ([p]) => partScreen(store, p ?? '') },
-  { pattern: /^\/drill\/([\w-]+)$/, render: ([id]) => drillScreen(store, id ?? '') },
+  { pattern: /^\/drill\/([\w-]+)$/, render: ([id]) => { const ls = listeningById(id ?? ''); return ls ? listeningDrillScreen(store, ls) : drillScreen(store, id ?? ''); } },
+  { pattern: /^\/listening\/(\d+)$/, render: ([p]) => partScreen(store, p ?? '', 'listening') },
   { pattern: /^\/progress$/, render: () => progressScreen(store) },
   { pattern: /^\/weak$/, render: () => weakScreen(store) },
   { pattern: /^\/retry$/, render: () => retryScreen(store) },

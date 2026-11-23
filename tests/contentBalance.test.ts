@@ -45,3 +45,19 @@ describe('answer keys are balanced', () => {
     expect(unusedIsLast.every(Boolean)).toBe(false);
   });
 });
+
+describe('Listening keys are balanced', () => {
+  const qs = (part: number) =>
+    (content.listening?.[part] ?? []).map((s) => {
+      const x = s as unknown as { id: string; questions?: { answer: string }[]; extracts?: { questions: { answer: string }[] }[] };
+      return { id: x.id, keys: (x.questions ?? x.extracts!.flatMap((e) => e.questions)).map((q) => q.answer) };
+    });
+  it.each([1, 3])('Part %i: no letter is the key for more than half of the questions', (part) => {
+    expect(qs(part).length).toBeGreaterThan(0);
+    for (const { id, keys } of qs(part)) {
+      const counts: Record<string, number> = {};
+      for (const k of keys) counts[k] = (counts[k] ?? 0) + 1;
+      expect(Math.max(...Object.values(counts)), id).toBeLessThanOrEqual(keys.length / 2);
+    }
+  });
+});

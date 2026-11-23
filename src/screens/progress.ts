@@ -1,11 +1,13 @@
 import { setById } from '../content/loader';
 import { isDrillSet } from '../domain/drill';
-import { formatArea, meterClass, partStats, percentText, retryGroups, sessionsNewestFirst } from '../domain/progress';
+import { listeningById } from '../content/loader';
+import { formatArea, meterClass, partName, partStats, percentText, retryGroups, sessionsNewestFirst } from '../domain/progress';
 import { areaStats, errorLog, MIN_ATTEMPTS, weakestAreas, weekActivity } from '../domain/weakAreas';
 import type { Store } from '../storage/store';
 import { h } from '../ui/h';
 import type { Route } from '../ui/router';
 import { drillScreen } from './drill';
+import { listeningDrillScreen } from './listening';
 
 type Screen = ReturnType<Route['render']>;
 
@@ -39,7 +41,7 @@ export function progressScreen(store: Store): Screen {
         ? h('div', { class: 'table-wrap' }, h('table', { class: 'stats' },
             h('caption', { class: 'visually-hidden' }, 'Úspěšnost podle částí'),
             h('thead', {}, h('tr', {}, h('th', { scope: 'col' }, 'Část'), h('th', { scope: 'col' }, 'Odpovědí'), h('th', { scope: 'col' }, 'Úspěšnost'))),
-            h('tbody', {}, parts.map((p) => h('tr', {}, h('th', { scope: 'row' }, `Part ${p.part}`), h('td', {}, p.n), h('td', {}, percentText(p.accuracy)))))))
+            h('tbody', {}, parts.map((p) => h('tr', {}, h('th', { scope: 'row' }, partName(p.paper, p.part)), h('td', {}, p.n), h('td', {}, percentText(p.accuracy)))))))
         : emptyNote('Zatím žádné odpovědi. Zkus některé cvičení.'),
       h('h2', {}, 'Dokončená cvičení'),
       sessionList.length ? h('ul', { class: 'set-list' }, sessionList) : emptyNote('Zatím žádná dokončená cvičení.'),
@@ -75,7 +77,7 @@ export function weakScreen(store: Store): Screen {
               h('th', { scope: 'col' }, 'Část'), h('th', { scope: 'col' }, 'Typ'), h('th', { scope: 'col' }, 'Odpovědí'), h('th', { scope: 'col' }, 'Úspěšnost'))),
             h('tbody', {}, all.map((a) =>
               h('tr', { class: weakKeys.has(`${a.paper}|${a.part}|${a.type}`) ? 'is-weak' : '' },
-                h('th', { scope: 'row' }, `Part ${a.part}`),
+                h('th', { scope: 'row' }, partName(a.paper, a.part)),
                 h('td', { lang: 'en' }, a.type, weakKeys.has(`${a.paper}|${a.part}|${a.type}`) ? h('span', { class: 'visually-hidden', lang: 'cs' }, ' (slabé místo)') : null),
                 h('td', {}, a.n),
                 h('td', {}, percentText(a.accuracy), a.eligible ? null : ' *'),
@@ -91,6 +93,8 @@ export function retryScreen(store: Store, setId?: string): Screen {
   if (setId) {
     const set = setById(setId);
     const g = groups.find((x) => x.setId === setId);
+    const ls = listeningById(setId);
+    if (ls && g) return listeningDrillScreen(store, ls, new Set(g.ns));
     if (set && isDrillSet(set) && g) return drillScreen(store, setId, new Set(g.ns));
   }
   return {

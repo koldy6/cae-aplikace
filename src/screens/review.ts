@@ -1,6 +1,8 @@
-import { setById } from '../content/loader';
+import { listeningById, setById } from '../content/loader';
 import { isDrillSet, isOpen, questionId, questionsOf, recomputeSession, selfMarkAttempt, type DrillQuestion, type DrillSet } from '../domain/drill';
 import type { Attempt, Store } from '../storage/store';
+import { correctListening, givenListening, listeningQuestions } from '../domain/listening';
+import { scriptView } from './listening';
 import { labelBadge } from '../ui/components';
 import { h } from '../ui/h';
 import type { Route } from '../ui/router';
@@ -28,8 +30,9 @@ function givenText(set: DrillSet, q: DrillQuestion, a: Attempt): string {
 
 export function reviewScreen(store: Store, sessionId: string): ReturnType<Route['render']> {
   const session = store.get().sessions.find((s) => s.id === sessionId);
-  const set = session ? setById(session.setIds[0] ?? '') : undefined;
-  if (!session || !set || !isDrillSet(set))
+  const lset = session ? listeningById(session.setIds[0] ?? '') : undefined;
+  const set = lset ? undefined : session ? setById(session.setIds[0] ?? '') : undefined;
+  if (!session || (!lset && (!set || !isDrillSet(set))))
     return {
       title: 'Nenalezeno',
       content: h('div', { class: 'stack' }, h('h1', {}, 'Výsledek nenalezen'), h('a', { href: '#/' }, 'Zpět na části')),
@@ -39,20 +42,25 @@ export function reviewScreen(store: Store, sessionId: string): ReturnType<Route[
   const list = h('ol', { class: 'review-list' });
   const attempted = new Set(store.get().attempts.filter((x) => x.sessionId === sessionId).map((x) => x.questionId));
   // a retry session only has attempts for the retried questions
-  const qs: DrillQuestion[] = questionsOf(set).filter((q) => attempted.has(questionId(set.id, q.n)));
+  const info = (lset ?? set)!;
+  interface Row { n: number; type: string; explanation: { en: string; cs: string }; correct: string; given: (a: Attempt) => string; open: boolean }
+  const all: Row[] = lset
+    ? listeningQuestions(lset).map((x) => ({ n: x.n, type: x.type, explanation: x.explanation, correct: correctListening(x), given: (a) => givenListening(x, a.answer), open: !x.options }))
+    : questionsOf(set as DrillSet).map((x) => ({ n: x.n, type: x.type, explanation: x.explanation, correct: correctText(set as DrillSet, x), given: (a) => givenText(set as DrillSet, x, a), open: isOpen(info.part) }));
+  const qs = all.filter((q) => attempted.has(questionId(info.id, q.n)));
 
-  const item = (q: DrillQuestion): HTMLElement => {
-    const a = store.get().attempts.find((x) => x.sessionId === sessionId && x.questionId === questionId(set.id, q.n));
+  const item = (q: Row): HTMLElement => {
+    const a = store.get().attempts.find((x) => x.sessionId === sessionId && x.questionId === questionId(info.id, q.n));
     const ok = !!a && a.marks === a.maxMarks;
     const li = h('li', { class: `review-item ${ok ? 'is-correct' : 'is-incorrect'}`, tabindex: '-1' });
     const status = h('span', { 'aria-live': 'polite' });
     const actions = h('div', { class: 'drill__actions' });
 
-    if (a && !ok && isOpen(a.part))
+    if (a && !ok && q.open)
       actions.append(
         h('button', { class: 'btn btn--secondary', type: 'button', onclick: () => selfMark(a, q) }, 'Myslím, že je to správně'),
       );
-    const reported = store.get().issues.some((i) => i.questionId === questionId(set.id, q.n));
+    const reported = store.get().issues.some((i) => i.questionId === questionId(info.id, q.n));
     const issueBtn = h('button', { class: 'btn btn--secondary', type: 'button' }, reported ? 'Chyba nahlášena (nahlásit znovu)' : 'Nahlásit chybu');
     issueBtn.addEventListener('click', () => {
       issueBtn.disabled = true;
@@ -64,7 +72,7 @@ export function reviewScreen(store: Store, sessionId: string): ReturnType<Route[
           const note = ta.value.trim();
           if (!note) return;
           store.update((d) => {
-            d.issues.push({ questionId: questionId(set.id, q.n), note, at: new Date().toISOString() });
+            d.issues.push({ questionId: questionId(info.id, q.n), note, at: new Date().toISOString() });
           });
           form.remove();
           issueBtn.disabled = false;
@@ -85,10 +93,10 @@ export function reviewScreen(store: Store, sessionId: string): ReturnType<Route[
         h('span', { class: 'result__text' }, `Otázka ${q.n}: ${ok ? (a?.selfMarked ? 'Správně (označeno ručně)' : 'Správně') : a && a.marks > 0 ? 'Částečně správně' : 'Špatně'}${a && a.maxMarks > 1 ? ` – ${a.marks}/${a.maxMarks} body` : ''}`),
       ),
       h('dl', {},
-        h('dt', {}, 'Moje odpověď'), h('dd', { lang: 'en' }, a ? givenText(set, q, a) : ''),
-        h('dt', {}, 'Správná odpověď'), h('dd', { lang: 'en' }, correctText(set, q)),
+        h('dt', {}, 'Moje odpověď'), h('dd', { lang: 'en' }, a ? q.given(a) : ''),
+        h('dt', {}, 'Správná odpověď'), h('dd', { lang: 'en' }, q.correct),
         h('dt', {}, 'Typ'), h('dd', {}, h('span', { class: 'tag' }, q.type)),
-        h('dt', {}, 'Zdroj'), h('dd', {}, labelBadge(set.label)),
+        h('dt', {}, 'Zdroj'), h('dd', {}, labelBadge(info.label)),
       ),
       h('div', { class: 'review-item__explanation' },
         h('p', { lang: 'en' }, q.explanation.en),
@@ -100,7 +108,7 @@ export function reviewScreen(store: Store, sessionId: string): ReturnType<Route[
     return li;
   };
 
-  function selfMark(a: Attempt, q: DrillQuestion): void {
+  function selfMark(a: Attempt, q: Row): void {
     store.update((d) => {
       const i = d.attempts.findIndex((x) => x.id === a.id);
       if (i >= 0) d.attempts[i] = selfMarkAttempt(d.attempts[i]!);
@@ -122,12 +130,13 @@ export function reviewScreen(store: Store, sessionId: string): ReturnType<Route[
     content: h(
       'div',
       { class: 'stack' },
-      h('h1', {}, 'Přehled – ', h('span', { lang: 'en' }, set.title)),
+      h('h1', {}, 'Přehled – ', h('span', { lang: 'en' }, info.title)),
       score,
       list,
+      lset ? scriptView(lset) : null,
       h('div', { class: 'drill__actions' },
-        h('a', { class: 'btn', href: `#/drill/${set.id}` }, 'Zkusit znovu'),
-        h('a', { class: 'btn btn--secondary', href: `#/part/${set.part}` }, 'Zpět na sady'),
+        h('a', { class: 'btn', href: `#/drill/${info.id}` }, 'Zkusit znovu'),
+        h('a', { class: 'btn btn--secondary', href: info.paper === 'listening' ? `#/listening/${info.part}` : `#/part/${info.part}` }, 'Zpět na sady'),
         h('a', { class: 'btn btn--secondary', href: '#/' }, 'Zpět na části'),
       ),
     ),

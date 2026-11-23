@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "id": "lis4-001",
+  "paper": "listening",
+  "part": 4,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Five people who joined an amateur choir",
+  "topic": "singing in an amateur choir",
+  "difficulty": 2,
+  "reviewed": true,
+  "speakers": [
+    {
+      "segments": [
+        { "speaker": "N", "text": "Speaker one." },
+        { "speaker": "A", "text": "I'd always been the person at the back of every meeting, saying nothing. My manager suggested a public speaking course, but that sounded terrifying. A choir seemed like a gentler way to find my voice, literally." },
+        { "speaker": "A", "text": "The first rehearsal was free, which helped, but that wasn't really why I went. I wanted to stop hiding. What I hadn't expected was the mix of people. I'd assumed it would be all retired teachers." },
+        { "speaker": "A", "text": "Instead, there's a sixteen-year-old next to me in the altos and a woman of eighty-seven behind me. Someone warned me that amateur choirs can be quite competitive. I haven't seen any sign of that. Everyone just wants the piece to sound good." }
+      ]
+    },
+    {
+      "segments": [
+        { "speaker": "N", "text": "Speaker two." },
+        { "speaker": "B", "text": "When I finished work last spring, I had a long list of plans. Within a month, I'd done most of them, and the days felt very long. My daughter kept telling me to try her choir, but I joined a different one, nearer home." },
+        { "speaker": "B", "text": "I needed something with a fixed timetable, something to get me out of the house on a Tuesday. I thought it would be a gentle sing-along. Not at all. Our conductor stops us after every two bars." },
+        { "speaker": "B", "text": "She'll make the tenors repeat a single line twenty times until it's right. At first I found that rather shocking. Now I quite like it. We only perform in public twice a year, so there's plenty of time to get things right." }
+      ]
+    },
+    {
+      "segments": [
+        { "speaker": "N", "text": "Speaker three." },
+        { "speaker": "A", "text": "Two years ago, I had a serious chest infection that left me breathless for months. My physiotherapist suggested singing to strengthen my lungs. I was sceptical, but I was also desperate. I'd sung at school, but I'd forgotten all about that." },
+        { "speaker": "A", "text": "The breathing exercises at the start of each rehearsal were exactly what I needed. What really caught me off guard, though, was the first concert. We sang a quiet piece at the end, and I could hardly get the words out." },
+        { "speaker": "A", "text": "I was in tears. I'd expected to be nervous, but not that. My voice isn't strong, and I knew from the start that it didn't need to be. These days I can walk up the hill to rehearsals without stopping, which still feels like a small victory." }
+      ]
+    },
+    {
+      "segments": [
+        { "speaker": "N", "text": "Speaker four." },
+        { "speaker": "B", "text": "My grandmother used to sing to me in Welsh when I was little. After she died, I realised I couldn't remember the words of any of those songs. That bothered me more than I can explain." },
+        { "speaker": "B", "text": "Then I found a Welsh choir that rehearses in the city, and I went along hoping to bring some of it back. I didn't know anyone there, which made the first evening tough." },
+        { "speaker": "B", "text": "I'd assumed I'd have to learn everything by ear, because I couldn't read a note. But within a few weeks, the sheets of music started to make sense. I can now follow a score almost as well as the others. I'm still amazed by that." }
+      ]
+    },
+    {
+      "segments": [
+        { "speaker": "N", "text": "Speaker five." },
+        { "speaker": "A", "text": "I moved here for work last autumn and didn't know a soul. Evenings in a rented flat get lonely fast. A neighbour mentioned the choir, and I thought, that's a ready-made group of people who meet every week." },
+        { "speaker": "A", "text": "It worked, too. I now have a group of friends I go to the pub with after rehearsals. We're preparing for a big concert at the cathedral in June, which is exciting, but that came later." },
+        { "speaker": "A", "text": "The thing nobody tells you is how exhausting it is. After two hours of standing and singing properly, my back aches and I'm ready to sleep. I'd thought of it as a restful hobby. Now I eat properly before rehearsals and keep a bottle of water by my chair, like an athlete." }
+      ]
+    }
+  ],
+  "task1": {
+    "prompt": "Task 1: Why did each speaker join the choir?",
+    "type": "reason-motivation",
+    "options": {
+      "A": "to make friends after moving to a new area",
+      "B": "to help their recovery from an illness",
+      "C": "because a relative kept insisting",
+      "D": "to become more confident with other people",
+      "E": "to prepare for a special occasion",
+      "F": "because they were offered a free trial",
+      "G": "to give structure to life after retiring",
+      "H": "to reconnect with a family memory"
+    }
+  },
+  "task2": {
+    "prompt": "Task 2: What surprised each speaker about the choir?",
+    "type": "feeling-attitude",
+    "options": {
+      "A": "how strict the conductor was",
+      "B": "how competitive some members were",
+      "C": "how quickly they learned to read music",
+      "D": "how often the choir performed in public",
+      "E": "how physically tiring singing was",
+      "F": "how wide the range of ages was",
+      "G": "how little the quality of their voice mattered",
+      "H": "how emotional they felt during a performance"
+    }
+  },
+  "answers1": ["D", "G", "B", "H", "A"],
+  "answers2": ["F", "A", "H", "C", "E"],
+  "explanations1": [
+    {
+      "en": "'I'd always been the person at the back... saying nothing' and 'I wanted to stop hiding' point to confidence (D). The free rehearsal 'helped, but that wasn't really why I went' (not F).",
+      "cs": "Mluvčí chtěla přestat být nenápadná a zbavit se ostýchavosti. Zkouška zdarma zazní, ale výslovně není důvodem ('that wasn't really why')."
+    },
+    {
+      "en": "'When I finished work' and 'I needed something with a fixed timetable' show he wanted structure after retiring (G). His daughter suggested her choir, but he joined a different one (not C).",
+      "cs": "'Finished work' = odchod do důchodu, potřeboval pevný program. Dcera ho přemlouvala, ale do jejího sboru nešel, takže C je past."
+    },
+    {
+      "en": "After a chest infection, 'my physiotherapist suggested singing to strengthen my lungs' (B). She had sung at school but 'forgotten all about that', so it was not about a memory (not H).",
+      "cs": "Důvodem byla rekonvalescence po nemoci plic. Zpěv ve škole jen zmíní a dodá, že na něj zapomněla."
+    },
+    {
+      "en": "He joined because he could not remember his grandmother's Welsh songs and hoped 'to bring some of it back' (H). Not knowing anyone made the first evening hard, but friendship was not his aim (not A).",
+      "cs": "Chtěl si vybavit písně, které mu zpívala babička – rodinná vzpomínka. To, že tam nikoho neznal, je jen okolnost, ne důvod."
+    },
+    {
+      "en": "'I moved here for work... and didn't know a soul', so the choir was 'a ready-made group of people' (A). The cathedral concert 'came later', so it was not the reason (not E).",
+      "cs": "Po přestěhování chtěla poznat lidi. Koncert v katedrále přišel až později ('that came later'), proto E nesedí."
+    }
+  ],
+  "explanations2": [
+    {
+      "en": "'What I hadn't expected was the mix of people', from a sixteen-year-old to a woman of eighty-seven (F). She was warned about competitiveness but has not 'seen any sign of that' (not B).",
+      "cs": "Překvapil ji věkový rozptyl členů. Soutěživost jí jen někdo předpověděl, ale nepotvrdila se."
+    },
+    {
+      "en": "He expected 'a gentle sing-along', but the conductor 'stops us after every two bars', which he found 'rather shocking' (A). They perform 'only twice a year', so frequent performances are not the surprise (not D).",
+      "cs": "Šokovala ho přísnost dirigentky. Veřejná vystoupení jsou jen dvakrát ročně, tedy spíš málo než často."
+    },
+    {
+      "en": "'What really caught me off guard' was the first concert: 'I was in tears' (H). She 'knew from the start' her voice did not need to be strong, so that was no surprise (not G).",
+      "cs": "'Caught me off guard' = zaskočilo ji to; rozplakala se při koncertu. Slabý hlas pro ni nebyl překvapením, věděla to od začátku."
+    },
+    {
+      "en": "He thought he would learn by ear, 'but within a few weeks, the sheets of music started to make sense... I'm still amazed by that' (C). The first evening was tough, but that is not what surprised him.",
+      "cs": "Úžas vyjadřuje nad tím, jak rychle se naučil číst noty ('I'm still amazed'). Těžký první večer je jen vedlejší detail."
+    },
+    {
+      "en": "'The thing nobody tells you is how exhausting it is... my back aches' (E). The cathedral concert is mentioned as exciting, not surprising, so D does not fit.",
+      "cs": "'Nobody tells you' signalizuje nečekané zjištění: zpěv je fyzicky vyčerpávající. Očekávala klidný koníček ('restful hobby')."
+    }
+  ]
+}

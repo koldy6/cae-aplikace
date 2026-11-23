@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "bad-lis-label-no-source",
+  "paper": "listening",
+  "part": 1,
+  "label": "official-format-reference",
+  "source": null,
+  "title": "Sample: short extracts",
+  "topic": "sample",
+  "difficulty": 2,
+  "reviewed": false,
+  "extracts": [
+    {
+      "intro": "Extract 1.",
+      "segments": [
+        {
+          "speaker": "N",
+          "text": "You hear two colleagues talking."
+        },
+        {
+          "speaker": "A",
+          "text": "Did you book the room?"
+        },
+        {
+          "speaker": "B",
+          "text": "Yes, for Tuesday at ten."
+        }
+      ],
+      "questions": [
+        {
+          "n": 1,
+          "stem": "Sample stem 1?",
+          "options": {
+            "A": "First option",
+            "B": "Second option",
+            "C": "Third option"
+          },
+          "answer": "B",
+          "type": "detail",
+          "explanation": {
+            "en": "Sample explanation 1.",
+            "cs": "Ukázkové vysvětlení 1."
+          }
+        },
+        {
+          "n": 2,
+          "stem": "Sample stem 2?",
+          "options": {
+            "A": "First option",
+            "B": "Second option",
+            "C": "Third option"
+          },
+          "answer": "A",
+          "type": "gist",
+          "explanation": {
+            "en": "Sample explanation 2.",
+            "cs": "Ukázkové vysvětlení 2."
+          }
+        }
+      ]
+    },
+    {
+      "intro": "Extract 2.",
+      "segments": [
+        {
+          "speaker": "N",
+          "text": "You hear two colleagues talking."
+        },
+        {
+          "speaker": "A",
+          "text": "Did you book the room?"
+        },
+        {
+          "speaker": "B",
+          "text": "Yes, for Tuesday at ten."
+        }
+      ],
+      "questions": [
+        {
+          "n": 3,
+          "stem": "Sample stem 3?",
+          "options": {
+            "A": "First option",
+            "B": "Second option",
+            "C": "Third option"
+          },
+          "answer": "C",
+          "type": "detail",
+          "explanation": {
+            "en": "Sample explanation 3.",
+            "cs": "Ukázkové vysvětlení 3."
+          }
+        },
+        {
+          "n": 4,
+          "stem": "Sample stem 4?",
+          "options": {
+            "A": "First option",
+            "B": "Second option",
+            "C": "Third option"
+          },
+          "answer": "C",
+          "type": "gist",
+          "explanation": {
+            "en": "Sample explanation 4.",
+            "cs": "Ukázkové vysvětlení 4."
+          }
+        }
+      ]
+    },
+    {
+      "intro": "Extract 3.",
+      "segments": [
+        {
+          "speaker": "N",
+          "text": "You hear two colleagues talking."
+        },
+        {
+          "speaker": "A",
+          "text": "Did you book the room?"
+        },
+        {
+          "speaker": "B",
+          "text": "Yes, for Tuesday at ten."
+        }
+      ],
+      "questions": [
+        {
+          "n": 5,
+          "stem": "Sample stem 5?",
+          "options": {
+            "A": "First option",
+            "B": "Second option",
+            "C": "Third option"
+          },
+          "answer": "B",
+          "type": "detail",
+          "explanation": {
+            "en": "Sample explanation 5.",
+            "cs": "Ukázkové vysvětlení 5."
+          }
+        },
+        {
+          "n": 6,
+          "stem": "Sample stem 6?",
+          "options": {
+            "A": "First option",
+            "B": "Second option",
+            "C": "Third option"
+          },
+          "answer": "A",
+          "type": "gist",
+          "explanation": {
+            "en": "Sample explanation 6.",
+            "cs": "Ukázkové vysvětlení 6."
+          }
+        }
+      ]
+    }
+  ]
+}

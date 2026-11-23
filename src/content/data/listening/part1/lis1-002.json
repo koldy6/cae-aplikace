@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "lis1-002",
+  "paper": "listening",
+  "part": 1,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Short extracts: a chess tournament, hot-desking, a choir concert",
+  "topic": "clubs, hobbies and the workplace",
+  "difficulty": 2,
+  "reviewed": true,
+  "extracts": [
+    {
+      "intro": "Extract 1.",
+      "segments": [
+        { "speaker": "N", "text": "You hear two chess club members, Emma and Raj, talking about a junior tournament they organised. Emma speaks first." },
+        { "speaker": "A", "text": "Well, that's the tournament over for another year, Raj. I'm exhausted." },
+        { "speaker": "B", "text": "Me too. But the feedback forms are mostly positive. The parents loved the new café corner." },
+        { "speaker": "A", "text": "Did anyone complain about the venue? I know the hall was freezing in the morning." },
+        { "speaker": "B", "text": "One or two did. What surprised me was how many mentioned the timetable. Apparently the gaps between rounds were far too long. The kids were getting restless." },
+        { "speaker": "A", "text": "Really? We built those gaps in so that nobody would feel rushed." },
+        { "speaker": "B", "text": "I know. But an eight-year-old waiting forty minutes for his next game isn't relaxed. He's bored." },
+        { "speaker": "A", "text": "Fair point. So next year we shorten the breaks." },
+        { "speaker": "B", "text": "Or we fill them. One parent suggested a puzzle table, where children solve chess problems between games. And it would be cheap." },
+        { "speaker": "A", "text": "Cost isn't really the point. But I do prefer it. If we shorten the breaks, we finish an hour earlier, and the parents have all booked their pick-up times." },
+        { "speaker": "B", "text": "True. So puzzles it is. I'll ask Peter to prepare some." }
+      ],
+      "questions": [
+        {
+          "n": 1,
+          "stem": "What did a surprising number of parents complain about?",
+          "options": {
+            "A": "the temperature in the hall",
+            "B": "the refreshments on offer",
+            "C": "the waiting time between games"
+          },
+          "answer": "C",
+          "type": "detail",
+          "explanation": {
+            "en": "Raj says 'how many mentioned the timetable' and 'the gaps between rounds were far too long'. A is the trap: the cold hall was a complaint, but only 'one or two' parents made it. B is wrong: the parents 'loved the new café corner'.",
+            "cs": "Pozor na množství: zimu v sále zmínilo jen 'one or two' rodičů, kdežto 'how many mentioned the timetable' znamená překvapivě mnoho. 'Gaps between rounds' jsou přestávky mezi koly, tedy čekání mezi partiemi."
+          }
+        },
+        {
+          "n": 2,
+          "stem": "Why does Emma prefer the puzzle table to shorter breaks?",
+          "options": {
+            "A": "It would not change the finishing time.",
+            "B": "It would cost less to organise.",
+            "C": "The children themselves asked for it."
+          },
+          "answer": "A",
+          "type": "detail",
+          "explanation": {
+            "en": "Emma explains that with shorter breaks 'we finish an hour earlier', which clashes with 'pick-up times'. B is Raj's point, and Emma rejects it: 'Cost isn't really the point.' C is wrong: the idea came from 'one parent', not the children.",
+            "cs": "Důvod B uvádí Raj a Emma ho výslovně odmítne ('Cost isn't really the point'). Rozhoduje to, že by turnaj skončil o hodinu dřív, než si rodiče naplánovali vyzvednutí dětí. Nápad navrhl jeden z rodičů, ne děti."
+          }
+        }
+      ]
+    },
+    {
+      "intro": "Extract 2.",
+      "segments": [
+        { "speaker": "N", "text": "You hear two colleagues, Clara and Ben, talking about changes to their office. Clara speaks first." },
+        { "speaker": "A", "text": "So, Ben. Three weeks of hot-desking. What's the verdict?" },
+        { "speaker": "B", "text": "I expected to hate it, to be honest. No desk of my own, carrying everything around in a plastic box." },
+        { "speaker": "A", "text": "And?" },
+        { "speaker": "B", "text": "That part's actually fine. I got used to it much faster than I thought I would. I even quite like sitting next to different people. I've met half the marketing team." },
+        { "speaker": "A", "text": "So no complaints at all?" },
+        { "speaker": "B", "text": "Just one. The noise. When three phone calls are going on around you, it's impossible to write anything properly. I end up taking my laptop home to finish my reports." },
+        { "speaker": "A", "text": "Doesn't that defeat the purpose? The whole idea was to bring people together." },
+        { "speaker": "B", "text": "Exactly. Management keeps saying it's improved communication. Maybe it has. But not for the work I'm actually paid to do." },
+        { "speaker": "A", "text": "Have you told them?" },
+        { "speaker": "B", "text": "I've drafted an email suggesting a couple of quiet rooms. I'm just not sure it's my place to send it." },
+        { "speaker": "A", "text": "Send it. If you don't, nobody will." }
+      ],
+      "questions": [
+        {
+          "n": 3,
+          "stem": "How does Ben feel about not having his own desk?",
+          "options": {
+            "A": "still resentful about the change",
+            "B": "surprised at how little it bothers him",
+            "C": "pleased that it lets him work from home"
+          },
+          "answer": "B",
+          "type": "feeling",
+          "explanation": {
+            "en": "Ben 'expected to hate it', but says 'That part's actually fine' and he 'got used to it much faster than I thought'. A was only his expectation. C is wrong: he works at home because of the noise, not because of the desks, and he does not seem pleased about it.",
+            "cs": "Past A: 'I expected to hate it' popisuje očekávání, ne skutečný pocit. Slovo 'actually' signalizuje, že realita je jiná, než čekal. Práce z domova je důsledek hluku, ne výhoda sdílených stolů."
+          }
+        },
+        {
+          "n": 4,
+          "stem": "What is Clara doing at the end of the conversation?",
+          "options": {
+            "A": "encouraging Ben to raise the problem",
+            "B": "advising Ben to speak to management in person",
+            "C": "warning Ben not to criticise management"
+          },
+          "answer": "A",
+          "type": "purpose-function",
+          "explanation": {
+            "en": "Ben is unsure whether to send his email, and Clara says 'Send it. If you don't, nobody will.' That is encouragement. B is wrong: she tells him to send the email, not to talk in person. C is the opposite: the doubt about criticising comes from Ben himself ('not sure it's my place').",
+            "cs": "Otázka se ptá, co Clara svou poslední replikou dělá (funkce výpovědi). 'Send it' je jasné povzbuzení. Pochybnost 'it's my place' (zda mi to přísluší) vyjadřuje Ben, ne Clara."
+          }
+        }
+      ]
+    },
+    {
+      "intro": "Extract 3.",
+      "segments": [
+        { "speaker": "N", "text": "You hear two friends, Grace and Leo, talking about the choir they sing in. Grace speaks first." },
+        { "speaker": "A", "text": "Leo, did you hear? The new director wants us to sing from memory at the spring concert. No sheet music at all." },
+        { "speaker": "B", "text": "I heard. Half the basses are threatening to leave." },
+        { "speaker": "A", "text": "Are you one of them?" },
+        { "speaker": "B", "text": "No. I'm nervous about it, I admit. But I think she's right. When we hold the music, we stare at the page. We never look at her, so we're never quite together." },
+        { "speaker": "A", "text": "That's true. Last year's concert was a bit messy in places." },
+        { "speaker": "B", "text": "And the audience can see our faces properly. It feels more like a performance and less like a rehearsal." },
+        { "speaker": "A", "text": "I'm not convinced it's worth the stress, though. We're volunteers. People join for fun, not to spend every evening learning words." },
+        { "speaker": "B", "text": "Well, she's only asking for four pieces by heart. We can still read the music for the rest." },
+        { "speaker": "A", "text": "Oh, is that all? Nobody told me that. In that case, I suppose I can manage." }
+      ],
+      "questions": [
+        {
+          "n": 5,
+          "stem": "Which reason does Leo give for supporting the director's plan?",
+          "options": {
+            "A": "It will help him to overcome his nerves.",
+            "B": "It will make rehearsals more enjoyable.",
+            "C": "It will help the singers to stay in time with each other."
+          },
+          "answer": "C",
+          "type": "detail",
+          "explanation": {
+            "en": "Leo says that with music in their hands 'we never look at her, so we're never quite together'. Singing from memory solves this. A is wrong: he admits he is 'nervous about it', so the plan causes nerves. B is wrong: 'fun' is Grace's word, and it is her argument against the plan.",
+            "cs": "'Never quite together' znamená, že sbor nezpívá přesně spolu, protože se nikdo nedívá na dirigentku. Nervozitu plán naopak vyvolává. Slovo 'fun' použije Grace jako argument proti, ne Leo."
+          }
+        },
+        {
+          "n": 6,
+          "stem": "Why does Grace change her mind?",
+          "options": {
+            "A": "Leo persuades her that the plan will reduce stress.",
+            "B": "She learns that the task is smaller than she thought.",
+            "C": "She remembers that last year's concert went badly."
+          },
+          "answer": "B",
+          "type": "detail",
+          "explanation": {
+            "en": "When Leo says it is 'only four pieces by heart', Grace replies 'Oh, is that all?' and agrees. A is wrong: Leo never says the plan reduces stress. C is the trap: she mentions the 'messy' concert, but right after that she says 'I'm not convinced', so it does not change her mind.",
+            "cs": "Zlom přichází až po informaci 'only four pieces' (jen čtyři skladby zpaměti). 'Is that all?' vyjadřuje úlevu: úkol je menší, než myslela. Zmínka o loňském koncertu je past, protože hned potom ještě nesouhlasí ('I'm not convinced')."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -75,6 +75,10 @@ describe('content data', () => {
     expect(validate(real, REAL)).toEqual([]);
   });
 
+  test('there is a listening sample for every part', () => {
+    for (const part of [1, 2, 3, 4]) expect(content.listening?.[part]?.length, `listening part ${part}`).toBeGreaterThan(0);
+  });
+
   test('loader groups sets by paper and part', () => {
     expect(content.rue?.[1]?.map((s) => s.id)).toContain('rue1-001');
     expect(buildIndex([{ paper: 'rue', part: 99 }, { reference: true }])).toEqual({});
@@ -96,6 +100,18 @@ describe('broken fixtures fail with a readable message naming the file', () => {
     ['bad-p5-five-questions', /questions/],
     ['bad-p6-text-id', /text ids must be A-D/],
     ['bad-p8-missing-section', /is not an existing section/],
+    ['bad-lis1-two-options', /options/],
+    ['bad-lis2-four-words', /has 4 words/],
+    ['bad-lis2-contraction-count', /has 4 words/],
+    ['bad-lis3-three-options', /options/],
+    ['bad-lis4-four-speakers', /speakers/],
+    ['bad-lis4-seven-options', /options/],
+    ['bad-lis4-duplicate-answer', /5 different options/],
+    ['bad-lis4-missing-type', /task2/],
+    ['bad-lis-long-segment', /over 300 characters/],
+    ['bad-lis-html-in-script', /"<" or ">"/],
+    ['bad-lis-speaker', /speaker/],
+    ['bad-lis-label-no-source', /requires source/],
   ];
   test.each(cases)('%s', (name, re) => {
     const errors = validate(pick(FIXTURES, `${name}.json`), FIXTURES);

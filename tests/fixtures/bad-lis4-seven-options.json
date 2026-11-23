@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "bad-lis4-seven-options",
+  "paper": "listening",
+  "part": 4,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Sample: five speakers",
+  "topic": "sample",
+  "difficulty": 2,
+  "reviewed": false,
+  "speakers": [
+    {
+      "segments": [
+        {
+          "speaker": "N",
+          "text": "Speaker."
+        },
+        {
+          "speaker": "A",
+          "text": "I changed jobs last year."
+        }
+      ]
+    },
+    {
+      "segments": [
+        {
+          "speaker": "N",
+          "text": "Speaker."
+        },
+        {
+          "speaker": "B",
+          "text": "I changed jobs last year."
+        }
+      ]
+    },
+    {
+      "segments": [
+        {
+          "speaker": "N",
+          "text": "Speaker."
+        },
+        {
+          "speaker": "A",
+          "text": "I changed jobs last year."
+        }
+      ]
+    },
+    {
+      "segments": [
+        {
+          "speaker": "N",
+          "text": "Speaker."
+        },
+        {
+          "speaker": "B",
+          "text": "I changed jobs last year."
+        }
+      ]
+    },
+    {
+      "segments": [
+        {
+          "speaker": "N",
+          "text": "Speaker."
+        },
+        {
+          "speaker": "A",
+          "text": "I changed jobs last year."
+        }
+      ]
+    }
+  ],
+  "task1": {
+    "prompt": "Why did each speaker change jobs?",
+    "type": "reason-motivation",
+    "options": {
+      "A": "Reason option A",
+      "B": "Reason option B",
+      "C": "Reason option C",
+      "D": "Reason option D",
+      "E": "Reason option E",
+      "F": "Reason option F",
+      "G": "Reason option G"
+    }
+  },
+  "task2": {
+    "prompt": "How does each speaker feel now?",
+    "type": "feeling-attitude",
+    "options": {
+      "A": "Feeling option A",
+      "B": "Feeling option B",
+      "C": "Feeling option C",
+      "D": "Feeling option D",
+      "E": "Feeling option E",
+      "F": "Feeling option F",
+      "G": "Feeling option G",
+      "H": "Feeling option H"
+    }
+  },
+  "answers1": [
+    "C",
+    "A",
+    "E",
+    "B",
+    "H"
+  ],
+  "answers2": [
+    "D",
+    "F",
+    "A",
+    "G",
+    "B"
+  ],
+  "explanations1": [
+    {
+      "en": "Sample explanation 1.",
+      "cs": "Ukázkové vysvětlení 1."
+    },
+    {
+      "en": "Sample explanation 2.",
+      "cs": "Ukázkové vysvětlení 2."
+    },
+    {
+      "en": "Sample explanation 3.",
+      "cs": "Ukázkové vysvětlení 3."
+    },
+    {
+      "en": "Sample explanation 4.",
+      "cs": "Ukázkové vysvětlení 4."
+    },
+    {
+      "en": "Sample explanation 5.",
+      "cs": "Ukázkové vysvětlení 5."
+    }
+  ],
+  "explanations2": [
+    {
+      "en": "Sample explanation 1.",
+      "cs": "Ukázkové vysvětlení 1."
+    },
+    {
+      "en": "Sample explanation 2.",
+      "cs": "Ukázkové vysvětlení 2."
+    },
+    {
+      "en": "Sample explanation 3.",
+      "cs": "Ukázkové vysvětlení 3."
+    },
+    {
+      "en": "Sample explanation 4.",
+      "cs": "Ukázkové vysvětlení 4."
+    },
+    {
+      "en": "Sample explanation 5.",
+      "cs": "Ukázkové vysvětlení 5."
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "lis3-002",
+  "paper": "listening",
+  "part": 3,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Two friends on learning an instrument as adults",
+  "topic": "learning a musical instrument as an adult",
+  "difficulty": 2,
+  "reviewed": true,
+  "segments": [
+    { "speaker": "N", "text": "You will hear two friends, Daniel and Mira, talking about learning a musical instrument as adults." },
+    { "speaker": "A", "text": "So, Mira, it's been about a year since you started the cello, hasn't it?" },
+    { "speaker": "B", "text": "Fourteen months, actually. Not that I'm counting." },
+    { "speaker": "A", "text": "And how's it going? Be honest." },
+    { "speaker": "B", "text": "Better than I expected, and worse than I hoped. When I started, I imagined I'd be playing in a little amateur orchestra by now. Instead, I'm still struggling with the same three pieces." },
+    { "speaker": "B", "text": "But here's the odd thing. I'm not disappointed. I've realised that the slow progress is what I actually enjoy. Each tiny improvement feels earned, and I wouldn't want it any faster." },
+    { "speaker": "A", "text": "That's interesting. With the piano, I'm the opposite. If I don't notice progress every week, I start losing interest." },
+    { "speaker": "A", "text": "Did you take lessons from the start?" },
+    { "speaker": "B", "text": "Not quite. I tried online videos for a month first. I developed some terrible habits with my bow arm, and my teacher spent weeks undoing them." },
+    { "speaker": "B", "text": "And the teacher matters more than the price. My first one was cheap, but she hardly listened. The second one costs more, and she notices everything." },
+    { "speaker": "A", "text": "I'm still teaching myself, mostly. Lessons are expensive, and I like setting my own pace." },
+    { "speaker": "B", "text": "I understand that. But don't you think you'd get further with someone watching you play?" },
+    { "speaker": "A", "text": "Probably, yes. My wrists ache after long sessions, which can't be a good sign. Maybe my body is telling me exactly what you're telling me." },
+    { "speaker": "A", "text": "So how do you fit practice in? You've got a busy job." },
+    { "speaker": "B", "text": "Twenty minutes every morning, before work. Same time, same chair. If I wait until the evening, there's always an excuse." },
+    { "speaker": "A", "text": "I've tried that, and it doesn't work for me. I'm half asleep before nine. I do longer sessions at the weekend instead." },
+    { "speaker": "B", "text": "My teacher would say that's the worst possible approach. Little and often, she always says." },
+    { "speaker": "A", "text": "Well, I'm sure she's right in principle. But your teacher hasn't met my alarm clock." },
+    { "speaker": "B", "text": "Fair point. I've seen you at breakfast meetings." },
+    { "speaker": "A", "text": "Has playing changed anything else in your life?" },
+    { "speaker": "B", "text": "It's made me far more patient at work. I manage a team, and I used to get irritated when people were slow to pick up new systems." },
+    { "speaker": "B", "text": "Now I remember how long it took me to play one clean note. So I give people more time, and I explain things twice without sighing." },
+    { "speaker": "A", "text": "For me, it's more about switching off. My job is all screens and deadlines. At the piano, I can't think about emails. My hands simply won't let me." },
+    { "speaker": "A", "text": "Do you ever play for other people?" },
+    { "speaker": "B", "text": "My teacher holds a small concert twice a year. I played at the last one. My hands were shaking so badly that the bow bounced on the strings." },
+    { "speaker": "A", "text": "That sounds awful." },
+    { "speaker": "B", "text": "It was, for about thirty seconds. Then I noticed that nobody in the audience was judging me. Half of them were learners too, waiting nervously for their turn. By the end, I almost enjoyed it." },
+    { "speaker": "A", "text": "I'm not sure I'd ever do that. I play for myself, and that's enough." },
+    { "speaker": "B", "text": "That's exactly what I said last year." },
+    { "speaker": "A", "text": "We'll see. So, would you recommend it? Starting an instrument at our age?" },
+    { "speaker": "B", "text": "Without hesitation. But I'd tell people to choose an instrument for its sound, not for how easy it looks. I chose the cello because I love the sound. That's what gets me through the bad weeks." },
+    { "speaker": "A", "text": "I agree with that completely. I nearly chose the guitar, because everyone said it was easier to start. I'm so glad I didn't. The piano is what I'd always wanted to hear in my own living room." },
+    { "speaker": "B", "text": "And forget about talent. Most of what I used to call talent turns out to be hours of practice." },
+    { "speaker": "A", "text": "Hmm, I'm not convinced about that. Some people really do have an ear for it. My sister could play anything after hearing it once." },
+    { "speaker": "B", "text": "Maybe. But your sister isn't the one learning the piano, is she?" },
+    { "speaker": "A", "text": "Well, at least we agree on the important part." },
+    { "speaker": "B", "text": "We usually do, eventually." }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "stem": "How does Mira feel about her progress on the cello?",
+      "options": {
+        "A": "She is frustrated that she is not yet in an orchestra.",
+        "B": "She is worried that her pieces are too difficult.",
+        "C": "She values it precisely because it is gradual.",
+        "D": "She needs to see improvement every week."
+      },
+      "answer": "C",
+      "type": "attitude-opinion",
+      "explanation": {
+        "en": "'The slow progress is what I actually enjoy. Each tiny improvement feels earned.' The orchestra was only her early expectation, and she says 'I'm not disappointed' (not A); needing weekly progress is Daniel's attitude (not D).",
+        "cs": "Mira si pomalý pokrok užívá ('slow progress is what I actually enjoy'). Orchestr byla jen původní představa a týdenní pokrok potřebuje Daniel – past typu 'řekl to druhý mluvčí'."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "What do Daniel and Mira agree about?",
+      "options": {
+        "A": "Daniel would probably benefit from having a teacher.",
+        "B": "Online videos are a sensible way for beginners to start.",
+        "C": "Lessons are worth paying for whatever they cost.",
+        "D": "Teaching yourself is the most enjoyable way to learn."
+      },
+      "answer": "A",
+      "type": "speaker-agreement",
+      "explanation": {
+        "en": "Mira asks if he would 'get further with someone watching', and Daniel answers 'Probably, yes... my body is telling me exactly what you're telling me.' Mira's videos gave her 'terrible habits' (not B), and Daniel finds lessons 'expensive' (not C).",
+        "cs": "Shoda: Daniel připouští ('Probably, yes'), že by mu učitel pomohl. Cenu lekcí řeší jen Mira, Daniel je považuje za drahé, takže C není společný názor."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "When Daniel says 'your teacher hasn't met my alarm clock', he means that",
+      "options": {
+        "A": "the teacher's method is wrong in general.",
+        "B": "the advice ignores how hard he finds early mornings.",
+        "C": "he would like to meet Mira's teacher one day.",
+        "D": "he prefers practising late in the evening."
+      },
+      "answer": "B",
+      "type": "meaning-in-context",
+      "explanation": {
+        "en": "He has just said 'I'm half asleep before nine', so the joke means morning practice is unrealistic for him. He accepts she is 'right in principle' (not A), and he practises at the weekend, not late at night (not D).",
+        "cs": "Vtip o budíku znamená: rada cvičit ráno nebere ohled na to, že ráno nefunguje. Metodu jako takovou uznává ('right in principle'), takže A neplatí."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "What effect has learning the cello had on Mira?",
+      "options": {
+        "A": "She has started playing music with her colleagues.",
+        "B": "She spends less time looking at screens.",
+        "C": "She finds it easier to forget about work emails.",
+        "D": "She is more understanding towards people learning new things."
+      },
+      "answer": "D",
+      "type": "detail",
+      "explanation": {
+        "en": "'I give people more time, and I explain things twice without sighing.' Screens and forgetting emails are Daniel's experience at the piano (not B or C).",
+        "cs": "Mira je trpělivější s kolegy, kteří se učí nové systémy. Obrazovky a e-maily zmiňuje Daniel – opět záměna mluvčích."
+      }
+    },
+    {
+      "n": 5,
+      "stem": "What is Mira implying when she says 'That's exactly what I said last year'?",
+      "options": {
+        "A": "Daniel is too nervous to perform in public.",
+        "B": "Daniel's attitude to performing may well change.",
+        "C": "She regrets having played at the concert.",
+        "D": "Daniel should have come to hear her play."
+      },
+      "answer": "B",
+      "type": "inference",
+      "explanation": {
+        "en": "Last year she also played only for herself, yet she performed and 'almost enjoyed it', so she implies Daniel may change his mind too; his reply 'We'll see' confirms this reading. The shaking hands were hers, not his (not A), and she does not regret it (not C).",
+        "cs": "Implikace: 'taky jsem to tak říkala, a pak jsem vystoupila', tedy Daniel může názor změnit. Třesoucí se ruce patří Miře a koncert nakonec skoro užila, proto A ani C nesedí."
+      }
+    },
+    {
+      "n": 6,
+      "stem": "What do both speakers believe about choosing an instrument?",
+      "options": {
+        "A": "An easy instrument helps beginners stay motivated.",
+        "B": "Natural talent matters more than people admit.",
+        "C": "The sound of the instrument should be the deciding factor.",
+        "D": "The guitar is a good choice for adult learners."
+      },
+      "answer": "C",
+      "type": "speaker-agreement",
+      "explanation": {
+        "en": "Mira says 'choose an instrument for its sound' and Daniel replies 'I agree with that completely.' Only Daniel believes in talent and Mira disagrees (not B); the guitar was what others recommended, and Daniel is glad he rejected it (not D).",
+        "cs": "Obě strany souhlasí jen v tom, že rozhoduje zvuk nástroje ('I agree with that completely'). O talentu se přou, takže B je názor jen jednoho z nich."
+      }
+    }
+  ]
+}

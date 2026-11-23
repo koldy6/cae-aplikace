@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "bad-lis-long-segment",
+  "paper": "listening",
+  "part": 2,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Sample: sentence completion",
+  "topic": "sample",
+  "difficulty": 2,
+  "reviewed": false,
+  "segments": [
+    {
+      "speaker": "N",
+      "text": "Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. Word. "
+    },
+    {
+      "speaker": "A",
+      "text": "Bees live in a hive."
+    },
+    {
+      "speaker": "A",
+      "text": "They make honey in summer."
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "before": "Sample sentence 1 with",
+      "after": "in it.",
+      "answers": [
+        "hive"
+      ],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Sample explanation 1.",
+        "cs": "Ukázkové vysvětlení 1."
+      }
+    },
+    {
+      "n": 2,
+      "before": "Sample sentence 2 with",
+      "after": "in it.",
+      "answers": [
+        "honey",
+        "sweet honey"
+      ],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Sample explanation 2.",
+        "cs": "Ukázkové vysvětlení 2."
+      }
+    },
+    {
+      "n": 3,
+      "before": "Sample sentence 3 with",
+      "after": "in it.",
+      "answers": [
+        "hive"
+      ],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Sample explanation 3.",
+        "cs": "Ukázkové vysvětlení 3."
+      }
+    },
+    {
+      "n": 4,
+      "before": "Sample sentence 4 with",
+      "after": "in it.",
+      "answers": [
+        "honey",
+        "sweet honey"
+      ],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Sample explanation 4.",
+        "cs": "Ukázkové vysvětlení 4."
+      }
+    },
+    {
+      "n": 5,
+      "before": "Sample sentence 5 with",
+      "after": "in it.",
+      "answers": [
+        "hive"
+      ],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Sample explanation 5.",
+        "cs": "Ukázkové vysvětlení 5."
+      }
+    },
+    {
+      "n": 6,
+      "before": "Sample sentence 6 with",
+      "after": "in it.",
+      "answers": [
+        "honey",
+        "sweet honey"
+      ],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Sample explanation 6.",
+        "cs": "Ukázkové vysvětlení 6."
+      }
+    },
+    {
+      "n": 7,
+      "before": "Sample sentence 7 with",
+      "after": "in it.",
+      "answers": [
+        "hive"
+      ],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Sample explanation 7.",
+        "cs": "Ukázkové vysvětlení 7."
+      }
+    },
+    {
+      "n": 8,
+      "before": "Sample sentence 8 with",
+      "after": "in it.",
+      "answers": [
+        "honey",
+        "sweet honey"
+      ],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Sample explanation 8.",
+        "cs": "Ukázkové vysvětlení 8."
+      }
+    }
+  ]
+}

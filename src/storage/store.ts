@@ -66,6 +66,8 @@ export const SettingsSchema = z.object({
   ttsVoiceA: z.string().nullable(),
   ttsVoiceB: z.string().nullable(),
   listeningPlayLimit: z.union([z.literal(2), z.null()]),
+  /** ISO time of the last backup export; optional so data saved before T21 still loads. */
+  lastBackupAt: z.string().optional(),
 });
 
 export const AppDataSchema = z.object({

@@ -29,9 +29,12 @@ export function retryGroups(errors: readonly Attempt[]): RetryGroup[] {
 
 const pct = (x: number): number => Math.round(x * 100);
 
+/** "Part 3" or "Listening Part 3". */
+export const partName = (paper: string | undefined, part: number): string => `${paper === 'listening' ? 'Listening ' : ''}Part ${part}`;
+
 /** "Part 3 word formation: 55 %" (type tags use dashes; shown with spaces). */
-export const formatArea = (s: Pick<AreaStat, 'part' | 'type' | 'accuracy'>): string =>
-  `Part ${s.part} ${s.type.replace(/-/g, ' ')}: ${pct(s.accuracy)} %`;
+export const formatArea = (s: Pick<AreaStat, 'part' | 'type' | 'accuracy'> & { paper?: string }): string =>
+  `${partName(s.paper, s.part)} ${s.type.replace(/-/g, ' ')}: ${pct(s.accuracy)} %`;
 
 /** Width class for .meter__bar, rounded to the nearest 5 %. */
 export const meterClass = (accuracy: number): string =>

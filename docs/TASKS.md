@@ -116,28 +116,28 @@ Depends on: T05, T06, the M1 feedback.
 
 ## Week 2 – P2
 
-### T21 Backup export/import (F11) (dev)
+### T21 Backup export/import (F11) (dev) — ✅ DONE 2026-11-23
 Depends on: T08. Can be pulled into week 1 if time allows (data-loss risk).
 - Write `storage/backup.ts` with BackupSchema, export download, import (size limit, parse, validate, preview, confirm, replace) and a backup reminder banner.
 - AC: `tests/backup.test.ts` is green (round-trip, invalid inputs leave data unchanged). The UI states that recordings are not included. US9 is met.
 
-### T22 TTS player module (dev)
+### T22 TTS player module (dev) — ✅ DONE 2026-11-23
 Depends on: T01.
 - Write `media/tts.ts`: feature detection, async voice loading, en-GB preference, voices A/B, per-segment playback, pause/resume/stop, rate, a play counter with limit 2 or unlimited, and a `?nospeech` override for testing the fallback.
 - AC: works in Chrome and Edge on Windows (manual). The fallback message plus script appears when unsupported. Settings store the voice and rate. No uncaught errors when there are no voices.
 
-### T23 Listening schema plus content batch 4 (Parts 1 and 2) (dev schema, edu content)
+### T23 Listening schema plus content batch 4 (Parts 1 and 2) (dev schema, edu content) — ✅ DONE 2026-11-23
 - Note from T02: Listening Part 4 schema needs `task1.type` and `task2.type` tag fields.
 Depends on: T02, T04.
 - Dev adds the Listening 1-4 schemas and fixtures (section 5.4). Edu writes 2 sets of Listening Part 1 and 2 sets of Part 2 (scripts written for TTS: short sentences, labelled speakers).
 - AC: the schema rules are enforced (3 options in Part 1, 4 in Part 3, 2x8 in Part 4, 1-3 words in Part 2). The content passes the tests.
 
-### T24 Listening drill screens, Parts 1-4 (dev)
+### T24 Listening drill screens, Parts 1-4 (dev) — ✅ DONE 2026-11-23
 Depends on: T22, T23, T13.
 - Each part has a player bar and its questions. Part 4 uses two `<select>` columns per speaker. The script can be revealed after submitting. Results are saved as a `listening` session.
 - AC: US5 is met. Scoring and review are reused. The play limit is enforced when set.
 
-### T25 Content batch 5: Listening Parts 3 and 4 (edu)
+### T25 Content batch 5: Listening Parts 3 and 4 (edu) — ✅ DONE 2026-11-23
 Depends on: T23.
 - AC: 2 sets of Part 3 and 2 sets of Part 4 that pass the tests. Total Listening content is about 60 questions.
 

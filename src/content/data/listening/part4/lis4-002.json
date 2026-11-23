@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "lis4-002",
+  "paper": "listening",
+  "part": 4,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Five people who work night shifts",
+  "topic": "working night shifts",
+  "difficulty": 2,
+  "reviewed": true,
+  "speakers": [
+    {
+      "segments": [
+        { "speaker": "N", "text": "Speaker one." },
+        { "speaker": "A", "text": "I work nights at a twenty-four-hour pharmacy. When my twins started school, my husband and I worked out that if I took nights, one of us would always be at home with them. That's the whole reason." },
+        { "speaker": "A", "text": "The money is a bit better, I suppose, but not much. And staying awake isn't really the problem. By three in the morning, the adrenaline kicks in." },
+        { "speaker": "A", "text": "What wears me down is the people who come in at that hour. Some are frightened, some are rude, and a few have clearly been drinking. You have to stay calm and polite, and after ten hours that's exhausting. Last month a man shouted at me for twenty minutes about the price of cough sweets." }
+      ]
+    },
+    {
+      "segments": [
+        { "speaker": "N", "text": "Speaker two." },
+        { "speaker": "B", "text": "I'm a lab technician at a hospital. During the day, the lab is chaos. Phones ringing, people walking in with questions. On nights, it's just me and the machines, and I can finally think properly." },
+        { "speaker": "B", "text": "That's why I asked for the transfer. A colleague assumed I wanted to escape my boss, but I actually get on well with her. She's the one who signed the form, and she still checks how I'm doing." },
+        { "speaker": "B", "text": "The hardest part is social. My friends meet up on Friday evenings, and I'm always at work. I've missed birthdays, and even a wedding. You start to feel as if life is happening somewhere else, without you." }
+      ]
+    },
+    {
+      "segments": [
+        { "speaker": "N", "text": "Speaker three." },
+        { "speaker": "A", "text": "I drive a delivery lorry. Nights pay almost a third more, and with a mortgage, that decided it for me. The roads are quieter too, which is a bonus, but I'd do it in heavy traffic for that money." },
+        { "speaker": "A", "text": "I sleep fine, honestly. Blackout curtains, earplugs, done. What I find hard is my parents. They ring me at eleven in the morning and sound hurt if I don't answer." },
+        { "speaker": "A", "text": "My mother still tells people I've got a temporary job, after six years. It's as if they think I'm just being lazy all day." },
+        { "speaker": "A", "text": "I've tried explaining that eleven in the morning is my three in the morning. They nod, and then they ring again the next day. I've stopped arguing about it." }
+      ]
+    },
+    {
+      "segments": [
+        { "speaker": "N", "text": "Speaker four." },
+        { "speaker": "B", "text": "I'm a night porter at a hotel while I finish my law degree. Lectures are in the mornings, and seminars in the early afternoon, so working nights was the only way to fit everything in." },
+        { "speaker": "B", "text": "The shift is mostly quiet. The odd guest arrives late and complains about something, but that's rare, and it's never serious." },
+        { "speaker": "B", "text": "My problem is sleeping. I share a flat above a café, and from about eight in the morning there's the coffee machine, the deliveries, the chairs scraping on the floor. I sleep in pieces, two hours here, an hour there." },
+        { "speaker": "B", "text": "I've tried earplugs and a fan, but nothing really works. Moving out isn't an option until I graduate." }
+      ]
+    },
+    {
+      "segments": [
+        { "speaker": "N", "text": "Speaker five." },
+        { "speaker": "A", "text": "When I qualified as a nurse, I applied everywhere. The only post that came up was on the night team at a care home, so I took it. I thought I'd move to days after a year, but I've stayed." },
+        { "speaker": "A", "text": "I don't mind the darkness. I've never been a big fan of sunshine anyway. And the drive home at dawn is actually quite peaceful." },
+        { "speaker": "A", "text": "The thing I can't get right is food. Is a meal at two in the morning lunch or dinner? I either eat nothing, or I snack on biscuits all night, and my body really doesn't thank me for it. I keep promising myself I'll bring a proper meal in a box. So far, that's lasted about three days." }
+      ]
+    }
+  ],
+  "task1": {
+    "prompt": "Task 1: Why did each speaker start working nights?",
+    "type": "reason-motivation",
+    "options": {
+      "A": "The pay was considerably higher.",
+      "B": "They wanted to avoid heavy traffic.",
+      "C": "They could share childcare with their partner.",
+      "D": "A colleague asked them to swap shifts.",
+      "E": "It allowed them to study during the day.",
+      "F": "It was the only job available to them.",
+      "G": "They wanted to get away from their manager.",
+      "H": "They could concentrate better at night."
+    }
+  },
+  "task2": {
+    "prompt": "Task 2: What does each speaker find most difficult about working nights?",
+    "type": "feeling-attitude",
+    "options": {
+      "A": "eating at sensible times",
+      "B": "feeling cut off from friends",
+      "C": "staying awake in the early hours",
+      "D": "sleeping through daytime noise",
+      "E": "the attitude of their family",
+      "F": "the lack of daylight",
+      "G": "dealing with difficult customers",
+      "H": "travelling home tired"
+    }
+  },
+  "answers1": ["C", "H", "A", "E", "F"],
+  "answers2": ["G", "B", "E", "D", "A"],
+  "explanations1": [
+    {
+      "en": "She took nights so that 'one of us would always be at home' with the twins: 'That's the whole reason' (C). The money is 'a bit better... but not much' (not A).",
+      "cs": "Rozhodla péče o děti sdílená s manželem. Vyšší plat zmíní, ale zlehčí ho ('not much')."
+    },
+    {
+      "en": "By day the lab is chaos; at night 'I can finally think properly. That's why I asked for the transfer' (H). A colleague thought he wanted to escape his boss, but 'I actually get on well with her' (not G).",
+      "cs": "Důvodem je klid na soustředění. Útěk před šéfovou je domněnka kolegy, kterou mluvčí vyvrací."
+    },
+    {
+      "en": "'Nights pay almost a third more... that decided it for me' (A). Quieter roads are 'a bonus', and he would work 'in heavy traffic for that money' (not B).",
+      "cs": "Rozhodly peníze ('that decided it'). Prázdnější silnice jsou jen bonus navíc, ne důvod."
+    },
+    {
+      "en": "With lectures in the mornings, 'working nights was the only way to fit everything in' while finishing his degree (E). 'The only way' refers to his timetable, not to a lack of other jobs (not F).",
+      "cs": "Noční směny mu umožňují studovat přes den. Pozor: 'the only way' neznamená jediné volné místo (F), ale jediný způsob, jak skloubit práci a studium."
+    },
+    {
+      "en": "'The only post that came up was on the night team, so I took it' (F). She stayed later by choice, but that was not why she started.",
+      "cs": "Nastoupila, protože nic jiného nebylo k dispozici. To, že zůstala, je až pozdější rozhodnutí."
+    }
+  ],
+  "explanations2": [
+    {
+      "en": "'What wears me down is the people who come in at that hour' – frightened, rude or drunk customers (G). 'Staying awake isn't really the problem' (not C).",
+      "cs": "Nejtěžší jsou nepříjemní zákazníci. Udržet se vzhůru výslovně problém není – distraktor C je popřen."
+    },
+    {
+      "en": "'The hardest part is social... I've missed birthdays, and even a wedding' (B). The chaos he mentions is about day shifts, not his main difficulty.",
+      "cs": "Trpí tím, že mu uniká společenský život s přáteli ('life is happening somewhere else')."
+    },
+    {
+      "en": "'What I find hard is my parents', who think his job is 'temporary' and that he is 'lazy all day' (E). He says 'I sleep fine', so D is wrong.",
+      "cs": "Problémem je postoj rodičů, kteří jeho práci neberou vážně. Spánek mu nevadí ('I sleep fine')."
+    },
+    {
+      "en": "'My problem is sleeping', because of the café below: the coffee machine, deliveries and scraping chairs (D). Complaining guests are 'rare' and 'never serious' (not G).",
+      "cs": "Nemůže spát kvůli hluku z kavárny. Stěžující si hosté jsou výjimka, proto G nesedí."
+    },
+    {
+      "en": "'The thing I can't get right is food... I either eat nothing, or I snack on biscuits all night' (A). She does not mind the darkness (not F) and finds the drive home 'peaceful' (not H).",
+      "cs": "Neumí si nastavit rozumné časy jídla. Tma ani cesta domů jí nevadí – obojí zazní jako past."
+    }
+  ]
+}

@@ -99,7 +99,7 @@ export function recomputeSession(session: Session, attempts: Attempt[]): Session
   };
 }
 
-export const newSession = (set: DrillSet, id: string, at: string, kind: 'drill' | 'retry' = 'drill'): Session => ({
+export const newSession = (set: { id: string }, id: string, at: string, kind: 'drill' | 'retry' | 'listening' = 'drill'): Session => ({
   id,
   kind,
   setIds: [set.id],

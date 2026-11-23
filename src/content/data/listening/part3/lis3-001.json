@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "lis3-001",
+  "paper": "listening",
+  "part": 3,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Interview with a mapmaker who draws by hand",
+  "topic": "hand-drawn maps and cartography",
+  "difficulty": 2,
+  "reviewed": true,
+  "segments": [
+    { "speaker": "N", "text": "You will hear an interview with Freya Lind, who draws maps by hand for walkers and tourist boards." },
+    { "speaker": "A", "text": "Freya, welcome to the programme. You started out at a large digital mapping company. What was that like?" },
+    { "speaker": "B", "text": "People assume I hated the technology, but I didn't. The data was fascinating, and the pay was better than anything I've earned since. My colleagues were lovely, too." },
+    { "speaker": "B", "text": "The problem was that every decision had already been made by an algorithm. My job was simply to check it. I spent eight hours a day approving choices I would never have made myself." },
+    { "speaker": "B", "text": "After three years, that wore me down. I wasn't afraid of being replaced by a computer, as some colleagues were. I just wanted my own judgement to count for something." },
+    { "speaker": "A", "text": "So you left to draw maps by hand. Wasn't that a huge risk?" },
+    { "speaker": "B", "text": "Everyone said so. My father kept sending me articles about artists who had gone bankrupt. He still does, occasionally." },
+    { "speaker": "B", "text": "But I'd saved for two years, and I'd already sold a few maps to friends. I wasn't jumping off a cliff. It felt more like stepping off a low wall." },
+    { "speaker": "A", "text": "Let's talk about the maps themselves. What does a drawn map offer that a phone app can't?" },
+    { "speaker": "B", "text": "Well, people often buy them because they look pretty, and I'm happy about that. But that's not really why they work." },
+    { "speaker": "B", "text": "An app tries to show you everything. Every car park, every café, every bus stop. A drawn map is allowed to leave things out. I can decide that a particular view matters more than a petrol station." },
+    { "speaker": "B", "text": "Some people find that annoying, I know. I once got a furious email because I hadn't marked a public toilet. Fair enough! But choosing what to ignore is the real skill. It's what makes a map readable." },
+    { "speaker": "A", "text": "Isn't accuracy a concern, though, if you're leaving things out?" },
+    { "speaker": "B", "text": "Of course. I walk every route myself, usually twice, and in different seasons. But accuracy isn't the same as completeness. That's the point most people miss." },
+    { "speaker": "A", "text": "Do you ever get it wrong?" },
+    { "speaker": "B", "text": "Once, badly. I drew a bridge that had been washed away the previous winter. A walker sent me a photo of himself standing on the riverbank, looking very unimpressed. I check with local rangers now." },
+    { "speaker": "A", "text": "You've done a lot of work for tourist boards. How do those projects usually go?" },
+    { "speaker": "B", "text": "They start well. Everyone's excited. Then the committee meetings begin. One member wants the new hotel on the map. Another wants the old castle drawn twice as big." },
+    { "speaker": "B", "text": "In my first few years, I fought every battle. I'd argue for an hour about a single footpath. It was exhausting, and it rarely changed anyone's mind." },
+    { "speaker": "B", "text": "Now I listen, I make notes, and I go away and draw what a walker actually needs. Nine times out of ten, when the committee sees the finished draft, the arguments simply stop." },
+    { "speaker": "B", "text": "A picture settles things in a way that a discussion never does. I wish someone had told me that ten years ago." },
+    { "speaker": "A", "text": "Your maps have become quite popular on social media. Has that changed your work?" },
+    { "speaker": "B", "text": "It's brought me commissions from all over the world, which is wonderful. I'm drawing a coastal path in New Zealand at the moment." },
+    { "speaker": "B", "text": "But I've noticed something slightly worrying. People share the images and comment on the colours. And I wonder how many of those maps ever actually leave the house." },
+    { "speaker": "A", "text": "Does that bother you?" },
+    { "speaker": "B", "text": "A little, yes. A map is a tool. If it only hangs on a wall, it's lost half its purpose. I'd honestly rather sell fewer and know they were getting muddy in someone's rucksack." },
+    { "speaker": "A", "text": "Finally, what advice would you give to someone who'd like to try drawing maps?" },
+    { "speaker": "B", "text": "Start with somewhere you know extremely well. Your street, or your local park. People think they should begin with a dramatic mountain range or a famous city." },
+    { "speaker": "B", "text": "But you can only decide what to leave out when you truly know a place. That knowledge comes first. The drawing comes later." },
+    { "speaker": "B", "text": "And please don't buy expensive equipment. A pencil and a lot of patience are enough for the first year." },
+    { "speaker": "A", "text": "Freya Lind, thank you very much." }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "stem": "What does Freya say about her time at the digital mapping company?",
+      "options": {
+        "A": "She was afraid that computers would take over her role.",
+        "B": "She resented having no real say in the final product.",
+        "C": "She found the work with data rather dull.",
+        "D": "She felt she was not paid enough for her skills."
+      },
+      "answer": "B",
+      "type": "inference",
+      "explanation": {
+        "en": "She spent the day 'approving choices I would never have made myself' and 'wanted my own judgement to count', so she resented her lack of control. A is tempting, but she says 'I wasn't afraid of being replaced by a computer'; the data was 'fascinating' (not C) and the pay was good (not D).",
+        "cs": "Klíčem je, že jen schvalovala rozhodnutí algoritmu a chtěla, aby 'my own judgement' něco znamenal. Strach z nahrazení počítačem měli kolegové, ne ona – typická past: myšlenka zazní, ale je odmítnuta."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "What does Freya mean when she says leaving 'felt more like stepping off a low wall'?",
+      "options": {
+        "A": "Her father had eventually come to support her plan.",
+        "B": "She had underestimated how dangerous the move was.",
+        "C": "Her friends had persuaded her to take the step.",
+        "D": "The change was less risky than other people believed."
+      },
+      "answer": "D",
+      "type": "meaning-in-context",
+      "explanation": {
+        "en": "Contrasting 'jumping off a cliff' with 'a low wall' shows that, with savings and some sales, the move was not as risky as 'everyone said'. Her father still sends warning articles (not A), and friends only bought maps; they did not persuade her (not C).",
+        "cs": "Obrat 'stepping off a low wall' (sestoupit z nízké zídky) je opak skoku z útesu – riziko bylo menší, než si lidé mysleli. Otec ji stále varuje, takže A neplatí; přátelé mapy jen kupovali."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "According to Freya, the main strength of a hand-drawn map is that it",
+      "options": {
+        "A": "selects only what is really worth showing.",
+        "B": "is more accurate than a phone app.",
+        "C": "shows practical facilities more clearly.",
+        "D": "is more attractive to look at."
+      },
+      "answer": "A",
+      "type": "attitude-opinion",
+      "explanation": {
+        "en": "She says a drawn map 'is allowed to leave things out' and 'choosing what to ignore is the real skill'. D is tempting because maps 'look pretty', but she adds 'that's not really why they work'; she separates accuracy from completeness rather than claiming more accuracy (not B).",
+        "cs": "Hlavní myšlenka: dobrá mapa vynechává ('choosing what to ignore'). Hezký vzhled zmíní, ale hned ho odmítne jako hlavní důvod. Toalety a parkoviště naopak vynechává, takže C je opak."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "What has Freya learnt from working with tourist boards?",
+      "options": {
+        "A": "She should accept every request the committee makes.",
+        "B": "She needs to defend her ideas firmly in meetings.",
+        "C": "Showing a finished draft usually ends disagreements.",
+        "D": "Local businesses expect to be given more space."
+      },
+      "answer": "C",
+      "type": "detail",
+      "explanation": {
+        "en": "'When the committee sees the finished draft, the arguments simply stop.' B describes what she used to do ('I fought every battle'), which 'rarely changed anyone's mind'; she listens but then draws what walkers need, so she does not accept every request (not A).",
+        "cs": "Pozor na časový posun 'In my first few years... Now...': dříve se hádala (B), teď ukáže hotový návrh a spory ustanou. Požadavky si jen zapíše, nesplní je všechny."
+      }
+    },
+    {
+      "n": 5,
+      "stem": "What concern does Freya express about the popularity of her maps online?",
+      "options": {
+        "A": "People may admire the maps without ever using them.",
+        "B": "She cannot keep up with orders from abroad.",
+        "C": "Followers often criticise her choice of colours.",
+        "D": "Sharing images online may reduce her sales."
+      },
+      "answer": "A",
+      "type": "attitude-opinion",
+      "explanation": {
+        "en": "She wonders 'how many of those maps ever actually leave the house' and says 'if it only hangs on a wall, it's lost half its purpose'. The foreign commissions are 'wonderful', not a problem (not B); people comment on the colours but do not criticise them (not C).",
+        "cs": "Obava: mapy visí na zdi místo toho, aby se používaly na túrách. Zakázky ze zahraničí hodnotí kladně a o nižších prodejích mluví naopak jako o něčem, co by klidně přijala ('I'd rather sell fewer')."
+      }
+    },
+    {
+      "n": 6,
+      "stem": "What does Freya recommend to people who want to start drawing maps?",
+      "options": {
+        "A": "Invest in good-quality drawing equipment.",
+        "B": "Choose a spectacular landscape to stay motivated.",
+        "C": "Practise by copying maps of famous cities.",
+        "D": "Begin by mapping a place they know well."
+      },
+      "answer": "D",
+      "type": "detail",
+      "explanation": {
+        "en": "'Start with somewhere you know extremely well. Your street, or your local park.' Mountains and famous cities are what people wrongly think they should begin with (not B or C), and she says 'don't buy expensive equipment' (not A).",
+        "cs": "Rada zní začít s dobře známým místem. Hory a slavná města uvádí jako chybnou představu začátečníků a drahé vybavení výslovně nedoporučuje – všechny distraktory v textu zazní, ale s opačným významem."
+      }
+    }
+  ]
+}

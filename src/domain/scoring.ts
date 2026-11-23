@@ -30,5 +30,5 @@ export function kwtScore(given: string, item: KwtItem): Marks {
   return item.parts.some((p) => p.accepted.some((a) => hasPhrase(g, a))) ? 1 : 0;
 }
 
-/** Maximum marks per question for a part: KWT = 2, Parts 5-7 = 2 per question, others (incl. Part 8) 1. */
-export const maxMarks = (part: number): 1 | 2 => (part >= 4 && part <= 7 ? 2 : 1);
+/** Maximum marks per question: R&UoE KWT = 2, Parts 5-7 = 2 per question, others (incl. Part 8) 1; Listening is always 1. */
+export const maxMarks = (part: number, paper = 'rue'): 1 | 2 => (paper !== 'listening' && part >= 4 && part <= 7 ? 2 : 1);

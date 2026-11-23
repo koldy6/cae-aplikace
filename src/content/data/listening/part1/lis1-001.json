@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "lis1-001",
+  "paper": "listening",
+  "part": 1,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Short extracts: podcasting, open-mic comedy, a cinema conversion",
+  "topic": "creative projects and performance",
+  "difficulty": 2,
+  "reviewed": true,
+  "extracts": [
+    {
+      "intro": "Extract 1.",
+      "segments": [
+        { "speaker": "N", "text": "You hear two friends, Lucy and Sam, talking about the podcast they make together. Lucy speaks first." },
+        { "speaker": "A", "text": "I've been listening back to our last few episodes, Sam. Something's gone wrong since we left the studio." },
+        { "speaker": "B", "text": "You mean the sound? I know there's a bit of an echo in my kitchen." },
+        { "speaker": "A", "text": "No, the sound's fine, really. Most of our listeners wear headphones on the bus. They'd never notice." },
+        { "speaker": "A", "text": "What bothers me is that we ramble. In the studio, we were paying by the hour, so every minute counted. Now we just chat until we get bored." },
+        { "speaker": "B", "text": "Hmm. I suppose the last one did run to nearly ninety minutes." },
+        { "speaker": "A", "text": "Exactly. And our guests have been brilliant lately. It's a shame to bury them in all that waffle." },
+        { "speaker": "B", "text": "Fair enough. So what are you proposing? Because I'm not going back to paying studio rent." },
+        { "speaker": "A", "text": "Neither am I. But what if we gave ourselves a strict limit? Say, forty-five minutes, with a timer on the table." },
+        { "speaker": "B", "text": "A timer? That sounds a bit like a school exam, to be honest." },
+        { "speaker": "B", "text": "Then again, I can't argue with the figures. Our downloads have dropped every single month since the episodes got longer. All right. Let's try it for a month and see." }
+      ],
+      "questions": [
+        {
+          "n": 1,
+          "stem": "What does Lucy think is wrong with their recent episodes?",
+          "options": {
+            "A": "The recordings contain too much background noise.",
+            "B": "The conversations lack focus.",
+            "C": "The guests have not been well chosen."
+          },
+          "answer": "B",
+          "type": "attitude-opinion",
+          "explanation": {
+            "en": "Lucy says 'What bothers me is that we ramble' and 'we just chat until we get bored'. A is the trap: Sam suggests the echo, but Lucy rejects it ('the sound's fine, really'). C is wrong because she calls the guests 'brilliant'.",
+            "cs": "Klíčová věta je 'we ramble' (mluvíme bez ladu a skladu, odbíháme od tématu). Past je zvuk: Sam ho zmíní, ale Lucy ho hned odmítne slovy 'No, the sound's fine'. Hosty naopak chválí."
+          }
+        },
+        {
+          "n": 2,
+          "stem": "What finally persuades Sam to accept a time limit?",
+          "options": {
+            "A": "the cost of hiring a studio",
+            "B": "Lucy's idea of using a timer",
+            "C": "a fall in the number of listeners"
+          },
+          "answer": "C",
+          "type": "detail",
+          "explanation": {
+            "en": "Sam says 'I can't argue with the figures. Our downloads have dropped every single month', and only then agrees. A is wrong: he refuses to pay 'studio rent' again. B is wrong: he says the timer sounds 'like a school exam'.",
+            "cs": "Sama přesvědčí až čísla: 'Our downloads have dropped' (klesají stažení, tedy posluchači). Studio zmiňuje jen proto, že se do něj vracet nechce, a nápad s časovačem zpočátku zesměšňuje. Pozor na 'Then again' – uvádí obrat v názoru."
+          }
+        }
+      ]
+    },
+    {
+      "intro": "Extract 2.",
+      "segments": [
+        { "speaker": "N", "text": "You hear two friends, Nina and Josh, talking about Josh's first performance at a comedy club. Nina speaks first." },
+        { "speaker": "A", "text": "So how did your first open-mic night go, Josh? Be honest." },
+        { "speaker": "B", "text": "Well, nobody threw anything. The first two minutes were awful, though. I rushed my opening joke, and it fell completely flat." },
+        { "speaker": "A", "text": "Oh no. Did you panic?" },
+        { "speaker": "B", "text": "Strangely, no. Something happened after that. A man in the front row coughed really loudly, right in the middle of a sentence." },
+        { "speaker": "B", "text": "I made a comment about it, and the whole room laughed. After that, I relaxed and just talked to them." },
+        { "speaker": "A", "text": "So the best moment wasn't even something you'd written." },
+        { "speaker": "B", "text": "That's what's so annoying. I spent three weeks polishing that material. My sister made me practise it in front of her every evening." },
+        { "speaker": "A", "text": "Still, all that practice probably gave you the confidence to improvise." },
+        { "speaker": "B", "text": "Maybe. But I came away thinking the script matters far less than I'd assumed. Next time, I'll go up with a few ideas on a card and see where the audience takes me." },
+        { "speaker": "A", "text": "Isn't that a bit risky?" },
+        { "speaker": "B", "text": "Probably. But it was the only part of the night I actually enjoyed." }
+      ],
+      "questions": [
+        {
+          "n": 3,
+          "stem": "What does Josh say about the start of his performance?",
+          "options": {
+            "A": "He delivered his first joke too quickly.",
+            "B": "He forgot the words of his opening joke.",
+            "C": "He was interrupted by a member of the audience."
+          },
+          "answer": "A",
+          "type": "detail",
+          "explanation": {
+            "en": "Josh says 'I rushed my opening joke', so he told it too quickly. B is not said: he told the joke, but 'it fell completely flat'. C is the trap: the man coughed, but Josh says this happened 'after that', not at the start.",
+            "cs": "'Rushed' znamená uspěchat, říct příliš rychle. Kašlající divák je past: Josh výslovně říká 'Something happened after that', tedy až po začátku. 'Fell flat' neznamená zapomenout text, ale že vtip nezabral."
+          }
+        },
+        {
+          "n": 4,
+          "stem": "What has Josh concluded from the experience?",
+          "options": {
+            "A": "His sister's help was more useful than he realised.",
+            "B": "Careful preparation is what gave him confidence.",
+            "C": "Reacting to the audience matters more than prepared material."
+          },
+          "answer": "C",
+          "type": "attitude-opinion",
+          "explanation": {
+            "en": "Josh says 'the script matters far less than I'd assumed' and plans to 'see where the audience takes me'. B is Nina's opinion, and Josh answers 'Maybe. But...', which rejects it. A is wrong: he mentions his sister only to show how much he practised.",
+            "cs": "Názor B vyslovuje Nina, ne Josh. Jeho 'Maybe. But...' je typický zdvořilý nesouhlas. Sestru zmiňuje jen jako příklad toho, kolik času strávil přípravou, která se nakonec ukázala jako méně důležitá."
+          }
+        }
+      ]
+    },
+    {
+      "intro": "Extract 3.",
+      "segments": [
+        { "speaker": "N", "text": "You hear two architects, Helen and Marek, discussing a plan to convert an old cinema. Helen speaks first." },
+        { "speaker": "A", "text": "Have you seen the latest drawings for the cinema, Marek? The developer's changed the plans again." },
+        { "speaker": "B", "text": "I have. They've dropped the rooftop restaurant, which I'm not sorry about. It would have spoiled the skyline." },
+        { "speaker": "A", "text": "Agreed. But now they want to remove the original front entrance and put in a glass one." },
+        { "speaker": "B", "text": "That's what really worries me. The tiled entrance is the one thing people in this town remember. Their grandparents queued there on Saturday nights." },
+        { "speaker": "A", "text": "The developer says it isn't wide enough for wheelchair users, though." },
+        { "speaker": "B", "text": "Which is a genuine problem. But the doorway could be widened at the side without destroying the tiles. I sketched an option last night." },
+        { "speaker": "A", "text": "Let me guess. You'd like me to present it at Thursday's meeting." },
+        { "speaker": "B", "text": "Well, you're much better at handling him than I am. He actually listens to you." },
+        { "speaker": "A", "text": "Flattery won't work on me. Fine. But only if you work out the costs first. He'll ask for them straight away." },
+        { "speaker": "B", "text": "Deal. I'll have the figures ready by Wednesday." }
+      ],
+      "questions": [
+        {
+          "n": 5,
+          "stem": "What concerns Marek most about the new plans?",
+          "options": {
+            "A": "the loss of the rooftop restaurant",
+            "B": "the removal of the original entrance",
+            "C": "the developer's frequent changes to the design"
+          },
+          "answer": "B",
+          "type": "attitude-opinion",
+          "explanation": {
+            "en": "About the glass entrance, Marek says 'That's what really worries me' because people 'remember' the tiled one. A is wrong: he is 'not sorry' the restaurant was dropped. C is mentioned by Helen ('changed the plans again'), but Marek does not complain about it.",
+            "cs": "'That's what really worries me' přímo ukazuje na vchod. U restaurace říká 'I'm not sorry' (nevadí mi to, spíš naopak). Časté změny plánů zmiňuje Helen, ale Marek k nim žádný postoj nevyjadřuje. Přístup pro vozíčkáře uznává jako problém, ale hned nabízí řešení."
+          }
+        },
+        {
+          "n": 6,
+          "stem": "Why does Marek praise Helen?",
+          "options": {
+            "A": "to get her to present his proposal",
+            "B": "to show he shares her view of the restaurant",
+            "C": "to thank her for showing him the drawings"
+          },
+          "answer": "A",
+          "type": "purpose-function",
+          "explanation": {
+            "en": "Helen guesses 'You'd like me to present it', and Marek replies 'you're much better at handling him'. Helen sees the purpose at once: 'Flattery won't work on me.' B is wrong: they agreed about the restaurant earlier, without praise. C is wrong: he had already seen the drawings.",
+            "cs": "Otázka se ptá na účel (purpose): Marek lichotí, aby Helen návrh prezentovala za něj. Helen to sama pojmenuje: 'Flattery won't work on me' (lichotky na mě neplatí). Výkresy už Marek viděl ('I have'), takže C nedává smysl."
+          }
+        }
+      ]
+    }
+  ]
+}

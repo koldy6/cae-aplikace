@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "lis2-002",
+  "paper": "listening",
+  "part": 2,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Sentence completion: competing in memory championships",
+  "topic": "memory sports and memory techniques",
+  "difficulty": 2,
+  "reviewed": true,
+  "segments": [
+    { "speaker": "N", "text": "You will hear a man called Tomas Weller talking about competing in memory championships." },
+    { "speaker": "A", "text": "Good evening. Five years ago, I couldn't remember where I'd left my keys. Last year, I memorised the order of a shuffled pack of cards in under two minutes." },
+    { "speaker": "A", "text": "I'm not a genius, and I don't have a photographic memory either. I simply learned a technique. Tonight, I'd like to tell you how that happened, and what it has taught me." },
+    { "speaker": "A", "text": "People usually guess that a television documentary got me interested. It didn't. It was a newspaper article about a schoolteacher who had won a national memory title. I cut it out and kept it on my fridge for months." },
+    { "speaker": "A", "text": "The main technique is called a memory palace. You imagine a building you know well. Then you place the things you need to remember at points along a route through it." },
+    { "speaker": "A", "text": "Most beginners use their own home. I didn't. I used my grandmother's farmhouse, because I'd spent every summer there as a child, and I knew every corner of it." },
+    { "speaker": "A", "text": "The images you place along the route have to be strange. Ordinary pictures simply fade. Let me give you an example." },
+    { "speaker": "A", "text": "If I need to remember the word umbrella, I don't picture a normal umbrella. And I don't just put it in the kitchen sink. I picture an umbrella made of jelly, wobbling in the sink. It sounds silly, but that's exactly why it works." },
+    { "speaker": "A", "text": "Training is less glamorous than it sounds. At first, I tried doing two hours at the weekends, but that didn't work at all. I forgot most of it by the following Saturday." },
+    { "speaker": "A", "text": "Now I practise for about forty minutes every day, usually on the bus to work. Little and often is the rule." },
+    { "speaker": "A", "text": "My first competition was in Vienna. No, I tell a lie. It was in Bratislava. Vienna was the second one, where I came last in the cards event and nearly gave up." },
+    { "speaker": "A", "text": "A full championship has ten events. There are names and faces, random words, historical dates, and binary numbers, which are long strings of ones and zeros." },
+    { "speaker": "A", "text": "But the event that every competitor fears is spoken numbers. A voice reads out digits at a rate of one per second, and you hear each one only once. Lose your concentration for a moment, and it's over." },
+    { "speaker": "A", "text": "Has all this changed my everyday life? A little. I no longer write shopping lists, and I can recall my friends' phone numbers." },
+    { "speaker": "A", "text": "People expect me to say it has helped my career. It hasn't, really. The biggest benefit has surprised me. It's my confidence. I used to be terrified of speaking in public. Now I give talks without any notes, like this one." },
+    { "speaker": "A", "text": "I'd also like to clear up a common myth. Memory athletes are not people with unusual brains. A few years ago, scientists scanned the brains of top competitors and compared them with ordinary volunteers." },
+    { "speaker": "A", "text": "They found no special structures at all. The difference lay entirely in the strategies the competitors used. In other words, anyone in this room could learn to do what they do." },
+    { "speaker": "A", "text": "So if you'd like to try, start small. Tonight, when you get home, walk through your house in your mind and place five silly images along the way. Tomorrow morning, see how many you can still find." },
+    { "speaker": "A", "text": "It only takes ten minutes. I think you'll be surprised. Thank you very much." }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "before": "Tomas first became interested in memory sports after reading a",
+      "after": ".",
+      "answers": ["newspaper article", "article"],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Tomas says 'It was a newspaper article about a schoolteacher'. The television documentary is what people 'usually guess', and he says 'It didn't.'",
+        "cs": "Dokument je past: lidé ho tipují, ale Tomas to hned popře ('It didn't'). Slovo 'reading' ve větě navíc sedí na článek, ne na televizní pořad."
+      }
+    },
+    {
+      "n": 2,
+      "before": "Tomas based his first memory palace on his grandmother's",
+      "after": ".",
+      "answers": ["farmhouse"],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Tomas says 'I used my grandmother's farmhouse'. Their 'own home' is what most beginners use, and he says 'I didn't.'",
+        "cs": "Vlastní dům používá většina začátečníků, ale Tomas říká 'I didn't'. Zvolil babiččin statek, protože ho znal do posledního kouta."
+      }
+    },
+    {
+      "n": 3,
+      "before": "In his example, Tomas imagines an umbrella made of",
+      "after": ".",
+      "answers": ["jelly"],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Tomas says 'I picture an umbrella made of jelly'. The kitchen sink is where the umbrella is placed, not what it is made of.",
+        "cs": "Fráze 'made of' (vyrobený z) se ptá na materiál. Dřez (sink) je jen místo, kam deštník umístí, takže do věty nepatří."
+      }
+    },
+    {
+      "n": 4,
+      "before": "Tomas now trains for about",
+      "after": "every day.",
+      "answers": ["forty minutes", "40 minutes"],
+      "type": "number-quantity",
+      "explanation": {
+        "en": "Tomas says 'Now I practise for about forty minutes every day'. Two hours at the weekends was his first plan, and 'that didn't work at all'.",
+        "cs": "Dvě hodiny o víkendu byl původní pokus, který nefungoval. Slovo 'Now' uvádí současný stav: čtyřicet minut denně. Číslo lze napsat slovy i číslicí."
+      }
+    },
+    {
+      "n": 5,
+      "before": "Tomas's first memory competition took place in",
+      "after": ".",
+      "answers": ["Bratislava"],
+      "type": "self-correction",
+      "explanation": {
+        "en": "Tomas first says Vienna, then corrects himself: 'No, I tell a lie. It was in Bratislava.' Vienna was 'the second one'.",
+        "cs": "'I tell a lie' je ustálená fráze, kterou mluvčí opravuje vlastní omyl (ne přiznání ke lži). Platí až druhý údaj, Bratislava."
+      }
+    },
+    {
+      "n": 6,
+      "before": "The event that all competitors fear most is called",
+      "after": ".",
+      "answers": ["spoken numbers"],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Tomas says 'the event that every competitor fears is spoken numbers'. Binary numbers are only listed among the other events.",
+        "cs": "Binární čísla jsou past se stejným slovem 'numbers'. Obávaná disciplína je 'spoken numbers' (čísla čtená nahlas), kde každou číslici slyšíte jen jednou."
+      }
+    },
+    {
+      "n": 7,
+      "before": "Tomas says the greatest benefit of his training has been an improvement in his",
+      "after": ".",
+      "answers": ["confidence"],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Tomas says 'The biggest benefit has surprised me. It's my confidence.' His career is what people expect, but he says 'It hasn't, really.'",
+        "cs": "Kariéra je očekávaná odpověď, kterou Tomas odmítne. Největší přínos je sebedůvěra (confidence), díky které teď mluví bez poznámek."
+      }
+    },
+    {
+      "n": 8,
+      "before": "Scientists found that top competitors differed from other people only in the",
+      "after": "they used.",
+      "answers": ["strategies", "strategy"],
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Tomas says 'The difference lay entirely in the strategies the competitors used.' The scans found 'no special structures', so brains are not the answer.",
+        "cs": "Mozky se nelišily ('no special structures'). Rozdíl byl jen ve strategiích. Přijímáme i jednotné číslo 'strategy', protože gramaticky sedí do věty."
+      }
+    }
+  ]
+}
