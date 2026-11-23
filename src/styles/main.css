@@ -155,9 +155,11 @@ main:focus, h1:focus { outline: none; } /* programmatic focus after navigation, 
   border-bottom: 1px solid var(--c-border);
 }
 .brand { font-weight: 700; font-size: var(--fs-md); color: var(--c-text); text-decoration: none; display: inline-flex; align-items: center; min-height: var(--tap); }
-.site-nav { display: flex; flex-wrap: wrap; gap: var(--s-1); }
+.site-nav { display: flex; flex-wrap: nowrap; gap: 0; overflow-x: auto; max-width: 100%; }
+.site-nav a { flex: none; }
+.site-nav a:focus-visible { outline-offset: -3px; }
 .site-nav a {
-  display: inline-flex; align-items: center; min-height: var(--tap); padding: 0 var(--s-3);
+  display: inline-flex; align-items: center; min-height: var(--tap); padding: 0 var(--s-2);
   border-radius: var(--radius); color: var(--c-text);
 }
 .site-nav a[aria-current="page"] { font-weight: 700; text-decoration: underline; text-decoration-thickness: 3px; }

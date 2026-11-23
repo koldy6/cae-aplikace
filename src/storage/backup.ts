@@ -18,6 +18,7 @@ export interface Preview {
   sessions: number;
   attempts: number;
   writing: number;
+  speaking: number;
   /** Date range (YYYY-MM-DD) of sessions, null when there are none. */
   from: string | null;
   to: string | null;
@@ -54,6 +55,7 @@ export function previewOf(b: Backup): Preview {
     sessions: b.data.sessions.length,
     attempts: b.data.attempts.length,
     writing: b.data.writing.length,
+    speaking: b.data.speaking.length,
     from: days[0] ?? null,
     to: days[days.length - 1] ?? null,
     exportedAt: b.exportedAt,
@@ -62,7 +64,7 @@ export function previewOf(b: Backup): Preview {
 
 /** True when there is data worth saving and no export in the last REMINDER_DAYS days. */
 export function needsBackupReminder(data: AppData, now = new Date()): boolean {
-  if (!data.sessions.length && !data.attempts.length && !data.writing.length) return false;
+  if (!data.sessions.length && !data.attempts.length && !data.writing.length && !data.speaking.length) return false;
   const last = data.settings.lastBackupAt;
   if (!last) return true;
   const t = Date.parse(last);
@@ -127,7 +129,7 @@ export function backupSection(store: Store): HTMLElement {
           }
           const p = previewOf(r.backup);
           previewBox.append(
-            h('p', {}, `Záloha z ${p.exportedAt.slice(0, 10)}: ${p.sessions} sezení, ${p.attempts} odpovědí, ${p.writing} textů` +
+            h('p', {}, `Záloha z ${p.exportedAt.slice(0, 10)}: ${p.sessions} sezení, ${p.attempts} odpovědí, ${p.writing} textů, ${p.speaking} záznamů Speaking` +
               (p.from ? `, období ${p.from} až ${p.to}.` : '.')),
             h('p', { class: 'notice' }, 'Import nahradí všechna současná data v tomto prohlížeči.'),
             h('div', { class: 'drill__actions' },

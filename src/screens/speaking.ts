@@ -1,7 +1,7 @@
 import { formatReference, speakingById, speakingSets } from '../content/loader';
 import type { FormatReference, SpeakingSet } from '../content/types';
 import { buildSpeakingPrompt } from '../domain/prompts';
-import { checkSupport, startRecording, type ActiveRecorder } from '../media/recorder';
+import { checkSupport, extForMime, recButtonState, startRecording, type ActiveRecorder } from '../media/recorder';
 import { deleteRecording, getRecording, putRecording } from '../storage/recordings';
 import type { SpeakingEntry, Store } from '../storage/store';
 import { labelBadge } from '../ui/components';
@@ -51,11 +51,17 @@ function segments(r: FormatReference, part: Part): [string, number][] {
 
 function setView(store: Store, set: SpeakingSet, reference: FormatReference): HTMLElement {
   const urls: string[] = [];
-  let active: ActiveRecorder | undefined;
-  // Leaving the screen: release the mic and the object URLs.
+  // One recorder for the whole screen: `owner` is the part that holds it (set on click, before the permission prompt resolves).
+  let owner: Part | undefined;
+  let rec: ActiveRecorder | undefined;
+  let stopTake: (() => Promise<void>) | undefined;
+  let left = false;
+  const syncs: (() => void)[] = [];
+  const sync = (): void => syncs.forEach((f) => f());
+  // Leaving the screen: save a running take to its own part, release the object URLs.
   window.addEventListener('hashchange', () => {
-    void active?.stop();
-    active = undefined;
+    left = true;
+    void stopTake?.();
     urls.forEach((u) => URL.revokeObjectURL(u));
   }, { once: true });
 
@@ -107,9 +113,13 @@ function setView(store: Store, set: SpeakingSet, reference: FormatReference): HT
     const saveText = (): void => {
       const text = transcript.value;
       if (!current && !text.trim()) return;
-      store.update((d) => { ensure(d).transcript = text; });
+      const had = !!current;
+      let e!: SpeakingEntry;
+      store.update((d) => { e = ensure(d); e.transcript = text; });
       saved.textContent = `Přepis uložen ${fmt(new Date().toISOString())}.`;
-      renderHistory();
+      // Never rebuild the list while typing (it would reset <audio> playback): patch the one transcript, or add the new entry.
+      const el = txEls.get(e.id);
+      if (el) { el.textContent = text; el.hidden = !text; } else if (!had || text) addEntry(e);
     };
     let t: ReturnType<typeof setTimeout> | undefined;
     transcript.addEventListener('input', () => { clearTimeout(t); t = setTimeout(saveText, 500); });
@@ -135,43 +145,66 @@ function setView(store: Store, set: SpeakingSet, reference: FormatReference): HT
     const recMsg = h('p', { role: 'alert', class: 'notice', hidden: !support }, support?.message ?? '');
     const showErr = (m: string): void => { recMsg.textContent = m; recMsg.hidden = false; };
     const recStatus = h('p', { role: 'status' });
-    const recBtn = h('button', { class: 'btn', type: 'button', disabled: !!support, onclick: async () => {
-      if (active) {
-        const rec = active;
-        active = undefined;
-        recBtn.textContent = 'Nahrávat';
-        recStatus.textContent = '';
-        const r = await rec.stop();
-        if (!r.ok) return showErr(r.message);
-        if (!current || current.recordingKey) { transcript.value = ''; current = undefined; } // a new take
-        let e!: SpeakingEntry;
-        store.update((d) => {
-          e = ensure(d);
-          e.recordingKey = e.id;
-          e.durationMs = r.recording.durationMs;
-          e.transcript = transcript.value || e.transcript;
-        });
-        if (!(await putRecording(e.id, r.recording.blob))) {
-          store.update(() => { e.recordingKey = null; });
-          showErr('Nahrávku se nepodařilo uložit (úložiště prohlížeče není dostupné). Přepis a ostatní funkce fungují dál.');
-        }
-        renderHistory();
-        return;
-      }
-      recMsg.hidden = true;
-      const r = await startRecording();
+    const syncBtn = (): void => {
+      const st = recButtonState(owner, !!rec, part);
+      recBtn.disabled = !!support || st === 'locked' || st === 'pending';
+      recBtn.textContent = st === 'recording' ? 'Zastavit nahrávání' : 'Nahrávat';
+      recStatus.textContent = st === 'recording' ? 'Nahrávám…' : st === 'pending' ? 'Čekám na mikrofon…' : st === 'locked' ? 'Nahrává se jiná část. Nejdřív ji zastav.' : '';
+    };
+    syncs.push(syncBtn);
+    const stopAndSave = async (): Promise<void> => {
+      const taken = rec!;
+      rec = undefined; owner = undefined; stopTake = undefined;
+      sync();
+      const r = await taken.stop();
       if (!r.ok) return showErr(r.message);
-      active = r.recorder;
-      recBtn.textContent = 'Zastavit nahrávání';
-      recStatus.textContent = 'Nahrávám…';
+      if (!current || current.recordingKey) { transcript.value = ''; current = undefined; } // a new take
+      let e!: SpeakingEntry;
+      store.update((d) => {
+        e = ensure(d);
+        e.recordingKey = e.id;
+        e.durationMs = r.recording.durationMs;
+        e.transcript = transcript.value || e.transcript;
+      });
+      if (!(await putRecording(e.id, r.recording.blob))) {
+        store.update(() => { e.recordingKey = null; });
+        showErr('Nahrávku se nepodařilo uložit (úložiště prohlížeče není dostupné). Přepis a ostatní funkce fungují dál.');
+      }
+      renderHistory();
+    };
+    const recBtn = h('button', { class: 'btn', type: 'button', disabled: !!support, onclick: async () => {
+      if (recButtonState(owner, !!rec, part) === 'recording') return stopAndSave();
+      if (owner !== undefined) return; // locked by another part, or a start is already pending
+      owner = part;
+      recMsg.hidden = true;
+      sync();
+      const r = await startRecording();
+      if (!r.ok) { owner = undefined; sync(); return showErr(r.message); }
+      if (left || !recBtn.isConnected) { owner = undefined; void r.recorder.stop(); return; } // user left during the prompt
+      rec = r.recorder;
+      stopTake = stopAndSave;
+      sync();
     } }, 'Nahrávat');
 
     // ---- recordings list ----
-    const history = h('section', { class: 'stack' });
+    const listBox = h('div', { class: 'stack' });
+    const history = h('section', { class: 'stack' }, h('h3', {}, 'Záznamy'), listBox);
+    const txEls = new Map<string, HTMLElement>(); // entry id -> its transcript <pre>
+    let partUrls: string[] = [];
+    const empty = h('p', { class: 'muted' }, 'Zatím nic.');
+    function addEntry(e: SpeakingEntry): void {
+      empty.remove();
+      listBox.prepend(entryView(e));
+    }
     function renderHistory(): void {
+      if (left) return;
+      partUrls.forEach((u) => URL.revokeObjectURL(u));
+      partUrls = [];
+      txEls.clear();
       const list = mine(part).filter((e) => e.recordingKey || e.feedback || e.transcript).reverse();
-      history.replaceChildren(h('h3', {}, 'Záznamy'),
-        ...(list.length ? list.map((e) => {
+      listBox.replaceChildren(...(list.length ? list.map(entryView) : [empty]));
+    }
+    function entryView(e: SpeakingEntry): HTMLElement {
           const body = h('div', { class: 'stack' });
           if (e.recordingKey) {
             const key = e.recordingKey;
@@ -179,10 +212,13 @@ function setView(store: Store, set: SpeakingSet, reference: FormatReference): HT
             const dl = h('a', { class: 'btn btn--secondary', download: `speaking-${set.id}-part${part}-${e.id}.webm`, hidden: true }, 'Stáhnout nahrávku');
             void getRecording(key).then((blob) => {
               if (!blob) { body.prepend(h('p', { class: 'muted' }, 'Nahrávka není v úložišti k dispozici.')); audio.remove(); return; }
+              if (left) return;
               const u = URL.createObjectURL(blob);
               urls.push(u);
+              partUrls.push(u);
               audio.src = u;
               dl.href = u;
+              dl.download = `speaking-${set.id}-part${part}-${e.id}.${extForMime(blob.type)}`;
               dl.hidden = false;
             });
             body.append(audio, dl, h('button', { class: 'btn btn--secondary', type: 'button', onclick: async () => {
@@ -192,10 +228,11 @@ function setView(store: Store, set: SpeakingSet, reference: FormatReference): HT
               renderHistory();
             } }, 'Smazat nahrávku'));
           }
-          if (e.transcript) body.append(h('pre', { class: 'pre-wrap', lang: 'en' }, e.transcript));
+          const tx = h('pre', { class: 'pre-wrap', lang: 'en', hidden: !e.transcript }, e.transcript ?? '');
+          txEls.set(e.id, tx);
+          body.append(tx);
           if (e.feedback) body.append(h('h4', {}, 'Zpětná vazba'), h('pre', { class: 'pre-wrap' }, e.feedback));
           return h('details', {}, h('summary', {}, `${fmt(e.at)}${e.durationMs ? ` – ${mmss(Math.round(e.durationMs / 1000))}` : ''}${e === current ? ' (rozpracováno)' : ''}`), body);
-        }) : [h('p', { class: 'muted' }, 'Zatím nic.')]));
     }
     renderHistory();
 

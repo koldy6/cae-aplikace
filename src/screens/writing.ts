@@ -41,7 +41,7 @@ function taskView(store: Store, task: WritingTask, reference: FormatReference): 
 
   const area = h('textarea', { class: 'input', id: 'answer', rows: 14, 'aria-describedby': 'wc', lang: 'en' });
   area.value = draft?.text ?? '';
-  const wc = h('p', { id: 'wc', role: 'status' });
+  const wc = h('p', { id: 'wc' }); // not a live region: announcing every keystroke is noise
   const warn = h('p', { class: 'notice', hidden: true });
   const saved = h('p', { class: 'muted', role: 'status' });
 
@@ -50,7 +50,8 @@ function taskView(store: Store, task: WritingTask, reference: FormatReference): 
     const st = wordState(n, task.wordMin, task.wordMax);
     wc.textContent = `Počet slov: ${n} (cíl ${task.wordMin}–${task.wordMax})`;
     warn.hidden = st === 'ok' || st === 'empty';
-    warn.textContent = st === 'short' ? `Text je kratší než ${task.wordMin} slov.` : st === 'long' ? `Text je delší než ${task.wordMax} slov.` : '';
+    const msg = st === 'short' ? `Text je kratší než ${task.wordMin} slov.` : st === 'long' ? `Text je delší než ${task.wordMax} slov.` : '';
+    if (warn.textContent !== msg) warn.textContent = msg; // the wrapper below is the only live region: announces on threshold changes only
   };
   const save = (): void => {
     const text = area.value;
@@ -66,6 +67,7 @@ function taskView(store: Store, task: WritingTask, reference: FormatReference): 
       draft.savedAt = now;
     });
     saved.textContent = `Koncept uložen ${fmt(now)}.`;
+    renderHistory(); // the textarea is not touched
   };
   let t: ReturnType<typeof setTimeout> | undefined;
   area.addEventListener('input', () => { refresh(); clearTimeout(t); t = setTimeout(save, 500); });
@@ -125,7 +127,7 @@ function taskView(store: Store, task: WritingTask, reference: FormatReference): 
       task.inputText ? h('blockquote', {}, task.inputText) : null,
       task.points.length ? h('ul', {}, task.points.map((p) => h('li', {}, p))) : null),
     h('details', {}, h('summary', {}, 'Plán odpovědi (nápověda)'), h('p', {}, task.modelPlanCs)),
-    h('div', {}, h('label', { class: 'field-label', for: 'answer' }, 'Tvoje odpověď'), area, wc, warn, saved),
+    h('div', {}, h('label', { class: 'field-label', for: 'answer' }, 'Tvoje odpověď'), area, wc, h('div', { role: 'status' }, warn), saved),
     h('div', { class: 'drill__actions' }, timerBtn, clock, cp.button),
     timerNote, ...cp.extra,
     h('section', { class: 'stack' }, h('h2', {}, 'Zpětná vazba od claude.ai'),

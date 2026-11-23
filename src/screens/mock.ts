@@ -4,7 +4,7 @@ import { announceAt, budgetOverride, budgetSeconds, buildMock, clock, partBreakd
 import { partName } from '../domain/progress';
 import type { Session, Store } from '../storage/store';
 import { h } from '../ui/h';
-import type { Route } from '../ui/router';
+import { setLeaveGuard, type Route } from '../ui/router';
 import { drillScreen } from './drill';
 import { listeningDrillScreen } from './listening';
 
@@ -58,8 +58,13 @@ export function mockScreen(store: Store): ReturnType<Route['render']> {
     const finishBtn = h('button', { class: 'btn', type: 'button', onclick: () => finish(false) }, 'Odevzdat mock');
     let done = false;
     let lastSaid = -1;
+    // Leaving a running mock loses the answers: warn on tab close/reload and on in-app navigation (partial results are not saved).
+    const onUnload = (e: BeforeUnloadEvent): void => { e.preventDefault(); e.returnValue = ''; };
+    window.addEventListener('beforeunload', onUnload);
+    setLeaveGuard(() => confirm('Mock právě běží. Pokud odejdeš, odpovědi se neuloží. Opravdu odejít?'));
+    const unguard = (): void => { window.removeEventListener('beforeunload', onUnload); setLeaveGuard(undefined); };
     const timer = window.setInterval(() => {
-      if (!root.isConnected) return void window.clearInterval(timer); // user navigated away: nothing is saved
+      if (!root.isConnected) { unguard(); return void window.clearInterval(timer); } // user navigated away: nothing is saved
       const left = remainingSeconds(Date.now(), deadline);
       shown.textContent = clock(left);
       if (announceAt(left) && left !== lastSaid) {
@@ -73,6 +78,7 @@ export function mockScreen(store: Store): ReturnType<Route['render']> {
       if (done) return;
       done = true;
       window.clearInterval(timer);
+      unguard();
       const answers = handles.map((e) => e.answers());
       handles.forEach((e) => e.lock());
       const now = new Date();

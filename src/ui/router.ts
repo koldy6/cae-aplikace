@@ -5,6 +5,11 @@ export interface Route {
   render: (params: Params) => { title: string; content: Node };
 }
 
+/** A screen may register a guard: in-app navigation is allowed only if it returns true (e.g. a confirm()). */
+let leaveGuard: (() => boolean) | undefined;
+export const setLeaveGuard = (g: (() => boolean) | undefined): void => { leaveGuard = g; };
+export const canLeave = (g: (() => boolean) | undefined): boolean => !g || g();
+
 /**
  * Minimal hash router. After each navigation (not the first load) focus moves to the page <h1>.
  * The last route is the not-found screen. `onRender` lets the layout update the nav state.
@@ -33,6 +38,15 @@ export function startRouter(main: HTMLElement, routes: Route[], onRender: (path:
     }
     first = false;
   };
-  window.addEventListener('hashchange', show);
+  let lastHash = location.hash;
+  window.addEventListener('hashchange', () => {
+    if (!canLeave(leaveGuard)) {
+      history.replaceState(null, '', lastHash || '#/'); // restore the URL; replaceState fires no hashchange, nothing re-renders
+      return;
+    }
+    leaveGuard = undefined;
+    lastHash = location.hash;
+    show();
+  });
   show();
 }

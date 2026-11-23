@@ -21,6 +21,17 @@ export function pickMime(isTypeSupported: (t: string) => boolean): string {
   return MIME_PREFERENCE.find((t) => isTypeSupported(t)) ?? '';
 }
 
+/** File extension matching a recorded blob's mime (Safari records audio/mp4). */
+export const extForMime = (mime: string): string => (/mp4/i.test(mime) ? 'mp4' : /ogg/i.test(mime) ? 'ogg' : 'webm');
+
+export type RecButtonState = 'idle' | 'recording' | 'locked' | 'pending';
+/** One recorder per screen: `owner` is the part that holds it (set on click, before the permission prompt resolves). */
+export function recButtonState(owner: number | undefined, hasRecorder: boolean, part: number): RecButtonState {
+  if (owner === undefined) return 'idle';
+  if (owner !== part) return 'locked';
+  return hasRecorder ? 'recording' : 'pending';
+}
+
 /** Maps a getUserMedia / MediaRecorder exception to an error code. */
 export function mapError(e: unknown): RecorderError {
   switch ((e as { name?: string } | null)?.name) {

@@ -169,7 +169,7 @@ Depends on: T18, T24.
 - Write `domain/mock.ts` (set selection, time budget, aggregation) and the mock screen: a countdown that auto-submits, a per-part breakdown, and a saved `mock` session.
 - AC: `tests/mock.test.ts` is green. US8 is met. Only raw scores are shown (no scale or grade).
 
-### T32 QA milestone M3 (qa)
+### T32 QA milestone M3 (qa) — ✅ DONE 2026-11-23 (0 blockers; 2 major + 8 minor fixed, m-9 accepted; user guide docs/NAVOD.md)
 Depends on: T21, T24, T27, T30, T31.
 - Run the full smoke checklist (including mic denied, no voices, CSP in `npm run preview`, export/import between PC and phone) plus `npm run check`.
 - AC: the defect list is resolved or accepted by the owner. The owner gets a short Czech user guide covering how to start the app, back up data and use claude.ai prompts.
