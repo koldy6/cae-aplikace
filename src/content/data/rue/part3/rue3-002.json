@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "rue3-002",
+  "paper": "rue",
+  "part": 3,
+  "label": "ai-generated",
+  "source": null,
+  "title": "The uses of boredom",
+  "topic": "psychology",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "For a long time, boredom was dismissed as a trivial [[1]], unworthy of serious [[2]] attention. That view has changed [[3]] over the past decade. Researchers now suggest that boredom acts as a signal, prompting us to abandon activities that have become [[4]] and to look for more rewarding ones. In a typical experiment, volunteers spend twenty minutes sorting paper clips by size and are then asked to solve a design problem; they often come up with more [[5]] solutions than those who skipped the dull task. Yet the effects of boredom are not [[6]] positive. When it becomes chronic, it is linked to poor concentration and even risky behaviour, and people who feel it constantly tend to report deep [[7]] with their lives. The challenge, it seems, is not to eliminate boredom [[8]], but to learn to listen to what it is telling us.",
+  "questions": [
+    {
+      "n": 1,
+      "stem": "ANNOY",
+      "answers": ["annoyance"],
+      "type": "noun-formation",
+      "explanation": {
+        "en": "After 'a trivial' we need a countable noun: 'annoyance'.",
+        "cs": "Po členu a přídavném jménu 'a trivial' následuje podstatné jméno: annoyance = otrava, nepříjemnost."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "SCIENCE",
+      "answers": ["scientific"],
+      "type": "adjective-formation",
+      "explanation": {
+        "en": "'Serious ... attention' needs an adjective before the noun: 'scientific'.",
+        "cs": "Před podstatným jménem 'attention' je třeba přídavné jméno: scientific (vědecký)."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "DRAMA",
+      "answers": ["dramatically"],
+      "type": "adverb-formation",
+      "explanation": {
+        "en": "An adverb modifies the verb 'has changed': 'dramatically'. Two steps are needed: drama, dramatic, dramatically.",
+        "cs": "Sloveso 'has changed' rozvíjí příslovce. Dva kroky: drama, dramatic, dramatically (u -ic přidáváme -ally)."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "MEANING",
+      "answers": ["meaningless"],
+      "type": "adjective-formation",
+      "explanation": {
+        "en": "We abandon activities and look for 'more rewarding ones', so the activities have lost their point: 'meaningless'. 'Meaningful' fits the grammar but contradicts the logic.",
+        "cs": "Opouštíme činnosti, které ztratily smysl, a hledáme 'more rewarding ones', proto meaningless. Meaningful by gramaticky sedělo, ale ne významově."
+      }
+    },
+    {
+      "n": 5,
+      "stem": "IMAGINE",
+      "answers": ["imaginative"],
+      "type": "adjective-formation",
+      "explanation": {
+        "en": "An adjective is needed before 'solutions', with the meaning 'creative': 'imaginative'. 'Imaginary' means 'not real', which makes no sense here.",
+        "cs": "Imaginative = nápaditý, tvořivý. Pozor na past: imaginary znamená smyšlený, neskutečný."
+      }
+    },
+    {
+      "n": 6,
+      "stem": "UNIFORM",
+      "answers": ["uniformly"],
+      "type": "adverb-formation",
+      "explanation": {
+        "en": "An adverb is needed before the adjective 'positive': 'not uniformly positive' means 'not positive in every case', which leads into the negative effects that follow.",
+        "cs": "Příslovce před přídavným jménem: uniformly = jednotně, ve všech případech. 'Not uniformly positive' = ne vždy kladné."
+      }
+    },
+    {
+      "n": 7,
+      "stem": "SATISFY",
+      "answers": ["dissatisfaction"],
+      "type": "negative-prefix",
+      "explanation": {
+        "en": "After 'report deep' a noun is needed, and the context of chronic boredom and risky behaviour requires a negative meaning: 'dissatisfaction'. Two changes: the prefix dis- and the suffix -faction.",
+        "cs": "Po 'report deep' je podstatné jméno a kontext je záporný (chronická nuda), proto dis- + satisfaction = dissatisfaction (nespokojenost). Pozor na dvě s."
+      }
+    },
+    {
+      "n": 8,
+      "stem": "ENTIRE",
+      "answers": ["entirely"],
+      "type": "adverb-formation",
+      "explanation": {
+        "en": "An adverb modifies 'eliminate boredom': 'entirely', meaning completely.",
+        "cs": "Příslovce rozvíjí sloveso 'eliminate': entirely = úplně, zcela."
+      }
+    }
+  ]
+}

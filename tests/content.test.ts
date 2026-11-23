@@ -76,7 +76,7 @@ describe('content data', () => {
   });
 
   test('loader groups sets by paper and part', () => {
-    expect(content.rue?.[1]?.map((s) => s.id)).toEqual(['sample-rue1-001']);
+    expect(content.rue?.[1]?.map((s) => s.id)).toContain('rue1-001');
     expect(buildIndex([{ paper: 'rue', part: 99 }, { reference: true }])).toEqual({});
   });
 });
@@ -102,8 +102,8 @@ describe('broken fixtures fail with a readable message naming the file', () => {
   });
 
   test('duplicate id across files', () => {
-    const errors = validate([...pick(REAL, 'sample-rue1-001.json'), ...pick(FIXTURES, 'dup-of-sample.json')], { ...REAL, ...FIXTURES });
-    expect(errors.join('\n')).toMatch(/dup-of-sample\.json: duplicate id "sample-rue1-001" \(also in sample-rue1-001\.json\)/);
+    const errors = validate([...pick(REAL, 'rue1-001.json'), ...pick(FIXTURES, 'dup-of-sample.json')], { ...REAL, ...FIXTURES });
+    expect(errors.join('\n')).toMatch(/dup-of-sample\.json: duplicate id "rue1-001" \(also in rue1-001\.json\)/);
   });
 
   test('fixtures are not under src/content/data (the loader never sees them)', () => {

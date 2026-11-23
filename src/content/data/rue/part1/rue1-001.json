@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "rue1-001",
+  "paper": "rue",
+  "part": 1,
+  "label": "ai-generated",
+  "source": null,
+  "title": "The return of the night train",
+  "topic": "travel",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "After decades of decline, the overnight sleeper train is [[1]] something of a comeback across Europe. For years, operators argued that such services were simply too expensive to run, and many routes were quietly [[2]] out in favour of cheap flights. Now, however, growing concern about the environmental cost of flying has [[3]] rise to a surge in demand. Travellers who were once [[4]] of the idea of spending a night on a train are discovering that it has a great deal [[5]] for it: you board in one city centre, sleep, and wake up in another rather than in a soulless terminal miles from anywhere.\n\nThat is not to say the experience is flawless. Cabins can be cramped, and delays are by no [[6]] unusual. Critics also point out that tickets often cost more than the equivalent flight, which may [[7]] budget-conscious passengers from making the switch. [[8]], supporters insist that falling asleep to the rhythm of the rails is worth every extra euro.",
+  "questions": [
+    {
+      "n": 1,
+      "options": { "A": "making", "B": "taking", "C": "doing", "D": "getting" },
+      "answer": "A",
+      "type": "collocation",
+      "explanation": {
+        "en": "The fixed collocation is 'make a comeback', so 'is making something of a comeback' is correct. 'Take' and 'get' do not combine with 'comeback' in this sense.",
+        "cs": "Ustálená kolokace je 'make a comeback' (vracet se na scénu). Česky říkáme 'zažívat návrat', proto láká 'take' nebo 'get', ale anglicky se s 'comeback' nepojí."
+      }
+    },
+    {
+      "n": 2,
+      "options": { "A": "phased", "B": "faded", "C": "ruled", "D": "cut" },
+      "answer": "A",
+      "type": "phrasal-verb",
+      "explanation": {
+        "en": "'Phase out' means to stop something gradually, which fits 'routes were quietly phased out'. 'Rule out' means to exclude a possibility, not to end an existing service.",
+        "cs": "'Phase out' znamená postupně rušit. 'Rule out' znamená vyloučit možnost, takže se nehodí na linky, které už existovaly."
+      }
+    },
+    {
+      "n": 3,
+      "options": { "A": "given", "B": "brought", "C": "made", "D": "taken" },
+      "answer": "A",
+      "type": "fixed-phrase",
+      "explanation": {
+        "en": "'Give rise to' is a fixed phrase meaning 'cause': 'has given rise to a surge'. 'Bring' works in 'bring about', but 'bring rise to' is not English.",
+        "cs": "'Give rise to' je ustálené spojení s významem 'způsobit, vyvolat'. 'Bring about' také znamená způsobit, ale 'bring rise to' neexistuje."
+      }
+    },
+    {
+      "n": 4,
+      "options": { "A": "dismissive", "B": "reluctant", "C": "opposed", "D": "averse" },
+      "answer": "A",
+      "type": "dependent-preposition",
+      "explanation": {
+        "en": "The gap is followed by 'of the idea', and only 'dismissive of' takes 'of'. 'Opposed' and 'averse' need 'to', and 'reluctant' is followed by 'to' + infinitive.",
+        "cs": "Za mezerou stojí 'of', a s 'of' se pojí jen 'dismissive of' (odmítavý k). 'Opposed' a 'averse' chtějí 'to', 'reluctant' chce 'to' + infinitiv."
+      }
+    },
+    {
+      "n": 5,
+      "options": { "A": "going", "B": "running", "C": "working", "D": "coming" },
+      "answer": "A",
+      "type": "fixed-phrase",
+      "explanation": {
+        "en": "'Have a lot (a great deal) going for it' is an idiom meaning 'have many advantages'. 'Working for it' sounds possible but means making an effort, which does not fit the list of benefits that follows.",
+        "cs": "'Have a great deal going for it' je idiom = mít hodně předností. 'Working for it' by znamenalo usilovat o něco, což nesedí k výčtu výhod za dvojtečkou."
+      }
+    },
+    {
+      "n": 6,
+      "options": { "A": "means", "B": "way", "C": "account", "D": "chance" },
+      "answer": "A",
+      "type": "fixed-phrase",
+      "explanation": {
+        "en": "'By no means' is the fixed phrase for 'not at all': 'by no means unusual'. 'Account' belongs to a different phrase, 'on no account', which means 'under no circumstances'.",
+        "cs": "'By no means' = vůbec ne. Častá chyba je 'by no account'; správně je 'on no account' a znamená 'za žádných okolností', což sem nepatří."
+      }
+    },
+    {
+      "n": 7,
+      "options": { "A": "deter", "B": "avert", "C": "refrain", "D": "abstain" },
+      "answer": "A",
+      "type": "verb-pattern",
+      "explanation": {
+        "en": "The pattern is 'deter somebody from doing': 'deter passengers from making the switch'. 'Refrain' and 'abstain' take 'from' but no object, and 'avert' means to prevent an event, not a person.",
+        "cs": "Vazba je 'deter sb from doing' (odradit někoho od). 'Refrain from' a 'abstain from' nemají předmět (zdržet se sám), 'avert' se používá pro události (avert a crisis)."
+      }
+    },
+    {
+      "n": 8,
+      "options": { "A": "Nevertheless", "B": "Furthermore", "C": "Consequently", "D": "Accordingly" },
+      "answer": "A",
+      "type": "linking",
+      "explanation": {
+        "en": "The sentence contrasts the criticism of high prices with the supporters' view, so a contrast linker is needed: 'Nevertheless'. 'Furthermore' would add another point in the same direction.",
+        "cs": "Věta staví názor příznivců proti kritice, proto je potřeba kontrast: 'Nevertheless' (přesto). 'Furthermore' jen přidává další bod stejným směrem."
+      }
+    }
+  ]
+}

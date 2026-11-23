@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "rue1-002",
+  "paper": "rue",
+  "part": 1,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Why we put things off",
+  "topic": "psychology",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "Most of us have, at some point, left an unpleasant task until the last possible moment. For a long time, procrastination was [[1]] down to simple laziness or poor time management. More recent research, however, has [[2]] to light a rather different explanation: the habit has more to do with emotions than with discipline. When a task makes us anxious or bored, delaying it brings instant relief, and our brains are highly [[3]] to that kind of short-term reward. [[4]] this, the strategy is self-defeating: the task does not go away, and the stress [[5]] up as the deadline approaches.\n\nOne technique that psychologists recommend is to [[6]] a deliberately tiny first step, so small that starting feels almost effortless. Another is, surprisingly, to be kinder to yourself. In one study, students who [[7]] themselves for procrastinating before a first exam were less likely to delay again before the next. Harsh self-criticism, it seems, only makes the task more threatening, and [[8]] strengthens the urge to avoid it.",
+  "questions": [
+    {
+      "n": 1,
+      "options": { "A": "put", "B": "set", "C": "laid", "D": "brought" },
+      "answer": "A",
+      "type": "phrasal-verb",
+      "explanation": {
+        "en": "'Put something down to' means 'explain it as caused by': 'was put down to simple laziness'. 'Brought down' means 'reduced' and 'laid down' means 'established as a rule'.",
+        "cs": "'Put sth down to sth' = připisovat něco něčemu. 'Bring down' znamená snížit a 'lay down' stanovit pravidlo, takže význam nesedí."
+      }
+    },
+    {
+      "n": 2,
+      "options": { "A": "brought", "B": "come", "C": "put", "D": "set" },
+      "answer": "A",
+      "type": "fixed-phrase",
+      "explanation": {
+        "en": "'Bring something to light' means 'reveal it', and here it has an object: 'has brought to light a different explanation'. 'Come to light' is also a real phrase, but it has no object, so it cannot take 'a rather different explanation'.",
+        "cs": "'Bring sth to light' = odhalit něco (má předmět). 'Come to light' také existuje, ale je bez předmětu (vyjít najevo), proto zde nesedí."
+      }
+    },
+    {
+      "n": 3,
+      "options": { "A": "sensitive", "B": "aware", "C": "conscious", "D": "fond" },
+      "answer": "A",
+      "type": "dependent-preposition",
+      "explanation": {
+        "en": "After the gap comes 'to that kind of reward', and only 'sensitive' takes 'to'. 'Aware', 'conscious' and 'fond' are all followed by 'of'.",
+        "cs": "Za mezerou je 'to', a s 'to' se pojí jen 'sensitive to' (citlivý na). 'Aware', 'conscious' i 'fond' vyžadují 'of'."
+      }
+    },
+    {
+      "n": 4,
+      "options": { "A": "Despite", "B": "Although", "C": "However", "D": "Nevertheless" },
+      "answer": "A",
+      "type": "linking",
+      "explanation": {
+        "en": "The gap is followed by a noun phrase, 'this', and then a comma, so a preposition of contrast is needed: 'Despite this'. 'Although' needs a full clause, and 'However' or 'Nevertheless' would need to stand alone before the comma.",
+        "cs": "Za mezerou je jen 'this' (podstatné jméno), takže potřebujeme předložku 'Despite'. 'Although' chce celou větu a 'However' či 'Nevertheless' by stály samostatně bez 'this'."
+      }
+    },
+    {
+      "n": 5,
+      "options": { "A": "builds", "B": "rises", "C": "swells", "D": "lifts" },
+      "answer": "A",
+      "type": "phrasal-verb",
+      "explanation": {
+        "en": "'Build up' means 'increase gradually', which suits stress growing 'as the deadline approaches'. 'Rise up' means 'rebel', and 'swell up' is used for parts of the body.",
+        "cs": "'Build up' = postupně narůstat. 'Rise up' znamená povstat (vzbouřit se) a 'swell up' se říká např. o oteklém kotníku."
+      }
+    },
+    {
+      "n": 6,
+      "options": { "A": "take", "B": "make", "C": "do", "D": "give" },
+      "answer": "A",
+      "type": "collocation",
+      "explanation": {
+        "en": "The collocation is 'take a step': 'take a deliberately tiny first step'. 'Make' is a common mistake here, because Czech speakers translate 'udělat krok'.",
+        "cs": "Anglicky se krok 'bere': 'take a step'. Čeština říká 'udělat krok', proto láká 'make' nebo 'do', ale ty se s 'step' nepojí."
+      }
+    },
+    {
+      "n": 7,
+      "options": { "A": "forgave", "B": "blamed", "C": "criticised", "D": "punished" },
+      "answer": "A",
+      "type": "meaning-in-context",
+      "explanation": {
+        "en": "All four verbs can take 'themselves for', but the text recommends being 'kinder to yourself' and warns against 'harsh self-criticism', so only 'forgave' fits. 'Blamed' is the opposite of the idea the paragraph supports.",
+        "cs": "Všechna slovesa gramaticky sedí s 'themselves for', ale rozhoduje kontext: text doporučuje být k sobě laskavější. 'Blamed' (obviňovali se) je přesný opak."
+      }
+    },
+    {
+      "n": 8,
+      "options": { "A": "thereby", "B": "whereby", "C": "wherein", "D": "whereupon" },
+      "answer": "A",
+      "type": "linking",
+      "explanation": {
+        "en": "'Thereby' means 'as a result of this' and can stand before a verb: 'and thereby strengthens the urge'. 'Whereby', 'wherein' and 'whereupon' introduce relative clauses and cannot follow 'and' like this.",
+        "cs": "'Thereby' = tím (čímž) a může stát přímo před slovesem. 'Whereby', 'wherein' a 'whereupon' uvozují vztažnou větu a po 'and' takto stát nemohou."
+      }
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "rue2-003",
+  "paper": "rue",
+  "part": 2,
+  "label": "ai-generated",
+  "source": null,
+  "title": "The case for the afternoon nap",
+  "topic": "health",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "For [[1]] long time, an afternoon nap was seen as a sign of laziness, or at best a habit for toddlers and the elderly. Sleep scientists, however, take a rather different view. Research suggests that a short nap can improve alertness, mood and memory, [[2]] long as it is kept brief. The ideal length, according to most experts, is between ten and twenty minutes. Sleep for much longer [[3]] that and you risk entering deep sleep, from [[4]] it is hard to wake without feeling groggy. Timing matters too: [[5]] later in the day you nap, the more likely it is to interfere with your sleep at night.\n\nSome employers have gone [[6]] far as to install nap pods in their offices, reasoning that a rested employee is a more productive one. Others remain unconvinced. [[7]] spite of the evidence, they worry about how it would look to clients if an employee [[8]] to be found fast asleep in the middle of the afternoon.",
+  "questions": [
+    {
+      "n": 1,
+      "answers": ["a"],
+      "type": "article-determiner",
+      "explanation": {
+        "en": "'For a long time' is the usual time expression; 'long time' is a countable noun phrase here and needs 'a'.",
+        "cs": "'For a long time' = dlouho. Výraz 'long time' zde potřebuje neurčitý člen 'a'."
+      }
+    },
+    {
+      "n": 2,
+      "answers": ["as", "so"],
+      "type": "linking",
+      "explanation": {
+        "en": "'As long as' (or 'so long as') means 'on condition that': the nap helps only if it is kept brief.",
+        "cs": "'As long as' i 'so long as' znamená 'pokud, za předpokladu, že'. Nejde o délku, ale o podmínku."
+      }
+    },
+    {
+      "n": 3,
+      "answers": ["than"],
+      "type": "comparison",
+      "explanation": {
+        "en": "The comparative 'longer' is followed by 'than': 'much longer than that'.",
+        "cs": "Po druhém stupni 'longer' následuje 'than' (než)."
+      }
+    },
+    {
+      "n": 4,
+      "answers": ["which"],
+      "type": "relative-pronoun",
+      "explanation": {
+        "en": "After a preposition, a relative clause about a thing uses 'which': 'deep sleep, from which it is hard to wake'. 'That' cannot follow a preposition.",
+        "cs": "Po předložce ve vztažné větě se používá 'which' (from which = ze kterého). 'That' po předložce stát nemůže."
+      }
+    },
+    {
+      "n": 5,
+      "answers": ["the"],
+      "type": "comparison",
+      "explanation": {
+        "en": "The structure 'the + comparative ..., the + comparative' shows that two things change together: 'the later ..., the more likely'. The clue is 'the more' in the second half.",
+        "cs": "Vazba 'the later ..., the more ...' = čím později, tím spíš. Nápovědou je 'the more' ve druhé části věty."
+      }
+    },
+    {
+      "n": 6,
+      "answers": ["so", "as"],
+      "type": "fixed-phrase",
+      "explanation": {
+        "en": "'Go so far as to do something' (also 'go as far as to') means 'take the surprising step of doing it'.",
+        "cs": "'Go so far as to do sth' (nebo 'as far as') = zajít tak daleko, že. Vyjadřuje překvapivě odvážný krok."
+      }
+    },
+    {
+      "n": 7,
+      "answers": ["In"],
+      "type": "linking",
+      "explanation": {
+        "en": "'In spite of' is a fixed linker of contrast followed by a noun: 'In spite of the evidence'. 'Despite' does not take 'of', so it cannot go before 'spite'.",
+        "cs": "'In spite of' = navzdory. Pozor, 'despite' se s 'of' ani 'spite' nepojí, takže zde jde jen 'In'."
+      }
+    },
+    {
+      "n": 8,
+      "answers": ["were", "was", "happened"],
+      "type": "auxiliary-verb",
+      "explanation": {
+        "en": "'If + subject + were to + infinitive' describes an unlikely future situation: 'if an employee were to be found asleep'. 'Was' (informal) and 'happened' ('happened to be found') are also accepted.",
+        "cs": "'If sb were to do sth' vyjadřuje málo pravděpodobnou situaci (kdyby snad). 'Were' je formálnější, 'was' hovorové; přijímá se i 'happened to be found' (kdyby náhodou)."
+      }
+    }
+  ]
+}

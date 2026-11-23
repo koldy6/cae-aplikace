@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "rue2-001",
+  "paper": "rue",
+  "part": 2,
+  "label": "ai-generated",
+  "source": null,
+  "title": "The story of the pencil",
+  "topic": "history of everyday objects",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "Few everyday objects are taken [[1]] granted as completely as the humble pencil, yet its history is surprisingly eventful. In the sixteenth century, a large deposit of unusually pure graphite was discovered in the north of England. Local shepherds are said to have been [[2]] first to make use of it, marking their sheep with the soft black mineral. [[3]] long, it was being wrapped in string or sheepskin so that it could be held without blackening the fingers. The graphite soon proved so valuable that the mine was placed under guard, and stealing from [[4]] eventually became a serious criminal offence.\n\nThe modern pencil, [[5]] which powdered graphite is mixed with clay and baked, owes much to a French engineer working in the 1790s. His method made it possible to control the hardness of the core, [[6]] is why pencils are still graded from hard to soft today. Not [[7]] is the pencil cheap and reliable, but it also works in conditions where many pens fail, [[8]] as freezing temperatures or zero gravity.",
+  "questions": [
+    {
+      "n": 1,
+      "answers": ["for"],
+      "type": "fixed-phrase",
+      "explanation": {
+        "en": "'Take something for granted' is a fixed phrase meaning 'not value it because it is always there'. The clue is 'taken ... granted'.",
+        "cs": "'Take sth for granted' = brát něco jako samozřejmost. Předložka je vždy 'for', nikoli 'as'."
+      }
+    },
+    {
+      "n": 2,
+      "answers": ["the"],
+      "type": "article-determiner",
+      "explanation": {
+        "en": "Ordinal numbers like 'first' normally take 'the' in this pattern: 'have been the first to make use of it'.",
+        "cs": "Před řadovou číslovkou ve vazbě 'the first to do sth' (první, kdo) stojí určitý člen 'the'."
+      }
+    },
+    {
+      "n": 3,
+      "answers": ["Before"],
+      "type": "fixed-phrase",
+      "explanation": {
+        "en": "'Before long' means 'soon' and introduces the next stage of the story. 'Not long' would need 'after' to work here.",
+        "cs": "'Before long' = zanedlouho, brzy. 'Not long' by potřebovalo ještě 'after', a to by byla dvě slova."
+      }
+    },
+    {
+      "n": 4,
+      "answers": ["it", "there"],
+      "type": "pronoun",
+      "explanation": {
+        "en": "'It' refers back to 'the mine': people were stealing from the mine. A preposition like 'from' needs an object; 'from there' is also accepted.",
+        "cs": "Zájmeno 'it' odkazuje na 'the mine' (krást z dolu). Po předložce 'from' musí následovat předmět; uznává se i 'from there'."
+      }
+    },
+    {
+      "n": 5,
+      "answers": ["in"],
+      "type": "preposition",
+      "explanation": {
+        "en": "'In which' is a formal relative structure: the graphite is mixed with clay inside the pencil. 'Of which' or 'for which' do not fit the meaning.",
+        "cs": "'In which' = ve kterém (grafit je uvnitř tužky). Formální vztažná věta s předložkou před 'which'."
+      }
+    },
+    {
+      "n": 6,
+      "answers": ["which"],
+      "type": "relative-pronoun",
+      "explanation": {
+        "en": "', which is why' refers back to the whole previous clause. 'That' cannot be used after a comma in this way, and 'this' would create two sentences joined only by a comma.",
+        "cs": "', which is why' (což je důvod, proč) odkazuje na celou předchozí větu. 'That' se po čárce takto nepoužívá a 'this' by vytvořilo dvě věty spojené jen čárkou."
+      }
+    },
+    {
+      "n": 7,
+      "answers": ["only"],
+      "type": "inversion",
+      "explanation": {
+        "en": "'Not only ... but also' at the start of a sentence causes inversion: 'Not only is the pencil cheap'. The clue is 'but it also' later in the sentence.",
+        "cs": "'Not only ... but also' na začátku věty vyžaduje inverzi (is the pencil). Nápovědou je 'but it also' dál ve větě."
+      }
+    },
+    {
+      "n": 8,
+      "answers": ["such"],
+      "type": "fixed-phrase",
+      "explanation": {
+        "en": "'Such as' introduces examples: 'such as freezing temperatures or zero gravity'. 'Like' would also give examples, but 'like as' is not English.",
+        "cs": "'Such as' uvádí příklady (jako například). 'Like' by fungovalo samo, ale zde už 'as' v textu je, takže jen 'such'."
+      }
+    }
+  ]
+}

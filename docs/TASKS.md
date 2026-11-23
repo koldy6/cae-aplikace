@@ -36,15 +36,16 @@ Depends on: T03.
 - Write `tests/content.test.ts` (global checks: unique ids, file name = id, tags, no `<`/`>`, forbidden wording) and `src/content/loader.ts` (`import.meta.glob`, index by paper/part).
 - AC: each sample file passes. A test fixture with one deliberately broken file per rule (wrong option count, 7 gaps, KWT without the key word, a 2-word Part 2 answer, a duplicate id, an `<b>` tag, "real exam" wording) fails with a readable message that names the file. The loader returns sets grouped by part.
 
-### T05 Content batch 1a: R&UoE Parts 1 and 2 (edu)
+### T05 Content batch 1a: R&UoE Parts 1 and 2 (edu) — ✅ DONE 2026-11-23 (6 sets, 48 questions)
 Depends on: T02 (format), T04 (to validate; can start drafting earlier).
 - AC: 3 Part 1 texts and 3 Part 2 texts, `label: ai-generated`, EN + CZ explanations, tags from T02. All pass `npm test`. The specialist self-reviews 100% of keys, and `reviewed: true` is set.
 
-### T06 Content batch 1b: R&UoE Parts 3, 4 and 7 (edu)
+### T06 Content batch 1b: R&UoE Parts 3, 4 and 7 (edu) — ✅ DONE 2026-11-23 (8 sets: 24 + 18 KWT + 12 questions)
 Depends on: T02, T04.
 - AC: 3 Part 3 texts, 3 Part 4 sets (18 items, each with 2 marked parts and at least 1 alternative where natural), 2 Part 7 texts (6 gaps + 1 extra paragraph). All pass `npm test` and are reviewed.
 
 ### T07 Scoring module (dev)
+- Note from T06: KWT items with several variants per part — score the item against `fullAnswers` combinations, not each part independently, so unrelated variant combinations do not get 2 marks.
 Depends on: T03.
 - Write `src/domain/scoring.ts` with `normalise`, letter scoring, open answer scoring, `kwtScore` and per-part marks (1/0-2/2).
 - AC: `tests/scoring.test.ts` covers all cases in ARCHITECTURE section 10, including KWT 0/1/2, key word missing or changed, over 6 words, contractions and alternatives. Functions are pure (no DOM, no storage).

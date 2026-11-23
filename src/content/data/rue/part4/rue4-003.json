@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "rue4-003",
+  "paper": "rue",
+  "part": 4,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Transformations: rules, regrets and results",
+  "topic": "mixed grammar",
+  "difficulty": 2,
+  "reviewed": true,
+  "items": [
+    {
+      "n": 1,
+      "sentence1": "It was a mistake for us not to book the tickets in advance.",
+      "keyWord": "SHOULD",
+      "before": "We",
+      "after": "the tickets in advance.",
+      "parts": [
+        { "accepted": ["should have"] },
+        { "accepted": ["booked", "bought", "reserved"] }
+      ],
+      "fullAnswers": ["should have booked", "should have bought", "should have reserved"],
+      "type": "modal-verb",
+      "explanation": {
+        "en": "Part 1: criticism of a past action is expressed with 'should have'. Part 2: it is followed by the past participle 'booked'; 'should have book' or 'should booked' are wrong.",
+        "cs": "Část 1: výčitka za minulost = should have (měli jsme). Část 2: následuje příčestí minulé booked."
+      }
+    },
+    {
+      "n": 2,
+      "sentence1": "No other student in the class is anywhere near as talented as Mia.",
+      "keyWord": "FAR",
+      "before": "Mia is",
+      "after": "student in the class.",
+      "parts": [
+        { "accepted": ["by far", "far and away", "far more talented"] },
+        { "accepted": ["the most talented", "than any other"] }
+      ],
+      "fullAnswers": [
+        "by far the most talented",
+        "far and away the most talented",
+        "far more talented than any other"
+      ],
+      "type": "comparison",
+      "explanation": {
+        "en": "Part 1: 'by far' (or 'far and away') intensifies a superlative. Part 2: the superlative 'the most talented' replaces 'no other student is as talented'. 'Far more talented than any other' is also correct.",
+        "cs": "Část 1: by far = zdaleka, jednoznačně (zesiluje 3. stupeň). Část 2: superlativ the most talented. Správně je i far more talented than any other."
+      }
+    },
+    {
+      "n": 3,
+      "sentence1": "Visitors must not feed the animals, whatever the situation.",
+      "keyWord": "CIRCUMSTANCES",
+      "before": "Under no",
+      "after": "feed the animals.",
+      "parts": [
+        {
+          "accepted": [
+            "circumstances must", "circumstances should", "circumstances may",
+            "circumstances can", "circumstances are"
+          ]
+        },
+        { "accepted": ["visitors", "visitors allowed to", "visitors permitted to"] }
+      ],
+      "fullAnswers": [
+        "circumstances must visitors",
+        "circumstances should visitors",
+        "circumstances may visitors",
+        "circumstances can visitors",
+        "circumstances are visitors allowed to",
+        "circumstances are visitors permitted to"
+      ],
+      "type": "inversion",
+      "explanation": {
+        "en": "Part 1: 'whatever the situation' becomes 'Under no circumstances', which is followed by a modal or auxiliary. Part 2: the subject 'visitors' comes after the modal (inversion), and the sentence no longer needs 'not'.",
+        "cs": "Část 1: Under no circumstances (za žádných okolností) + modální sloveso. Část 2: inverze, podmět visitors stojí až za slovesem. Zápor not už nepatří, je obsažen v 'no'."
+      }
+    },
+    {
+      "n": 4,
+      "sentence1": "I'd prefer you not to mention this to anyone.",
+      "keyWord": "RATHER",
+      "before": "I'd",
+      "after": "this to anyone.",
+      "parts": [
+        { "accepted": ["rather you"] },
+        { "accepted": ["did not mention", "didn't mention"] }
+      ],
+      "fullAnswers": ["rather you did not mention", "rather you didn't mention"],
+      "type": "wish-regret",
+      "explanation": {
+        "en": "Part 1: 'would rather' followed by another person, 'rather you'. Part 2: that person's action takes the past simple with present meaning, 'didn't mention', not 'not to mention'.",
+        "cs": "Část 1: would rather + jiná osoba: rather you. Část 2: po této vazbě následuje minulý čas, i když mluvíme o přítomnosti: didn't mention."
+      }
+    },
+    {
+      "n": 5,
+      "sentence1": "Nobody was surprised that the team was defeated.",
+      "keyWord": "SURPRISE",
+      "before": "The team's",
+      "after": "anyone.",
+      "parts": [
+        { "accepted": ["defeat", "loss"] },
+        {
+          "accepted": [
+            "came as no surprise to", "was no surprise to",
+            "was not a surprise to", "wasn't a surprise to"
+          ]
+        }
+      ],
+      "fullAnswers": [
+        "defeat came as no surprise to",
+        "defeat was no surprise to",
+        "defeat was not a surprise to",
+        "defeat wasn't a surprise to",
+        "loss came as no surprise to",
+        "loss was no surprise to",
+        "loss was not a surprise to",
+        "loss wasn't a surprise to"
+      ],
+      "type": "nominalisation",
+      "explanation": {
+        "en": "Part 1: the passive verb 'was defeated' becomes the noun 'defeat' after 'The team's'. Part 2: 'Nobody was surprised' becomes 'came as no surprise to anyone'.",
+        "cs": "Část 1: sloveso was defeated převedeme na podstatné jméno defeat (porážka). Část 2: ustálené spojení come as no surprise to somebody = nikoho nepřekvapit."
+      }
+    },
+    {
+      "n": 6,
+      "sentence1": "We need someone to fix the heating before winter.",
+      "keyWord": "GET",
+      "before": "We need to",
+      "after": "before winter.",
+      "parts": [
+        { "accepted": ["get the heating", "get someone to"] },
+        { "accepted": ["fixed", "repaired", "seen to", "fix the heating", "repair the heating"] }
+      ],
+      "fullAnswers": [
+        "get the heating fixed",
+        "get the heating repaired",
+        "get the heating seen to",
+        "get someone to fix the heating",
+        "get someone to repair the heating"
+      ],
+      "type": "causative",
+      "explanation": {
+        "en": "Part 1: the causative 'get something done' puts the object straight after 'get'. Part 2: the object is followed by the past participle 'fixed'. 'Get someone to fix the heating' is also correct.",
+        "cs": "Část 1: get something done = nechat něco udělat: get the heating. Část 2: příčestí minulé fixed. Správně je i get someone to fix the heating."
+      }
+    }
+  ]
+}

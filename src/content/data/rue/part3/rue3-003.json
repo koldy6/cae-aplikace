@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "rue3-003",
+  "paper": "rue",
+  "part": 3,
+  "label": "ai-generated",
+  "source": null,
+  "title": "The return of the thatcher",
+  "topic": "traditional crafts",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "In many parts of rural England, the craft of thatching was close to [[1]] by the middle of the twentieth century. Cheap tiles had made straw roofs seem [[2]] as well as old-fashioned, and few young people were willing to commit to an [[3]] lasting several years. Recently, however, the trade has enjoyed an [[4]] revival. Part of the appeal lies in the [[5]] of a well-made roof, which can last for decades with only [[6]] repairs. Environmental concerns play a role too: straw and reed are [[7]] materials, and producing them requires [[8]] little energy.",
+  "questions": [
+    {
+      "n": 1,
+      "stem": "EXTINCT",
+      "answers": ["extinction"],
+      "type": "noun-formation",
+      "explanation": {
+        "en": "'Close to' is followed here by a noun: 'close to extinction' means almost disappearing completely.",
+        "cs": "Po 'close to' (na pokraji) zde stojí podstatné jméno: extinction = vymření, zánik."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "PRACTICE",
+      "answers": ["impractical", "unpractical"],
+      "type": "negative-prefix",
+      "explanation": {
+        "en": "'Seem' takes an adjective, and 'as well as old-fashioned' shows another negative quality: 'impractical'. 'Unpractical' exists too but is much less common.",
+        "cs": "Po 'seem' následuje přídavné jméno se záporným významem (vedle 'old-fashioned'): impractical = nepraktický. Dvě změny: předpona im- a přípona -al."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "APPRENTICE",
+      "answers": ["apprenticeship"],
+      "type": "noun-formation",
+      "explanation": {
+        "en": "Something 'lasting several years' is a period of training, not a person, so the noun is 'apprenticeship'.",
+        "cs": "'Lasting several years' popisuje období, ne osobu: apprentice = učeň, apprenticeship = učení, vyučení se."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "EXPECT",
+      "answers": ["unexpected"],
+      "type": "negative-prefix",
+      "explanation": {
+        "en": "'However' contrasts the revival with the earlier decline, so nobody expected it: 'an unexpected revival'. Two changes: the prefix un- and the -ed ending.",
+        "cs": "'However' staví oživení do kontrastu s předchozím úpadkem, takže je nečekané: un- + expect + -ed = unexpected. Člen 'an' na to také napovídá."
+      }
+    },
+    {
+      "n": 5,
+      "stem": "DURABLE",
+      "answers": ["durability"],
+      "type": "noun-formation",
+      "explanation": {
+        "en": "After 'the' and before 'of' a noun is needed, and 'can last for decades' points to the meaning: 'durability'.",
+        "cs": "Mezi 'the' a 'of' patří podstatné jméno. Střecha vydrží desítky let: durability = trvanlivost (-able se mění na -ability)."
+      }
+    },
+    {
+      "n": 6,
+      "stem": "OCCASION",
+      "answers": ["occasional"],
+      "type": "adjective-formation",
+      "explanation": {
+        "en": "An adjective describes the noun 'repairs': 'only occasional repairs' means repairs from time to time.",
+        "cs": "Přídavné jméno před 'repairs': occasional = občasný."
+      }
+    },
+    {
+      "n": 7,
+      "stem": "RENEW",
+      "answers": ["renewable"],
+      "type": "adjective-formation",
+      "explanation": {
+        "en": "In the context of environmental concerns, materials that can be grown again are 'renewable'. 'Renewed' fits the grammar but not the meaning.",
+        "cs": "Ekologický kontext: obnovitelné materiály = renewable materials. Renewed (obnovený) významově nesedí."
+      }
+    },
+    {
+      "n": 8,
+      "stem": "COMPARE",
+      "answers": ["comparatively"],
+      "type": "adverb-formation",
+      "explanation": {
+        "en": "An adverb modifies 'little': 'comparatively little energy' means little in comparison with other materials. Two steps: compare, comparative, comparatively.",
+        "cs": "Příslovce před 'little': comparatively = poměrně, ve srovnání. Dva kroky: compare, comparative, comparatively."
+      }
+    }
+  ]
+}

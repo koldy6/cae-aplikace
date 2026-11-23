@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "rue2-002",
+  "paper": "rue",
+  "part": 2,
+  "label": "ai-generated",
+  "source": null,
+  "title": "The four-day week",
+  "topic": "work",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "When a number of companies agreed to trial a four-day week [[1]] cutting a single penny from their employees' pay, many observers predicted chaos. Surely, they argued, productivity would suffer if staff spent [[2]] time at their desks? The results suggested otherwise. In most of the firms involved, output remained [[3]] high as before, and in some it actually rose. Managers, for [[4]] part, noticed that meetings became shorter and more focused. [[5]] some employees found the pace of the shorter week intense, hardly anyone wanted to return to the old schedule.\n\nThat is not to say the model suits every organisation. Hospitals, for instance, cannot simply close for a day, and [[6]] is hard to see how they could adopt the model without recruiting more staff. Even so, rarely [[7]] a workplace experiment attracted so much attention, and it has forced many employers to ask [[8]] the traditional working week still makes sense.",
+  "questions": [
+    {
+      "n": 1,
+      "answers": ["without"],
+      "type": "preposition",
+      "explanation": {
+        "en": "'Without cutting a single penny' means pay stayed the same. 'A single penny' only works in a negative context, so 'while' does not fit.",
+        "cs": "'Without cutting' = aniž by snížily. Spojení 'a single penny' (ani halíř) potřebuje zápor, proto nesedí 'while'."
+      }
+    },
+    {
+      "n": 2,
+      "answers": ["less"],
+      "type": "quantifier",
+      "explanation": {
+        "en": "'Time' is uncountable here, so the comparative quantifier is 'less', not 'fewer'. The idea is a shorter week, so staff spend less time at work.",
+        "cs": "'Time' je zde nepočitatelné, proto 'less', ne 'fewer' (to je pro počitatelná, např. fewer hours)."
+      }
+    },
+    {
+      "n": 3,
+      "answers": ["as"],
+      "type": "comparison",
+      "explanation": {
+        "en": "The equal comparison is 'as ... as': 'remained as high as before'. The second 'as' after the gap is the clue.",
+        "cs": "Srovnání rovnosti 'as high as' (stejně vysoký jako). Nápovědou je druhé 'as' za mezerou."
+      }
+    },
+    {
+      "n": 4,
+      "answers": ["their"],
+      "type": "fixed-phrase",
+      "explanation": {
+        "en": "'For their part' means 'speaking about them', and the possessive must match 'Managers'. 'Its' or 'his' would not agree with a plural subject.",
+        "cs": "'For their part' = pokud jde o ně, z jejich strany. Přivlastňovací zájmeno musí odpovídat 'Managers' (množné číslo)."
+      }
+    },
+    {
+      "n": 5,
+      "answers": ["Although", "Though", "While", "Whilst"],
+      "type": "linking",
+      "explanation": {
+        "en": "The two clauses contrast: some found the week intense, yet hardly anyone wanted to go back. A conjunction of concession such as 'Although' is needed; 'Despite' cannot be followed by a full clause.",
+        "cs": "Věty jsou v kontrastu, proto přípustková spojka 'Although' (i když). 'Despite' nejde, protože za ním nemůže stát celá věta."
+      }
+    },
+    {
+      "n": 6,
+      "answers": ["it"],
+      "type": "pronoun",
+      "explanation": {
+        "en": "'It is hard to see how ...' uses 'it' as a preparatory subject for the clause that follows. 'There' cannot be used with 'is hard to see'.",
+        "cs": "'It is hard to see how' = těžko si představit, jak. 'It' je formální podmět, který čeština nevyjadřuje, proto se často vynechává."
+      }
+    },
+    {
+      "n": 7,
+      "answers": ["has"],
+      "type": "inversion",
+      "explanation": {
+        "en": "After 'rarely' at the start of a clause, the auxiliary comes before the subject: 'rarely has a workplace experiment attracted'. The present perfect matches 'it has forced' later in the sentence.",
+        "cs": "Po 'rarely' na začátku věty následuje inverze: pomocné sloveso před podmětem. Čas je předpřítomný, stejně jako 'it has forced'."
+      }
+    },
+    {
+      "n": 8,
+      "answers": ["whether", "if"],
+      "type": "linking",
+      "explanation": {
+        "en": "'Ask whether' (or 'if') introduces an indirect yes/no question: does the traditional week still make sense? 'That' is wrong because 'ask' is not followed by a 'that'-clause.",
+        "cs": "Nepřímá otázka typu ano/ne se uvozuje 'whether' nebo 'if' (zda). 'That' po 'ask' nejde."
+      }
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "rue3-001",
+  "paper": "rue",
+  "part": 3,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Bees on the rooftops",
+  "topic": "urban beekeeping",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "Twenty years ago, the idea of keeping bees on a city rooftop would have struck most people as faintly [[1]]. Today, hives are a common sight above offices and hotels across Europe, and their [[2]] shows little sign of fading. Supporters argue that urban bees are surprisingly [[3]], since parks and private gardens offer a far greater [[4]] of flowers than farmland that has been sprayed with pesticides. Not everyone is convinced, however. Some ecologists warn that the largely [[5]] spread of honeybee colonies, which no authority currently monitors, may put wild bees, which compete for the same nectar, at a serious [[6]]. They also point out that a hive [[7]] inspected by an owner with little spare time can quickly become a source of disease. For this reason, several cities now require beekeepers to complete a short course before they are [[8]] to keep hives at all.",
+  "questions": [
+    {
+      "n": 1,
+      "stem": "RIDICULE",
+      "answers": ["ridiculous"],
+      "type": "adjective-formation",
+      "explanation": {
+        "en": "After 'struck most people as faintly' we need an adjective describing the idea: 'ridiculous'. Note the spelling change: the final -e of the stem is dropped and -ous is added.",
+        "cs": "Po 'strike somebody as' následuje přídavné jméno (připadat komu jako ...). Ze slovesa ridicule vznikne ridiculous, koncové -e mizí."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "POPULAR",
+      "answers": ["popularity"],
+      "type": "noun-formation",
+      "explanation": {
+        "en": "After the possessive 'their' a noun is needed as the subject of 'shows': 'popularity'.",
+        "cs": "Za přivlastňovacím 'their' musí stát podstatné jméno (podmět věty): popularity = obliba."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "PRODUCE",
+      "answers": ["productive"],
+      "type": "adjective-formation",
+      "explanation": {
+        "en": "'Are surprisingly' needs an adjective, and the reason given (more flowers) shows a positive meaning: 'productive'. 'Unproductive' would contradict the supporters' argument.",
+        "cs": "Po 'are surprisingly' je třeba přídavné jméno s kladným významem, protože jde o argument zastánců: productive = výkonný, plodný."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "VARY",
+      "answers": ["variety"],
+      "type": "noun-formation",
+      "explanation": {
+        "en": "'A far greater ... of flowers' needs a noun; 'a variety of' is the natural collocation for a range of different kinds. 'Variation' does not combine naturally with 'of flowers' here.",
+        "cs": "Po 'a far greater' a před 'of flowers' patří podstatné jméno. Ustálené spojení je 'a variety of' (rozmanitost); 'variation' znamená spíše kolísání, odchylku."
+      }
+    },
+    {
+      "n": 5,
+      "stem": "REGULATE",
+      "answers": ["unregulated"],
+      "type": "negative-prefix",
+      "explanation": {
+        "en": "An adjective is needed before 'spread', and 'which no authority currently monitors' shows the meaning is negative: 'unregulated'. Two changes are needed: the prefix un- and the -ed ending.",
+        "cs": "Vedlejší věta 'which no authority currently monitors' ukazuje, že šíření nikdo nekontroluje, proto záporná předpona un- a koncovka -ed: unregulated."
+      }
+    },
+    {
+      "n": 6,
+      "stem": "ADVANTAGE",
+      "answers": ["disadvantage"],
+      "type": "negative-prefix",
+      "explanation": {
+        "en": "The ecologists are warning about harm to wild bees, so the fixed phrase is 'put someone at a disadvantage'. 'Advantage' is the stem itself and gives the opposite meaning.",
+        "cs": "Ekologové varují, takže jde o znevýhodnění: 'put somebody at a disadvantage'. Předpona dis- tvoří opak."
+      }
+    },
+    {
+      "n": 7,
+      "stem": "FREQUENT",
+      "answers": ["infrequently"],
+      "type": "negative-prefix",
+      "explanation": {
+        "en": "An adverb is needed before the participle 'inspected', and 'an owner with little spare time' shows the hive is rarely checked: 'infrequently'. Two changes: the prefix in- and the suffix -ly.",
+        "cs": "Před příčestím 'inspected' stojí příslovce. Majitel nemá čas, takže úl kontroluje zřídka: in- + frequent + -ly = infrequently."
+      }
+    },
+    {
+      "n": 8,
+      "stem": "LICENCE",
+      "answers": ["licensed"],
+      "type": "verb-formation",
+      "explanation": {
+        "en": "'Before they are ... to keep hives' needs a passive past participle: 'licensed'. In British English the noun is 'licence' with c, but the verb is spelt 'license' with s.",
+        "cs": "Jde o trpný rod (are + příčestí): licensed. Pozor na britský pravopis: podstatné jméno licence s c, sloveso license s s."
+      }
+    }
+  ]
+}

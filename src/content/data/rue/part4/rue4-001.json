@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "rue4-001",
+  "paper": "rue",
+  "part": 4,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Transformations: events and deductions",
+  "topic": "mixed grammar",
+  "difficulty": 2,
+  "reviewed": true,
+  "items": [
+    {
+      "n": 1,
+      "sentence1": "We will go ahead with the outdoor concert unless the forecast changes.",
+      "keyWord": "PROVIDED",
+      "before": "We will go ahead with the outdoor concert",
+      "after": "change.",
+      "parts": [
+        { "accepted": ["provided the forecast", "provided that the forecast"] },
+        { "accepted": ["does not", "doesn't"] }
+      ],
+      "fullAnswers": [
+        "provided the forecast does not",
+        "provided that the forecast does not",
+        "provided the forecast doesn't",
+        "provided that the forecast doesn't"
+      ],
+      "type": "conditional",
+      "explanation": {
+        "en": "Part 1: 'provided (that) the forecast' replaces 'unless' and means 'only if'. Part 2: because 'unless' already contains a negative, the new clause needs 'does not change'.",
+        "cs": "Část 1: provided (that) = pokud, za podmínky že. Část 2: unless v sobě nese zápor (pokud ne), takže po provided musíme zápor doplnit: does not / doesn't change."
+      }
+    },
+    {
+      "n": 2,
+      "sentence1": "'You broke the printer on purpose, Tom!' said Kate.",
+      "keyWord": "ACCUSED",
+      "before": "Kate",
+      "after": "the printer on purpose.",
+      "parts": [
+        { "accepted": ["accused Tom of"] },
+        { "accepted": ["breaking", "having broken"] }
+      ],
+      "fullAnswers": ["accused Tom of breaking", "accused Tom of having broken"],
+      "type": "reported-speech",
+      "explanation": {
+        "en": "Part 1: the pattern is 'accuse somebody of', so Tom must follow the verb. Part 2: a preposition is followed by the -ing form, 'breaking' or 'having broken'.",
+        "cs": "Část 1: vazba accuse somebody of (obvinit koho z čeho). Část 2: po předložce of následuje -ing tvar: breaking nebo having broken."
+      }
+    },
+    {
+      "n": 3,
+      "sentence1": "It is believed that the thieves escaped through a back window.",
+      "keyWord": "BELIEVED",
+      "before": "The thieves",
+      "after": "through a back window.",
+      "parts": [
+        { "accepted": ["are believed"] },
+        { "accepted": ["to have escaped", "to have got away", "to have got out", "to have fled"] }
+      ],
+      "fullAnswers": [
+        "are believed to have escaped",
+        "are believed to have got away",
+        "are believed to have got out",
+        "are believed to have fled"
+      ],
+      "type": "passive",
+      "explanation": {
+        "en": "Part 1: the personal passive starts with the subject, 'The thieves are believed'. Part 2: the escape happened before the believing, so the perfect infinitive 'to have escaped' is needed.",
+        "cs": "Část 1: osobní pasivum: The thieves are believed. Část 2: útěk proběhl dřív než 'věří se', proto infinitiv minulý: to have escaped."
+      }
+    },
+    {
+      "n": 4,
+      "sentence1": "I'm sure Mark didn't see the message, or he would have replied.",
+      "keyWord": "SEEN",
+      "before": "Mark",
+      "after": "the message, or he would have replied.",
+      "parts": [
+        {
+          "accepted": [
+            "can't", "cannot", "couldn't", "could not",
+            "can't possibly", "cannot possibly", "couldn't possibly", "could not possibly"
+          ]
+        },
+        { "accepted": ["have seen"] }
+      ],
+      "fullAnswers": [
+        "can't have seen",
+        "cannot have seen",
+        "couldn't have seen",
+        "could not have seen",
+        "can't possibly have seen",
+        "cannot possibly have seen",
+        "couldn't possibly have seen",
+        "could not possibly have seen"
+      ],
+      "type": "modal-verb",
+      "explanation": {
+        "en": "Part 1: 'I'm sure ... didn't' is a negative deduction, expressed with 'can't' or 'couldn't'. Part 2: the deduction is about the past, so 'have seen' follows the modal. 'Mustn't have' is avoided here, as it is not the standard British form for deduction.",
+        "cs": "Část 1: jistota, že se něco nestalo = can't / couldn't. Část 2: jde o minulost, proto have + příčestí: have seen. Mustn't have v britské angličtině pro dedukci běžně nepoužíváme."
+      }
+    },
+    {
+      "n": 5,
+      "sentence1": "Paul didn't realise that the job would be so difficult.",
+      "keyWord": "IDEA",
+      "before": "Paul",
+      "after": "the job would be.",
+      "parts": [
+        { "accepted": ["had no idea"] },
+        { "accepted": ["how difficult"] }
+      ],
+      "fullAnswers": ["had no idea how difficult"],
+      "type": "fixed-phrase",
+      "explanation": {
+        "en": "Part 1: 'didn't realise' becomes the fixed phrase 'had no idea'. Part 2: 'so difficult' becomes an indirect question, 'how difficult the job would be'.",
+        "cs": "Část 1: ustálené spojení have no idea = vůbec netušit. Část 2: 'so difficult' se mění na nepřímou otázku how difficult (s oznamovacím slovosledem the job would be)."
+      }
+    },
+    {
+      "n": 6,
+      "sentence1": "The sequel was much less entertaining than the original film.",
+      "keyWord": "NEAR",
+      "before": "The sequel was",
+      "after": "the original film.",
+      "parts": [
+        { "accepted": ["nowhere near", "not anywhere near"] },
+        { "accepted": ["as entertaining as"] }
+      ],
+      "fullAnswers": ["nowhere near as entertaining as", "not anywhere near as entertaining as"],
+      "type": "comparison",
+      "explanation": {
+        "en": "Part 1: 'much less' becomes 'nowhere near', a strong negative comparison. Part 2: it is followed by the equative 'as entertaining as'. 'Nearly' would change the key word.",
+        "cs": "Část 1: nowhere near = zdaleka ne (silnější než 'not as'). Část 2: srovnání as + přídavné jméno + as. Nearly nelze, klíčové slovo se nesmí měnit."
+      }
+    }
+  ]
+}
