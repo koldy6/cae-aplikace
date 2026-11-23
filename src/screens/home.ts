@@ -34,7 +34,7 @@ export function homeScreen(store: Store): ReturnType<Route['render']> {
     const ready = playableSets(part).length > 0;
     const body = [
       h('span', { class: 'part-tile__title' }, `Part ${part}`),
-      h('span', { class: 'part-tile__sub' }, sub),
+      h('span', { class: 'part-tile__sub', lang: 'en' }, sub),
       h('span', { class: 'part-tile__status' }, ready ? `Sad: ${playableSets(part).length}` : 'připravujeme'),
     ];
     return h(
@@ -64,7 +64,7 @@ export function partScreen(store: Store, partStr: string): ReturnType<Route['ren
     return h(
       'li',
       { class: 'set-item' },
-      h('a', { class: 'set-item__link', href: `#/drill/${s.id}` }, s.title),
+      h('a', { class: 'set-item__link', lang: 'en', href: `#/drill/${s.id}` }, s.title),
       labelBadge(s.label),
       h('span', { class: 'set-item__score' }, score ? `Poslední skóre: ${score}` : 'Zatím nezkoušeno'),
     );
@@ -74,7 +74,7 @@ export function partScreen(store: Store, partStr: string): ReturnType<Route['ren
     content: h(
       'div',
       { class: 'stack' },
-      h('h1', {}, `Part ${part} – ${PARTS[part] ?? ''}`),
+      h('h1', { lang: 'en' }, `Part ${part} – ${PARTS[part] ?? ''}`),
       h('ul', { class: 'set-list' }, items),
       h('a', { href: '#/' }, 'Zpět na části'),
     ),

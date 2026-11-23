@@ -13,86 +13,86 @@
   "paragraphs": [
     {
       "id": "A",
-      "text": "These volunteers are an unusual mix. Among the regulars are a former telephone engineer, two teenage sisters who specialise in electronics, and a retired dressmaker who can mend almost anything made of fabric. None of them is paid, and the repairs are free, although most visitors leave a donation in the jar by the door."
-    },
-    {
-      "id": "B",
-      "text": "'We've got used to the idea that when something breaks, you throw it away,' he says. 'Partly that's because manufacturers make it hard to do anything else. Screws are hidden, parts are glued together and instructions simply don't exist. What we try to show is that a surprising amount can still be fixed.'"
-    },
-    {
-      "id": "C",
-      "text": "Yet success is not measured only in repaired objects. Volunteers are encouraged to explain what they are doing as they work, and owners are expected to stay and watch. Many go home having learnt how to replace a fuse or sew on a button, skills that a generation ago would hardly have needed teaching."
-    },
-    {
-      "id": "D",
       "text": "Stories like hers help to explain why the movement has spread so quickly. The first events of this kind were held well over a decade ago, and today similar groups meet regularly in villages, towns and cities in many countries."
     },
     {
-      "id": "E",
-      "text": "Not everyone is convinced that such rules will make much difference. Some economists point out that for many cheap appliances, a professional repair will always cost more than a replacement, however easy the parts are to obtain."
+      "id": "B",
+      "text": "That rule was introduced after a volunteer received a nasty shock from a lamp that had been left plugged in. Since then, every electrical item has to be unplugged and checked by the café's safety officer before anyone is allowed to touch it."
     },
     {
-      "id": "F",
+      "id": "C",
+      "text": "These volunteers are an unusual mix. Among the regulars are a former telephone engineer, two teenage sisters who specialise in electronics, and a retired dressmaker who can mend almost anything made of fabric. None of them is paid, and the repairs are free, although most visitors leave a donation in the jar by the door."
+    },
+    {
+      "id": "D",
       "text": "Certainly, by midday the atmosphere in the hall is closer to that of a village fair than a workshop. Children are drawing at a table in the corner, the tea urn is on its third refill, and the teenage sisters are explaining to an elderly man why his radio has been silent for a year."
     },
     {
+      "id": "E",
+      "text": "Yet success is not measured only in repaired objects. Volunteers are encouraged to explain what they are doing as they work, and owners are expected to stay and watch. Many go home having learnt how to replace a fuse or sew on a button, skills that a generation ago would hardly have needed teaching."
+    },
+    {
+      "id": "F",
+      "text": "Not everyone is convinced that such rules will make much difference. Some economists point out that for many cheap appliances, a professional repair will always cost more than a replacement, however easy the parts are to obtain."
+    },
+    {
       "id": "G",
-      "text": "That rule was introduced after a volunteer received a nasty shock from a lamp that had been left plugged in. Since then, every electrical item has to be unplugged and checked by the café's safety officer before anyone is allowed to touch it."
+      "text": "'We've got used to the idea that when something breaks, you throw it away,' he says. 'Partly that's because manufacturers make it hard to do anything else. Screws are hidden, parts are glued together and instructions simply don't exist. What we try to show is that a surprising amount can still be fixed.'"
     }
   ],
   "questions": [
     {
       "n": 1,
-      "answer": "A",
+      "answer": "C",
       "type": "reference-link",
       "explanation": {
-        "en": "'These volunteers' refers back to 'a team of volunteers', and the donation jar in A explains 'The money' after the gap. G cannot fit, because no rule has been mentioned for 'That rule' to refer to.",
-        "cs": "'These volunteers' navazuje na 'a team of volunteers' a kasička na příspěvky v A vysvětluje 'The money' za mezerou. G nesedí, protože žádné pravidlo ('That rule') zatím nezaznělo."
+        "en": "'These volunteers' refers back to 'a team of volunteers', and the donation jar in C explains 'The money' after the gap. B cannot fit, because no rule has been mentioned for 'That rule' to refer to.",
+        "cs": "'These volunteers' navazuje na 'a team of volunteers' a kasička na příspěvky v C vysvětluje 'The money' za mezerou. B nesedí, protože žádné pravidlo ('That rule') zatím nezaznělo."
       }
     },
     {
       "n": 2,
-      "answer": "B",
+      "answer": "G",
       "type": "argument-flow",
       "explanation": {
-        "en": "The text introduces Dev Mistry and his aim, and B gives his own words ('he says'). His claim that 'a surprising amount can still be fixed' is what 'The figures appear to support him' refers to.",
-        "cs": "Text představí organizátora a B přináší jeho citaci ('he says'). Jeho tvrzení, že se dá spravit hodně věcí, potvrzují čísla za mezerou: 'The figures appear to support him'."
+        "en": "The text introduces Dev Mistry and his aim, and G gives his own words ('he says'). His claim that 'a surprising amount can still be fixed' is what 'The figures appear to support him' refers to.",
+        "cs": "Text představí organizátora a G přináší jeho citaci ('he says'). Jeho tvrzení, že se dá spravit hodně věcí, potvrzují čísla za mezerou: 'The figures appear to support him'."
       }
     },
     {
       "n": 3,
-      "answer": "C",
+      "answer": "E",
       "type": "discourse-marker",
       "explanation": {
-        "en": "'Yet' contrasts the repair rate before the gap with another kind of success. The skills owners learn in C are illustrated by Ellie, 'a case in point', after the gap.",
+        "en": "'Yet' contrasts the repair rate before the gap with another kind of success. The skills owners learn in E are illustrated by Ellie, 'a case in point', after the gap.",
         "cs": "'Yet' staví do protikladu počet opravených věcí a jiný druh úspěchu. Ellie za mezerou je příkladem ('a case in point') lidí, kteří se naučili něco opravit."
       }
     },
     {
       "n": 4,
-      "answer": "D",
+      "answer": "A",
       "type": "reference-link",
       "explanation": {
-        "en": "'Stories like hers' refers to Ellie's experience. 'Their growth' after the gap needs the spread of similar groups described in D.",
-        "cs": "'Stories like hers' odkazuje na příběh Ellie. 'Their growth' za mezerou navazuje na šíření podobných skupin z odstavce D."
+        "en": "'Stories like hers' refers to Ellie's experience. 'Their growth' after the gap needs the spread of similar groups described in A.",
+        "cs": "'Stories like hers' odkazuje na příběh Ellie. 'Their growth' za mezerou navazuje na šíření podobných skupin z odstavce A."
       }
     },
     {
       "n": 5,
-      "answer": "E",
+      "answer": "F",
       "type": "argument-flow",
       "explanation": {
-        "en": "'Such rules' refers to 'rules along these lines', and E gives the economists' counter-view. 'Mistry does not dispute the economics' after the gap answers it. G mentions a rule too, but it is a café safety rule, not a government one.",
-        "cs": "'Such rules' odkazuje na vládní pravidla a E přináší protiargument ekonomů, na který Mistry reaguje ('does not dispute the economics'). G sice mluví o pravidle, ale jde o bezpečnostní pravidlo kavárny."
+        "en": "'Such rules' refers to 'rules along these lines', and F gives the economists' counter-view. 'Mistry does not dispute the economics' after the gap answers it. B mentions a rule too, but it is a café safety rule, not a government one.",
+        "cs": "'Such rules' odkazuje na vládní pravidla a F přináší protiargument ekonomů, na který Mistry reaguje ('does not dispute the economics'). B sice mluví o pravidle, ale jde o bezpečnostní pravidlo kavárny."
       }
     },
     {
       "n": 6,
-      "answer": "F",
+      "answer": "D",
       "type": "lexical-link",
       "explanation": {
-        "en": "'A pleasant way to spend a Saturday morning' leads to F's description of the friendly atmosphere 'by midday'. The radio in F is the one that 'crackles back into life' after the gap.",
-        "cs": "'A pleasant way to spend a Saturday morning' navazuje na popis příjemné atmosféry v F. Rádio z odstavce F je to, které za mezerou znovu ožije."
+        "en": "'A pleasant way to spend a Saturday morning' leads to D's description of the friendly atmosphere 'by midday'. The radio in D is the one that 'crackles back into life' after the gap.",
+        "cs": "'A pleasant way to spend a Saturday morning' navazuje na popis příjemné atmosféry v D. Rádio z odstavce D je to, které za mezerou znovu ožije."
       }
     }
   ]

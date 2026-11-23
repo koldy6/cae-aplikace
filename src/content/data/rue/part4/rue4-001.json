@@ -110,13 +110,13 @@
       "after": "the job would be.",
       "parts": [
         { "accepted": ["had no idea"] },
-        { "accepted": ["how difficult"] }
+        { "accepted": ["how difficult", "how hard", "how tough"] }
       ],
-      "fullAnswers": ["had no idea how difficult"],
+      "fullAnswers": ["had no idea how difficult", "had no idea how hard", "had no idea how tough"],
       "type": "fixed-phrase",
       "explanation": {
-        "en": "Part 1: 'didn't realise' becomes the fixed phrase 'had no idea'. Part 2: 'so difficult' becomes an indirect question, 'how difficult the job would be'.",
-        "cs": "Část 1: ustálené spojení have no idea = vůbec netušit. Část 2: 'so difficult' se mění na nepřímou otázku how difficult (s oznamovacím slovosledem the job would be)."
+        "en": "Part 1: 'didn't realise' becomes the fixed phrase 'had no idea'. Part 2: 'so difficult' becomes an indirect question, 'how difficult the job would be'. 'How hard' and 'how tough' are accepted too.",
+        "cs": "Část 1: ustálené spojení have no idea = vůbec netušit. Část 2: 'so difficult' se mění na nepřímou otázku how difficult (s oznamovacím slovosledem the job would be). Uznává se i how hard nebo how tough."
       }
     },
     {

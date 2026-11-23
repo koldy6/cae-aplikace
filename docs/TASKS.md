@@ -94,7 +94,7 @@ Depends on: T13, T15.
 - The progress screen lists sessions and per-part accuracy. The weak-area screen shows a table plus the highlighted weakest 3 ("Part 3 word formation: 55%"), with a "too few answers" note below 10. The retry drill uses only questions from the error log (set-based parts show the other gaps read-only).
 - AC: US3 criteria are met. When a retried question is answered correctly, it leaves the error log.
 
-### T17 QA milestone M1 (qa)
+### T17 QA milestone M1 (qa) — ✅ DONE 2026-11-23 (0 blockers, 5 major + 7 minor fixed, see QA_M1.md)
 Depends on: T05, T06, T14, T16.
 - Run `npm run check` and the manual smoke checklist (ARCHITECTURE section 10) for P1 scope on Chrome or Edge desktop and on a phone via `vite --host`. Do a keyboard-only pass and spot-check contrast.
 - AC: a defect list is filed as tasks (blockers fixed before M1 sign-off). The owner gets a short Czech status: what works and how to start the app.

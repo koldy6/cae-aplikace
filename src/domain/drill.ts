@@ -36,7 +36,11 @@ export const isDrillSet = (s: ContentSet): s is DrillSet => s.part === 1 || s.pa
 export const questionsOf = (s: DrillSet): DrillQuestion[] => (s.part === 4 ? s.items : s.questions);
 
 /** Open answers can be self-marked. */
-export const isOpen = (part: number): boolean => part === 2 || part === 3;
+export const isOpen = (part: number): boolean => part === 2 || part === 3 || part === 4;
+
+/** Enter in a text input must not submit the whole drill (only the submit button does). */
+export const blocksImplicitSubmit = (key: string, tag: string, type?: string): boolean =>
+  key === 'Enter' && tag === 'INPUT' && (type ?? 'text') === 'text';
 
 export const scoreGap = (q: GapQuestion, given: string): 0 | 1 =>
   'answer' in q ? scoreLetter(given, q.answer) : scoreOpen(given, q.answers);

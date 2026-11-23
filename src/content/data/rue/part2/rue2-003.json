@@ -70,8 +70,8 @@
       "answers": ["In"],
       "type": "linking",
       "explanation": {
-        "en": "'In spite of' is a fixed linker of contrast followed by a noun: 'In spite of the evidence'. 'Despite' does not take 'of', so it cannot go before 'spite'.",
-        "cs": "'In spite of' = navzdory. Pozor, 'despite' se s 'of' ani 'spite' nepojí, takže zde jde jen 'In'."
+        "en": "'In spite of' is a fixed linker of contrast followed by a noun: 'In spite of the evidence'. Only 'in' fits before 'spite of'. 'Despite' has the same meaning, but it is used alone ('despite the evidence'), never as 'despite of' or with 'spite'.",
+        "cs": "'In spite of' = navzdory. Před 'spite of' může stát jen 'In'. 'Despite' znamená totéž, ale stojí samo ('despite the evidence'); 'despite of' ani spojení se 'spite' neexistuje."
       }
     },
     {

@@ -78,3 +78,16 @@ describe('Part 4 and Part 7 attempts', () => {
     expect([s.marks, s.maxMarks]).toEqual([4, 12]);
   });
 });
+
+import { blocksImplicitSubmit, isOpen } from '../src/domain/drill';
+describe('QA fixes', () => {
+  it('Enter in a text input is blocked, button and select are not', () => {
+    expect(blocksImplicitSubmit('Enter', 'INPUT', 'text')).toBe(true);
+    expect(blocksImplicitSubmit('Enter', 'BUTTON', 'submit')).toBe(false);
+    expect(blocksImplicitSubmit('Enter', 'SELECT', 'select-one')).toBe(false);
+    expect(blocksImplicitSubmit('a', 'INPUT', 'text')).toBe(false);
+  });
+  it('self-mark covers Parts 2-4', () => {
+    expect([1, 2, 3, 4, 7].map(isOpen)).toEqual([false, true, true, true, false]);
+  });
+});

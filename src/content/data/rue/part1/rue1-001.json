@@ -13,8 +13,8 @@
   "questions": [
     {
       "n": 1,
-      "options": { "A": "making", "B": "taking", "C": "doing", "D": "getting" },
-      "answer": "A",
+      "options": { "A": "doing", "B": "getting", "C": "making", "D": "taking" },
+      "answer": "C",
       "type": "collocation",
       "explanation": {
         "en": "The fixed collocation is 'make a comeback', so 'is making something of a comeback' is correct. 'Take' and 'get' do not combine with 'comeback' in this sense.",
@@ -33,8 +33,8 @@
     },
     {
       "n": 3,
-      "options": { "A": "given", "B": "brought", "C": "made", "D": "taken" },
-      "answer": "A",
+      "options": { "A": "brought", "B": "made", "C": "taken", "D": "given" },
+      "answer": "D",
       "type": "fixed-phrase",
       "explanation": {
         "en": "'Give rise to' is a fixed phrase meaning 'cause': 'has given rise to a surge'. 'Bring' works in 'bring about', but 'bring rise to' is not English.",
@@ -43,8 +43,8 @@
     },
     {
       "n": 4,
-      "options": { "A": "dismissive", "B": "reluctant", "C": "opposed", "D": "averse" },
-      "answer": "A",
+      "options": { "A": "averse", "B": "dismissive", "C": "reluctant", "D": "opposed" },
+      "answer": "B",
       "type": "dependent-preposition",
       "explanation": {
         "en": "The gap is followed by 'of the idea', and only 'dismissive of' takes 'of'. 'Opposed' and 'averse' need 'to', and 'reluctant' is followed by 'to' + infinitive.",
@@ -53,8 +53,8 @@
     },
     {
       "n": 5,
-      "options": { "A": "going", "B": "running", "C": "working", "D": "coming" },
-      "answer": "A",
+      "options": { "A": "running", "B": "working", "C": "coming", "D": "going" },
+      "answer": "D",
       "type": "fixed-phrase",
       "explanation": {
         "en": "'Have a lot (a great deal) going for it' is an idiom meaning 'have many advantages'. 'Working for it' sounds possible but means making an effort, which does not fit the list of benefits that follows.",
@@ -63,8 +63,8 @@
     },
     {
       "n": 6,
-      "options": { "A": "means", "B": "way", "C": "account", "D": "chance" },
-      "answer": "A",
+      "options": { "A": "account", "B": "chance", "C": "means", "D": "way" },
+      "answer": "C",
       "type": "fixed-phrase",
       "explanation": {
         "en": "'By no means' is the fixed phrase for 'not at all': 'by no means unusual'. 'Account' belongs to a different phrase, 'on no account', which means 'under no circumstances'.",
@@ -73,8 +73,8 @@
     },
     {
       "n": 7,
-      "options": { "A": "deter", "B": "avert", "C": "refrain", "D": "abstain" },
-      "answer": "A",
+      "options": { "A": "abstain", "B": "deter", "C": "avert", "D": "refrain" },
+      "answer": "B",
       "type": "verb-pattern",
       "explanation": {
         "en": "The pattern is 'deter somebody from doing': 'deter passengers from making the switch'. 'Refrain' and 'abstain' take 'from' but no object, and 'avert' means to prevent an event, not a person.",

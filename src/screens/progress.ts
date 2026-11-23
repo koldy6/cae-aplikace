@@ -64,7 +64,6 @@ export function weakScreen(store: Store): Screen {
             h('li', { class: 'weak-item is-weak' },
               h('span', { class: 'weak-item__name', lang: 'en' }, formatArea(w)),
               h('div', { class: 'meter', 'aria-hidden': 'true' }, h('div', { class: `meter__bar ${meterClass(w.accuracy)}` })),
-              h('span', { class: 'weak-item__pct' }, percentText(w.accuracy)),
               h('a', { class: 'btn btn--secondary', href: '#/retry' }, 'Opakovat chyby'),
             )))
         : emptyNote(`Zatím není dost dat: typ úloh se hodnotí od ${MIN_ATTEMPTS} zodpovězených otázek.`),
@@ -77,7 +76,7 @@ export function weakScreen(store: Store): Screen {
             h('tbody', {}, all.map((a) =>
               h('tr', { class: weakKeys.has(`${a.paper}|${a.part}|${a.type}`) ? 'is-weak' : '' },
                 h('th', { scope: 'row' }, `Part ${a.part}`),
-                h('td', { lang: 'en' }, a.type),
+                h('td', { lang: 'en' }, a.type, weakKeys.has(`${a.paper}|${a.part}|${a.type}`) ? h('span', { class: 'visually-hidden', lang: 'cs' }, ' (slabé místo)') : null),
                 h('td', {}, a.n),
                 h('td', {}, percentText(a.accuracy), a.eligible ? null : ' *'),
               )))))

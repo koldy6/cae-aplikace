@@ -13,73 +13,73 @@
   "paragraphs": [
     {
       "id": "A",
-      "text": "That brightness, it turns out, has a name: skyglow. It is produced when light from streetlamps, car parks and illuminated advertising is scattered by particles in the air, forming a glowing dome that can be seen from many kilometres away. According to one estimate I came across, most people in Europe now live under skies where the faintest stars are permanently hidden."
-    },
-    {
-      "id": "B",
-      "text": "The nearest of these turned out to be a stretch of moorland two hours north, where a small group of volunteers had persuaded the local council to dim the village lights after midnight. When I phoned the group's organiser, a retired geography teacher called Ruth, she invited me to join them on their next observing night."
-    },
-    {
-      "id": "C",
       "text": "What I saw over the next few minutes is difficult to describe without sounding sentimental. The sky did not so much fill with stars as reveal that it had been full of them all along. The band of the Milky Way, which I had only known as a smudge on my photographs, stretched from one horizon to the other."
     },
     {
-      "id": "D",
-      "text": "Her group's campaign had not been an easy one. Some residents feared that darker streets would encourage crime, and the council demanded two years of evidence before agreeing to a trial. In the end, the results were reassuring: there had been no rise in break-ins, and the savings on electricity had paid for a new playground."
-    },
-    {
-      "id": "E",
-      "text": "Not everyone welcomes this kind of tourism, however. Some astronomers worry that coachloads of stargazers, with their headlights and phone screens, may end up harming the very darkness they have come to admire. Ruth's group now asks visitors to park at the edge of the village and walk the last few hundred metres."
-    },
-    {
-      "id": "F",
+      "id": "B",
       "text": "Something else has changed, too. Walking home through my own neighbourhood, I now notice the lights I used to ignore: the floodlit office car park that stays empty all night, the shop window glowing for no one. I have started writing polite letters to their owners, and two of them have already agreed to switch off after closing time."
     },
     {
-      "id": "G",
+      "id": "C",
+      "text": "Not everyone welcomes this kind of tourism, however. Some astronomers worry that coachloads of stargazers, with their headlights and phone screens, may end up harming the very darkness they have come to admire. Ruth's group now asks visitors to park at the edge of the village and walk the last few hundred metres."
+    },
+    {
+      "id": "D",
+      "text": "That brightness, it turns out, has a name: skyglow. It is produced when light from streetlamps, car parks and illuminated advertising is scattered by particles in the air, forming a glowing dome that can be seen from many kilometres away. According to one estimate I came across, most people in Europe now live under skies where the faintest stars are permanently hidden."
+    },
+    {
+      "id": "E",
       "text": "Such statistics, however, tell only part of the story. Artificial light also confuses wildlife: migrating birds can be drawn off course by brightly lit towers, and moths that would normally pollinate flowers at night circle streetlamps until they are exhausted."
+    },
+    {
+      "id": "F",
+      "text": "The nearest of these turned out to be a stretch of moorland two hours north, where a small group of volunteers had persuaded the local council to dim the village lights after midnight. When I phoned the group's organiser, a retired geography teacher called Ruth, she invited me to join them on their next observing night."
+    },
+    {
+      "id": "G",
+      "text": "Her group's campaign had not been an easy one. Some residents feared that darker streets would encourage crime, and the council demanded two years of evidence before agreeing to a trial. In the end, the results were reassuring: there had been no rise in break-ins, and the savings on electricity had paid for a new playground."
     }
   ],
   "questions": [
     {
       "n": 1,
-      "answer": "A",
+      "answer": "D",
       "type": "reference-link",
       "explanation": {
-        "en": "'That brightness' points back to 'simply too bright', and the estimate in A is what 'figures like these' refers to after the gap. G also mentions statistics, but there are none before the gap for 'Such statistics' to refer to.",
-        "cs": "'That brightness' odkazuje na 'too bright' před mezerou a odhad v A vysvětluje 'figures like these' za mezerou. G začíná 'Such statistics', ale před mezerou žádná čísla nejsou."
+        "en": "'That brightness' points back to 'simply too bright', and the estimate in D is what 'figures like these' refers to after the gap. E also mentions statistics, but there are none before the gap for 'Such statistics' to refer to.",
+        "cs": "'That brightness' odkazuje na 'too bright' před mezerou a odhad v D vysvětluje 'figures like these' za mezerou. E začíná 'Such statistics', ale před mezerou žádná čísla nejsou."
       }
     },
     {
       "n": 2,
-      "answer": "B",
+      "answer": "F",
       "type": "reference-link",
       "explanation": {
-        "en": "'The nearest of these' refers to 'the darkest patches within driving distance'. B also introduces Ruth, who is mentioned by name after the gap without any introduction.",
-        "cs": "'The nearest of these' odkazuje na 'the darkest patches'. Odstavec B navíc představuje Ruth, o které text za mezerou mluví jako o známé osobě."
+        "en": "'The nearest of these' refers to 'the darkest patches within driving distance'. F also introduces Ruth, who is mentioned by name after the gap without any introduction.",
+        "cs": "'The nearest of these' odkazuje na 'the darkest patches'. Odstavec F navíc představuje Ruth, o které text za mezerou mluví jako o známé osobě."
       }
     },
     {
       "n": 3,
-      "answer": "C",
+      "answer": "A",
       "type": "chronology",
       "explanation": {
-        "en": "Ruth tells the writer to 'look up', and C describes what the writer saw 'over the next few minutes'. 'Yet it was not the view itself' after the gap refers back to the view described in C.",
+        "en": "Ruth tells the writer to 'look up', and A describes what the writer saw 'over the next few minutes'. 'Yet it was not the view itself' after the gap refers back to the view described in A.",
         "cs": "Po výzvě 'look up' následuje popis toho, co autor viděl 'over the next few minutes'. Za mezerou 'not the view itself' odkazuje právě na tento výhled."
       }
     },
     {
       "n": 4,
-      "answer": "D",
+      "answer": "G",
       "type": "lexical-link",
       "explanation": {
-        "en": "'Her group's campaign' develops 'until the volunteers stepped in' from Ruth's remark. The happy ending in D (no rise in crime, money saved) is what 'Success stories of this kind' refers to after the gap.",
-        "cs": "'Her group's campaign' rozvíjí zmínku o dobrovolnících ('the volunteers stepped in'). Úspěšný konec v D pak navazuje na 'Success stories of this kind' za mezerou."
+        "en": "'Her group's campaign' develops 'until the volunteers stepped in' from Ruth's remark. The happy ending in G (no rise in crime, money saved) is what 'Success stories of this kind' refers to after the gap.",
+        "cs": "'Her group's campaign' rozvíjí zmínku o dobrovolnících ('the volunteers stepped in'). Úspěšný konec v G pak navazuje na 'Success stories of this kind' za mezerou."
       }
     },
     {
       "n": 5,
-      "answer": "E",
+      "answer": "C",
       "type": "discourse-marker",
       "explanation": {
         "en": "'This kind of tourism' refers to dark-sky places that 'attract visitors', and 'however' introduces the drawback. After the gap, 'As for me' moves back to the writer's own story.",
@@ -88,7 +88,7 @@
     },
     {
       "n": 6,
-      "answer": "F",
+      "answer": "B",
       "type": "argument-flow",
       "explanation": {
         "en": "'Something else has changed, too' adds a second change to the improved photographs before the gap. The two owners who agreed to switch off are the 'small beginning' mentioned after the gap.",

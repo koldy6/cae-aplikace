@@ -32,7 +32,9 @@ export function reviewScreen(store: Store, sessionId: string): ReturnType<Route[
 
   const score = h('p', { class: 'score', 'aria-live': 'polite' }, scoreText(session));
   const list = h('ol', { class: 'review-list' });
-  const qs: DrillQuestion[] = questionsOf(set);
+  const attempted = new Set(store.get().attempts.filter((x) => x.sessionId === sessionId).map((x) => x.questionId));
+  // a retry session only has attempts for the retried questions
+  const qs: DrillQuestion[] = questionsOf(set).filter((q) => attempted.has(questionId(set.id, q.n)));
 
   const item = (q: DrillQuestion): HTMLElement => {
     const a = store.get().attempts.find((x) => x.sessionId === sessionId && x.questionId === questionId(set.id, q.n));
@@ -115,7 +117,7 @@ export function reviewScreen(store: Store, sessionId: string): ReturnType<Route[
     content: h(
       'div',
       { class: 'stack' },
-      h('h1', {}, `Přehled – ${set.title}`),
+      h('h1', {}, 'Přehled – ', h('span', { lang: 'en' }, set.title)),
       score,
       list,
       h('div', { class: 'drill__actions' },

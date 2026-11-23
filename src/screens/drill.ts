@@ -1,7 +1,7 @@
 import { kwtWordCount } from '../content/schema';
 import { setById } from '../content/loader';
 import { maxMarks, type KwtItem } from '../domain/scoring';
-import { buildAttempts, isDrillSet, newSession, parseGapText, questionsOf, recomputeSession, scoreAny, type DrillSet } from '../domain/drill';
+import { blocksImplicitSubmit, buildAttempts, isDrillSet, newSession, parseGapText, questionsOf, recomputeSession, scoreAny, type DrillSet } from '../domain/drill';
 import type { Store } from '../storage/store';
 import { labelBadge } from '../ui/components';
 import { h } from '../ui/h';
@@ -29,6 +29,7 @@ export function drillScreen(store: Store, setId: string, retry?: ReadonlySet<num
   const set = setById(setId);
   if (!set || !isDrillSet(set)) return notFound();
 
+  const ds = set;
   const controls = new Map<number, HTMLSelectElement | HTMLInputElement>();
   const gaps = new Map<number, HTMLElement>();
 
@@ -36,6 +37,8 @@ export function drillScreen(store: Store, setId: string, retry?: ReadonlySet<num
   /** Part 7: duplicates are allowed (each paragraph is used once in the real exam) but flagged. */
   function flagDuplicates(): void {
     const by = new Map<string, number[]>();
+    // read-only gaps (retry) already use their paragraph
+    if (ds.part === 7) ds.questions.filter((q) => !active(q.n)).forEach((q) => by.set(q.answer, [...(by.get(q.answer) ?? []), q.n]));
     controls.forEach((c, n) => c.value && by.set(c.value, [...(by.get(c.value) ?? []), n]));
     const dups = [...by].filter(([, ns]) => ns.length > 1);
     dupNote.textContent = dups.map(([k, ns]) => `Odstavec ${k} je vybrán vícekrát (mezery ${ns.join(', ')}).`).join(' ');
@@ -123,7 +126,7 @@ export function drillScreen(store: Store, setId: string, retry?: ReadonlySet<num
     h('p', {}, segs.map((s) => (s.t === 'text' ? s.value : gapEl(s.n)))),
   );
 
-  const score = h('p', { class: 'score', 'aria-live': 'polite' });
+  const score = h('p', { class: 'score', 'aria-live': 'polite', tabindex: '-1' });
   const actions = h('div', { class: 'drill__actions' });
   const submit = h('button', { class: 'btn', type: 'submit' }, 'Zkontrolovat odpovědi');
   actions.append(submit);
@@ -144,6 +147,7 @@ export function drillScreen(store: Store, setId: string, retry?: ReadonlySet<num
     submit.disabled = true;
     score.textContent = `Skóre: ${session.marks}/${session.maxMarks}`;
     actions.append(h('a', { class: 'btn', href: `#/review/${sid}` }, 'Zobrazit vysvětlení'));
+    score.focus();
   };
 
   return {
@@ -151,9 +155,12 @@ export function drillScreen(store: Store, setId: string, retry?: ReadonlySet<num
     content: h(
       'div',
       { class: 'stack' },
-      h('h1', {}, `${retry ? 'Opakování chyb: ' : ''}Part ${set.part} – ${set.title}`),
-      h('p', {}, labelBadge(set.label), ' ', h('span', { class: 'muted' }, PARTS[set.part])),
-      h('form', { class: 'drill', onsubmit: onSubmit }, set.part === 4
+      h('h1', {}, `${retry ? 'Opakování chyb: ' : ''}`, h('span', { lang: 'en' }, `Part ${set.part} – ${set.title}`)),
+      h('p', {}, labelBadge(set.label), ' ', h('span', { class: 'muted', lang: 'en' }, PARTS[set.part])),
+      h('form', { class: 'drill', onsubmit: onSubmit, onkeydown: (e: Event) => {
+        const t = e.target as HTMLInputElement;
+        if (blocksImplicitSubmit((e as KeyboardEvent).key, t.tagName, t.type)) e.preventDefault();
+      } }, set.part === 4
           ? h('ol', { class: 'kwt-list stack' }, kwtItems)
           : h('div', { class: 'gap-text', lang: 'en' }, paragraphs),
         set.part === 7
