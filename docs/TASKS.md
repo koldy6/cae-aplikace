@@ -1,6 +1,6 @@
 # CAE English – Tasks (MVP)
 
-Status: DRAFT, starts only after the owner approves `ARCHITECTURE.md`.
+Status: APPROVED 2026-11-23 together with ARCHITECTURE.md.
 Each task should take half a day or less, sits on its own feature branch, and is done only when `npm run check` is green (from T01 on).
 Agents: **dev** = developer, **ui** = ui-designer, **qa** = qa-engineer, **edu** = education-specialist.
 Content tasks (edu) run alongside dev tasks. Content becomes usable once it passes `content.test.ts` (available from T04).

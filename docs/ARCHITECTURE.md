@@ -1,6 +1,6 @@
 # CAE English – Architecture (MVP)
 
-Status: DRAFT, waiting for owner approval. No development starts until it is approved.
+Status: APPROVED by owner 2026-11-23, including the npm install of zod, vite, vitest, typescript.
 Input: `docs/SPEC.md` (APPROVED 2026-11-22), `projects/cae-english/CLAUDE.md`, root `CLAUDE.md`.
 Author: architect agent, 2026-11-22.
 

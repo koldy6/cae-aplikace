@@ -33,4 +33,4 @@ Build an excellent AI-powered application for preparing for Cambridge C1 Advance
 - Explain mistakes and provide useful corrections.
 
 ## Status
-- No implementation until the product specification and architecture are reviewed and approved.
+- SPEC.md and ARCHITECTURE.md approved (2026-11-23); work follows `docs/TASKS.md`.
