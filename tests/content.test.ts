@@ -68,7 +68,7 @@ describe('content data', () => {
   const real = Object.keys(REAL);
 
   test('there is sample content for every implemented part', () => {
-    for (const part of [1, 2, 3, 4, 7]) expect(content.rue?.[part]?.length, `rue part ${part}`).toBeGreaterThan(0);
+    for (const part of [1, 2, 3, 4, 5, 6, 7, 8]) expect(content.rue?.[part]?.length, `rue part ${part}`).toBeGreaterThan(0);
   });
 
   test('every content file passes the schema and global checks', () => {
@@ -93,6 +93,9 @@ describe('broken fixtures fail with a readable message naming the file', () => {
     ['bad-kwt-key-alone', /only the key word/],
     ['bad-p7-duplicate-answer', /6 different paragraphs/],
     ['bad-p3-answer-equals-stem', /differ from the stem/],
+    ['bad-p5-five-questions', /questions/],
+    ['bad-p6-text-id', /text ids must be A-D/],
+    ['bad-p8-missing-section', /is not an existing section/],
   ];
   test.each(cases)('%s', (name, re) => {
     const errors = validate(pick(FIXTURES, `${name}.json`), FIXTURES);

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "rue5-002",
+  "paper": "rue",
+  "part": 5,
+  "label": "ai-generated",
+  "source": null,
+  "title": "The second author",
+  "topic": "literary translation",
+  "difficulty": 3,
+  "reviewed": true,
+  "text": "When people learn that I translate novels for a living, they tend to ask one of two questions. The first is whether I am fluent in both languages, which is a little like asking a surgeon whether she has hands. The second, which I find far more interesting, is whether a translated book is really the same book at all. I have been doing this work for nearly twenty years, and I am less certain of the answer now than when I began.\n\nThere is a comfortable theory, popular among publishers, that the translator's job is to be invisible. A good translation, according to this view, reads as though it had been written in English in the first place; the reader should never sense the presence of a second person standing between them and the author. I understand the appeal. Nobody wants to read a novel that feels like a legal document, every clause anxiously preserved at the expense of rhythm. But invisibility is, in the end, a kind of illusion, and a slightly dishonest one.\n\nConsider a single word. In the novel I am currently working on, a grandmother repeatedly uses a term of affection that literally means 'my little liver'. In the original language it is tender and faintly old-fashioned, the sort of thing you might hear from an elderly relative at a family meal. In English, translated directly, it is grotesque. I could replace it with 'sweetheart' or 'my darling', and most readers would never know. Yet something would be lost: the strangeness, the reminder that these characters live in a world with its own habits of feeling. Whichever I choose, I am not passing the author's meaning along unchanged. I am making a decision she did not make.\n\nThis is where the question of fidelity becomes genuinely difficult. Early in my career, I believed that my loyalty was to the words on the page. I would agonise over a sentence until it matched the original as closely as English grammar allowed, and I was proud of the results. Reading those translations now, I find them stiff and oddly lifeless. They were accurate in every detail and wrong in their overall effect, rather like a photograph of a joke.\n\nThese days, I think of loyalty differently. What I owe the author is not her vocabulary but her intentions, as far as I can understand them. If a sentence in the original is meant to make the reader laugh, a translation that is precise but not funny has failed, however faithful it looks. This sounds liberating, and in a way it is. It is also far more dangerous, because intentions are not printed on the page. They must be inferred, and an inference can be wrong.\n\nSome authors make this easier than others. A few have no interest in their translations at all, which I have come to regard as a form of trust, though at first it felt like indifference. Others send long lists of corrections, not all of which improve the text. One writer I worked with objected to almost every change I proposed, until I sent her a passage translated word for word, exactly as she seemed to be demanding. She replied within an hour: 'This is terrible. Do what you think best.' We have worked together happily ever since.\n\nNone of this means that translators should feel free to improve on the books they translate, a temptation that is more common than the profession likes to admit. A clumsy sentence in the original may be clumsy on purpose, and smoothing it out can erase a character's personality as surely as a careless edit. The skill, if there is one, lies in knowing which difficulties belong to the author and which are merely the result of moving between languages.\n\nSo is a translated book the same book? I no longer think the question has a yes-or-no answer. It is perhaps more like a piece of music performed by a different orchestra: recognisably itself, and yet shaped at every moment by choices the composer never heard. I would simply like readers to remember that someone made those choices.",
+  "questions": [
+    {
+      "n": 1,
+      "stem": "Why does the writer compare a translator to a surgeon in the first paragraph?",
+      "options": {
+        "A": "to show that translation requires years of specialist training",
+        "B": "to suggest that one question she is often asked is rather obvious",
+        "C": "to explain why she finds the second question harder to answer",
+        "D": "to stress that a translator's mistakes can have serious results"
+      },
+      "answer": "B",
+      "type": "purpose-function",
+      "explanation": {
+        "en": "B: asking a translator if she is fluent is 'a little like asking a surgeon whether she has hands' – of course she is. A and D read too much into the image of a surgeon. C: the comparison is about the first question, not the second.",
+        "cs": "B: ptát se překladatelky, zda umí oba jazyky, je jako ptát se chirurga, zda má ruce – odpověď je samozřejmá. A a D přidávají do přirovnání něco, co v textu není. C: přirovnání se týká první otázky, ne druhé."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "What is the writer's view of the theory that translators should be invisible?",
+      "options": {
+        "A": "She thinks publishers mainly use it as an excuse to pay translators less.",
+        "B": "She rejects it because it produces novels that read like legal documents.",
+        "C": "She believes it is correct in principle but impossible to achieve.",
+        "D": "She can see why it is attractive but considers it misleading."
+      },
+      "answer": "D",
+      "type": "attitude-opinion",
+      "explanation": {
+        "en": "D: 'I understand the appeal' but invisibility is 'a kind of illusion, and a slightly dishonest one'. B reverses the logic: the legal-document style is what nobody wants, i.e. the reason the theory appeals. A goes beyond the text. C: she does not say the theory is correct.",
+        "cs": "D: 'I understand the appeal', ale neviditelnost je 'a kind of illusion, and a slightly dishonest one' – chápe ji, ale považuje ji za klamnou. B obrací logiku: styl právního dokumentu nikdo nechce, proto teorie láká. A text nepodporuje. C: neříká, že teorie je správná."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "The writer discusses the phrase 'my little liver' in order to",
+      "options": {
+        "A": "illustrate how any choice she makes alters the original in some way.",
+        "B": "show that translating literally always gives grotesque results.",
+        "C": "explain why she prefers to keep unusual expressions unchanged.",
+        "D": "point out that readers rarely notice what translators change."
+      },
+      "answer": "A",
+      "type": "purpose-function",
+      "explanation": {
+        "en": "A: 'Whichever I choose, I am not passing the author's meaning along unchanged. I am making a decision she did not make.' B overgeneralises one example ('always'). C: she states no preference; both options lose something. D is true ('most readers would never know') but is a side point, not the purpose.",
+        "cs": "A: 'Whichever I choose, I am not passing the author's meaning along unchanged' – každá volba originál nějak mění. B zobecňuje jeden příklad ('always'). C: žádnou preferenci neuvádí. D je pravda ('most readers would never know'), ale je to vedlejší poznámka, ne účel."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "What does the writer mean when she compares her early translations to 'a photograph of a joke'?",
+      "options": {
+        "A": "They were amusing in ways that she had not intended.",
+        "B": "They were produced too quickly to be fully accurate.",
+        "C": "They reproduced every detail but missed the point.",
+        "D": "They were admired at first but are now forgotten."
+      },
+      "answer": "C",
+      "type": "meaning-in-context",
+      "explanation": {
+        "en": "C: they were 'accurate in every detail and wrong in their overall effect' – like a joke that is recorded but no longer funny. A takes 'joke' literally. B contradicts 'agonise over a sentence' and 'accurate'. D: she was proud of them, but nothing is said about others admiring or forgetting them.",
+        "cs": "C: 'accurate in every detail and wrong in their overall effect' – jako vyfocený vtip: vše je zachyceno, ale nefunguje. A bere slovo 'joke' doslova. B odporuje 'agonise over a sentence' a 'accurate'. D: o obdivu ostatních text nemluví."
+      }
+    },
+    {
+      "n": 5,
+      "stem": "What does the writer suggest about her current approach in the fifth paragraph?",
+      "options": {
+        "A": "It carries a risk that her earlier approach largely avoided.",
+        "B": "It allows her to change a passage's meaning whenever she wishes.",
+        "C": "It works best with authors who write mainly humorous books.",
+        "D": "It is the approach that most translators have now adopted."
+      },
+      "answer": "A",
+      "type": "inference",
+      "explanation": {
+        "en": "A: following intentions is 'far more dangerous, because intentions are not printed on the page', whereas her early approach followed 'the words on the page'. B contradicts her loyalty to the author's intentions. C misuses the example of a funny sentence. D: other translators are not mentioned here.",
+        "cs": "A: řídit se záměrem autora je 'far more dangerous, because intentions are not printed on the page'; dřívější přístup se držel slov na stránce, takže toto riziko neměl. B odporuje věrnosti autorovu záměru. C zneužívá příklad vtipné věty. D: o jiných překladatelích tu není řeč."
+      }
+    },
+    {
+      "n": 6,
+      "stem": "Why did the writer send one author a passage translated word for word?",
+      "options": {
+        "A": "She had lost patience and wanted to end their work together.",
+        "B": "The author had sent her a long list of corrections to make.",
+        "C": "She wanted to show the result of the method the author seemed to want.",
+        "D": "She hoped to prove that the original text was badly written."
+      },
+      "answer": "C",
+      "type": "inference",
+      "explanation": {
+        "en": "C: she translated it 'exactly as she seemed to be demanding', and the author saw that it was 'terrible'. A is contradicted: they 'have worked together happily ever since'. B: the 'long lists of corrections' refer to other authors in general. D: the problem was the literal method, not the original.",
+        "cs": "C: přeložila pasáž 'exactly as she seemed to be demanding', aby autorka viděla výsledek – a ta uznala 'This is terrible'. A je v rozporu s 'worked together happily ever since'. B: dlouhé seznamy oprav posílají jiní autoři obecně. D: chyba byla v doslovné metodě, ne v originálu."
+      }
+    }
+  ]
+}

@@ -9,6 +9,7 @@ const sets = Object.values(content.rue ?? {}).flat() as unknown as {
   questions: { answer: string }[];
 }[];
 const part1 = sets.filter((s) => s.part === 1);
+const part5 = sets.filter((s) => s.part === 5);
 const part7 = sets.filter((s) => s.part === 7);
 
 describe('answer keys are balanced', () => {
@@ -19,6 +20,11 @@ describe('answer keys are balanced', () => {
       for (const q of s.questions) counts[q.answer] = (counts[q.answer] ?? 0) + 1;
       expect(Math.max(...Object.values(counts)), s.id).toBeLessThanOrEqual(4);
     }
+  });
+
+  it('Part 5: the 6 keys are not all the same letter', () => {
+    expect(part5.length).toBeGreaterThan(0);
+    for (const s of part5) expect(new Set(s.questions.map((q) => q.answer)).size, s.id).toBeGreaterThan(1);
   });
 
   it('Part 7: keys are not in strictly ascending letter order', () => {

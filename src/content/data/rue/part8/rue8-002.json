@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "rue8-002",
+  "paper": "rue",
+  "part": 8,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Volunteers on the hill",
+  "topic": "volunteer mountain rescue",
+  "difficulty": 2,
+  "reviewed": true,
+  "sections": [
+    {
+      "id": "A",
+      "heading": "Ewan, team leader, 22 years",
+      "text": "People imagine rescue work as a series of dramatic cliff-top operations, but most of our callouts involve walkers who have twisted an ankle or simply lost their way in the mist. That doesn't make them less important; a minor injury at two thousand feet can become life-threatening once the temperature drops. What has changed most during my time is the technology. When I started, we searched with maps, whistles and a great deal of guesswork. Now a lost walker can often send us their exact position from a phone, which saves hours. The downside is that some people set off with nothing but that phone, assuming it will get them out of trouble if things go wrong. Batteries die quickly in the cold. I spend a good part of every winter giving talks in schools and outdoor shops, because I'd far rather stop an accident happening than respond to one. The hardest part of the job, though, has nothing to do with the hills: it is persuading employers to let volunteers leave work at a moment's notice."
+    },
+    {
+      "id": "B",
+      "heading": "Priya, team doctor, 6 years",
+      "text": "I joined because I wanted to use my medical training somewhere other than a hospital, where I had started to feel like a small part of a very large machine. On the hill, the decisions are mine, and that responsibility is both frightening and oddly freeing. I was not prepared for how physically demanding it would be. On my first night callout, we carried a stretcher for four hours through deep snow, and I was so exhausted afterwards that I could barely hold a cup of tea. I have trained much harder since. What I value most is the team itself. We are a strange mixture – a farmer, two teachers, a plumber, a retired police officer – and on an ordinary day we would probably have little to say to each other. On a callout, none of that matters. I've never felt so completely able to rely on other people."
+    },
+    {
+      "id": "C",
+      "heading": "Callum, trainee, 1 year",
+      "text": "I'd been a keen climber for years, so I assumed the training would be easy. It wasn't. Climbing is about getting yourself up something; rescue is about getting someone else down, often in the dark, without making their injuries worse, and the skills are completely different. I failed my first navigation assessment, which was a blow to my pride, but in hindsight it was the best thing that could have happened, because it made me stop assuming I knew everything. The older members have been generous with their time, though some of them can be blunt. One told me that enthusiasm was no substitute for reading the weather forecast, which stung at the time and which I now repeat to newer trainees. I joined partly because a close friend of mine was rescued after a fall a few years ago. I'd like to think I'm repaying a debt, even if it isn't to the same people."
+    },
+    {
+      "id": "D",
+      "heading": "Margaret, base controller, 15 years",
+      "text": "I don't go out on the hill any more; I gave that up after a knee operation. These days I run the base, coordinating the team by radio and keeping in touch with the police, the ambulance service and, sometimes, the helicopter crew. It is less glamorous than being out there, and I'll admit I missed the hill terribly at first and resented being stuck indoors. But I've come to see that the base is where the whole operation either holds together or falls apart. My other job, which nobody warns you about, is talking to families. When someone's son or daughter hasn't come home, they ring us, and I have learned that what they want above all is honesty, even when the news is uncertain. Money is a constant worry. We receive no regular government funding, so every rope and radio is paid for by donations, and I spend more evenings than I'd like organising sponsored walks."
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "stem": "had not expected the work to be so tiring",
+      "answer": "B",
+      "type": "feeling-experience",
+      "explanation": {
+        "en": "B: 'I was not prepared for how physically demanding it would be' – after four hours with a stretcher she 'could barely hold a cup of tea'. C also expected something easier, but his surprise was about the skills, not physical effort.",
+        "cs": "B: 'not prepared for how physically demanding it would be' – po čtyřech hodinách s nosítky byla vyčerpaná. C také čekal něco snazšího, ale překvapily ho dovednosti, ne fyzická námaha."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "has found that worried relatives prefer the truth to comforting words",
+      "answer": "D",
+      "type": "opinion-attitude",
+      "explanation": {
+        "en": "D: families 'want above all ... honesty, even when the news is uncertain'. No other section mentions talking to families; A deals with employers, not relatives.",
+        "cs": "D: rodiny chtějí především upřímnost ('honesty, even when the news is uncertain'). Jiná část o rozhovorech s rodinami nemluví; A řeší zaměstnavatele, ne příbuzné."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "thinks that a useful piece of technology can make some people careless",
+      "answer": "A",
+      "type": "opinion-attitude",
+      "explanation": {
+        "en": "A: some walkers 'set off with nothing but that phone, assuming it will get them out of trouble'. D mentions radios, but only as equipment paid for by donations.",
+        "cs": "A: někteří turisté vyrážejí jen s telefonem v domnění, že je zachrání – technologie je činí neopatrnými. D zmiňuje vysílačky jen jako vybavení placené z darů."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "now regards an early failure as having been good for them",
+      "answer": "C",
+      "type": "feeling-experience",
+      "explanation": {
+        "en": "C: failing the navigation assessment 'was the best thing that could have happened, because it made me stop assuming I knew everything'. B had a hard first callout, but it was exhausting, not a failure.",
+        "cs": "C: neúspěch u zkoušky z navigace byl 'the best thing that could have happened' – přestal si myslet, že vše ví. B měla těžký první zásah, ale šlo o únavu, ne o neúspěch."
+      }
+    },
+    {
+      "n": 5,
+      "stem": "points out that most emergencies are less exciting than outsiders imagine",
+      "answer": "A",
+      "type": "specific-detail",
+      "explanation": {
+        "en": "A: 'People imagine ... dramatic cliff-top operations, but most of our callouts involve walkers who have twisted an ankle'. D calls her own job 'less glamorous than being out there', which is about her role, not the emergencies.",
+        "cs": "A: lidé si představují dramatické akce, ale většinou jde o vyvrtnutý kotník nebo zbloudilé turisty. D říká, že její práce je 'less glamorous', ale to se týká její role, ne povahy zásahů."
+      }
+    },
+    {
+      "n": 6,
+      "stem": "explains that the team depends entirely on public generosity",
+      "answer": "D",
+      "type": "specific-detail",
+      "explanation": {
+        "en": "D: 'We receive no regular government funding, so every rope and radio is paid for by donations'. A depends on employers' goodwill to release volunteers, but that is time, not money.",
+        "cs": "D: tým nemá státní peníze, vše se platí z darů ('paid for by donations'). A závisí na vstřícnosti zaměstnavatelů, ale jde o uvolnění z práce, ne o peníze."
+      }
+    },
+    {
+      "n": 7,
+      "stem": "wanted more control over decisions than a previous workplace allowed",
+      "answer": "B",
+      "type": "reason-purpose",
+      "explanation": {
+        "en": "B: in hospital she felt 'like a small part of a very large machine'; 'On the hill, the decisions are mine'. D coordinates the whole operation, but she does not say she joined for that reason.",
+        "cs": "B: v nemocnici si připadala jako 'a small part of a very large machine', na horách rozhoduje sama ('the decisions are mine'). D řídí celou akci, ale neuvádí to jako důvod, proč se přidala."
+      }
+    },
+    {
+      "n": 8,
+      "stem": "volunteered partly out of gratitude for help given to someone close to them",
+      "answer": "C",
+      "type": "reason-purpose",
+      "explanation": {
+        "en": "C: 'a close friend of mine was rescued after a fall' and 'I'm repaying a debt'. D mentions families whose children have not come home, but that is part of her work, not her reason for joining.",
+        "cs": "C: jeho blízký přítel byl zachráněn po pádu a on teď 'splácí dluh' ('repaying a debt'). D mluví o rodinách pohřešovaných, ale to je součást práce, ne důvod vstupu."
+      }
+    },
+    {
+      "n": 9,
+      "stem": "found it hard at first to accept a change in their role",
+      "answer": "D",
+      "type": "feeling-experience",
+      "explanation": {
+        "en": "D: after giving up work on the hill, 'I missed the hill terribly at first and resented being stuck indoors'. B changed from hospital to rescue work by choice and finds it 'oddly freeing'.",
+        "cs": "D: po přechodu na základnu jí hory 'terribly' chyběly a vadilo jí sedět uvnitř. B změnila prostředí dobrovolně a nová odpovědnost je pro ni 'oddly freeing'."
+      }
+    },
+    {
+      "n": 10,
+      "stem": "devotes time to activities aimed at reducing the number of incidents",
+      "answer": "A",
+      "type": "reason-purpose",
+      "explanation": {
+        "en": "A gives winter talks in schools and shops 'because I'd far rather stop an accident happening than respond to one'. D also spends evenings on extra work, but sponsored walks raise money; they do not prevent accidents.",
+        "cs": "A přednáší ve školách a obchodech, protože chce nehodám předcházet ('stop an accident happening'). D tráví večery organizováním sponzorovaných pochodů, ale ty slouží k získání peněz, ne k prevenci."
+      }
+    }
+  ]
+}

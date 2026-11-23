@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "bad-p8-missing-section",
+  "paper": "rue",
+  "part": 8,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Sample: Four travellers, four journeys",
+  "topic": "travel experiences",
+  "difficulty": 2,
+  "reviewed": false,
+  "sections": [
+    {
+      "id": "A",
+      "heading": "Ines: a month on the trains",
+      "text": "I crossed Europe by rail because I was afraid of flying. It turned out to be the best decision I made, since I met people I would never have spoken to at an airport. Admittedly I misjudged how expensive the sleeper trains would be."
+    },
+    {
+      "id": "B",
+      "heading": "Omar: cycling the coast",
+      "text": "I set off with no plan beyond following the sea. By the third day my legs ached so badly that I nearly turned back, but a stranger offered me a bed and a hot meal and I carried on, grateful and slightly ashamed."
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "stem": "felt that a trip taught them to accept help from others",
+      "answer": "B",
+      "type": "feeling-experience",
+      "explanation": {
+        "en": "Sample explanation for question 1.",
+        "cs": "Ukázkové vysvětlení k otázce 1."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "chose a means of travel because of a fear",
+      "answer": "A",
+      "type": "reason-purpose",
+      "explanation": {
+        "en": "Sample explanation for question 2.",
+        "cs": "Ukázkové vysvětlení k otázce 2."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "found that an original motive no longer mattered",
+      "answer": "C",
+      "type": "opinion-attitude",
+      "explanation": {
+        "en": "Sample explanation for question 3.",
+        "cs": "Ukázkové vysvětlení k otázce 3."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "enjoyed being recognised by a local person",
+      "answer": "D",
+      "type": "feeling-experience",
+      "explanation": {
+        "en": "Sample explanation for question 4.",
+        "cs": "Ukázkové vysvětlení k otázce 4."
+      }
+    },
+    {
+      "n": 5,
+      "stem": "found part of the journey more costly than expected",
+      "answer": "A",
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Sample explanation for question 5.",
+        "cs": "Ukázkové vysvětlení k otázce 5."
+      }
+    },
+    {
+      "n": 6,
+      "stem": "nearly gave up because of physical discomfort",
+      "answer": "B",
+      "type": "specific-detail",
+      "explanation": {
+        "en": "Sample explanation for question 6.",
+        "cs": "Ukázkové vysvětlení k otázce 6."
+      }
+    },
+    {
+      "n": 7,
+      "stem": "found a dull task unexpectedly rewarding",
+      "answer": "C",
+      "type": "feeling-experience",
+      "explanation": {
+        "en": "Sample explanation for question 7.",
+        "cs": "Ukázkové vysvětlení k otázce 7."
+      }
+    },
+    {
+      "n": 8,
+      "stem": "mentions that other people disagreed with the way the holiday was spent",
+      "answer": "D",
+      "type": "opinion-attitude",
+      "explanation": {
+        "en": "Sample explanation for question 8.",
+        "cs": "Ukázkové vysvětlení k otázce 8."
+      }
+    },
+    {
+      "n": 9,
+      "stem": "valued meeting people outside their usual circle",
+      "answer": "A",
+      "type": "opinion-attitude",
+      "explanation": {
+        "en": "Sample explanation for question 9.",
+        "cs": "Ukázkové vysvětlení k otázce 9."
+      }
+    },
+    {
+      "n": 10,
+      "stem": "went somewhere partly to improve their career record",
+      "answer": "C",
+      "type": "reason-purpose",
+      "explanation": {
+        "en": "Sample explanation for question 10.",
+        "cs": "Ukázkové vysvětlení k otázce 10."
+      }
+    }
+  ]
+}

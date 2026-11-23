@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "rue4-004",
+  "paper": "rue",
+  "part": 4,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Transformations: work, study and money",
+  "topic": "work, study and money",
+  "difficulty": 2,
+  "reviewed": true,
+  "items": [
+    {
+      "n": 1,
+      "sentence1": "The bank will lend you the money, but only if you can provide a guarantor.",
+      "keyWord": "CONDITION",
+      "before": "The bank will lend you the money",
+      "after": "a guarantor.",
+      "parts": [
+        { "accepted": ["on condition that", "on the condition that"] },
+        { "accepted": ["you provide", "you can provide", "you find", "you can find"] }
+      ],
+      "fullAnswers": [
+        "on condition that you provide",
+        "on condition that you can provide",
+        "on condition that you find",
+        "on condition that you can find",
+        "on the condition that you provide",
+        "on the condition that you find"
+      ],
+      "type": "conditional",
+      "explanation": {
+        "en": "Part 1: 'but only if' becomes the fixed conditional linker 'on (the) condition that'. Part 2: it is followed by a full clause with its own subject and verb, 'you (can) provide' or 'you (can) find'. 'On the condition that you can provide' would be 7 words, which is too many.",
+        "cs": "Část 1: 'but only if' nahradíme spojkou on (the) condition that = pod podmínkou, že. Část 2: následuje celá věta s podmětem a slovesem: you (can) provide / you (can) find. Varianta 'on the condition that you can provide' má 7 slov, to je moc."
+      }
+    },
+    {
+      "n": 2,
+      "sentence1": "'Do not open attachments from unknown senders,' the IT manager told the staff.",
+      "keyWord": "WARNED",
+      "before": "The IT manager",
+      "after": "attachments from unknown senders.",
+      "parts": [
+        { "accepted": ["warned the staff"] },
+        { "accepted": ["not to open", "against opening"] }
+      ],
+      "fullAnswers": ["warned the staff not to open", "warned the staff against opening"],
+      "type": "reported-speech",
+      "explanation": {
+        "en": "Part 1: 'warn' takes a direct object, so the listener follows it: 'warned the staff'. Part 2: a negative command is reported with 'not to' + infinitive ('not to open') or with 'against' + -ing ('against opening'). 'Warned the staff to not open' puts 'not' in the wrong place.",
+        "cs": "Část 1: warn má přímý předmět, proto hned za ním stojí the staff. Část 2: zápor rozkazu převedeme jako not to + infinitiv (not to open) nebo against + -ing (against opening). Pořadí 'to not open' je chybné."
+      }
+    },
+    {
+      "n": 3,
+      "sentence1": "The university is going to publish the exam results next Friday.",
+      "keyWord": "DUE",
+      "before": "The exam results",
+      "after": "next Friday.",
+      "parts": [
+        { "accepted": ["are due"] },
+        { "accepted": ["to be published", "to be released", "to be announced", "to come out", "out"] }
+      ],
+      "fullAnswers": [
+        "are due to be published",
+        "are due to be released",
+        "are due to be announced",
+        "are due to come out",
+        "are due out"
+      ],
+      "type": "passive",
+      "explanation": {
+        "en": "Part 1: a planned future event is expressed with 'be due', and the plural subject needs 'are'. Part 2: the results do not publish themselves, so a passive infinitive is needed: 'to be published' (or released / announced). 'Are due out' and 'are due to come out' are also natural and accepted.",
+        "cs": "Část 1: plánovanou budoucnost vyjádříme be due (má proběhnout), u množného čísla are due. Část 2: výsledky nikdo 'nepublikuje sám', proto pasivní infinitiv: to be published (released, announced). Uznává se i are due out / are due to come out."
+      }
+    },
+    {
+      "n": 4,
+      "sentence1": "Sophie postponed telling her boss about the mistake for as long as she could.",
+      "keyWord": "OFF",
+      "before": "Sophie",
+      "after": "her boss about the mistake for as long as she could.",
+      "parts": [
+        { "accepted": ["put off", "held off"] },
+        { "accepted": ["telling", "informing"] }
+      ],
+      "fullAnswers": ["put off telling", "put off informing", "held off telling", "held off informing"],
+      "type": "phrasal-verb",
+      "explanation": {
+        "en": "Part 1: 'postponed' becomes the phrasal verb 'put off' (past tense 'put'); 'held off' is also accepted. Part 2: 'put off' is followed by the -ing form, 'telling', not 'to tell'.",
+        "cs": "Část 1: postponed = frázové sloveso put off (minulý čas put, beze změny tvaru); uznává se i held off. Část 2: po put off následuje -ing: telling, nikoli to tell."
+      }
+    },
+    {
+      "n": 5,
+      "sentence1": "The new manager has greatly influenced the way the office works.",
+      "keyWord": "INFLUENCE",
+      "before": "The new manager has",
+      "after": "the way the office works.",
+      "parts": [
+        {
+          "accepted": [
+            "had a great influence", "had a huge influence", "had a major influence", "had a big influence",
+            "had a strong influence", "had a considerable influence", "had a significant influence", "had an enormous influence"
+          ]
+        },
+        { "accepted": ["on"] }
+      ],
+      "fullAnswers": [
+        "had a great influence on",
+        "had a huge influence on",
+        "had a major influence on",
+        "had a big influence on",
+        "had a strong influence on",
+        "had a considerable influence on",
+        "had a significant influence on",
+        "had an enormous influence on"
+      ],
+      "type": "nominalisation",
+      "explanation": {
+        "en": "Part 1: the verb 'influenced' becomes the noun phrase 'had a great influence', and the adverb 'greatly' becomes an adjective. Part 2: the noun 'influence' takes the preposition 'on'. 'A great deal of influence on' would be 7 words.",
+        "cs": "Část 1: sloveso influenced převedeme na podstatné jméno: has had a great influence; příslovce greatly se mění na přídavné jméno great (huge, major…). Část 2: influence se pojí s předložkou on. 'A great deal of influence on' má 7 slov."
+      }
+    },
+    {
+      "n": 6,
+      "sentence1": "Working night shifts no longer feels strange to me.",
+      "keyWord": "USED",
+      "before": "I have",
+      "after": "night shifts.",
+      "parts": [
+        { "accepted": ["got used to", "become used to", "grown used to"] },
+        { "accepted": ["working", "doing"] }
+      ],
+      "fullAnswers": [
+        "got used to working",
+        "got used to doing",
+        "become used to working",
+        "become used to doing",
+        "grown used to working",
+        "grown used to doing"
+      ],
+      "type": "verb-pattern",
+      "explanation": {
+        "en": "Part 1: 'no longer feels strange' describes a change, so the answer is 'got used to' (or 'become / grown used to'), not 'used to', which is about past habits. Part 2: 'to' here is a preposition, so it is followed by the -ing form: 'working', not 'work'.",
+        "cs": "Část 1: jde o změnu (už mi to nepřijde divné), proto get / become used to = zvyknout si. Pozor: samotné used to + infinitiv znamená 'dříve jsem…'. Část 2: to je zde předložka, proto následuje -ing: working, ne work."
+      }
+    }
+  ]
+}

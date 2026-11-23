@@ -1,7 +1,7 @@
 import { kwtWordCount } from '../content/schema';
 import { setById } from '../content/loader';
 import { maxMarks, type KwtItem } from '../domain/scoring';
-import { blocksImplicitSubmit, buildAttempts, isDrillSet, newSession, parseGapText, questionsOf, recomputeSession, scoreAny, type DrillSet } from '../domain/drill';
+import { blocksImplicitSubmit, buildAttempts, isDrillSet, newSession, parseGapText, questionsOf, recomputeSession, scoreAny, type DrillSet, type ReadingSet } from '../domain/drill';
 import type { Store } from '../storage/store';
 import { labelBadge } from '../ui/components';
 import { h } from '../ui/h';
@@ -26,11 +26,12 @@ function saveDrill(store: Store, set: DrillSet, answers: Record<number, string>,
 
 /** `retry`: question numbers to answer again; other gaps are read-only with the correct answer. */
 export function drillScreen(store: Store, setId: string, retry?: ReadonlySet<number>): ReturnType<Route['render']> {
-  const set = setById(setId);
-  if (!set || !isDrillSet(set)) return notFound();
+  const found = setById(setId);
+  if (!found) return notFound();
+  const set: DrillSet = found;
 
   const ds = set;
-  const controls = new Map<number, HTMLSelectElement | HTMLInputElement>();
+  const controls = new Map<number, { value: string; disabled: boolean }>();
   const gaps = new Map<number, HTMLElement>();
 
   const dupNote = h('p', { class: 'notice', role: 'status' });
@@ -49,6 +50,55 @@ export function drillScreen(store: Store, setId: string, retry?: ReadonlySet<num
 
   const active = (n: number): boolean => !retry || retry.has(n);
   const kwtItems = set.part === 4 ? set.items.filter((i) => active(i.n)).map(kwtEl) : [];
+
+  const paras = (t: string): HTMLElement[] => t.split(/\n\n+/).map((x) => x.trim()).filter(Boolean).map((x) => h('p', {}, x));
+
+  /** Parts 5, 6, 8: one question per list item; Part 5 uses radios, Parts 6 and 8 a select. */
+  function readingQ(q: ReadingSet['questions'][number]): HTMLElement {
+    const li = h('li', { class: 'q' });
+    gaps.set(q.n, li);
+    const stem = h('span', { lang: 'en' }, h('span', { class: 'gap__num', 'aria-hidden': 'true' }, q.n), ' ', q.stem);
+    if (!active(q.n)) {
+      li.append(h('p', {}, stem), h('p', {}, h('span', { class: 'gap__fixed', lang: 'en' }, correctShort(set, q)), h('span', { class: 'visually-hidden', lang: 'cs' }, ' (již správně, jen ke čtení)')));
+      return li;
+    }
+    if ('options' in q) {
+      let value = '';
+      const radios = Object.entries(q.options).map(([k, v]) =>
+        h('label', { class: 'q__option', lang: 'en' }, h('input', { type: 'radio', name: `q${q.n}`, value: k, onchange: () => (value = k) }), ` ${k}  ${v}`),
+      );
+      const group = h('fieldset', { class: 'q__group' }, h('legend', {}, stem), radios);
+      controls.set(q.n, {
+        get value() { return value; },
+        set disabled(d: boolean) { group.disabled = d; },
+      } as { value: string; disabled: boolean });
+      li.append(group);
+      return li;
+    }
+    const pool: { id: string; heading: string }[] = set.part === 6 ? set.texts : set.part === 8 ? set.sections : [];
+    const sel = h(
+      'select',
+      { class: 'q__select', id: `q${q.n}` },
+      h('option', { value: '' }, '–'),
+      pool.map((x) => h('option', { value: x.id }, set.part === 8 ? `${x.id}  ${x.heading}` : x.id)),
+    );
+    controls.set(q.n, sel);
+    li.append(h('label', { for: `q${q.n}`, class: 'q__stem' }, stem), sel);
+    return li;
+  }
+
+  function readingBody(rs: ReadingSet): HTMLElement {
+    const passages = rs.part === 5
+      ? paras(rs.text)
+      : (rs.part === 6 ? rs.texts : rs.sections).map((x) =>
+          h('section', { class: 'passage' }, h('h2', {}, `${rs.part === 6 ? 'Text' : 'Section'} ${x.id} – ${x.heading}`), paras(x.text)));
+    return h(
+      'div',
+      { class: 'split' },
+      h('div', { class: 'passages stack', lang: 'en' }, passages),
+      h('ol', { class: 'q-list stack' }, (rs.questions as ReadingSet['questions']).map(readingQ)),
+    );
+  }
 
   function kwtEl(it: KwtItem): HTMLElement {
     const hint = h('span', { class: 'kwt__hint muted', id: `kwt-hint-${it.n}` });
@@ -122,7 +172,7 @@ export function drillScreen(store: Store, setId: string, retry?: ReadonlySet<num
     return wrap;
   };
 
-  const paragraphs = set.part === 4 ? [] : parseGapText(set.text).map((segs) =>
+  const paragraphs = set.part === 4 || set.part === 5 || set.part === 6 || set.part === 8 ? [] : parseGapText(set.text).map((segs) =>
     h('p', {}, segs.map((s) => (s.t === 'text' ? s.value : gapEl(s.n)))),
   );
 
@@ -162,6 +212,8 @@ export function drillScreen(store: Store, setId: string, retry?: ReadonlySet<num
         if (blocksImplicitSubmit((e as KeyboardEvent).key, t.tagName, t.type)) e.preventDefault();
       } }, set.part === 4
           ? h('ol', { class: 'kwt-list stack' }, kwtItems)
+          : set.part === 5 || set.part === 6 || set.part === 8
+          ? readingBody(set)
           : h('div', { class: 'gap-text', lang: 'en' }, paragraphs),
         set.part === 7
           ? h('div', { class: 'stack' }, dupNote, h('h2', {}, 'Odstavce'), h('dl', { class: 'para-list', lang: 'en' }, set.paragraphs.flatMap((p) => [h('dt', {}, p.id), h('dd', {}, p.text)])))

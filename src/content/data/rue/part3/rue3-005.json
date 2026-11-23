@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "rue3-005",
+  "paper": "rue",
+  "part": 3,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Letting nature take over",
+  "topic": "rewilding",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "Rewilding, the practice of allowing land to return to a natural state, has moved from the fringes of conservation into the [[1]]. The idea is to keep human [[2]] to a minimum and let natural processes do the work. Often, large grazing animals such as cattle or ponies are released, because their feeding and trampling help to [[3]] the landscape, creating a mix of open ground, scrub and woodland.\n\nThe results can be [[4]]: nobody can say in advance which species will return. In some places, however, the recovery has been [[5]], with beavers, storks and wildcats reappearing after centuries of absence.\n\nNot everyone welcomes the trend. Some farmers fear that their contribution to the countryside is being [[6]] by policies that seem to favour wildlife over food, and they argue that it is [[7]] to take productive land out of use while food prices are rising. Supporters reply that much of the land involved was [[8]] wetland or forest and was never well suited to farming in the first place.",
+  "questions": [
+    {
+      "n": 1,
+      "stem": "MAIN",
+      "answers": ["mainstream"],
+      "type": "compound-word",
+      "explanation": {
+        "en": "'From the fringes ... into the' needs a noun that means the opposite of 'fringes': 'the mainstream', the ideas most people accept. The stem combines with 'stream' to form a compound noun.",
+        "cs": "Protiklad k 'fringes' (okraj) je 'the mainstream' (hlavní proud). Slovo vzniká spojením main + stream."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "INTERVENE",
+      "answers": ["intervention"],
+      "type": "noun-formation",
+      "explanation": {
+        "en": "'Keep human ... to a minimum' needs a noun after the adjective 'human': 'intervention'. Note the spelling change: the final -e of the verb disappears before -tion.",
+        "cs": "Po přídavném jménu 'human' je třeba podstatné jméno: intervention = zásah. Pozor na pravopis: intervene, intervention."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "DIVERSE",
+      "answers": ["diversify"],
+      "type": "verb-formation",
+      "explanation": {
+        "en": "'Help to' is followed by a verb in the infinitive, and 'creating a mix' of habitats shows the meaning 'make more varied': 'diversify'. The suffix -ify turns the adjective into a verb.",
+        "cs": "Po 'help to' následuje infinitiv slovesa. Zvířata vytvářejí pestrou krajinu, proto diversify = zpestřit, diverzifikovat (přípona -ify)."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "PREDICT",
+      "answers": ["unpredictable"],
+      "type": "negative-prefix",
+      "explanation": {
+        "en": "'Nobody can say in advance' explains the colon, so the results cannot be foreseen: 'unpredictable'. Two changes: the prefix un- and the suffix -able.",
+        "cs": "Za dvojtečkou je vysvětlení: nikdo nedokáže předem říct, co se stane. Proto un- + predict + -able = unpredictable (nepředvídatelný)."
+      }
+    },
+    {
+      "n": 5,
+      "stem": "SPECTACLE",
+      "answers": ["spectacular"],
+      "type": "adjective-formation",
+      "explanation": {
+        "en": "'Has been' needs an adjective, and the return of beavers, storks and wildcats shows a very impressive result: 'spectacular'. The ending -cle changes to -cular.",
+        "cs": "Po 'has been' je přídavné jméno; návrat bobrů a čápů je úchvatný: spectacular. Koncovka -cle se mění na -cular."
+      }
+    },
+    {
+      "n": 6,
+      "stem": "LOOK",
+      "answers": ["overlooked"],
+      "type": "compound-word",
+      "explanation": {
+        "en": "'Is being ... by policies' is a passive, and the farmers' fear is that nobody notices their contribution: 'overlooked'. The prefix over- and the -ed participle are both needed.",
+        "cs": "Trpný rod (is being + příčestí). Farmáři se bojí, že jejich přínos je přehlížen: over- + look + -ed = overlooked."
+      }
+    },
+    {
+      "n": 7,
+      "stem": "RESPONSIBLE",
+      "answers": ["irresponsible"],
+      "type": "negative-prefix",
+      "explanation": {
+        "en": "The farmers are criticising the policy, so 'it is ... to take productive land out of use' needs a negative adjective: 'irresponsible'. Adjectives beginning with r usually take the prefix ir-.",
+        "cs": "Farmáři politiku kritizují, proto záporné přídavné jméno: irresponsible = nezodpovědný. Před r se zápor obvykle tvoří předponou ir-."
+      }
+    },
+    {
+      "n": 8,
+      "stem": "ORIGIN",
+      "answers": ["originally"],
+      "type": "adverb-formation",
+      "explanation": {
+        "en": "An adverb is needed between 'was' and 'wetland' to say what the land was at first: 'originally'. Two steps: origin, original, originally.",
+        "cs": "Mezi 'was' a 'wetland' stojí příslovce: originally = původně. Dva kroky: origin, original, originally."
+      }
+    }
+  ]
+}

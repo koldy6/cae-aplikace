@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "rue5-001",
+  "paper": "rue",
+  "part": 5,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Wetting the hills again",
+  "topic": "peatland restoration",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "The first thing you notice on Bryn Du is the sound. Where the hillside used to drain into a neat grid of ditches, water now seeps, gurgles and pools among tussocks of cotton grass. For most of the last century, this was considered a problem to be solved. Landowners were paid to cut drainage channels across the uplands in the belief that drier ground would grow better grass for sheep. Today, a different set of payments is funding people to fill those same channels in.\n\nRuth Calder, the ecologist who has led the work on Bryn Du for six years, is quick to point out the irony, though she refuses to sneer at the men who dug the ditches. 'They were doing what the experts of the day told them was responsible land management,' she says. 'It would be arrogant of us to assume that nobody will look back at our methods and wince.' It is a striking admission from someone whose career depends on the conviction that restoration works, and it sets the tone for much of what she tells me.\n\nThe case for re-wetting rests largely on carbon. A healthy bog accumulates plant material faster than it decays, because waterlogged ground starves the microbes responsible for decomposition of oxygen. Over thousands of years, this produces layers of peat several metres deep. Once drained, however, the peat begins to oxidise, releasing its stored carbon into the atmosphere. Calder's team estimates that the damaged sections of Bryn Du were losing the equivalent of a small town's annual emissions. Blocking the ditches, in principle, reverses the process, although the word 'reverses' makes her uneasy. 'We stop the bleeding,' she says. 'Whether we're healing anything is a question for people who'll be around in two hundred years.'\n\nThe practical work is less romantic than the language that surrounds it. Small excavators, fitted with wide tracks so as not to churn up the surface, cut blocks of peat from beside each ditch and press them into the channel to form a series of dams. Bare patches are covered with a mulch of chopped heather, and sphagnum moss is introduced in clumps or as a kind of gel sprayed from a backpack. Progress is measured in water levels rather than in anything a casual walker would see. For the first two or three years, Calder admits, a restored site can look worse than a drained one.\n\nThat appearance matters more than scientists sometimes recognise. Gareth Pryce, whose family has grazed sheep on the lower slopes for four generations, was initially among the project's fiercest critics. 'You'd walk up and see what looked like a bomb site,' he recalls. 'And you're being told it's for the good of the planet.' What changed his mind was not a lecture on carbon but a summer of heavy storms. The stream that runs past his farmhouse, which had burst its banks twice in a decade, rose more slowly and fell more gently. The bog, holding water like a sponge, was releasing it gradually rather than all at once.\n\nPryce is careful not to overstate the point. One wet summer, he says, proves nothing, and he still has reservations about how much grazing land will eventually be lost to the wetter ground. But he now sits on the committee that decides which areas are restored next, and he describes his role there as 'keeping the scientists honest about what it costs the people who live here.' Calder, for her part, says she would not want it any other way.\n\nIt would be easy to present Bryn Du as a straightforward success story, and the project's funders occasionally do. The reality is more provisional. Some dams have failed and had to be rebuilt; sphagnum has taken hold in some places and stubbornly refused in others, for reasons nobody fully understands. Calder keeps a notebook of what she calls 'honest failures', and she is more animated describing these than any of the triumphs. 'If we only publish the good results,' she says, 'the next team repeats our mistakes at public expense.'\n\nAs I leave, the mist is lifting off the summit and a curlew is calling somewhere out of sight. Calder tells me it is the first she has heard on this part of the hill. Then, almost immediately, she adds that one bird is an anecdote, not data.",
+  "questions": [
+    {
+      "n": 1,
+      "stem": "Why does the writer mention payments in the first paragraph?",
+      "options": {
+        "A": "to criticise the use of public money to support upland farming",
+        "B": "to explain why local farmers at first opposed the restoration work",
+        "C": "to show how thinking about the right use of the land has turned around",
+        "D": "to suggest that landowners make a profit whatever the official policy"
+      },
+      "answer": "C",
+      "type": "purpose-function",
+      "explanation": {
+        "en": "C: landowners 'were paid to cut drainage channels', and today 'a different set of payments is funding people to fill those same channels in' – the policy has reversed. A and D go beyond the text: no criticism or profit is mentioned. B: farmers' opposition (Pryce) comes in paragraph 5 and is about appearance, not payments.",
+        "cs": "C: dříve se platilo za kopání odvodňovacích kanálů ('were paid to cut drainage channels'), dnes se platí za jejich zasypání – názor na krajinu se obrátil. A a D text nepodporuje (žádná kritika ani zisk). B: odpor farmáře (Pryce) je až v 5. odstavci a týká se vzhledu, ne plateb."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "What does Ruth Calder's comment about the men who dug the ditches reveal about her?",
+      "options": {
+        "A": "She accepts that her own methods may one day be judged mistaken.",
+        "B": "She feels the experts of the past ought to have known better.",
+        "C": "She believes restoration is more responsible than drainage was.",
+        "D": "She is anxious because her career depends on the project's success."
+      },
+      "answer": "A",
+      "type": "attitude-opinion",
+      "explanation": {
+        "en": "A: 'It would be arrogant of us to assume that nobody will look back at our methods and wince.' B is the opposite: she 'refuses to sneer' at them. C is not stated. D twists 'her career depends on the conviction that restoration works'; no anxiety is mentioned.",
+        "cs": "A: 'arrogant of us to assume that nobody will look back at our methods and wince' – připouští, že i její metody budou jednou vypadat jako chyba. B je opak ('refuses to sneer'). C v textu není. D překrucuje větu o kariéře; o obavách se nemluví."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "What does Calder mean by 'We stop the bleeding'?",
+      "options": {
+        "A": "Restoration can return the peat to its original depth.",
+        "B": "The losses from the bog were greater than her team expected.",
+        "C": "The project has already undone the harm caused by drainage.",
+        "D": "Re-wetting prevents further loss, but recovery is uncertain."
+      },
+      "answer": "D",
+      "type": "meaning-in-context",
+      "explanation": {
+        "en": "D: blocking the ditches stops carbon escaping, but 'whether we're healing anything' cannot be known for 'two hundred years'; the word 'reverses' makes her uneasy. A and C claim the full recovery she refuses to claim. B: the text gives an estimate but says nothing about expectations.",
+        "cs": "D: zablokování kanálů zastaví únik uhlíku, ale zda se bažina 'uzdravuje', ukáže až čas ('two hundred years'); slovo 'reverses' se jí nelíbí. A a C tvrdí úplnou obnovu, kterou ona odmítá. B: text uvádí odhad, ne očekávání."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "According to the fourth paragraph, how is progress on a restored site judged?",
+      "options": {
+        "A": "by how much new moss can be seen on the surface",
+        "B": "by checking how high the water sits in the ground",
+        "C": "by comparing the site with drained areas nearby",
+        "D": "by counting the number of dams that have been built"
+      },
+      "answer": "B",
+      "type": "detail",
+      "explanation": {
+        "en": "B: 'Progress is measured in water levels'. A is contradicted: not 'anything a casual walker would see'. C misuses 'look worse than a drained one', which describes appearance, not measurement. D: dams are part of the work, not the measure of progress.",
+        "cs": "B: 'Progress is measured in water levels' – měří se hladina vody. A je v rozporu s 'rather than in anything a casual walker would see'. C zneužívá srovnání s odvodněnou plochou, které se týká vzhledu. D: hráze jsou součást práce, ne měřítko pokroku."
+      }
+    },
+    {
+      "n": 5,
+      "stem": "What does the fifth paragraph suggest about Gareth Pryce's change of mind?",
+      "options": {
+        "A": "It was the result of scientists explaining the benefits to him.",
+        "B": "It came about once the restored areas began to look healthier.",
+        "C": "It followed the flooding of his farm during a stormy summer.",
+        "D": "It was based on something he noticed for himself near his home."
+      },
+      "answer": "D",
+      "type": "inference",
+      "explanation": {
+        "en": "D: he saw that the stream past his farmhouse 'rose more slowly and fell more gently'. A is contradicted: 'not a lecture on carbon'. B: the text never says the site started to look better. C: the stream had flooded before, but this summer it did not burst its banks.",
+        "cs": "D: sám viděl, že potok u jeho domu 'rose more slowly and fell more gently'. A je v rozporu s 'not a lecture on carbon'. B: text neříká, že by plocha začala vypadat lépe. C: potok se dříve rozléval, ale toto léto naopak ne."
+      }
+    },
+    {
+      "n": 6,
+      "stem": "In the final paragraph, the writer's account of the curlew serves to",
+      "options": {
+        "A": "reinforce an impression of Calder given earlier in the article.",
+        "B": "provide evidence that the restoration has been a success.",
+        "C": "suggest that the writer is more optimistic than Calder is.",
+        "D": "show that wildlife has returned faster than anyone predicted."
+      },
+      "answer": "A",
+      "type": "purpose-function",
+      "explanation": {
+        "en": "A: even with good news she says 'one bird is an anecdote, not data' – the same caution as 'We stop the bleeding' and her notebook of 'honest failures'. B is rejected by Calder herself. C: the writer gives no opinion of their own. D: nothing is said about predictions.",
+        "cs": "A: i u dobré zprávy říká 'one bird is an anecdote, not data' – stejná opatrnost jako 'We stop the bleeding' a zápisník 'honest failures'. B odmítá sama Calder. C: autor svůj názor neuvádí. D: o předpovědích text nemluví."
+      }
+    }
+  ]
+}

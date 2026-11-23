@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "rue3-006",
+  "paper": "rue",
+  "part": 3,
+  "label": "ai-generated",
+  "source": null,
+  "title": "The library reinvented",
+  "topic": "public libraries and society",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "In an age when almost any information can be found online, public libraries might seem [[1]]. Yet in many towns the number of regular [[2]], many of them young people, is rising. To survive, libraries have had to [[3]], and many now offer services that would have been [[4]] a generation ago, from 3D printers to language exchanges.\n\nAbove all, a library provides a warm, quiet space that is [[5]] to everyone, regardless of income. For older people who live alone, a weekly reading group can be a valuable remedy for [[6]], while parents bring their children to coding [[7]] after school. The problem is money. Many libraries remain seriously [[8]], with too little money to pay professional staff, and rely on volunteers simply to keep their doors open.",
+  "questions": [
+    {
+      "n": 1,
+      "stem": "RELEVANT",
+      "answers": ["irrelevant"],
+      "type": "negative-prefix",
+      "explanation": {
+        "en": "'In an age when almost any information can be found online' suggests that libraries might no longer be needed, so the negative 'irrelevant' fits after 'seem'. 'Yet' in the next sentence confirms the contrast.",
+        "cs": "Když je vše online, knihovny se mohou zdát zbytečné: irrelevant (předpona ir- před r). Následující 'Yet' tento kontrast potvrzuje."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "VISIT",
+      "answers": ["visitors"],
+      "type": "noun-formation",
+      "explanation": {
+        "en": "'Many of them young people' shows the gap refers to people, so the plural noun 'visitors' is needed. 'Visits' are events, not people, and cannot be 'young people'.",
+        "cs": "Dovětek 'many of them young people' ukazuje, že jde o osoby: visitors (návštěvníci, v množném čísle). 'Visits' jsou návštěvy jako události, ne lidé."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "MODERN",
+      "answers": ["modernise", "modernize"],
+      "type": "verb-formation",
+      "explanation": {
+        "en": "After 'have had to' a verb in the infinitive is needed, and the new services show what changed: 'modernise'. Both the British -ise and the -ize spelling are standard.",
+        "cs": "Po 'have had to' následuje infinitiv slovesa: modernise = modernizovat. Obě hláskování, -ise i -ize, jsou správná."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "THINK",
+      "answers": ["unthinkable"],
+      "type": "negative-prefix",
+      "explanation": {
+        "en": "'Would have been ... a generation ago' says these services were impossible to imagine in the past: 'unthinkable'. Two changes: the prefix un- and the suffix -able.",
+        "cs": "Před generací by si takové služby nikdo nedokázal představit: un- + think + -able = unthinkable (nemyslitelný). Dvě změny: předpona i přípona."
+      }
+    },
+    {
+      "n": 5,
+      "stem": "ACCESS",
+      "answers": ["accessible"],
+      "type": "adjective-formation",
+      "explanation": {
+        "en": "'Is ... to everyone, regardless of income' needs an adjective with a positive meaning: 'accessible'. 'Inaccessible' would contradict the positive point that 'Above all' introduces.",
+        "cs": "Po 'is' a před 'to everyone' je přídavné jméno s kladným významem: accessible = přístupný. Záporné 'inaccessible' by odporovalo smyslu věty."
+      }
+    },
+    {
+      "n": 6,
+      "stem": "LONE",
+      "answers": ["loneliness"],
+      "type": "noun-formation",
+      "explanation": {
+        "en": "'A remedy for' needs a noun, and 'older people who live alone' points to the meaning: 'loneliness'. Two changes: lone becomes lonely, and the -y changes to -i before -ness.",
+        "cs": "Po 'a remedy for' (lék na) stojí podstatné jméno; starší lidé žijí sami: loneliness = osamělost. Dvě změny: lone, lonely, loneliness (y se mění na i)."
+      }
+    },
+    {
+      "n": 7,
+      "stem": "WORK",
+      "answers": ["workshops"],
+      "type": "compound-word",
+      "explanation": {
+        "en": "Children come to 'coding ...' after school, which describes a practical class: 'workshops'. The stem combines with 'shop', and the plural is needed because there is no article.",
+        "cs": "Děti chodí na programovací kroužky, dílny: workshops (work + shop). Množné číslo, protože před slovem není člen."
+      }
+    },
+    {
+      "n": 8,
+      "stem": "FUND",
+      "answers": ["underfunded"],
+      "type": "compound-word",
+      "explanation": {
+        "en": "'With too little money' shows that the libraries receive some funding but not enough: 'underfunded'. 'Unfunded' would mean they get no money at all, which does not match 'too little'.",
+        "cs": "'With too little money' = mají peníze, ale málo, proto under- (pod-): underfunded = podfinancovaný. 'Unfunded' by znamenalo úplně bez peněz."
+      }
+    }
+  ]
+}

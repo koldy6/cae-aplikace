@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "rue8-001",
+  "paper": "rue",
+  "part": 8,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Learning to sail as an adult",
+  "topic": "learning to sail",
+  "difficulty": 2,
+  "reviewed": true,
+  "sections": [
+    {
+      "id": "A",
+      "heading": "Joanna, 52, retired nurse",
+      "text": "I signed up for a beginners' course mainly because my husband had bought a small boat without asking me, and I refused to spend every summer as a passenger while he had all the fun. The first weekend was humiliating. I couldn't tie a single knot the instructor showed us, and I capsized twice in water that was far colder than the brochure had implied. What kept me going was the other people on the course, most of whom were just as hopeless as I was. We started meeting for coffee between lessons to practise knots on bits of string, and by the end of the summer I could handle the boat better than my husband could, which I mention as often as possible."
+    },
+    {
+      "id": "B",
+      "heading": "Daniel, 34, accountant",
+      "text": "I came to sailing expecting it to be relaxing. In fact it demands constant attention: the wind shifts, the tide turns and something always needs adjusting. Oddly, that is exactly why I love it. At work my mind wanders all day, but on the water there is no room to think about anything else, and I come home more rested than I ever do after a week lying on a beach. The one thing I would change is how some clubs treat newcomers. At the first one I tried, the members talked in a jargon nobody bothered to explain and rarely spoke to anyone they didn't already know, so I left after a month. My current club pairs every beginner with an experienced sailor, and that has made all the difference."
+    },
+    {
+      "id": "C",
+      "heading": "Mei, 41, architect",
+      "text": "I took up sailing after my doctor told me I needed a hobby that would get me away from a screen and out of doors. I chose it partly because it looked difficult, and I have always preferred to struggle with something than to be bored by it. I did not expect to be frightened, but I was. Halfway through my third lesson a squall came in from nowhere and the boat heeled so far over that I was sure we would go in. The instructor stayed completely calm, and I remember being almost annoyed by it. Afterwards she explained exactly what she had done and why, and I realised that those ten minutes of fear had taught me more than the previous two lessons combined."
+    },
+    {
+      "id": "D",
+      "heading": "Roberto, 67, former engineer",
+      "text": "People assume that at my age I must be sailing for my health, but the truth is I was curious about the physics. I spent forty years designing machines, and a boat moving into the wind looked to me like a puzzle I ought to be able to solve. I read three books on the subject before I ever touched a rope, which my instructor found very entertaining. Theory, it turns out, is of limited use when the boom swings towards your head. Even so, I believe my working life gave me a head start; I understood why the sails behaved as they did, even when my hands were too slow to respond. My only regret is that I waited until retirement to try."
+    },
+    {
+      "id": "E",
+      "heading": "Hannah, 29, teacher",
+      "text": "Sailing was my brother's passion, and after he moved abroad I took it up partly to feel closer to him. We now compare notes on video calls every week, and he is far more patient with my questions than he ever was when we were children; I think we get on better now than we have for years. I was surprised by how expensive it all turned out to be. The course itself was reasonable, but the waterproof clothing, the club membership and the endless small pieces of equipment added up quickly. I have since found a group that shares boats and kit between members, which has cut the cost considerably. My advice to anyone starting out is to borrow before you buy anything."
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "stem": "believes that experience gained in a previous career has been useful",
+      "answer": "D",
+      "type": "opinion-attitude",
+      "explanation": {
+        "en": "D: 'I believe my working life gave me a head start; I understood why the sails behaved as they did.' B and C name their jobs, but neither says the job helps with sailing.",
+        "cs": "D: 'my working life gave me a head start' – inženýrská praxe mu pomohla pochopit plachty. B a C své profese zmiňují, ale neříkají, že by jim při plachtění pomáhaly."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "was determined not to play a secondary role in a shared activity",
+      "answer": "A",
+      "type": "reason-purpose",
+      "explanation": {
+        "en": "A: she 'refused to spend every summer as a passenger while he had all the fun'. E also started because of a family member, but to 'feel closer to him', not to avoid a minor role.",
+        "cs": "A: 'refused to spend every summer as a passenger' – nechtěla být jen pasažérkou. E začala také kvůli příbuznému, ale aby mu byla blíž, ne kvůli roli."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "found the total cost of the hobby higher than expected",
+      "answer": "E",
+      "type": "specific-detail",
+      "explanation": {
+        "en": "E: 'I was surprised by how expensive it all turned out to be' – clothing, membership and equipment 'added up quickly'. A was also surprised, but by the cold water, not by money.",
+        "cs": "E: 'surprised by how expensive it all turned out to be' – oblečení, členství a vybavení se sčítaly. A byla také překvapena, ale studenou vodou, ne cenou."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "came to see a frightening moment as a valuable lesson",
+      "answer": "C",
+      "type": "feeling-experience",
+      "explanation": {
+        "en": "C: 'those ten minutes of fear had taught me more than the previous two lessons combined'. A capsized but calls it 'humiliating', not a lesson; D mentions the boom swinging towards his head, but only to show the limits of theory.",
+        "cs": "C: 'ten minutes of fear had taught me more than the previous two lessons' – strach se ukázal jako cenná lekce. A se převrátila, ale mluví o ponížení; D zmiňuje ráhno jen jako důkaz, že teorie nestačí."
+      }
+    },
+    {
+      "n": 5,
+      "stem": "gave up on an organisation because its members made little effort to include beginners",
+      "answer": "B",
+      "type": "reason-purpose",
+      "explanation": {
+        "en": "B: at his first club 'the members talked in a jargon nobody bothered to explain', 'so I left after a month'. E joined a new group to save money; she did not leave one.",
+        "cs": "B: v prvním klubu mluvili žargonem, který nikdo nevysvětlil, a s nováčky se nebavili – 'so I left after a month'. E se k jiné skupině přidala kvůli penězům, nic neopustila."
+      }
+    },
+    {
+      "n": 6,
+      "stem": "practised a skill with fellow learners outside formal lessons",
+      "answer": "A",
+      "type": "specific-detail",
+      "explanation": {
+        "en": "A: 'We started meeting for coffee between lessons to practise knots on bits of string.' B is paired with an experienced sailor, not fellow beginners; E compares notes with her brother, who is not a learner.",
+        "cs": "A: 'meeting for coffee between lessons to practise knots' – trénovala uzly s ostatními začátečníky mimo kurz. B má zkušeného partnera, ne spolužáky; E konzultuje s bratrem, který není začátečník."
+      }
+    },
+    {
+      "n": 7,
+      "stem": "says the hobby has brought them closer to a relative",
+      "answer": "E",
+      "type": "feeling-experience",
+      "explanation": {
+        "en": "E: she and her brother 'compare notes' and 'get on better now than we have for years'. A mentions her husband, but only to say she now sails better than he does – rivalry, not closeness.",
+        "cs": "E: s bratrem si teď rozumí lépe ('get on better now than we have for years'). A zmiňuje manžela, ale jen proto, že ho předčí – to je soupeření, ne sblížení."
+      }
+    },
+    {
+      "n": 8,
+      "stem": "started the activity on a health professional's recommendation",
+      "answer": "C",
+      "type": "reason-purpose",
+      "explanation": {
+        "en": "C: 'my doctor told me I needed a hobby that would get me away from a screen'. D mentions health, but only to deny it: 'People assume ... I must be sailing for my health, but ...'. A is a retired nurse, but her reason was her husband's boat.",
+        "cs": "C: začala, protože jí to doporučil lékař ('my doctor told me'). D zdraví zmiňuje jen proto, aby ho jako důvod odmítl. A je bývalá zdravotní sestra, ale důvodem byla manželova loď."
+      }
+    },
+    {
+      "n": 9,
+      "stem": "amused someone with the way they prepared for the activity",
+      "answer": "D",
+      "type": "specific-detail",
+      "explanation": {
+        "en": "D: he read three books 'before I ever touched a rope, which my instructor found very entertaining'. A felt embarrassed on her first weekend, but nobody laughed at her preparation.",
+        "cs": "D: přečetl tři knihy dřív, než vzal do ruky lano, což instruktora velmi bavilo ('found very entertaining'). A se cítila ponížená, ale nikdo se nesmál její přípravě."
+      }
+    },
+    {
+      "n": 10,
+      "stem": "finds the hobby more restful than a conventional holiday",
+      "answer": "B",
+      "type": "opinion-attitude",
+      "explanation": {
+        "en": "B: 'I come home more rested than I ever do after a week lying on a beach', because sailing leaves no room for other thoughts. C took up sailing to get away from a screen, but does not compare it with a holiday.",
+        "cs": "B: po plachtění je odpočatější než po týdnu na pláži ('more rested than ... after a week lying on a beach'). C chtěla pryč od obrazovky, ale s dovolenou plachtění nesrovnává."
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "rue6-001",
+  "paper": "rue",
+  "part": 6,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Closing the old town to cars",
+  "topic": "car-free historic city centres",
+  "difficulty": 2,
+  "reviewed": true,
+  "texts": [
+    {
+      "id": "A",
+      "heading": "Lena Fischer, urban planner",
+      "text": "When the council finally closed the old town to private cars, the predictions of disaster were loud and confident. Shops would empty, residents would leave, and the centre would become a ghost town. Three years on, the figures tell a different story: the number of people walking through the main streets has risen by almost a third, and retail takings have followed. Without the constant roar of engines, the medieval lanes have recovered something of the intimacy they were built for; people linger, look up at the buildings, sit down. Critics argue that the closure shuts out those who cannot walk far, but I think this concern, while sincere, is overstated. The electric shuttle runs every ten minutes, and blue-badge holders can still apply for access permits. If I have one piece of advice for other cities, it is to resist the temptation to phase the change in over many years. Gradual schemes leave drivers uncertain about what is allowed where, and they give opponents time to organise. A clear decision, made once and explained well, is kinder in the long run."
+    },
+    {
+      "id": "B",
+      "heading": "Tomasz Nowak, bookshop owner",
+      "text": "I opposed the scheme, and for the first six months I felt my fears had been justified. Takings dropped sharply, and two of my neighbours closed. But trade has since recovered and is now healthier than before, largely because people who arrive on foot browse rather than dash in and out. I will also admit that the square outside my window is a far more pleasant place than it used to be; on summer evenings it feels like the town it must once have been. My oldest customers, who I assumed would stop coming, have mostly adapted, and several tell me the shuttle is easier than finding a parking space ever was. What still annoys me is the way it was done. We were given barely a month's notice, and nobody asked how deliveries would work. Had the council introduced the restrictions step by step, listening to traders as it went, those first months need not have been so painful."
+    },
+    {
+      "id": "C",
+      "heading": "Grace Adeyemi, disability campaigner",
+      "text": "Visitors photograph the cobbled streets and say how much nicer they look without cars, and I don't dispute that. A beautiful centre is worth having. My question is who it is beautiful for. For many disabled and elderly people, the car was not a luxury but the only practical way to reach a doctor's surgery or a bank. The shuttle helps, but it stops only at fixed points, and the permit system is so complicated that many who qualify have simply given up. I'm told local shops are doing well, and perhaps they are; it's not something I'm in a position to judge. What I do know is that a change of this size should have been tested in stages, with disabled residents involved from the beginning rather than consulted afterwards. Had that happened, many of the problems I now hear about every week would have been obvious long before the barriers went up."
+    },
+    {
+      "id": "D",
+      "heading": "Robert Hale, local historian",
+      "text": "It is often said that removing cars restores the old town to its original character. As a historian, I find this claim curious. These streets were never quiet. For most of their history they were crowded with carts, animals and traders shouting their prices, and the noise would horrify a modern visitor. What we have now is not the past recovered but a calm, tidy version of it designed for tourists, rather like a museum. I also notice that the businesses which have thrived are mostly cafes and souvenir shops, while the ironmonger and the shoe repairer have gone, so I would hesitate to call the scheme a success for local trade. And I worry about the older residents of my own street, several of whom now rarely venture into the centre because the walk from the nearest stop is too far for them. None of this means cars should return. But a slower, more careful introduction, testing each street before moving to the next, would have allowed these problems to be noticed in time."
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "stem": "Which writer shares Lena Fischer's opinion about the effect of the scheme on local trade?",
+      "answer": "B",
+      "type": "shares-view",
+      "explanation": {
+        "en": "A says 'retail takings have followed' the rise in visitors. B agrees: trade 'is now healthier than before'. C does not judge ('not something I'm in a position to judge'), and D doubts it ('would hesitate to call the scheme a success for local trade').",
+        "cs": "A: tržby rostou ('retail takings have followed'). B souhlasí: obchod je 'now healthier than before'. C se nevyjadřuje ('not something I'm in a position to judge') a D pochybuje ('would hesitate to call the scheme a success for local trade')."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "Which writer has a different view from Grace Adeyemi on how such a change should be introduced?",
+      "answer": "A",
+      "type": "differs-from-one",
+      "explanation": {
+        "en": "C wants the change 'tested in stages'. A is against this: 'resist the temptation to phase the change in' – 'a clear decision, made once'. B ('step by step') and D ('testing each street before moving to the next') agree with C.",
+        "cs": "C chce změnu zavádět postupně ('tested in stages'). A je proti: 'resist the temptation to phase the change in' – raději jedno jasné rozhodnutí. B ('step by step') i D ('testing each street') s C souhlasí."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "Which writer takes a different view from the others on whether the car-free centre reflects the old town's original character?",
+      "answer": "D",
+      "type": "differs-from-all",
+      "explanation": {
+        "en": "D says the streets 'were never quiet' and the result is 'not the past recovered but a calm, tidy version of it'. A thinks the lanes 'have recovered something of the intimacy they were built for', B says it 'feels like the town it must once have been', and C accepts it looks nicer ('I don't dispute that').",
+        "cs": "D tvrdí, že ulice 'were never quiet' a dnešní stav je 'not the past recovered', ale uhlazená kopie pro turisty. A říká, že uličky získaly zpět svou původní intimitu, B, že náměstí 'feels like the town it must once have been', a C krásu nezpochybňuje ('I don't dispute that')."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "Which writer shares Grace Adeyemi's concern about people who find it hard to walk long distances?",
+      "answer": "D",
+      "type": "shares-view",
+      "explanation": {
+        "en": "C says the shuttle 'stops only at fixed points' and many elderly and disabled people are left out. D shares this: older neighbours 'rarely venture into the centre because the walk from the nearest stop is too far'. A calls the concern 'overstated', and B says older customers 'have mostly adapted'.",
+        "cs": "C: kyvadlový autobus 'stops only at fixed points', starší a postižení lidé jsou vyloučeni. D to sdílí: starší sousedé 'rarely venture into the centre because the walk from the nearest stop is too far'. A považuje obavy za 'overstated' a B říká, že starší zákazníci 'have mostly adapted'."
+      }
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "rue2-004",
+  "paper": "rue",
+  "part": 2,
+  "label": "ai-generated",
+  "source": null,
+  "title": "The museum that never closes",
+  "topic": "digital museums and culture",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "When museums closed their doors during lockdown, many curators were struck by how [[1]] of the collection in their care the public had ever actually seen. In a typical national museum, only a small fraction of the objects are on display at [[2]] one time; the rest sit in storage, catalogued but unseen. Digitising these hidden treasures had once seemed an expensive luxury, but suddenly [[3]] became a priority.\n\nThe results have been impressive. Visitors can now zoom in on brushstrokes so fine that they could never [[4]] been seen by someone standing in the gallery, or rotate a fossil on their screen to examine it from every angle. Some institutions have even gone [[5]] far as to make their entire archive free to download.\n\nNot everyone is comfortable with this. Some curators worry that people who can see everything online will no longer bother to visit in person. The evidence, however, points the other way: museums [[6]] collections are largely online have generally seen visitor numbers rise. A digital image, it seems, sparks curiosity rather than satisfying it, and people who come [[7]] an object online often want to see it with their own eyes. Standing in front of the original remains, for many, a far [[8]] powerful experience than looking at any screen.",
+  "questions": [
+    {
+      "n": 1,
+      "answers": ["little"],
+      "type": "quantifier",
+      "explanation": {
+        "en": "'Collection' is uncountable here, and the next sentence ('only a small fraction') shows the amount was small: 'how little of the collection'. 'Much' fits the grammar but 'struck by how much' would mean the public had seen a lot.",
+        "cs": "'How little of' = jak málo z. 'Much' je gramaticky možné, ale význam by byl opačný; následující věta 'only a small fraction' ukazuje, že veřejnost viděla málo."
+      }
+    },
+    {
+      "n": 2,
+      "answers": ["any"],
+      "type": "article-determiner",
+      "explanation": {
+        "en": "'At any one time' is a fixed pattern meaning 'at a particular moment'. 'A' cannot be used before 'one', and 'the one time' would mean a single specific occasion.",
+        "cs": "'At any one time' = v kterémkoli okamžiku, najednou. Člen 'a' před 'one' stát nemůže a 'the one time' by znamenalo jednu konkrétní příležitost."
+      }
+    },
+    {
+      "n": 3,
+      "answers": ["it", "this"],
+      "type": "pronoun",
+      "explanation": {
+        "en": "The clause after 'but' needs a subject, and it refers back to 'Digitising these hidden treasures': 'suddenly it became a priority'. 'This' is also accepted because it can point back to the same activity.",
+        "cs": "Věta po 'but' potřebuje podmět, který odkazuje na digitalizaci: 'it became a priority'. Čeština podmět vynechá ('stala se prioritou'), angličtina ne. Uznává se i 'this'."
+      }
+    },
+    {
+      "n": 4,
+      "answers": ["have"],
+      "type": "auxiliary-verb",
+      "explanation": {
+        "en": "'Could never have been seen' is a modal perfect passive about what was impossible in the past. The past participle 'been' after the gap shows that 'have' is needed; 'be' would need 'seen' straight after it.",
+        "cs": "Modální sloveso v minulosti: could + have + příčestí (could never have been seen = nikdy by nemohlo být vidět). Za mezerou je 'been', proto musí být 'have'."
+      }
+    },
+    {
+      "n": 5,
+      "answers": ["so", "as"],
+      "type": "fixed-phrase",
+      "explanation": {
+        "en": "'Go so far as to do something' (or 'go as far as to') means to take a surprisingly extreme step. Both 'so' and 'as' are accepted before 'far as'.",
+        "cs": "'Go so far as to do sth' = zajít tak daleko, že. Obě varianty 'so far as' i 'as far as' jsou správně."
+      }
+    },
+    {
+      "n": 6,
+      "answers": ["whose"],
+      "type": "relative-pronoun",
+      "explanation": {
+        "en": "The collections belong to the museums, so the possessive relative 'whose' is needed: 'museums whose collections are largely online'. 'Which' or 'that' cannot be followed directly by a noun in this way.",
+        "cs": "Sbírky patří muzeím, proto přivlastňovací vztažné zájmeno 'whose' (jejichž). Za 'which' nebo 'that' nemůže takto stát podstatné jméno."
+      }
+    },
+    {
+      "n": 7,
+      "answers": ["across", "upon"],
+      "type": "phrasal-verb",
+      "explanation": {
+        "en": "'Come across' (or more formally 'come upon') means to find something by chance, which fits browsing online. 'Come over' or 'come into' do not have this meaning with an object.",
+        "cs": "'Come across sth' = narazit na něco, náhodou objevit. Formálnější varianta 'come upon' se také uznává."
+      }
+    },
+    {
+      "n": 8,
+      "answers": ["more"],
+      "type": "comparison",
+      "explanation": {
+        "en": "'Than' later in the sentence shows a comparative, and 'powerful' is a long adjective, so 'far more powerful ... than'. 'Less' fits the grammar but contradicts the idea that people still want to see the original.",
+        "cs": "'Than' ukazuje na 2. stupeň; dlouhé přídavné jméno 'powerful' ho tvoří pomocí 'more'. 'Less' gramaticky sedí, ale odporuje smyslu (lidé chtějí vidět originál)."
+      }
+    }
+  ]
+}

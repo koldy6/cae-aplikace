@@ -300,3 +300,20 @@ a.part-tile:hover { border-color: var(--c-primary); }
 .week { display: flex; gap: var(--s-2); list-style: none; padding: 0; flex-wrap: wrap; }
 .week li { display: grid; justify-items: center; min-width: 2.75rem; padding: var(--s-1) var(--s-2); background: var(--c-surface); border-radius: var(--radius); }
 .week strong { font-size: var(--fs-md); }
+
+/* T18: Parts 5, 6, 8 (passages + questions) */
+.split { display: grid; gap: var(--s-4); }
+.passages { max-width: 42rem; }
+.passage h2 { font-size: var(--fs-lg); }
+.q-list { list-style: none; padding: 0; }
+.q { padding: var(--s-3); border: 1px solid var(--c-border); border-radius: var(--radius); }
+.q__group { border: 0; padding: 0; margin: 0; }
+.q__group legend { padding: 0; margin-bottom: var(--s-2); font-weight: 600; }
+.q__stem { display: block; margin-bottom: var(--s-2); font-weight: 600; }
+.q__option { display: flex; align-items: flex-start; gap: var(--s-2); min-height: var(--tap); padding: var(--s-1) 0; }
+.q__select { max-width: 100%; }
+.q.is-correct, .q.is-incorrect { border: 2px solid currentColor; }
+.q.is-incorrect { border-style: dashed; }
+@media (min-width: 900px) {
+  .split { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; }
+}

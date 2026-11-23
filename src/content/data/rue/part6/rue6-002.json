@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "rue6-002",
+  "paper": "rue",
+  "part": 6,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Does handwriting still matter?",
+  "topic": "teaching handwriting in schools",
+  "difficulty": 2,
+  "reviewed": true,
+  "texts": [
+    {
+      "id": "A",
+      "heading": "Fiona Marsh, primary school teacher",
+      "text": "Every September I watch a new class of seven-year-olds struggle to hold a pencil properly, and every June I see what a year of daily practice achieves. The research on this seems to me convincing: children who form letters by hand recognise them more quickly and remember spellings better than those who only type. That is why I insist on a joined-up style, not merely neat printing. Once the letters flow into one another, writing becomes fast enough that children can think about what they want to say rather than how to shape each letter. My concern is what happens later. Pupils whose writing never becomes quick are penalised in handwritten exams, not for what they know but for how fast their hand moves, and I would like to see them allowed to type. I am often told that handwriting matters because it is personal and expressive. Perhaps, but that is not why I teach it, and I doubt that argument would persuade a head teacher with a crowded timetable."
+    },
+    {
+      "id": "B",
+      "heading": "Dr Samuel Okoro, educational psychologist",
+      "text": "Studies comparing handwriting with typing consistently find that the physical act of forming letters engages areas of the brain linked to reading and memory, and I see no reason to doubt them. Whether those letters are joined up is another matter. I have found no good evidence that a joined-up style adds anything, and I would happily let children settle on whatever legible hand suits them. Where I part company with some colleagues is over exams. They argue that handwritten papers are unfair to slow writers; I think the answer is to give those pupils proper support, because writing under pressure, without a spellchecker, shows what a student genuinely knows. There is also something I find hard to measure but impossible to ignore. A handwritten note carries a trace of the person who wrote it, in a way that a typed message never does, and children deserve to discover that for themselves."
+    },
+    {
+      "id": "C",
+      "heading": "Martin Leclerc, parent and software engineer",
+      "text": "I keep reading that handwriting improves memory, but when I looked at the studies myself I was unimpressed. Most involved a few dozen university students taking notes in a lecture, which tells us very little about how seven-year-olds learn to read. My daughter's school spends hours on joined-up letters, and I honestly cannot see why any particular style should matter, as long as other people can read it. Nor do I accept that handwritten exams are a problem; pupils who write slowly can already be given extra time, and the system seems to work. And yet I would not want handwriting dropped. The most precious thing I own is a notebook of my grandmother's recipes, stained and crossed out and unmistakably hers. No typed document could mean the same to me. That, rather than any laboratory finding, is the argument I find convincing."
+    },
+    {
+      "id": "D",
+      "heading": "Ayesha Rahman, secondary school head of English",
+      "text": "Nobody seriously disputes that writing by hand helps young children learn; the evidence on letter formation and memory is solid, and I would never want it removed from the early years. But we should be honest about what it costs older pupils. I spend a surprising amount of time insisting on joined-up writing that, frankly, makes no difference to the quality of anyone's thinking; clear printing does the job perfectly well. Meanwhile, students with untidy or slow handwriting lose marks in exams simply because they run out of time or because examiners struggle to read their scripts. It is hard to defend that when almost all their writing outside school is done on a keyboard, and I would move exams onto screens tomorrow. People sometimes defend handwriting as a link with the past or a form of self-expression. I understand the feeling, but nostalgia is a poor reason to keep something in a curriculum."
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "stem": "Which writer has a different view from the others about the research on handwriting and memory?",
+      "answer": "C",
+      "type": "differs-from-all",
+      "explanation": {
+        "en": "C was 'unimpressed' by the studies because they used 'university students taking notes'. A finds the research 'convincing', B sees 'no reason to doubt' it, and D calls the evidence 'solid'.",
+        "cs": "C studie nepřesvědčily ('unimpressed'), protože zkoumaly vysokoškoláky při psaní poznámek. A je považuje za 'convincing', B nevidí 'no reason to doubt them' a D označuje důkazy za 'solid'."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "Which writer shares Fiona Marsh's opinion about handwritten exams?",
+      "answer": "D",
+      "type": "shares-view",
+      "explanation": {
+        "en": "A says slow writers 'are penalised in handwritten exams' and should be 'allowed to type'. D agrees: such students 'lose marks' and she 'would move exams onto screens'. B wants to keep handwritten papers and give 'proper support'; C does not see a problem ('extra time ... seems to work').",
+        "cs": "A: pomalí pisatelé jsou u ručně psaných zkoušek znevýhodněni a měli by smět psát na klávesnici. D souhlasí: 'lose marks' a zkoušky by převedla 'onto screens'. B chce ruční zkoušky zachovat s podporou, C problém nevidí ('extra time ... seems to work')."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "Which writer has a different opinion from Ayesha Rahman about whether children need to learn a joined-up style?",
+      "answer": "A",
+      "type": "differs-from-one",
+      "explanation": {
+        "en": "D says joined-up writing 'makes no difference' and 'clear printing does the job'. A disagrees: 'I insist on a joined-up style, not merely neat printing', because it makes writing fast. B ('no good evidence that a joined-up style adds anything') and C ('cannot see why any particular style should matter') agree with D.",
+        "cs": "D: psací písmo 'makes no difference', stačí tiskací. A nesouhlasí: 'I insist on a joined-up style, not merely neat printing', protože zrychluje psaní. B ('no good evidence') i C ('cannot see why any particular style should matter') souhlasí s D."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "Which writer agrees with Samuel Okoro that handwriting has a personal value that typing lacks?",
+      "answer": "C",
+      "type": "shares-view",
+      "explanation": {
+        "en": "B says a handwritten note 'carries a trace of the person who wrote it'. C agrees: his grandmother's recipes are 'unmistakably hers' and 'no typed document could mean the same'. A says 'that is not why I teach it', and D dismisses the idea as 'nostalgia'.",
+        "cs": "B: ručně psaný vzkaz 'carries a trace of the person who wrote it'. C souhlasí: babiččiny recepty jsou 'unmistakably hers' a 'no typed document could mean the same'. A tento důvod odmítá ('not why I teach it') a D ho označuje za 'nostalgia'."
+      }
+    }
+  ]
+}

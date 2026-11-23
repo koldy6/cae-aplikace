@@ -7,8 +7,8 @@ import { kwtScore, maxMarks } from '../src/domain/scoring';
 const drillSets = Object.values(content.rue ?? {}).flat().filter(isDrillSet);
 
 describe('QA M1: shipped content is consistent with the scorer', () => {
-  it('has content for Parts 1-4 and 7', () => {
-    expect([...new Set(drillSets.map((s) => s.part))].sort()).toEqual([1, 2, 3, 4, 7]);
+  it('has content for Parts 1-8', () => {
+    expect([...new Set(drillSets.map((s) => s.part))].sort()).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
   });
   it('every key earns full marks through scoreAny', () => {
     for (const s of drillSets) {

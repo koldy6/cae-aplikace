@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "rue7-003",
+  "paper": "rue",
+  "part": 7,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Bees on the roof",
+  "topic": "urban beekeeping and wild bees",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "When the office manager announced that two beehives were going to be installed on the roof of our building, the reaction in the staff kitchen was mixed. A few colleagues were delighted. Rather more wanted to know, quite reasonably, whether they would be stung on their way to the car park. I said nothing, but that same afternoon I quietly put my name down for the volunteer rota.\n\n[[1]]\n\nHe turned out to be a softly spoken man in his sixties called Desmond, who had kept bees for forty years and talked about them the way some people talk about their grandchildren. On our first morning he made us stand beside the hives for ten minutes without opening anything at all. Bees, he explained, react badly to quick, nervous movements, and the first thing any beekeeper has to learn is how to slow down.\n\n[[2]]\n\nOur confidence grew along with the colonies. By midsummer each hive held tens of thousands of bees, and in August we harvested more than thirty jars of honey, which sold out in reception within a week.\n\n[[3]]\n\nNot everyone was impressed, though. At a lunch to celebrate the harvest, I found myself sitting next to an ecologist from the city council, who asked me something I had never thought to ask: how many other hives were there within a couple of kilometres of ours?\n\n[[4]]\n\nThe trouble with that belief, the ecologist explained, is that the honeybee is just one domesticated species among the many kinds of bee that live in a city. Most of the others are wild: solitary bees that nest in old walls and patches of bare soil, and bumblebees that make their homes in abandoned burrows. They all feed on the same flowers, and in a crowded neighbourhood with little green space, a few hundred thousand extra honeybees can leave very little for anyone else.\n\n[[5]]\n\nWhen I passed all this on to Desmond, I half expected him to defend his hobby. Instead, he nodded and admitted that he had been worrying about the same thing for years.\n\n[[6]]\n\nIt is not the grand gesture any of us imagined when the hives first arrived. But standing on the roof last week, I watched a small dark bee that was certainly not one of ours disappear into the bee hotel, and I felt, for the first time, that we had got something right.",
+  "paragraphs": [
+    {
+      "id": "A",
+      "text": "Some researchers go further, suggesting that large numbers of managed hives may also pass diseases on to wild bees. The evidence is still being debated, but the concern has been taken seriously enough for some conservation groups to advise against adding new hives in areas that already have plenty."
+    },
+    {
+      "id": "B",
+      "text": "That lesson proved much harder than it sounds. When I finally lifted a frame out of the hive, crawling with several thousand bees, my hands were shaking so badly that Desmond had to steady them with his own. Yet not one of the insects stung me, and by our third session I had stopped holding my breath every time a lid came off."
+    },
+    {
+      "id": "C",
+      "text": "I had no idea, and when I looked into it, the answer surprised me. Over the past decade, dozens of offices, hotels and schools in the city centre had put hives on their roofs, all inspired by the same belief as our office manager: that more bees can only be good for nature."
+    },
+    {
+      "id": "D",
+      "text": "Their fears were not entirely unfounded. Honeybees rarely sting unless their hive is under threat, but a swarm leaving a hive in early summer can alarm anyone who does not know what it is, and city beekeepers are regularly called out to collect swarms from bus stops and balconies."
+    },
+    {
+      "id": "E",
+      "text": "The rota, as it happened, came with compulsory training. Before anyone was allowed near the hives, the company had arranged for an experienced beekeeper from the local association to give the volunteers six early-morning lessons on the roof."
+    },
+    {
+      "id": "F",
+      "text": "His solution, which the office manager has since agreed to, is a compromise. We are keeping our two hives but will not be adding a third, and the money from next year's honey will pay for wildflower planters on the roof, together with a bee hotel: a wooden box of hollow stems where solitary bees can nest."
+    },
+    {
+      "id": "G",
+      "text": "The money went to a local wildlife charity, and the hives quickly became a source of pride. Visitors were taken up to the roof to admire them, and the company newsletter carried a photograph of the directors in veils, holding up a frame of honeycomb."
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "answer": "E",
+      "type": "reference-link",
+      "explanation": {
+        "en": "'The rota' picks up 'the volunteer rota' just before the gap, and 'an experienced beekeeper' in E is the person 'He' refers to after the gap. D also follows the colleagues' worries ('Their fears'), but then 'He turned out to be' would have no one to refer to.",
+        "cs": "'The rota' navazuje na 'the volunteer rota' před mezerou a 'an experienced beekeeper' v E je ten, na koho odkazuje 'He' za mezerou. D by sice navázal na obavy kolegů ('Their fears'), ale 'He' za mezerou by pak nemělo k čemu odkazovat."
+      }
+    },
+    {
+      "n": 2,
+      "answer": "B",
+      "type": "chronology",
+      "explanation": {
+        "en": "'That lesson' refers to learning 'how to slow down'. B ends 'by our third session', and the text continues later in time with 'By midsummer'; 'Our confidence grew' follows from the writer no longer holding their breath.",
+        "cs": "'That lesson' odkazuje na 'how to slow down'. B končí 'by our third session' a text pokračuje časově dál: 'By midsummer'. 'Our confidence grew' navazuje na to, že autor už nezadržuje dech."
+      }
+    },
+    {
+      "n": 3,
+      "answer": "G",
+      "type": "lexical-link",
+      "explanation": {
+        "en": "'The money' is the money from the honey that 'sold out in reception'. After the gap, 'Not everyone was impressed, though' contrasts with the 'source of pride' and the admiring visitors in G.",
+        "cs": "'The money' jsou peníze z medu, který se 'sold out in reception'. Za mezerou 'Not everyone was impressed, though' tvoří protiklad k 'source of pride' a obdivu návštěvníků v G."
+      }
+    },
+    {
+      "n": 4,
+      "answer": "C",
+      "type": "argument-flow",
+      "explanation": {
+        "en": "'I had no idea' answers the ecologist's question about how many other hives there were. C ends with the belief 'that more bees can only be good for nature', which 'The trouble with that belief' after the gap then challenges.",
+        "cs": "'I had no idea' odpovídá na otázku ekoložky, kolik dalších úlů je v okolí. C končí názorem 'that more bees can only be good for nature', který text za mezerou zpochybňuje: 'The trouble with that belief'."
+      }
+    },
+    {
+      "n": 5,
+      "answer": "A",
+      "type": "discourse-marker",
+      "explanation": {
+        "en": "'Go further' and 'also' add a second, stronger problem (disease) to the competition for flowers described before the gap. 'All this' after the gap sums up both problems that the writer passes on to Desmond.",
+        "cs": "'Go further' a 'also' přidávají k soupeření o květy před mezerou další, vážnější problém (nemoci). 'All this' za mezerou shrnuje oba problémy, které autor předá Desmondovi."
+      }
+    },
+    {
+      "n": 6,
+      "answer": "F",
+      "type": "reference-link",
+      "explanation": {
+        "en": "'His solution' refers to Desmond, who has just admitted he was worried. The 'compromise' in F is what 'not the grand gesture' describes after the gap, and F introduces the bee hotel that the wild bee disappears into.",
+        "cs": "'His solution' odkazuje na Desmonda, který právě přiznal obavy. 'Compromise' v F je to, co za mezerou popisuje 'not the grand gesture', a F zavádí 'bee hotel', do kterého pak zaletí divoká včela."
+      }
+    }
+  ]
+}

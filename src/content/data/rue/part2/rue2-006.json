@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "rue2-006",
+  "paper": "rue",
+  "part": 2,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Is homework worth it?",
+  "topic": "education",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "There are few topics on [[1]] parents disagree as sharply as homework. Some see it as essential preparation for exams; others regard it as a burden that eats [[2]] family time and does little to improve learning.\n\nResearch paints a picture that is more complicated [[3]] either side usually admits. For teenagers, homework does seem to be linked to better results, provided it is not excessive. For younger children, [[4]], the benefits are much harder to detect. One large review found that primary pupils who [[5]] been given homework every night performed no better than those who had been given none.\n\nPart of the problem is that the tasks are often poorly designed. Worksheets that simply repeat what was covered in class add [[6]] to a child's understanding. By contrast, short activities that require pupils to put new knowledge [[7]] practice in an unfamiliar situation can be genuinely useful. Only [[8]] homework is planned with this in mind is it likely to justify the arguments it causes at the kitchen table.",
+  "questions": [
+    {
+      "n": 1,
+      "answers": ["which"],
+      "type": "relative-pronoun",
+      "explanation": {
+        "en": "After a preposition, a relative clause about things uses 'which': 'topics on which parents disagree'. 'That' cannot follow a preposition, and 'whom' is only for people.",
+        "cs": "Po předložce ve vztažné větě o věcech stojí 'which' (on which = o kterých). 'That' po předložce stát nemůže a 'whom' je jen pro osoby."
+      }
+    },
+    {
+      "n": 2,
+      "answers": ["into", "up"],
+      "type": "phrasal-verb",
+      "explanation": {
+        "en": "'Eat into' means to use up part of something valuable, such as time or savings. 'Eat up' (use completely) is also accepted here, as both fit the complaint about lost family time.",
+        "cs": "'Eat into sth' = ukrajovat z něčeho (času, úspor). Uznává se i 'eat up' (spotřebovat, zabrat), obojí odpovídá stížnosti na ztracený rodinný čas."
+      }
+    },
+    {
+      "n": 3,
+      "answers": ["than"],
+      "type": "comparison",
+      "explanation": {
+        "en": "The comparative 'more complicated' needs 'than' before the second part of the comparison: 'more complicated than either side admits'. 'As' would need 'as complicated as'.",
+        "cs": "Po 2. stupni 'more complicated' následuje 'than' (než). 'As' by vyžadovalo stavbu 'as complicated as'."
+      }
+    },
+    {
+      "n": 4,
+      "answers": ["however", "though", "conversely"],
+      "type": "linking",
+      "explanation": {
+        "en": "Results for younger children contrast with those for teenagers, so a contrast linker is needed in mid-sentence: 'For younger children, however, ...'. 'Though' and 'conversely' also work between commas; 'although' would need a full clause.",
+        "cs": "Mladší děti jsou v kontrastu s teenagery, proto 'however' (však) mezi čárkami. Uznává se i 'though' a 'conversely'; 'although' by potřebovalo celou vedlejší větu."
+      }
+    },
+    {
+      "n": 5,
+      "answers": ["had"],
+      "type": "auxiliary-verb",
+      "explanation": {
+        "en": "The review reports an earlier situation, and 'been given' after the gap shows a past perfect passive: 'pupils who had been given homework'. The same form appears later: 'those who had been given none'.",
+        "cs": "Za mezerou je 'been given', takže chybí pomocné sloveso 'had' (předminulý čas v trpném rodě). Stejný tvar se opakuje na konci věty: 'who had been given none'."
+      }
+    },
+    {
+      "n": 6,
+      "answers": ["little", "nothing"],
+      "type": "quantifier",
+      "explanation": {
+        "en": "The worksheets only repeat class work, so they add hardly anything: 'add little to a child's understanding'. 'Nothing' is also accepted; 'few' is wrong because there is no countable noun.",
+        "cs": "'Add little to' = přidat málo, skoro nic. Uznává se i 'nothing'. 'Few' nejde, protože tu není počitatelné podstatné jméno."
+      }
+    },
+    {
+      "n": 7,
+      "answers": ["into"],
+      "type": "preposition",
+      "explanation": {
+        "en": "'Put something into practice' means to use knowledge or an idea in a real situation. 'In practice' is a different phrase meaning 'in reality' and does not follow 'put'.",
+        "cs": "'Put sth into practice' = uvést do praxe. 'In practice' (ve skutečnosti) je jiné spojení a po 'put' nestojí."
+      }
+    },
+    {
+      "n": 8,
+      "answers": ["if", "when"],
+      "type": "inversion",
+      "explanation": {
+        "en": "'Only if' (or 'only when') at the start of a sentence causes inversion in the main clause: 'is it likely to justify'. The inverted 'is it' is the clue that a limiting expression begins the sentence.",
+        "cs": "'Only if / Only when' na začátku věty způsobí inverzi v hlavní větě ('is it likely'). Právě obrácený slovosled 'is it' napovídá, že věta začíná omezujícím výrazem."
+      }
+    }
+  ]
+}

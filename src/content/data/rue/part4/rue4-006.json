@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "id": "rue4-006",
+  "paper": "rue",
+  "part": 4,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Transformations: health, science and the media",
+  "topic": "health, science and the media",
+  "difficulty": 3,
+  "reviewed": true,
+  "items": [
+    {
+      "n": 1,
+      "sentence1": "The scientist had no idea at the time how important her discovery would turn out to be.",
+      "keyWord": "LITTLE",
+      "before": "At the time,",
+      "after": "how important her discovery would turn out to be.",
+      "parts": [
+        { "accepted": ["little did"] },
+        {
+          "accepted": [
+            "the scientist realise", "the scientist realize", "the scientist know",
+            "the scientist suspect", "the scientist imagine", "the scientist guess"
+          ]
+        }
+      ],
+      "fullAnswers": [
+        "little did the scientist realise",
+        "little did the scientist realize",
+        "little did the scientist know",
+        "little did the scientist suspect",
+        "little did the scientist imagine",
+        "little did the scientist guess"
+      ],
+      "type": "inversion",
+      "explanation": {
+        "en": "Part 1: the negative adverbial 'little' at the front of the clause causes inversion with the auxiliary 'did'. Part 2: the subject comes after 'did', and the verb is in the base form: 'the scientist realise', not 'realised'. 'She' cannot replace 'the scientist', because nobody has been named yet.",
+        "cs": "Část 1: záporné příslovce little na začátku věty vyžaduje inverzi s pomocným did. Část 2: za did následuje podmět a sloveso v základním tvaru: the scientist realise (ne realised). Zájmeno she nelze použít, osoba ještě nebyla zmíněna."
+      }
+    },
+    {
+      "n": 2,
+      "sentence1": "The clinic has no flu vaccines left.",
+      "keyWord": "RUN",
+      "before": "The clinic",
+      "after": "flu vaccines.",
+      "parts": [
+        { "accepted": ["has run out", "has completely run out"] },
+        { "accepted": ["of"] }
+      ],
+      "fullAnswers": ["has run out of", "has completely run out of"],
+      "type": "phrasal-verb",
+      "explanation": {
+        "en": "Part 1: 'has no ... left' is the present result of a past process, so the present perfect phrasal verb 'has run out' is used ('run' is also the past participle). Part 2: 'run out' needs 'of' before the thing that is finished.",
+        "cs": "Část 1: 'has no … left' je výsledek v přítomnosti, proto předpřítomný čas frázového slovesa: has run out (příčestí run). Část 2: run out se pojí s of před tím, co došlo: run out of vaccines."
+      }
+    },
+    {
+      "n": 3,
+      "sentence1": "I definitely sent the patient's notes to the hospital; I can picture myself doing it.",
+      "keyWord": "REMEMBER",
+      "before": "I",
+      "after": "the patient's notes to the hospital.",
+      "parts": [
+        {
+          "accepted": [
+            "clearly remember", "distinctly remember", "definitely remember",
+            "can clearly remember", "can distinctly remember"
+          ]
+        },
+        { "accepted": ["sending", "having sent"] }
+      ],
+      "fullAnswers": [
+        "clearly remember sending",
+        "distinctly remember sending",
+        "definitely remember sending",
+        "can clearly remember sending",
+        "can distinctly remember sending",
+        "clearly remember having sent",
+        "distinctly remember having sent",
+        "definitely remember having sent",
+        "can clearly remember having sent",
+        "can distinctly remember having sent"
+      ],
+      "type": "verb-pattern",
+      "explanation": {
+        "en": "Part 1: 'definitely ... I can picture myself' becomes a strong memory, 'clearly remember'. Part 2: 'remember' + -ing ('sending' or 'having sent') refers to a memory of an earlier action. 'Remember to send' means 'not forget to do it' and changes the meaning.",
+        "cs": "Část 1: jistotu a živou vzpomínku vyjádříme clearly / distinctly remember. Část 2: remember + -ing (sending, having sent) = pamatuji si, že jsem to udělal. 'Remember to send' znamená 'nezapomenout to udělat', to je jiný význam."
+      }
+    },
+    {
+      "n": 4,
+      "sentence1": "Since I moved abroad, I have had no contact with my old school friends.",
+      "keyWord": "TOUCH",
+      "before": "Since I moved abroad, I",
+      "after": "my old school friends.",
+      "parts": [
+        {
+          "accepted": [
+            "have lost touch", "have been out of touch", "have not been in touch", "haven't been in touch",
+            "have not kept in touch", "haven't kept in touch", "have not stayed in touch", "haven't stayed in touch"
+          ]
+        },
+        { "accepted": ["with"] }
+      ],
+      "fullAnswers": [
+        "have lost touch with",
+        "have been out of touch with",
+        "have not been in touch with",
+        "haven't been in touch with",
+        "have not kept in touch with",
+        "haven't kept in touch with",
+        "have not stayed in touch with",
+        "haven't stayed in touch with"
+      ],
+      "type": "fixed-phrase",
+      "explanation": {
+        "en": "Part 1: 'have had no contact' becomes a fixed phrase with 'touch' in the present perfect: 'have lost touch' (or 'have not kept / been in touch'). Part 2: all these phrases take the preposition 'with' before the person.",
+        "cs": "Část 1: 'have had no contact' nahradíme ustáleným spojením s touch v předpřítomném čase: have lost touch (ztratit kontakt) nebo have not kept / been in touch. Část 2: tato spojení se pojí s předložkou with."
+      }
+    },
+    {
+      "n": 5,
+      "sentence1": "The documentary was so moving that many viewers wrote to the channel.",
+      "keyWord": "SUCH",
+      "before": "It",
+      "after": "that many viewers wrote to the channel.",
+      "parts": [
+        { "accepted": ["was such a"] },
+        { "accepted": ["moving documentary"] }
+      ],
+      "fullAnswers": ["was such a moving documentary"],
+      "type": "linking",
+      "explanation": {
+        "en": "Part 1: 'so + adjective + that' becomes 'such + a + adjective + noun + that'; the article 'a' is needed because 'documentary' is a singular countable noun. Part 2: the adjective comes before the noun, 'moving documentary'.",
+        "cs": "Část 1: so + přídavné jméno + that se mění na such + a + přídavné jméno + podstatné jméno + that; člen a je nutný, protože documentary je počitatelné v jednotném čísle. Část 2: přídavné jméno stojí před podstatným: moving documentary."
+      }
+    },
+    {
+      "n": 6,
+      "sentence1": "We were disappointed that so few people came to the clinic's open day.",
+      "keyWord": "TURNOUT",
+      "before": "We were disappointed by the",
+      "after": "the clinic's open day.",
+      "parts": [
+        {
+          "accepted": [
+            "low turnout", "poor turnout", "small turnout",
+            "very low turnout", "very poor turnout", "very small turnout"
+          ]
+        },
+        { "accepted": ["at", "for"] }
+      ],
+      "fullAnswers": [
+        "low turnout at",
+        "poor turnout at",
+        "small turnout at",
+        "very low turnout at",
+        "very poor turnout at",
+        "very small turnout at",
+        "low turnout for",
+        "poor turnout for",
+        "small turnout for",
+        "very low turnout for",
+        "very poor turnout for",
+        "very small turnout for"
+      ],
+      "type": "nominalisation",
+      "explanation": {
+        "en": "Part 1: the clause 'so few people came' becomes a noun phrase, 'low (or poor) turnout'. 'Few turnout' is wrong, because 'turnout' collocates with low, poor or small. Part 2: 'turnout' is followed by 'at' or 'for' before the event.",
+        "cs": "Část 1: větu 'so few people came' převedeme na podstatné jméno: low / poor turnout (nízká účast). 'Few turnout' nelze, turnout se pojí s low, poor, small. Část 2: před akcí stojí předložka at nebo for."
+      }
+    }
+  ]
+}

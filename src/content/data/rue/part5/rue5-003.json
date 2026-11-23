@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "rue5-003",
+  "paper": "rue",
+  "part": 5,
+  "label": "ai-generated",
+  "source": null,
+  "title": "When noon moved",
+  "topic": "railway time and the history of clocks",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "Before the middle of the nineteenth century, nobody in Britain much minded that it was a different time in different towns. Each community set its clocks by the sun, so that noon arrived when the sun stood highest over the local church or market square. Because the earth turns from west to east, this meant that Bristol ran roughly ten minutes behind London, and Plymouth a little further behind still. For people who travelled by horse, at perhaps ten miles an hour, the difference was too small to notice. A few minutes gained or lost over a day's journey disappeared among all the other uncertainties of the road.\n\nThe railways changed this, though not as suddenly as is often claimed. Early timetables simply listed local times at each station, leaving passengers to work out the arithmetic for themselves. Some companies printed small tables of corrections; others relied on guards carrying watches that were adjusted, with varying degrees of care, as the train moved west. The confusion was real, but it was also, for a while, tolerated. What eventually made it intolerable was not the inconvenience to passengers but the danger posed by trains on the same single track working to different clocks.\n\nThe solution adopted by most railway companies during the 1840s was to run every train on London time, which from the early 1850s could be sent down the line by electric telegraph. This was efficient, but it created an odd double life for many towns. Station clocks showed railway time while the church clock in the high street showed local time, and some public clocks were fitted with two minute hands to display both. For a decade or more, a resident of Exeter could miss a train while being, by the town's own reckoning, early for it.\n\nThe source of that agreed time was the Royal Observatory at Greenwich, whose astronomers had been measuring the sun's passage with great precision for purposes that had nothing to do with trains. Their concern was navigation: a ship's position at sea could be calculated only by comparing the time on board with the time at a fixed reference point. It is one of the quieter ironies of the story that a system developed to help sailors find their way across empty oceans ended up deciding when a farmer in Devon should eat his lunch.\n\nResistance to the change is sometimes portrayed as simple stubbornness, the reaction of provincial people who disliked being told what to do by the capital. There was certainly some of that. But the objections were not only emotional. Local time was tied to the sun, and the sun governed the working day in ways that a clock in London could not. Farmers, in particular, pointed out that their animals took no notice of railway timetables. To them, the new arrangement looked less like progress than like an abstraction imposed from outside, convenient for those who owned the trains and nobody else.\n\nThe argument was settled less by persuasion than by habit. As more and more of daily life came to depend on the railway – the post, the newspapers, the delivery of goods – keeping two times became more trouble than it was worth, and towns quietly abandoned their local time one by one. By the time Parliament made a single standard time the legal time throughout Great Britain in 1880, the law largely confirmed what had already happened. It is a pattern historians have noted in many reforms: the formal decision arrives last, after the practical one has been made.\n\nWhat is perhaps most striking, looking back, is how completely the older way of thinking has vanished. Today the idea that the time could differ between two towns an hour apart seems almost absurd, and we tend to regard standard time as a fact of nature rather than an agreement. Yet it is, in the end, an agreement, and a relatively recent one. Our clocks no longer tell us where the sun is; they tell us what everyone else has decided it is.",
+  "questions": [
+    {
+      "n": 1,
+      "stem": "What does the writer suggest about travel before the railways?",
+      "options": {
+        "A": "Travellers often complained about differences in local time.",
+        "B": "Few people travelled far enough to pass between local times.",
+        "C": "Towns in the west chose to keep their clocks behind London's.",
+        "D": "Small differences in time mattered less than other unknowns."
+      },
+      "answer": "D",
+      "type": "inference",
+      "explanation": {
+        "en": "D: a few minutes 'disappeared among all the other uncertainties of the road'. A is contradicted: 'nobody ... much minded'. B goes beyond the text; it only says the difference was 'too small to notice'. C: the difference came from the sun, not from a choice.",
+        "cs": "D: pár minut 'disappeared among all the other uncertainties of the road' – na cestě bylo mnohem víc nejistot. A odporuje 'nobody ... much minded'. B text neříká, jen že rozdíl byl 'too small to notice'. C: rozdíl způsobovalo slunce, ne rozhodnutí měst."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "According to the second paragraph, what finally made a single time necessary?",
+      "options": {
+        "A": "complaints from passengers who had to calculate the times",
+        "B": "the risk of accidents when trains shared the same line",
+        "C": "guards who failed to adjust their watches correctly",
+        "D": "the cost to companies of printing tables of corrections"
+      },
+      "answer": "B",
+      "type": "detail",
+      "explanation": {
+        "en": "B: 'the danger posed by trains on the same single track working to different clocks'. A is ruled out directly: 'not the inconvenience to passengers'. C and D are mentioned as part of the confusion, but not as what made it intolerable.",
+        "cs": "B: 'the danger posed by trains on the same single track working to different clocks' – nebezpečí srážek. A text výslovně vylučuje ('not the inconvenience to passengers'). C a D jsou zmíněny jako součást zmatku, ne jako rozhodující důvod."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "The writer mentions a resident of Exeter in order to",
+      "options": {
+        "A": "show how unreliable station clocks were in the 1840s.",
+        "B": "explain why towns in the west rejected railway time.",
+        "C": "illustrate the confusion of having two times at once.",
+        "D": "suggest that railway passengers were often careless."
+      },
+      "answer": "C",
+      "type": "purpose-function",
+      "explanation": {
+        "en": "C: the example follows 'an odd double life for many towns' – by local time you were early, by railway time the train had gone. A: the station clocks were not unreliable, they showed a different time. B: reasons for resistance come later. D: the problem was the system, not carelessness.",
+        "cs": "C: příklad navazuje na 'an odd double life for many towns' – podle místního času jste byli včas, podle železničního vlak už odjel. A: nádražní hodiny nebyly nepřesné, ukazovaly jiný čas. B: důvody odporu přicházejí později. D: problém byl v systému, ne v nepozornosti."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "In the fourth paragraph, what does 'a system' refer to?",
+      "options": {
+        "A": "the precise timekeeping astronomers used to fix positions at sea",
+        "B": "the electric telegraph that carried time signals down the line",
+        "C": "the railway timetable that was based on London time",
+        "D": "the way farmers organised their day according to the sun"
+      },
+      "answer": "A",
+      "type": "reference",
+      "explanation": {
+        "en": "A: the system was 'developed to help sailors find their way' – the Greenwich measurements used for 'navigation'. B: the telegraph is in paragraph 3 and was not made for sailors. C is what the system ended up controlling, not the system itself. D is the opposite of Greenwich time.",
+        "cs": "A: systém byl 'developed to help sailors find their way' – přesné měření času v Greenwichi pro navigaci. B: telegraf je ve 3. odstavci a pro námořníky nevznikl. C je to, co systém nakonec ovlivnil, ne systém sám. D je opak greenwichského času."
+      }
+    },
+    {
+      "n": 5,
+      "stem": "In the fifth paragraph, the writer suggests that opposition to railway time",
+      "options": {
+        "A": "was mainly a matter of regional pride.",
+        "B": "had practical as well as emotional causes.",
+        "C": "came mostly from people who avoided trains.",
+        "D": "was encouraged by rival railway companies."
+      },
+      "answer": "B",
+      "type": "attitude-opinion",
+      "explanation": {
+        "en": "B: 'the objections were not only emotional' – the sun 'governed the working day', and farmers' animals ignored timetables. A is the view the writer corrects ('sometimes portrayed as simple stubbornness'). C and D are not in the text.",
+        "cs": "B: 'the objections were not only emotional' – pracovní den řídilo slunce a zvířata se jízdním řádem neřídí. A je názor, který autor opravuje ('sometimes portrayed as simple stubbornness'). C a D v textu nejsou."
+      }
+    },
+    {
+      "n": 6,
+      "stem": "What is the main point of the sixth paragraph?",
+      "options": {
+        "A": "Towns held on to local time until the law forced them to give it up.",
+        "B": "Parliament acted quickly once the problems had become obvious.",
+        "C": "The post and newspapers came to depend on the railways.",
+        "D": "Everyday needs, rather than argument or law, ended the dispute."
+      },
+      "answer": "D",
+      "type": "gist",
+      "explanation": {
+        "en": "D: it was 'settled less by persuasion than by habit', and the 1880 law 'largely confirmed what had already happened'. A is contradicted: towns gave up local time before the law. B: nothing suggests Parliament was quick. C is a true detail, but only an example within the paragraph.",
+        "cs": "D: spor skončil 'less by persuasion than by habit' a zákon z roku 1880 jen potvrdil, co už platilo. A odporuje textu: města se vzdala místního času před zákonem. B: o rychlosti parlamentu text nemluví. C je pravdivý detail, ale jen příklad, ne hlavní myšlenka."
+      }
+    }
+  ]
+}

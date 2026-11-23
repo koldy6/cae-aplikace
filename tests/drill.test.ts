@@ -58,6 +58,16 @@ describe('daysToExam / lastScore', () => {
   });
 });
 
+describe('Parts 5, 6, 8 marks', () => {
+  it.each([[5, 12], [6, 8], [8, 10]])('Part %i: all correct gives %i marks', (part, max) => {
+    const set = setsFor('rue', part)[0] as Extract<ReturnType<typeof setsFor>[number], { part: 5 | 6 | 8 }>;
+    const a = buildAttempts(set, Object.fromEntries(set.questions.map((q) => [q.n, q.answer])), 'sx', new Date().toISOString());
+    const s = recomputeSession(newSession(set, 'sx', new Date().toISOString()), a);
+    expect([s.marks, s.maxMarks]).toEqual([max, max]);
+    expect(buildAttempts(set, {}, 'sy', 'x').every((x) => x.marks === 0)).toBe(true);
+  });
+});
+
 describe('Part 4 and Part 7 attempts', () => {
   const at = new Date().toISOString();
   it('stores KWT marks 0/1/2 in attempt.marks with maxMarks 2', () => {

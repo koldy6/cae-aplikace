@@ -17,14 +17,26 @@
       "before": "No",
       "after": "it started to pour with rain.",
       "parts": [
-        { "accepted": ["sooner had Clara"] },
-        { "accepted": ["arrived than"] }
+        {
+          "accepted": [
+            "sooner had Clara"
+          ]
+        },
+        {
+          "accepted": [
+            "arrived than",
+            "got there than"
+          ]
+        }
       ],
-      "fullAnswers": ["sooner had Clara arrived than"],
+      "fullAnswers": [
+        "sooner had Clara arrived than",
+        "sooner had Clara got there than"
+      ],
       "type": "inversion",
       "explanation": {
-        "en": "Part 1: after 'No sooner' the auxiliary comes before the subject, 'had Clara'. Part 2: the past participle 'arrived' is followed by 'than', not 'when' or 'that'.",
-        "cs": "Část 1: po No sooner následuje inverze s past perfect: had Clara. Část 2: příčestí arrived a spojka than (ne when, ne that)."
+        "en": "Part 1: after 'No sooner' the auxiliary comes before the subject, 'had Clara'. Part 2: the past participle 'arrived' is followed by 'than', not 'when' or 'that'. 'Got there' instead of 'arrived' is also accepted.",
+        "cs": "Část 1: po No sooner následuje inverze s past perfect: had Clara. Část 2: příčestí arrived a spojka than (ne when, ne that). Uznává se i got there místo arrived."
       }
     },
     {
@@ -34,10 +46,25 @@
       "before": "If",
       "after": "the job in Lisbon.",
       "parts": [
-        { "accepted": ["only I had", "only I'd"] },
-        { "accepted": ["taken", "accepted"] }
+        {
+          "accepted": [
+            "only I had",
+            "only I'd"
+          ]
+        },
+        {
+          "accepted": [
+            "taken",
+            "accepted"
+          ]
+        }
       ],
-      "fullAnswers": ["only I had taken", "only I'd taken", "only I had accepted", "only I'd accepted"],
+      "fullAnswers": [
+        "only I had taken",
+        "only I'd taken",
+        "only I had accepted",
+        "only I'd accepted"
+      ],
       "type": "wish-regret",
       "explanation": {
         "en": "Part 1: 'If only' expresses regret, and a regret about the past needs the past perfect, 'I had'. Part 2: the past participle 'taken' (or 'accepted') completes it; there is no 'not', because the regret is about what did not happen.",
@@ -51,10 +78,22 @@
       "before": "I",
       "after": "by a professional stylist tomorrow.",
       "parts": [
-        { "accepted": ["am having my hair", "will be having my hair"] },
-        { "accepted": ["cut"] }
+        {
+          "accepted": [
+            "am having my hair",
+            "will be having my hair"
+          ]
+        },
+        {
+          "accepted": [
+            "cut"
+          ]
+        }
       ],
-      "fullAnswers": ["am having my hair cut", "will be having my hair cut"],
+      "fullAnswers": [
+        "am having my hair cut",
+        "will be having my hair cut"
+      ],
       "type": "causative",
       "explanation": {
         "en": "Part 1: the causative 'have something done' in the present continuous, 'am having my hair', expresses a future arrangement. Part 2: the object is followed by the past participle 'cut'.",
@@ -68,8 +107,18 @@
       "before": "We",
       "after": "a parking space near the stadium.",
       "parts": [
-        { "accepted": ["had difficulty", "had some difficulty"] },
-        { "accepted": ["finding", "in finding"] }
+        {
+          "accepted": [
+            "had difficulty",
+            "had some difficulty"
+          ]
+        },
+        {
+          "accepted": [
+            "finding",
+            "in finding"
+          ]
+        }
       ],
       "fullAnswers": [
         "had difficulty finding",
@@ -90,14 +139,29 @@
       "before": "My doctor advised",
       "after": "sugar.",
       "parts": [
-        { "accepted": ["me to"] },
-        { "accepted": ["cut down on", "cut back on"] }
+        {
+          "accepted": [
+            "me to",
+            "that I should"
+          ]
+        },
+        {
+          "accepted": [
+            "cut down on",
+            "cut back on"
+          ]
+        }
       ],
-      "fullAnswers": ["me to cut down on", "me to cut back on"],
+      "fullAnswers": [
+        "me to cut down on",
+        "me to cut back on",
+        "that I should cut down on",
+        "that I should cut back on"
+      ],
       "type": "phrasal-verb",
       "explanation": {
-        "en": "Part 1: 'advise' takes the pattern object + to-infinitive, 'advised me to'. Part 2: 'eat less' becomes the phrasal verb 'cut down on' (or 'cut back on'), which needs 'on' before 'sugar'.",
-        "cs": "Část 1: vazba advise somebody to do something: advised me to. Část 2: frázové sloveso cut down on / cut back on = omezit; bez on je odpověď neúplná."
+        "en": "Part 1: 'advise' takes the pattern object + to-infinitive, 'advised me to'; 'advised that I should' is also correct. Part 2: 'eat less' becomes the phrasal verb 'cut down on' (or 'cut back on'), which needs 'on' before 'sugar'.",
+        "cs": "Část 1: vazba advise somebody to do something: advised me to; správně je i advised that I should. Část 2: frázové sloveso cut down on / cut back on = omezit; bez on je odpověď neúplná."
       }
     },
     {
@@ -107,14 +171,32 @@
       "before": "The match went ahead",
       "after": ".",
       "parts": [
-        { "accepted": ["in spite of"] },
-        { "accepted": ["the heavy rain", "heavy rain", "it raining heavily"] }
+        {
+          "accepted": [
+            "in spite of"
+          ]
+        },
+        {
+          "accepted": [
+            "the heavy rain",
+            "heavy rain",
+            "it raining heavily",
+            "the heavy rainfall",
+            "heavy rainfall"
+          ]
+        }
       ],
-      "fullAnswers": ["in spite of the heavy rain", "in spite of heavy rain", "in spite of it raining heavily"],
+      "fullAnswers": [
+        "in spite of the heavy rain",
+        "in spite of heavy rain",
+        "in spite of it raining heavily",
+        "in spite of the heavy rainfall",
+        "in spite of heavy rainfall"
+      ],
       "type": "linking",
       "explanation": {
-        "en": "Part 1: 'although' is followed by a clause, but 'in spite of' needs a noun phrase or -ing form. Part 2: 'it rained heavily' becomes 'the heavy rain' (or 'it raining heavily').",
-        "cs": "Část 1: although + věta, ale in spite of + podstatné jméno nebo -ing. Část 2: větu převedeme na podstatné jméno: the heavy rain. Pozor: 'in spite of it rained' je chyba."
+        "en": "Part 1: 'although' is followed by a clause, but 'in spite of' needs a noun phrase or -ing form. Part 2: 'it rained heavily' becomes 'the heavy rain' (or 'heavy rainfall', 'it raining heavily').",
+        "cs": "Část 1: although + věta, ale in spite of + podstatné jméno nebo -ing. Část 2: větu převedeme na podstatné jméno: the heavy rain (také heavy rainfall, it raining heavily). Pozor: in spite of it rained je chyba."
       }
     }
   ]

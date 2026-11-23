@@ -177,13 +177,73 @@ export const rue7Schema = z
       fail(ctx, 'answers must be 6 different paragraphs (exactly 1 paragraph unused)', ['questions']);
   });
 
+// ---- Parts 5, 6, 8 (reading comprehension) ---------------------------------
+function checkNumbers(ctx: Ctx, ns: number[], count: number) {
+  if (ns.some((n, i) => n !== i + 1)) fail(ctx, `question numbers must be 1..${count} in order, found: ${ns.join(',')}`, ['questions']);
+}
+
+const p5q = z.strictObject({
+  n: z.number().int(),
+  stem: str,
+  options: z.strictObject({ A: str, B: str, C: str, D: str }),
+  answer: letter4,
+  type: z.enum(RUE_TAGS[5]),
+  explanation,
+});
+export const rue5Schema = z
+  .strictObject({ ...rueBase, part: z.literal(5), text: str, questions: z.array(p5q).length(6) })
+  .superRefine((v, ctx) => {
+    checkSource(ctx, v);
+    checkNumbers(ctx, v.questions.map((q) => q.n), 6);
+    v.questions.forEach((q, i) => {
+      if (new Set(Object.values(q.options).map(norm)).size !== 4)
+        fail(ctx, `question ${q.n}: the 4 options must be distinct`, ['questions', i, 'options']);
+    });
+  });
+
+const p6q = z.strictObject({ n: z.number().int(), stem: str, answer: letter4, type: z.enum(RUE_TAGS[6]), explanation });
+export const rue6Schema = z
+  .strictObject({
+    ...rueBase,
+    part: z.literal(6),
+    texts: z.array(z.strictObject({ id: letter4, heading: str, text: str })).length(4),
+    questions: z.array(p6q).length(4),
+  })
+  .superRefine((v, ctx) => {
+    checkSource(ctx, v);
+    checkNumbers(ctx, v.questions.map((q) => q.n), 4);
+    if (v.texts.map((t) => t.id).join('') !== 'ABCD') fail(ctx, 'text ids must be A-D in order', ['texts']);
+  });
+
+const letter8 = z.enum(['A', 'B', 'C', 'D', 'E', 'F']);
+const p8q = z.strictObject({ n: z.number().int(), stem: str, answer: letter8, type: z.enum(RUE_TAGS[8]), explanation });
+export const rue8Schema = z
+  .strictObject({
+    ...rueBase,
+    part: z.literal(8),
+    sections: z.array(z.strictObject({ id: letter8, heading: str, text: str })).min(4).max(6),
+    questions: z.array(p8q).length(10),
+  })
+  .superRefine((v, ctx) => {
+    checkSource(ctx, v);
+    checkNumbers(ctx, v.questions.map((q) => q.n), 10);
+    const ids = v.sections.map((x) => x.id);
+    if (ids.join('') !== 'ABCDEF'.slice(0, ids.length)) fail(ctx, 'section ids must be A, B, C... in order without gaps', ['sections']);
+    v.questions.forEach((q, i) => {
+      if (!ids.includes(q.answer)) fail(ctx, `question ${q.n}: answer ${q.answer} is not an existing section (${ids.join(',')})`, ['questions', i, 'answer']);
+    });
+  });
+
 // ---- lookup ---------------------------------------------------------------
 export const schemas = {
   'rue/1': rue1Schema,
   'rue/2': rue2Schema,
   'rue/3': rue3Schema,
   'rue/4': rue4Schema,
+  'rue/5': rue5Schema,
+  'rue/6': rue6Schema,
   'rue/7': rue7Schema,
+  'rue/8': rue8Schema,
 } as const;
 export type SchemaKey = keyof typeof schemas;
 

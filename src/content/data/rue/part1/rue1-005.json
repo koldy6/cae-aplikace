@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "rue1-005",
+  "paper": "rue",
+  "part": 1,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Treasure on the ocean floor",
+  "topic": "deep-sea mining and the environment",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "Thousands of metres below the surface of the Pacific lie vast fields of potato-sized rocks containing cobalt, nickel and other metals used in electric car batteries. Mining companies have long had their eye on these deposits, and several now [[1]] investors that the seabed can be harvested with minimal harm. Collecting rocks from the ocean floor, they argue, is far less destructive than [[2]] rainforests to reach the same metals on land.\n\nMarine biologists are far from convinced. The machines would stir [[3]] vast clouds of sediment, which could drift for hundreds of kilometres and smother creatures living on the seabed. What is more, the deep sea remains one of the least [[4]] environments on the planet: we have better maps of the surface of Mars than of our own ocean floor. Several countries have [[5]] for a pause on all deep-sea mining until more research has been done.\n\nSupporters of mining, [[6]], point out that demand for batteries is rising fast and the metals have to come from somewhere. In the [[7]] of a clear scientific consensus, the decision is likely to come down to politics. That prospect [[8]] many scientists, who fear that damage done now could take thousands of years to repair.",
+  "questions": [
+    {
+      "n": 1,
+      "options": { "A": "insist", "B": "claim", "C": "assure", "D": "argue" },
+      "answer": "C",
+      "type": "verb-pattern",
+      "explanation": {
+        "en": "The gap is followed by a person and a 'that'-clause ('investors that ...'), and only 'assure somebody that' has this pattern. 'Insist', 'claim' and 'argue' take a 'that'-clause directly, without a personal object.",
+        "cs": "Vazba 'assure sb that' = ujistit někoho, že. 'Claim', 'argue' i 'insist' mají 'that' hned za slovesem, bez osoby ('claim that ...', ne 'claim investors that')."
+      }
+    },
+    {
+      "n": 2,
+      "options": { "A": "clearing", "B": "emptying", "C": "vacating", "D": "clarifying" },
+      "answer": "A",
+      "type": "collocation",
+      "explanation": {
+        "en": "'Clear a forest' means to cut down the trees so the land can be used, which fits 'clearing rainforests to reach the same metals'. 'Emptying' is used for containers or rooms, not for land covered in trees.",
+        "cs": "'Clear a forest' = vykácet les (uvolnit půdu). 'Empty' znamená vyprázdnit nádobu nebo místnost, s lesem se nepojí."
+      }
+    },
+    {
+      "n": 3,
+      "options": { "A": "off", "B": "out", "C": "over", "D": "up" },
+      "answer": "D",
+      "type": "phrasal-verb",
+      "explanation": {
+        "en": "'Stir up' means to make sediment or dust rise and move around: 'stir up vast clouds of sediment'. The other particles do not form a phrasal verb with 'stir' that has this meaning.",
+        "cs": "'Stir up' = zvířit (prach, usazeniny), přeneseně i vyvolat (stir up trouble). Ostatní částice se slovesem 'stir' tento význam netvoří."
+      }
+    },
+    {
+      "n": 4,
+      "options": { "A": "realised", "B": "understood", "C": "noticed", "D": "acknowledged" },
+      "answer": "B",
+      "type": "meaning-in-context",
+      "explanation": {
+        "en": "The clue is 'we have better maps of the surface of Mars': the deep sea is one of the 'least understood' places, meaning we know little about it. 'Acknowledged' means accepted as true or existing, which does not fit a place.",
+        "cs": "Nápověda je o mapách: o hlubokém moři toho víme málo, je 'least understood' (nejméně prozkoumané, pochopené). 'Acknowledged' = uznaný, přiznaný, to k prostředí nesedí."
+      }
+    },
+    {
+      "n": 5,
+      "options": { "A": "called", "B": "demanded", "C": "required", "D": "insisted" },
+      "answer": "A",
+      "type": "dependent-preposition",
+      "explanation": {
+        "en": "The gap is followed by 'for', and 'call for' means to demand publicly: 'have called for a pause'. 'Demanded' and 'required' take a direct object without 'for', and 'insist' takes 'on'.",
+        "cs": "'Call for sth' = vyzývat k něčemu. 'Demand' a 'require' mají přímý předmět bez předložky (demand a pause), 'insist' se pojí s 'on'."
+      }
+    },
+    {
+      "n": 6,
+      "options": { "A": "therefore", "B": "moreover", "C": "however", "D": "besides" },
+      "answer": "C",
+      "type": "linking",
+      "explanation": {
+        "en": "The paragraph turns from the critics to the other side, so a contrast is needed: 'Supporters of mining, however, point out'. 'Moreover' would add another argument in the same direction as the critics.",
+        "cs": "Odstavec přechází od kritiků k zastáncům, proto kontrast 'however' (však). 'Moreover' (navíc) by jen přidalo další argument kritiků."
+      }
+    },
+    {
+      "n": 7,
+      "options": { "A": "lack", "B": "absence", "C": "shortage", "D": "want" },
+      "answer": "B",
+      "type": "fixed-phrase",
+      "explanation": {
+        "en": "'In the absence of' is a fixed phrase meaning 'without': 'In the absence of a clear scientific consensus'. 'Lack' has the right meaning but is used as 'for lack of' or 'a lack of', not 'in the lack of'.",
+        "cs": "'In the absence of' = při absenci, protože chybí. 'Lack' znamená totéž, ale používá se jako 'for lack of' nebo 'a lack of', ne 'in the lack of'."
+      }
+    },
+    {
+      "n": 8,
+      "options": { "A": "startles", "B": "astonishes", "C": "amazes", "D": "alarms" },
+      "answer": "D",
+      "type": "meaning-in-context",
+      "explanation": {
+        "en": "The scientists 'fear that damage done now' could last for millennia, so the feeling is worry: the prospect 'alarms' them. 'Startles' describes a brief shock from something sudden, not a lasting concern about the future.",
+        "cs": "Vědci se obávají ('fear'), proto 'alarm' = znepokojit, vyděsit. 'Startle' je krátké leknutí z něčeho náhlého, ne dlouhodobá obava; 'astonish' a 'amaze' vyjadřují údiv, ne strach."
+      }
+    }
+  ]
+}

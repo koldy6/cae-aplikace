@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "bad-p6-text-id",
+  "paper": "rue",
+  "part": 6,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Sample: Working from home",
+  "topic": "remote work",
+  "difficulty": 2,
+  "reviewed": false,
+  "texts": [
+    {
+      "id": "A",
+      "heading": "Priya",
+      "text": "I have worked from my kitchen table for three years and I would not go back. I save two hours a day on commuting, and my concentration is far better without colleagues interrupting. People worry about loneliness, but I see my friends more now than I did before."
+    },
+    {
+      "id": "B",
+      "heading": "Daniel",
+      "text": "Everyone praises the freedom, yet I miss the office. Ideas come from casual conversations by the coffee machine, and those do not survive on video calls. I accept that the commute was tiresome, but it also gave me a boundary between work and home."
+    },
+    {
+      "id": "C",
+      "heading": "Hannah",
+      "text": "For my team the main gain is flexibility. Parents can collect children and no one has to spend a fortune on rent in the city. The loss is spontaneity, but we meet in person once a month, which seems to be enough to keep us together."
+    },
+    {
+      "id": "C",
+      "heading": "Marcus",
+      "text": "Companies like remote work because it cuts costs, not because it makes people happy. I find it isolating, and younger staff especially lose out because they learn by watching others. Meeting monthly is not a real substitute for daily contact."
+    }
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "stem": "Priya and which other writer say that working at home saves them money or time?",
+      "answer": "C",
+      "type": "shares-view",
+      "explanation": {
+        "en": "Sample explanation for question 1.",
+        "cs": "Ukázkové vysvětlení k otázce 1."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "Which writer takes a different view from Daniel about the value of conversations at work?",
+      "answer": "A",
+      "type": "differs-from-one",
+      "explanation": {
+        "en": "Sample explanation for question 2.",
+        "cs": "Ukázkové vysvětlení k otázce 2."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "Which writer has a different opinion from all the others about the commute?",
+      "answer": "B",
+      "type": "differs-from-all",
+      "explanation": {
+        "en": "Sample explanation for question 3.",
+        "cs": "Ukázkové vysvětlení k otázce 3."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "Which writer shares Marcus's doubt that occasional meetings are enough?",
+      "answer": "B",
+      "type": "shares-view",
+      "explanation": {
+        "en": "Sample explanation for question 4.",
+        "cs": "Ukázkové vysvětlení k otázce 4."
+      }
+    }
+  ]
+}

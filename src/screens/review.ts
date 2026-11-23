@@ -13,12 +13,17 @@ function correctText(set: DrillSet, q: DrillQuestion): string {
     const k = (q as { answer: string }).answer;
     return `${k} – ${set.paragraphs.find((p) => p.id === k)?.text.slice(0, 80) ?? ''}…`;
   }
-  const g = q as Extract<DrillSet, { part: 1 | 2 | 3 }>['questions'][number];
+  if (set.part === 6 || set.part === 8) {
+    const k = (q as { answer: string }).answer;
+    const pool: { id: string; heading: string }[] = set.part === 6 ? set.texts : set.sections;
+    return `${k} – ${pool.find((x) => x.id === k)?.heading ?? ''}`;
+  }
+  const g = q as Extract<DrillSet, { part: 1 | 2 | 3 | 5 }>['questions'][number];
   return 'options' in g ? `${g.answer} – ${g.options[g.answer]}` : g.answers.join(' / ');
 }
 function givenText(set: DrillSet, q: DrillQuestion, a: Attempt): string {
   if (!a.answer) return '(bez odpovědi)';
-  return set.part === 1 && 'options' in q ? `${a.answer} – ${q.options[a.answer as 'A'] ?? ''}` : a.answer;
+  return (set.part === 1 || set.part === 5) && 'options' in q ? `${a.answer} – ${q.options[a.answer as 'A'] ?? ''}` : a.answer;
 }
 
 export function reviewScreen(store: Store, sessionId: string): ReturnType<Route['render']> {

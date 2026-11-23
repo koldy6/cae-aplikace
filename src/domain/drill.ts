@@ -1,4 +1,4 @@
-import type { ContentSet, Rue1Set, Rue2Set, Rue3Set, Rue4Set, Rue7Set } from '../content/types';
+import type { ContentSet, Rue1Set, Rue2Set, Rue3Set, Rue4Set, Rue5Set, Rue6Set, Rue7Set, Rue8Set } from '../content/types';
 import type { Attempt, Session } from '../storage/store';
 import { kwtScore, maxMarks, scoreLetter, scoreOpen } from './scoring';
 
@@ -29,10 +29,13 @@ export type GapQuestion = GapSet['questions'][number];
 /** Parts 1-3: gaps in a text. */
 export const isGapSet = (s: ContentSet): s is GapSet => s.part === 1 || s.part === 2 || s.part === 3;
 
-/** Every set that has a drill screen (Parts 1-4 and 7). */
-export type DrillSet = GapSet | Rue4Set | Rue7Set;
-export type DrillQuestion = GapQuestion | Rue4Set['items'][number] | Rue7Set['questions'][number];
-export const isDrillSet = (s: ContentSet): s is DrillSet => s.part === 1 || s.part === 2 || s.part === 3 || s.part === 4 || s.part === 7;
+/** Parts 5, 6, 8: passages plus questions. */
+export type ReadingSet = Rue5Set | Rue6Set | Rue8Set;
+
+/** Every set that has a drill screen (all implemented parts). */
+export type DrillSet = GapSet | Rue4Set | Rue7Set | ReadingSet;
+export type DrillQuestion = GapQuestion | Rue4Set['items'][number] | Rue7Set['questions'][number] | ReadingSet['questions'][number];
+export const isDrillSet = (s: ContentSet): s is DrillSet => s.paper === 'rue';
 export const questionsOf = (s: DrillSet): DrillQuestion[] => (s.part === 4 ? s.items : s.questions);
 
 /** Open answers can be self-marked. */
@@ -45,10 +48,10 @@ export const blocksImplicitSubmit = (key: string, tag: string, type?: string): b
 export const scoreGap = (q: GapQuestion, given: string): 0 | 1 =>
   'answer' in q ? scoreLetter(given, q.answer) : scoreOpen(given, q.answers);
 
-/** Marks for one answer: Parts 1-3 are 0/1, Part 4 (KWT) 0/1/2, Part 7 is 2 per correct gap. */
+/** Marks for one answer: Parts 1-3 are 0/1, Part 4 (KWT) 0/1/2, Parts 5-7 are 2 per correct answer, Part 8 is 1. */
 export function scoreAny(set: DrillSet, q: DrillQuestion, given: string): 0 | 1 | 2 {
   if (set.part === 4) return kwtScore(given, q as Rue4Set['items'][number]);
-  if (set.part === 7) return scoreLetter(given, (q as Rue7Set['questions'][number]).answer) === 1 ? 2 : 0;
+  if (set.part >= 5) return (scoreLetter(given, (q as { answer: string }).answer) * maxMarks(set.part)) as 0 | 1 | 2;
   return scoreGap(q as GapQuestion, given);
 }
 

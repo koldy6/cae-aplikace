@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "bad-p5-five-questions",
+  "paper": "rue",
+  "part": 5,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Sample: The quiet workshop",
+  "topic": "craft and patience",
+  "difficulty": 2,
+  "reviewed": false,
+  "text": "When Maria Lopes opened her furniture workshop twenty years ago, she expected to compete with factories. Instead, she found customers who wanted something the factories could not offer: a chair with a story.\n\nShe works slowly, and she says so without apology. A single table can take six weeks, partly because she lets the wood rest between stages. Visitors often assume this is a pose, but she insists it is practical. Timber that is hurried, she explains, will warp within a year.\n\nHer apprentices find the pace hard at first. One of them, Tomas, admitted that he used to check his phone every few minutes. After a month he stopped noticing that he had stopped.\n\nNot everything is peaceful. Last winter a large order was cancelled at short notice, and Maria spent a sleepless week deciding whether to lay anyone off. In the end she cut her own wages instead. She does not talk about it much, but Tomas knows, and says it changed how he saw her.\n\nToday the workshop has a waiting list of nearly a year. Maria is wary of this. 'A long list is flattering,' she says, 'but it can turn into a promise you cannot keep.' She has therefore decided to take no new orders until the autumn.",
+  "questions": [
+    {
+      "n": 1,
+      "stem": "Why does Maria let the wood rest between stages?",
+      "options": {
+        "A": "She wants visitors to see a traditional method.",
+        "B": "Rushed timber does not last well.",
+        "C": "She has too few apprentices to work faster.",
+        "D": "Customers expect a slow process."
+      },
+      "answer": "B",
+      "type": "detail",
+      "explanation": {
+        "en": "Sample explanation for question 1.",
+        "cs": "Ukázkové vysvětlení k otázce 1."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "What does the writer suggest about Tomas in the third paragraph?",
+      "options": {
+        "A": "He became more relaxed without realising it.",
+        "B": "He disliked the slow pace throughout.",
+        "C": "He was asked to stop using his phone.",
+        "D": "He learned the craft faster than others."
+      },
+      "answer": "A",
+      "type": "inference",
+      "explanation": {
+        "en": "Sample explanation for question 2.",
+        "cs": "Ukázkové vysvětlení k otázce 2."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "What is the main point of the fourth paragraph?",
+      "options": {
+        "A": "Maria dislikes talking about business.",
+        "B": "Large orders are risky for small workshops.",
+        "C": "Maria put her staff before herself in a crisis.",
+        "D": "Tomas intends to leave the workshop."
+      },
+      "answer": "C",
+      "type": "gist",
+      "explanation": {
+        "en": "Sample explanation for question 3.",
+        "cs": "Ukázkové vysvětlení k otázce 3."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "What does 'a pose' mean in the second paragraph?",
+      "options": {
+        "A": "a rule of the trade",
+        "B": "a pretended attitude",
+        "C": "a physical position",
+        "D": "a marketing plan"
+      },
+      "answer": "B",
+      "type": "meaning-in-context",
+      "explanation": {
+        "en": "Sample explanation for question 4.",
+        "cs": "Ukázkové vysvětlení k otázce 4."
+      }
+    },
+    {
+      "n": 5,
+      "stem": "What is Maria's attitude to the long waiting list?",
+      "options": {
+        "A": "She is proud of it.",
+        "B": "She is anxious to shorten it at once.",
+        "C": "She is cautious about what it implies.",
+        "D": "She is amused by it."
+      },
+      "answer": "C",
+      "type": "attitude-opinion",
+      "explanation": {
+        "en": "Sample explanation for question 5.",
+        "cs": "Ukázkové vysvětlení k otázce 5."
+      }
+    }
+  ]
+}

@@ -25,7 +25,7 @@
     },
     {
       "id": "D",
-      "text": "That brightness, it turns out, has a name: skyglow. It is produced when light from streetlamps, car parks and illuminated advertising is scattered by particles in the air, forming a glowing dome that can be seen from many kilometres away. According to one estimate I came across, most people in Europe now live under skies where the faintest stars are permanently hidden."
+      "text": "That brightness, it turns out, has a name: skyglow. It is produced when light from streetlamps, car parks and illuminated advertising is scattered by particles in the air, forming a glowing dome that can be seen from many kilometres away. According to the estimates I came across, most people in Europe now live under skies where the faintest stars are permanently hidden, and more than half can no longer see the Milky Way from where they live."
     },
     {
       "id": "E",
@@ -46,8 +46,8 @@
       "answer": "D",
       "type": "reference-link",
       "explanation": {
-        "en": "'That brightness' points back to 'simply too bright', and the estimate in D is what 'figures like these' refers to after the gap. E also mentions statistics, but there are none before the gap for 'Such statistics' to refer to.",
-        "cs": "'That brightness' odkazuje na 'too bright' před mezerou a odhad v D vysvětluje 'figures like these' za mezerou. E začíná 'Such statistics', ale před mezerou žádná čísla nejsou."
+        "en": "'That brightness' points back to 'simply too bright', and the estimates in D are what 'figures like these' refers to after the gap. E also mentions statistics, but there are none before the gap for 'Such statistics' to refer to.",
+        "cs": "'That brightness' odkazuje na 'too bright' před mezerou a odhady v D vysvětlují 'figures like these' za mezerou. E začíná 'Such statistics', ale před mezerou žádná čísla nejsou."
       }
     },
     {

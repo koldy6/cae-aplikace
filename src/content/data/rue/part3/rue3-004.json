@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "rue3-004",
+  "paper": "rue",
+  "part": 3,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Lost in machine translation",
+  "topic": "translation technology",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "Not long ago, the idea that a phone could translate a conversation in real time seemed almost [[1]]. Today, translation apps are used by millions of people, and their [[2]] has improved dramatically thanks to a [[3]] in artificial intelligence. Instead of following rules written by linguists, modern systems learn from vast quantities of text, which allows them to handle slang, idioms and [[4]] speech far better than before.\n\nEven so, it would be a mistake to [[5]] what the technology can do. Apps still struggle with humour, wordplay and cultural references, and a single [[6]] in a medical or legal document could have serious consequences. The software has certainly [[7]] the time professionals spend on routine texts, but it has not replaced them. [[8]], translators work alongside the machine, checking and correcting its output rather than starting from scratch.",
+  "questions": [
+    {
+      "n": 1,
+      "stem": "BELIEVE",
+      "answers": ["unbelievable"],
+      "type": "negative-prefix",
+      "explanation": {
+        "en": "'Seemed almost' needs an adjective, and 'Not long ago' contrasts the past doubt with today's reality: 'unbelievable'. Two changes: the prefix un- and the suffix -able (the final -e is dropped).",
+        "cs": "Po 'seemed almost' je přídavné jméno; dříve to vypadalo nemožně, proto záporné un- + believ + -able = unbelievable. Koncové -e zmizí."
+      }
+    },
+    {
+      "n": 2,
+      "stem": "ACCURATE",
+      "answers": ["accuracy"],
+      "type": "noun-formation",
+      "explanation": {
+        "en": "After the possessive 'their' a noun is needed as the subject of 'has improved': 'accuracy'. The adjective ending -ate changes to -acy.",
+        "cs": "Za 'their' musí stát podstatné jméno (podmět): accuracy = přesnost. Přípona -ate se mění na -acy."
+      }
+    },
+    {
+      "n": 3,
+      "stem": "BREAK",
+      "answers": ["breakthrough"],
+      "type": "compound-word",
+      "explanation": {
+        "en": "'A ... in artificial intelligence' that improved the apps is an important discovery: 'a breakthrough'. The stem combines with 'through' to form one compound noun.",
+        "cs": "Jde o zásadní objev, který aplikace zlepšil: breakthrough = průlom. Slovo vzniká spojením break + through."
+      }
+    },
+    {
+      "n": 4,
+      "stem": "FORMAL",
+      "answers": ["informal"],
+      "type": "negative-prefix",
+      "explanation": {
+        "en": "The list 'slang, idioms and ... speech' describes casual language, so the negative 'informal' is needed. The answer must be a different form from the stem, and 'formal' would not match slang.",
+        "cs": "Výčet 'slang, idioms' popisuje hovorový jazyk, proto záporná předpona in-: informal = neformální, hovorový."
+      }
+    },
+    {
+      "n": 5,
+      "stem": "ESTIMATE",
+      "answers": ["overestimate"],
+      "type": "compound-word",
+      "explanation": {
+        "en": "'Even so' and the list of things apps still 'struggle with' show the warning is about thinking they are better than they are: 'overestimate'. 'Underestimate' fits the grammar but has the opposite meaning.",
+        "cs": "'Even so' a výčet slabin ukazují, že nemáme technologii přeceňovat: over- + estimate = overestimate. 'Underestimate' (podcenit) je opak a do kontextu nesedí."
+      }
+    },
+    {
+      "n": 6,
+      "stem": "TRANSLATE",
+      "answers": ["mistranslation"],
+      "type": "negative-prefix",
+      "explanation": {
+        "en": "'A single ... could have serious consequences' refers to an error, so the noun needs the prefix mis- meaning 'wrongly': 'mistranslation'. Two changes: mis- and the noun suffix -ion.",
+        "cs": "Vážné následky může mít chyba v překladu, proto předpona mis- (špatně) a přípona -ion: mistranslation = chybný překlad."
+      }
+    },
+    {
+      "n": 7,
+      "stem": "SHORT",
+      "answers": ["shortened"],
+      "type": "verb-formation",
+      "explanation": {
+        "en": "'Has certainly ... the time' needs a past participle of a verb with the meaning 'make shorter': 'shortened'. The suffix -en turns the adjective into a verb, and -ed is added for the present perfect.",
+        "cs": "Po 'has' je potřeba příčestí slovesa: short (krátký), shorten (zkrátit), shortened. Přípona -en tvoří sloveso z přídavného jména."
+      }
+    },
+    {
+      "n": 8,
+      "stem": "INCREASE",
+      "answers": ["Increasingly"],
+      "type": "adverb-formation",
+      "explanation": {
+        "en": "A sentence adverb is needed before the comma to describe a growing trend: 'Increasingly, translators work alongside the machine'. Two steps: increase, increasing, increasingly.",
+        "cs": "Na začátku věty stojí příslovce popisující rostoucí trend: increasingly = stále častěji. Dva kroky: increase, increasing, increasingly."
+      }
+    }
+  ]
+}

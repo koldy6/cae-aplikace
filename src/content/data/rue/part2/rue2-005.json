@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "rue2-005",
+  "paper": "rue",
+  "part": 2,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Meat without the animal",
+  "topic": "food science",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "Meat grown from animal cells in a laboratory, rather than taken from a slaughtered animal, was until recently regarded as [[1]] stuff of science fiction. Today, a handful of companies are selling it, although only in small quantities and at prices [[2]] put it out of reach of most shoppers.\n\nThe process begins [[3]] a small sample of cells taken from a living animal. These are then fed nutrients in large steel tanks until they multiply. In theory, it would take only a few cells to produce [[4]] meat to feed a whole town. Supporters claim that, if the technology were adopted on a large scale, it [[5]] dramatically reduce the land and water used for farming.\n\nNo sooner [[6]] the first products gone on sale than critics began to raise objections. Some question whether the energy needed to run the tanks would cancel [[7]] the environmental benefits. Others doubt that consumers will ever trust food made in a factory. Whatever the outcome, few experts expect lab-grown meat to replace farming altogether; at most, [[8]] will become one option among many.",
+  "questions": [
+    {
+      "n": 1,
+      "answers": ["the"],
+      "type": "article-determiner",
+      "explanation": {
+        "en": "'The stuff of science fiction' (or 'of dreams', 'of legend') is a fixed pattern meaning 'something that belongs in science fiction'. It always takes the definite article.",
+        "cs": "Spojení 'the stuff of science fiction' = něco jako z vědeckofantastického románu. Používá se se členem 'the'."
+      }
+    },
+    {
+      "n": 2,
+      "answers": ["that", "which"],
+      "type": "relative-pronoun",
+      "explanation": {
+        "en": "A defining relative clause describes the prices: 'prices that put it out of reach'. There is no comma, so both 'that' and 'which' are accepted.",
+        "cs": "Vztažná věta bez čárky určuje, o jaké ceny jde, proto 'that' i 'which'. 'What' tu nejde, protože už máme podstatné jméno 'prices'."
+      }
+    },
+    {
+      "n": 3,
+      "answers": ["with"],
+      "type": "preposition",
+      "explanation": {
+        "en": "'Begin with something' names the first stage of a process: 'The process begins with a small sample'. 'By' would need an -ing form ('begins by taking').",
+        "cs": "'Begin with sth' = začínat něčím. 'Begin by' se používá s -ing (begins by taking cells), ne s podstatným jménem."
+      }
+    },
+    {
+      "n": 4,
+      "answers": ["enough", "sufficient"],
+      "type": "quantifier",
+      "explanation": {
+        "en": "'Enough meat to feed a whole town' uses the pattern enough + noun + 'to' infinitive. 'Sufficient' works in the same position and is also accepted; 'much' would need 'so much ... that' or 'too'.",
+        "cs": "Vazba enough + podstatné jméno + to + infinitiv = dost masa na to, aby. Uznává se i formálnější 'sufficient'."
+      }
+    },
+    {
+      "n": 5,
+      "answers": ["could", "would", "might"],
+      "type": "auxiliary-verb",
+      "explanation": {
+        "en": "'If the technology were adopted' is a second conditional, so the main clause needs a past modal: 'it could (would, might) dramatically reduce'. 'Will' does not match the unreal 'were' in the if-clause.",
+        "cs": "Druhý kondicionál (if ... were adopted) chce v hlavní větě would, could nebo might. 'Will' patří k prvnímu kondicionálu a s 'were' nejde dohromady."
+      }
+    },
+    {
+      "n": 6,
+      "answers": ["had"],
+      "type": "inversion",
+      "explanation": {
+        "en": "'No sooner' at the start of a sentence causes inversion with the past perfect: 'No sooner had the first products gone on sale than critics began'. The participle 'gone' and the later 'than' are the clues.",
+        "cs": "Po 'No sooner' na začátku věty následuje inverze s předminulým časem: had + podmět + příčestí. Nápovědou je 'gone' a dále 'than'."
+      }
+    },
+    {
+      "n": 7,
+      "answers": ["out"],
+      "type": "phrasal-verb",
+      "explanation": {
+        "en": "'Cancel out' means to balance something so that it has no effect: the energy used might cancel out the benefits. 'Cancel off' or 'cancel down' are not used with this meaning.",
+        "cs": "'Cancel out' = vyrušit, vynulovat účinek něčeho. Spotřeba energie by mohla smazat ekologický přínos."
+      }
+    },
+    {
+      "n": 8,
+      "answers": ["it", "this"],
+      "type": "pronoun",
+      "explanation": {
+        "en": "The clause needs a subject that refers back to 'lab-grown meat': 'at most, it will become one option'. 'This' is also accepted; 'they' does not agree with the uncountable 'meat'.",
+        "cs": "Věta potřebuje podmět odkazující na 'lab-grown meat'. 'Meat' je nepočitatelné, proto 'it' (případně 'this'), ne 'they'."
+      }
+    }
+  ]
+}

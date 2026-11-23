@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "rue4-005",
+  "paper": "rue",
+  "part": 4,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Transformations: travel and home",
+  "topic": "travel and home",
+  "difficulty": 2,
+  "reviewed": true,
+  "items": [
+    {
+      "n": 1,
+      "sentence1": "Without the satnav, we would have got completely lost in the mountains.",
+      "keyWord": "BEEN",
+      "before": "If it",
+      "after": "the satnav, we would have got completely lost in the mountains.",
+      "parts": [
+        { "accepted": ["had not", "hadn't"] },
+        { "accepted": ["been for"] }
+      ],
+      "fullAnswers": ["had not been for", "hadn't been for"],
+      "type": "conditional",
+      "explanation": {
+        "en": "Part 1: 'without' in a third conditional becomes 'If it had not (hadn't)', with the past perfect because the situation is in the past. Part 2: the fixed structure is 'if it hadn't been for' + noun.",
+        "cs": "Část 1: without ve třetím kondicionálu nahradíme 'If it had not / hadn't' (minulost, proto past perfect). Část 2: ustálená vazba if it hadn't been for + podstatné jméno = nebýt (čeho)."
+      }
+    },
+    {
+      "n": 2,
+      "sentence1": "Engineers will have finished the repairs to the bridge by the time we arrive.",
+      "keyWord": "REPAIRED",
+      "before": "The bridge",
+      "after": "by the time we arrive.",
+      "parts": [
+        { "accepted": ["will have"] },
+        { "accepted": ["been repaired"] }
+      ],
+      "fullAnswers": ["will have been repaired"],
+      "type": "passive",
+      "explanation": {
+        "en": "Part 1: the action will be complete before a future moment, so the future perfect 'will have' stays. Part 2: the bridge is the object of the action, so the passive 'been repaired' follows. 'Will be repaired' loses the idea of completion before we arrive.",
+        "cs": "Část 1: děj bude dokončen před určitým okamžikem v budoucnosti, proto future perfect: will have. Část 2: most opravuje někdo jiný, proto pasivum: been repaired. 'Will be repaired' neříká, že oprava bude hotová už před naším příjezdem."
+      }
+    },
+    {
+      "n": 3,
+      "sentence1": "'If I were you, I'd book a table in advance,' the receptionist told us.",
+      "keyWord": "RECOMMENDED",
+      "before": "The receptionist",
+      "after": "a table in advance.",
+      "parts": [
+        { "accepted": ["recommended that we", "recommended we"] },
+        { "accepted": ["book", "should book", "reserve", "should reserve"] }
+      ],
+      "fullAnswers": [
+        "recommended that we book",
+        "recommended that we should book",
+        "recommended we book",
+        "recommended we should book",
+        "recommended that we reserve",
+        "recommended that we should reserve",
+        "recommended we reserve",
+        "recommended we should reserve"
+      ],
+      "type": "reported-speech",
+      "explanation": {
+        "en": "Part 1: 'If I were you, I'd...' is advice, reported with 'recommended (that) we'. Part 2: the verb after it is the base form ('book') or 'should book'. 'Recommended booking' is also good English but has only 2 words, and 'recommended us to book' is widely considered incorrect.",
+        "cs": "Část 1: 'If I were you, I'd…' je rada, kterou převedeme jako recommended (that) we. Část 2: následuje holý infinitiv (book) nebo should book. 'Recommended booking' je správně, ale má jen 2 slova; 'recommended us to book' se považuje za chybu."
+      }
+    },
+    {
+      "n": 4,
+      "sentence1": "The hotel was cheap, and it was very comfortable as well.",
+      "keyWord": "ONLY",
+      "before": "The hotel was",
+      "after": "very comfortable.",
+      "parts": [
+        { "accepted": ["not only cheap"] },
+        { "accepted": ["but also", "but"] }
+      ],
+      "fullAnswers": ["not only cheap but also", "not only cheap but"],
+      "type": "linking",
+      "explanation": {
+        "en": "Part 1: 'and ... as well' becomes the paired linker 'not only', placed directly before the first quality, 'cheap'. Part 2: the second half is introduced by 'but (also)'. There is no inversion here, because 'not only' does not start the sentence.",
+        "cs": "Část 1: 'and … as well' nahradíme párovou spojkou not only, která stojí přímo před první vlastností (cheap). Část 2: druhou část uvádí but (also). Inverze zde není, protože not only nestojí na začátku věty."
+      }
+    },
+    {
+      "n": 5,
+      "sentence1": "I completely forgot to water my neighbour's plants while she was away.",
+      "keyWord": "MIND",
+      "before": "It",
+      "after": "my neighbour's plants while she was away.",
+      "parts": [
+        { "accepted": ["slipped my mind"] },
+        { "accepted": ["to water"] }
+      ],
+      "fullAnswers": ["completely slipped my mind to water", "slipped my mind to water"],
+      "type": "fixed-phrase",
+      "explanation": {
+        "en": "Part 1: 'I forgot' becomes the idiom 'it slipped my mind', where the thing forgotten is the subject, not the person. Part 2: the forgotten action follows as 'to water'. 'Completely' may be kept before 'slipped'.",
+        "cs": "Část 1: I forgot = idiom it slipped my mind (vypadlo mi to z hlavy); podmětem není člověk, ale věc. Část 2: zapomenutou činnost připojíme infinitivem: to water. Slovo completely můžeme ponechat před slipped."
+      }
+    },
+    {
+      "n": 6,
+      "sentence1": "We took a lot of food with us, but that was unnecessary because the hostel had a café.",
+      "keyWord": "NEED",
+      "before": "We",
+      "after": "so much food with us, as the hostel had a café.",
+      "parts": [
+        { "accepted": ["need not have", "had no need to", "did not need to", "didn't need to"] },
+        { "accepted": ["taken", "brought", "take", "bring"] }
+      ],
+      "fullAnswers": [
+        "need not have taken",
+        "need not have brought",
+        "had no need to take",
+        "had no need to bring",
+        "did not need to take",
+        "didn't need to take",
+        "did not need to bring",
+        "didn't need to bring"
+      ],
+      "type": "modal-verb",
+      "explanation": {
+        "en": "Part 1: 'need not have' says we did something that turned out to be unnecessary. 'Needn't' would change the key word, so write 'need not'. 'Did not need to' and 'had no need to' are accepted, as the context shows that we took the food. Part 2: after 'need not have' use the past participle 'taken'; after 'need to' use the base form 'take'.",
+        "cs": "Část 1: need not have + příčestí = udělali jsme něco zbytečně. Tvar needn't by změnil klíčové slovo, proto need not. Uznává se i did not need to / had no need to, protože z kontextu je jasné, že jídlo jsme vzali. Část 2: po need not have příčestí taken, po need to holý infinitiv take."
+      }
+    }
+  ]
+}

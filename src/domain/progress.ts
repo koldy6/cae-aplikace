@@ -69,7 +69,7 @@ export const sessionsNewestFirst = (sessions: readonly Session[]): Session[] =>
 /** Short correct-answer text shown for read-only gaps in a retry drill. */
 export function correctShort(set: DrillSet, q: DrillQuestion): string {
   const x = q as { answer?: string; answers?: string[]; options?: Record<string, string>; fullAnswers?: string[] };
-  if (set.part === 7) return x.answer ?? '';
+  if (set.part >= 6) return x.answer ?? '';
   if (x.options && x.answer) return x.options[x.answer] ?? x.answer;
   return x.answers?.[0] ?? x.fullAnswers?.[0] ?? '';
 }

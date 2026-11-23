@@ -101,16 +101,16 @@ Depends on: T05, T06, T14, T16.
 
 ## Start of week 2 – P1 completion
 
-### T18 Schema plus drill screens for Parts 5, 6 and 8 (dev)
+### T18 Schema plus drill screens for Parts 5, 6 and 8 (dev) — ✅ DONE 2026-11-23
 Depends on: T14.
 - Add the schemas from section 5.3 and the drill screens: Part 5 MC on a long text with a two-column layout at 900 px or wider; Part 6 four texts plus `<select>` A-D per question; Part 8 sections plus `<select>` per question.
 - AC: the schema tests include valid and broken fixtures for each part. The marks are 2/2/1. The review screen is reused.
 
-### T19 Content batch 2: R&UoE Parts 5, 6 and 8 (edu)
+### T19 Content batch 2: R&UoE Parts 5, 6 and 8 (edu) — ✅ DONE 2026-11-23 (3+2+2 sets)
 Depends on: T02, T18 (schema).
 - AC: 3 Part 5 texts, 2 Part 6 sets and 2 Part 8 sets. All pass the tests and are reviewed (distractors plausible but clearly wrong, with the reason stated in the explanation).
 
-### T20 Content batch 3: top up Parts 1-4 and 7 to SPEC minimum (edu)
+### T20 Content batch 3: top up Parts 1-4 and 7 to SPEC minimum (edu) — ✅ DONE 2026-11-23 (all SPEC minimums met: 34 sets, 244 questions)
 Depends on: T05, T06, the M1 feedback.
 - AC: Parts 1-3 have 6 texts each, Part 4 has 36 items and Part 7 has 3 texts. A sample review of 20% is done by edu with fresh eyes, and issues from the `issues` reports are fixed.
 

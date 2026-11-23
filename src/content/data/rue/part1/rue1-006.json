@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "rue1-006",
+  "paper": "rue",
+  "part": 1,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Democracy by lottery",
+  "topic": "citizens' assemblies",
+  "difficulty": 2,
+  "reviewed": true,
+  "text": "Faced with divisive questions that politicians seem unable to resolve, a growing number of governments are trying something new: the citizens' assembly. Around a hundred people are chosen by lottery, with care taken to [[1]] that the group reflects the population in terms of age, gender and region. Over several weekends, members listen to experts, question campaigners on both sides and then [[2]] the arguments over in small groups.\n\nCrucially, members are not expected to [[3]] up their minds straight away; they have weeks to weigh the evidence, and many end up changing their views. The format [[4]] participants to listen to one another rather than simply defend their own positions. In some countries, the recommendations of such assemblies have [[5]] considerable weight, paving the way for changes in the law.\n\nCritics, however, are [[6]] of the idea that a small group of unelected people should have so much influence. They point out that assembly members are not accountable to voters, [[7]] MPs, who can be removed at the next election. Supporters [[8]] that this is precisely the point: freed from the pressure of winning votes, members can afford to think about the long term.",
+  "questions": [
+    {
+      "n": 1,
+      "options": { "A": "assure", "B": "safeguard", "C": "secure", "D": "ensure" },
+      "answer": "D",
+      "type": "meaning-in-context",
+      "explanation": {
+        "en": "'Ensure that' means to make certain that something happens: 'to ensure that the group reflects the population'. 'Assure' means to tell somebody confidently and needs a personal object ('assure people that').",
+        "cs": "'Ensure that' = zajistit, aby. 'Assure' = ujistit někoho a vyžaduje osobu (assure sb that). 'Secure' a 'safeguard' se s 'that'-větou nepojí."
+      }
+    },
+    {
+      "n": 2,
+      "options": { "A": "speak", "B": "talk", "C": "tell", "D": "say" },
+      "answer": "B",
+      "type": "phrasal-verb",
+      "explanation": {
+        "en": "'Talk something over' means to discuss it thoroughly, which fits 'talk the arguments over in small groups'. 'Speak over' means to talk at the same time as someone else, so it does not fit.",
+        "cs": "'Talk sth over' = probrat, prodiskutovat. 'Speak over sb' znamená skákat někomu do řeči; 'tell' a 'say' frázové sloveso s 'over' v tomto významu netvoří."
+      }
+    },
+    {
+      "n": 3,
+      "options": { "A": "take", "B": "set", "C": "make", "D": "put" },
+      "answer": "C",
+      "type": "fixed-phrase",
+      "explanation": {
+        "en": "'Make up your mind' is a fixed phrase meaning 'decide': 'not expected to make up their minds straight away'. 'Set your mind on something' exists, but it means to be determined to get it and is not used with 'up'.",
+        "cs": "'Make up one's mind' = rozhodnout se. 'Set one's mind on sth' (upnout se na něco) existuje, ale bez 'up' a s jiným významem."
+      }
+    },
+    {
+      "n": 4,
+      "options": { "A": "requires", "B": "makes", "C": "lets", "D": "has" },
+      "answer": "A",
+      "type": "verb-pattern",
+      "explanation": {
+        "en": "The gap is followed by object + 'to' infinitive ('participants to listen'), which fits 'require somebody to do'. 'Make', 'let' and 'have' take the infinitive without 'to' in the active ('makes participants listen').",
+        "cs": "Za mezerou je předmět + to + infinitiv: 'require sb to do' (vyžadovat od někoho). Po 'make', 'let' a 'have' v činném rodě následuje holý infinitiv bez 'to'."
+      }
+    },
+    {
+      "n": 5,
+      "options": { "A": "lifted", "B": "carried", "C": "brought", "D": "raised" },
+      "answer": "B",
+      "type": "collocation",
+      "explanation": {
+        "en": "'Carry weight' is the collocation for being influential: the recommendations 'have carried considerable weight'. 'Lift' and 'raise' a weight describe a physical action, not influence.",
+        "cs": "'Carry weight' = mít váhu, vliv. 'Lift' nebo 'raise a weight' znamená fyzicky zvednout závaží, ne mít vliv."
+      }
+    },
+    {
+      "n": 6,
+      "options": { "A": "opposed", "B": "hostile", "C": "resistant", "D": "wary" },
+      "answer": "D",
+      "type": "dependent-preposition",
+      "explanation": {
+        "en": "The gap is followed by 'of the idea', and only 'wary of' takes 'of': critics are cautious about the idea. 'Opposed', 'hostile' and 'resistant' all need 'to'.",
+        "cs": "Za mezerou je 'of' a s ním se pojí jen 'wary of' (ostražitý, nedůvěřivý vůči). 'Opposed', 'hostile' i 'resistant' chtějí 'to'."
+      }
+    },
+    {
+      "n": 7,
+      "options": { "A": "unlike", "B": "whereas", "C": "despite", "D": "instead" },
+      "answer": "A",
+      "type": "linking",
+      "explanation": {
+        "en": "A contrast between two groups is needed before the noun phrase 'MPs, who can be removed', so the preposition 'unlike' fits. 'Whereas' has the right meaning but must introduce a full clause with its own verb.",
+        "cs": "Srovnáváme dvě skupiny a za mezerou je jen podstatné jméno (MPs), proto předložka 'unlike' (na rozdíl od). 'Whereas' znamená totéž, ale musí uvádět celou větu."
+      }
+    },
+    {
+      "n": 8,
+      "options": { "A": "oppose", "B": "contradict", "C": "counter", "D": "deny" },
+      "answer": "C",
+      "type": "meaning-in-context",
+      "explanation": {
+        "en": "'Counter that' means to reply to a criticism with an opposing argument, which is what the supporters do. 'Deny that' fits the grammar but would mean they reject 'this is precisely the point', the opposite of what follows.",
+        "cs": "'Counter that' = namítnout, odpovědět protiargumentem. 'Deny that' gramaticky sedí, ale znamenalo by, že popírají, že jde o podstatu věci, což odporuje zbytku věty."
+      }
+    }
+  ]
+}
