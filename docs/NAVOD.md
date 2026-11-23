@@ -6,12 +6,15 @@ Osobní aplikace na přípravu na Cambridge C1 Advanced. Běží jen na tomto po
 
 ## Spuštění
 
-1. Otevřete PowerShell a spusťte:
-   ```powershell
-   npm --prefix "C:\claude ai workspace\firma-na-aplikace\projects\cae-english" run dev
-   ```
-2. V prohlížeči (Chrome nebo Edge) otevřete **http://localhost:5173**.
-3. Ukončení: v PowerShellu stiskněte `Ctrl+C`.
+**Nejjednodušší:** dvakrát klikněte na soubor `C:\claude ai workspace\firma-na-aplikace\projects\cae-english\spustit.cmd`. Otevře se černé okno a po chvíli prohlížeč s aplikací. Okno nechte otevřené; jeho zavřením aplikaci ukončíte.
+
+**Z PowerShellu:** použijte `npm.cmd` (ne `npm` – to Windows na tomto PC blokuje kvůli zásadám spouštění skriptů):
+```powershell
+npm.cmd --prefix "C:\claude ai workspace\firma-na-aplikace\projects\cae-english" run dev
+```
+Pak otevřete **http://localhost:5173** (Chrome nebo Edge). Ukončení: `Ctrl+C`.
+
+Pokud stránka nejde otevřít, aplikace neběží – spusťte ji znovu jedním z postupů výše.
 
 ## Co aplikace obsahuje
 
