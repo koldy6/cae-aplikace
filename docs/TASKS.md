@@ -141,11 +141,11 @@ Depends on: T22, T23, T13.
 Depends on: T23.
 - AC: 2 sets of Part 3 and 2 sets of Part 4 that pass the tests. Total Listening content is about 60 questions.
 
-### T26 Writing tasks content (edu)
+### T26 Writing tasks content (edu) — ✅ DONE 2026-11-23 (8 tasks + reference/format.json)
 Depends on: T02.
 - AC: 8 tasks (4 Part 1 essays, plus Part 2 letter/email, proposal, report and review), labelled `ai-generated`. `reference/format.json` contains the Writing and Speaking criteria names, the timings and the notice text, with source URL and date (`official-format-reference`).
 
-### T27 Writing helper plus prompt builder (dev)
+### T27 Writing helper plus prompt builder (dev) — ✅ DONE 2026-11-23
 Depends on: T26, T10, T08.
 - Write `domain/prompts.ts` (`buildWritingPrompt`) and the writing screen: word count with a warning outside 220-260, optional timer, draft autosave, copy with clipboard fallback, and a paste-feedback textarea (stored and shown as plain text).
 - AC: `tests/prompts.test.ts` is green. US6 is met on desktop. The fallback copy works on the phone over http.

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "w-002",
+  "paper": "writing",
+  "part": 1,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Keeping villages alive",
+  "topic": "rural depopulation",
+  "difficulty": 2,
+  "reviewed": true,
+  "taskType": "essay",
+  "instructions": "You must answer this question. Write your answer in 220-260 words in an appropriate style.\n\nYour class has listened to a radio programme about young people leaving the countryside for big cities. You have made the notes below.\n\nWrite an essay discussing two of the measures in your notes. You should explain which measure would do more to persuade young people to stay in rural areas, giving reasons to support your view.\n\nYou may use the opinions from the programme if you wish, but express them in your own words as far as possible.",
+  "inputText": "What could encourage young people to stay in rural areas?\n\nOpinions expressed in the programme:\n'Without a fast internet connection, nobody can work from a village.'\n'If the last bus leaves at six, young people feel trapped.'\n'Young couples simply cannot afford the houses that are for sale.'",
+  "points": ["fast internet access", "better public transport", "affordable housing"],
+  "wordMin": 220,
+  "wordMax": 260,
+  "modelPlanCs": "- Úvod: obecně popiš trend odchodu mladých lidí z venkova, nezačínej hned svým názorem.\n- 2. odstavec: první opatření - proč by pomohlo a jaké má limity.\n- 3. odstavec: druhé opatření - stejná struktura, aby byly odstavce vyvážené.\n- Závěr: vyber jedno opatření jako účinnější a zdůvodni to (např. bez něj nefunguje ani to druhé).\n- Pozor: piš jen o dvou bodech; třetí bod nerozebírej."
+}

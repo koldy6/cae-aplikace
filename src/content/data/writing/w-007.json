@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "w-007",
+  "paper": "writing",
+  "part": 2,
+  "label": "ai-generated",
+  "source": null,
+  "title": "After the street food festival",
+  "topic": "local festivals and events",
+  "difficulty": 2,
+  "reviewed": true,
+  "taskType": "report",
+  "instructions": "Write your answer in 220-260 words in an appropriate style.\n\nYou helped as a volunteer at your town's first street food festival. The organising committee has asked volunteers to write a report about the event.\n\nIn your report, you should describe what worked well, explain the main problems visitors and stallholders experienced, and recommend changes for next year's festival.\n\nWrite your report.",
+  "inputText": "From the organising committee:\n\nThank you for helping at the festival. Around 8,000 people came, far more than we expected. Before we plan next year's event, we would like an honest report from the volunteers who were there on the day.",
+  "points": [],
+  "wordMin": 220,
+  "wordMax": 260,
+  "modelPlanCs": "- Titulek a úvod: účel zprávy a z čeho vychází (tvá zkušenost dobrovolníka).\n- Podnadpis 'What worked well': 2 konkrétní úspěchy.\n- Podnadpis 'Problems': hlavní potíže návštěvníků i stánkařů (fronty, odpad, nedostatek míst k sezení...).\n- Podnadpis 'Recommendations': konkrétní změny navázané na problémy.\n- Styl: neutrální až formální, věcný; trpný rod a neosobní fráze (It was noted that...)."
+}

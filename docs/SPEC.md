@@ -221,3 +221,6 @@ Still unverified:
 - Equal weighting of the five skill scores, with the overall score as their average.
 - Exact Writing Part 1 input structure (three points, choose two?). The handbook PDF (https://www.cambridgeenglish.org/Images/167804-c1-advanced-handbook.pdf) was too large to fetch.
 - Raw-mark-to-scale conversion: we found no official fixed conversion table, so the app must not show one.
+
+### Update 2026-11-23 (T26)
+Writing Part 1 input is now verified from official Cambridge teaching materials: the task gives 3 points and 3 short opinions; the candidate discusses 2 of the points and says which is more important, optionally using the opinions in their own words. Writing criteria (Content, Communicative Achievement, Organisation, Language) and Speaking criteria (Grammatical Resource, Lexical Resource, Discourse Management, Pronunciation, Interactive Communication, Global Achievement) are recorded with sources in `src/content/data/reference/format.json`.

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "w-006",
+  "paper": "writing",
+  "part": 2,
+  "label": "ai-generated",
+  "source": null,
+  "title": "A mentoring scheme for new staff",
+  "topic": "starting a new job and workplace mentoring",
+  "difficulty": 2,
+  "reviewed": true,
+  "taskType": "proposal",
+  "instructions": "Write your answer in 220-260 words in an appropriate style.\n\nThe company you work for has noticed that many new employees leave within their first year. The manager has asked staff to send in proposals for a mentoring scheme in which experienced employees support new colleagues.\n\nWrite a proposal for the manager. In your proposal, you should explain why new staff find their first months difficult, describe how the mentoring scheme should work, and say how the company would benefit.\n\nWrite your proposal.",
+  "inputText": "Message from the manager:\n\nWe are losing too many good people in their first year. I would like to start a mentoring scheme next spring and I would welcome your proposals. Please be practical: mentors will still have their normal workload.",
+  "points": [],
+  "wordMin": 220,
+  "wordMax": 260,
+  "modelPlanCs": "- Nadpis a krátký úvod: účel návrhu (To: / From: / Subject: nebo jen titulek).\n- Podnadpis 1: proč jsou první měsíce pro nováčky těžké (2-3 konkrétní důvody).\n- Podnadpis 2: jak by program fungoval - kdo je mentor, jak často se scházejí, jak to sladit s běžnou prací.\n- Podnadpis 3: přínosy pro firmu (méně odchodů, rychlejší zapracování).\n- Závěr s doporučením; formální styl, doporučovací fráze (I would recommend that..., It would be advisable to...)."
+}

@@ -190,6 +190,7 @@ main:focus, h1:focus { outline: none; } /* programmatic focus after navigation, 
   min-height: var(--tap); padding: var(--s-1) var(--s-3);
   border: 2px solid var(--c-border); border-radius: var(--radius);
 }
+textarea.input { display: block; width: 100%; box-sizing: border-box; resize: vertical; }
 
 /* Badges: two label types; text always present, border style differs (not colour only) */
 .badge {
@@ -321,3 +322,5 @@ a.part-tile:hover { border-color: var(--c-primary); }
 /* T24: Listening */
 .player, .player-opts { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-3); }
 .script p { margin: var(--s-1) 0; max-width: 42rem; }
+
+.pre-wrap { white-space: pre-wrap; font: inherit; margin: 0; }

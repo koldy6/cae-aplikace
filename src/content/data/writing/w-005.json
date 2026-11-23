@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "w-005",
+  "paper": "writing",
+  "part": 2,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Saving the market hall",
+  "topic": "historic buildings and town planning",
+  "difficulty": 2,
+  "reviewed": true,
+  "taskType": "letter",
+  "instructions": "Write your answer in 220-260 words in an appropriate style.\n\nYou have read the article below in your local newspaper. You decide to write a letter to the editor. In your letter, you should explain what the market hall means to people in the town, comment on the council's arguments, and suggest a better use for the building.\n\nWrite your letter.",
+  "inputText": "Council to replace old market hall with car park\n\nThe town council has announced that the nineteenth-century market hall, which now hosts a weekly farmers' market, will be demolished next year. Councillors say the building is too expensive to repair and that the town centre urgently needs more parking spaces. Readers' views are welcome.",
+  "points": [],
+  "wordMin": 220,
+  "wordMax": 260,
+  "modelPlanCs": "- Oslovení a úvod: Dear Editor, / Dear Sir or Madam, a důvod dopisu (reakce na článek).\n- 1. odstavec: co hala znamená pro obyvatele (historie, trh, setkávání).\n- 2. odstavec: reaguj na argumenty rady (náklady, parkování) - zdvořile, ale přesvědčivě.\n- 3. odstavec: konkrétní návrh lepšího využití budovy a proč by se vyplatil.\n- Závěr a podpis: výzva k přehodnocení, Yours faithfully / Yours sincerely + jméno; formální styl."
+}

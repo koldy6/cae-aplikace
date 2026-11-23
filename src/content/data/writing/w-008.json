@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "w-008",
+  "paper": "writing",
+  "part": 2,
+  "label": "ai-generated",
+  "source": null,
+  "title": "A documentary that changed my mind",
+  "topic": "documentary films and changing opinions",
+  "difficulty": 2,
+  "reviewed": true,
+  "taskType": "review",
+  "instructions": "Write your answer in 220-260 words in an appropriate style.\n\nYou see this announcement on an international culture website.\n\nWrite a review of a documentary film or series that made you change your opinion about something. Describe what the documentary is about, explain how and why it changed your view, and say who you would recommend it to.\n\nWrite your review.",
+  "inputText": "Reviews wanted: documentaries that changed your mind\n\nHas a documentary ever made you see a subject in a completely new way? Send us a review. We will publish the most interesting ones next month.",
+  "points": [],
+  "wordMin": 220,
+  "wordMax": 260,
+  "modelPlanCs": "- Výstižný titulek a úvod, který zaujme čtenáře (otázka nebo překvapivé tvrzení).\n- 1. odstavec: o čem dokument je - stručně, bez převyprávění celého děje.\n- 2. odstavec: jak a proč změnil tvůj názor (co sis myslel dřív, co tě přesvědčilo).\n- 3. odstavec: hodnocení - silné a slabé stránky (kamera, vypravěč, tempo).\n- Závěr: komu dokument doporučuješ a proč; živý, osobní styl s bohatou slovní zásobou."
+}

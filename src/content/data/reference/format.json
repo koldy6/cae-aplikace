@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "format",
+  "paper": "reference",
+  "label": "official-format-reference",
+  "source": { "url": "https://www.cambridgeenglish.org/exams-and-tests/advanced/exam-format/", "readOn": "2026-11-23" },
+  "sources": [
+    {
+      "url": "https://www.cambridgeenglish.org/exams-and-tests/advanced/exam-format/",
+      "readOn": "2026-11-23",
+      "what": "C1 Advanced exam format page: Writing 1 h 30 min, 2 parts, 220-260 words each; Part 1 compulsory essay based on an input text, explain which of two points is more important with reasons; Part 2 one task from three (letter/email, proposal, report, review); Speaking 15 min per pair (23 min for three) and the part timings."
+    },
+    {
+      "url": "https://cambridgeenglish.org/Images/181555-cambridge-english-c1-advanced-writing-part-1.pdf",
+      "readOn": "2026-11-23",
+      "what": "Cambridge teacher's notes 'C1 Advanced Writing Part 1': the input gives three bullet points and three short opinions; the candidate discusses two of the points, decides which is more important or effective and gives reasons; the opinions may be used but in the candidate's own words."
+    },
+    {
+      "url": "https://www.cambridgeenglish.org/Images/167864-cambridge-english-c1-advanced-writing-overview.pdf",
+      "readOn": "2026-11-23",
+      "what": "Cambridge lesson 'C1 Advanced Overview of the Writing Paper': Part 1 is one compulsory task, Part 2 offers a choice of three, both parts carry equal marks, 220-260 words each; Part 1 notes are bullet points with short related opinions, and only two bullet points are discussed."
+    },
+    {
+      "url": "https://www.cambridgeenglish.org/Images/286979-improve-your-english-checklist-c1.pdf",
+      "readOn": "2026-11-23",
+      "what": "Cambridge 'Checklist to improve your writing: C1 Advanced' (2024): the four Writing criteria Content, Communicative Achievement, Organisation and Language and what each one looks at."
+    },
+    {
+      "url": "https://www.cambridgeenglish.org/Images/600976-teacher-guide-for-writing-c1-advanced.pdf",
+      "readOn": "2026-11-23",
+      "what": "Cambridge 'Teacher guide for writing C1 Advanced': four subscales, each marked 0-5. Seen in search results only; the PDF was too large to open."
+    },
+    {
+      "url": "https://www.cambridgeenglish.org/images/167865-cambridge-english-advanced-cae-speaking-assessment-scales.pdf",
+      "readOn": "2026-11-23",
+      "what": "C1 Advanced Speaking assessment scales: Grammatical Resource, Lexical Resource, Discourse Management, Pronunciation, Interactive Communication, plus a separate Global Achievement scale; bands 0-5."
+    }
+  ],
+  "writingCriteria": [
+    {
+      "name": "Content",
+      "descriptionEn": "Whether the answer does everything the task asks: all required points are covered, nothing irrelevant is added, the task is not misread and the points are developed with the writer's own ideas.",
+      "descriptionCs": "Zda text splnil vše, co zadání požaduje: pokrývá všechny požadované body, neobsahuje nic nepodstatného, zadání nebylo špatně pochopeno a body jsou rozvedeny vlastními myšlenkami."
+    },
+    {
+      "name": "Communicative Achievement",
+      "descriptionEn": "Whether the text suits the task type and the target reader: it achieves its purpose (for example persuading, recommending, explaining) and uses a suitable register, tone and balance of fact and opinion.",
+      "descriptionCs": "Zda text odpovídá typu úlohy a cílovému čtenáři: plní svůj účel (např. přesvědčit, doporučit, vysvětlit) a používá vhodný styl, tón a poměr faktů a názorů."
+    },
+    {
+      "name": "Organisation",
+      "descriptionEn": "How well the text is put together: logical order, clear paragraphs, features that fit the genre (headings, openings, closings) and ideas that are clearly linked and given balanced space.",
+      "descriptionCs": "Jak dobře je text uspořádán: logické pořadí, jasné odstavce, prvky odpovídající žánru (nadpisy, oslovení, závěr) a myšlenky zřetelně propojené a vyvážené."
+    },
+    {
+      "name": "Language",
+      "descriptionEn": "The range and accuracy of vocabulary and grammar, including topic-specific phrases and spelling; errors matter most when they make the text hard to follow.",
+      "descriptionCs": "Rozsah a přesnost slovní zásoby a gramatiky včetně frází k tématu a pravopisu; nejvíce vadí chyby, které ztěžují porozumění."
+    }
+  ],
+  "speakingCriteria": [
+    {
+      "name": "Grammatical Resource",
+      "descriptionEn": "How well the candidate controls a range of grammatical forms, both simple and complex.",
+      "descriptionCs": "Jak dobře kandidát ovládá škálu gramatických struktur, jednoduchých i složitých."
+    },
+    {
+      "name": "Lexical Resource",
+      "descriptionEn": "How wide and appropriate the vocabulary is for giving and exchanging views on familiar and less familiar topics.",
+      "descriptionCs": "Jak široká a vhodná je slovní zásoba při vyjadřování a výměně názorů na známá i méně známá témata."
+    },
+    {
+      "name": "Discourse Management",
+      "descriptionEn": "Whether the candidate speaks at length with little hesitation, keeps contributions relevant and organised, and links ideas with cohesive devices and discourse markers.",
+      "descriptionCs": "Zda kandidát mluví souvisle a bez větší váhavosti, drží se tématu, má myšlenky uspořádané a propojuje je spojovacími výrazy."
+    },
+    {
+      "name": "Pronunciation",
+      "descriptionEn": "How easy the candidate is to understand: intonation, sentence and word stress, and clear individual sounds.",
+      "descriptionCs": "Jak snadno je kandidátovi rozumět: intonace, větný a slovní přízvuk a zřetelná výslovnost jednotlivých hlásek."
+    },
+    {
+      "name": "Interactive Communication",
+      "descriptionEn": "How well the candidate starts and responds in the conversation, builds on what the partner says, keeps the discussion moving and works towards an outcome.",
+      "descriptionCs": "Jak dobře kandidát zahajuje a reaguje v rozhovoru, navazuje na partnera, udržuje diskusi v pohybu a směřuje k dohodě."
+    },
+    {
+      "name": "Global Achievement",
+      "descriptionEn": "An overall view of the performance: how easily the candidate handles a range of topics, including abstract ones, and produces coherent, accurate extended speech.",
+      "descriptionCs": "Celkový dojem z výkonu: jak snadno kandidát zvládá různá témata včetně abstraktních a jak souvisle a přesně mluví v delších úsecích."
+    }
+  ],
+  "timings": {
+    "writingMinutes": 90,
+    "writingParts": 2,
+    "writingWordMin": 220,
+    "writingWordMax": 260,
+    "speakingMinutes": 15,
+    "speakingMinutesGroupOfThree": 23,
+    "speakingPart1Seconds": 120,
+    "speakingPart2LongTurnSeconds": 60,
+    "speakingPart2PartnerSeconds": 30,
+    "speakingPart3DiscussionSeconds": 120,
+    "speakingPart3DecisionSeconds": 60,
+    "speakingPart4Seconds": 300
+  },
+  "notice": {
+    "en": "This is AI-generated feedback on a practice task. It is not a Cambridge mark, score or grade and does not predict an exam result.",
+    "cs": "Toto je zpětná vazba vytvořená AI k cvičné úloze. Nejde o hodnocení Cambridge, skóre ani známku a nepředpovídá výsledek zkoušky."
+  },
+  "notes": [
+    "Criterion descriptions are our own paraphrases of public Cambridge materials, not the official band descriptors.",
+    "Writing Part 1 input (three bullet points plus three short opinions; discuss two points; opinions optional, in own words) is confirmed by Cambridge teaching resources for the 2015 revised exam (sources 2 and 3). The handbook PDF itself was not opened, so the current handbook wording was not checked.",
+    "Writing subscales marked 0-5 each: seen in search results for the teacher guide only (the PDF was too large to open). Not verified this session.",
+    "That Global Achievement is given by the interlocutor and the other five criteria by the assessor is not stated in the scale PDF we read. Not verified this session.",
+    "Speaking part timings are approximate ('about') on the official page. The app uses them as practice timers only.",
+    "The suggested split of about 45 minutes per Writing part is common advice, not an official rule, so it is not included in timings."
+  ]
+}

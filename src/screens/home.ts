@@ -59,7 +59,7 @@ export function homeScreen(store: Store): ReturnType<Route['render']> {
   });
   return {
     title: 'Domů',
-    content: h('div', { class: 'stack' }, h('h1', {}, 'Reading and Use of English'), backupReminder(store), countdown, h('ul', { class: 'part-grid' }, tiles('rue', PARTS)), h('h2', {}, 'Listening'), h('ul', { class: 'part-grid' }, tiles('listening', LISTENING_PARTS))),
+    content: h('div', { class: 'stack' }, h('h1', {}, 'Reading and Use of English'), backupReminder(store), countdown, h('ul', { class: 'part-grid' }, tiles('rue', PARTS)), h('h2', {}, 'Listening'), h('ul', { class: 'part-grid' }, tiles('listening', LISTENING_PARTS)), h('h2', {}, 'Writing'), h('ul', { class: 'part-grid' }, h('li', {}, h('a', { class: 'part-tile', href: '#/writing' }, h('span', { class: 'part-tile__title' }, 'Writing'), h('span', { class: 'part-tile__sub', lang: 'en' }, 'Essay, letter, report…'), h('span', { class: 'part-tile__status' }, 'Zpětná vazba přes claude.ai'))))),
   };
 }
 

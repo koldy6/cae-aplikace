@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "w-003",
+  "paper": "writing",
+  "part": 1,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Getting young people to vote",
+  "topic": "young voters and elections",
+  "difficulty": 2,
+  "reviewed": true,
+  "taskType": "essay",
+  "instructions": "You must answer this question. Write your answer in 220-260 words in an appropriate style.\n\nYour class has attended a debate about why so few young people vote in elections. You have made the notes below.\n\nWrite an essay discussing two of the ideas in your notes. You should explain which idea would be more effective in raising the number of young voters, giving reasons to support your view.\n\nYou may use the opinions from the debate if you wish, but express them in your own words as far as possible.",
+  "inputText": "How can more young people be encouraged to vote?\n\nOpinions expressed in the debate:\n'Most school leavers have no idea how their local council works.'\n'At sixteen you can work and pay tax, so why not vote?'\n'If voting took two minutes on a phone, turnout would soar.'",
+  "points": ["teaching politics at school", "lowering the voting age", "allowing online voting"],
+  "wordMin": 220,
+  "wordMax": 260,
+  "modelPlanCs": "- Úvod: uveď problém nízké volební účasti mladých a cíl eseje.\n- 2. odstavec: první nápad - výhody i možná rizika (např. bezpečnost online hlasování).\n- 3. odstavec: druhý nápad - argumenty pro a proti.\n- Závěr: rozhodni, který nápad je účinnější, a připoj hlavní důvod.\n- Jazyk: formální styl, užij hedging (it could be argued, arguably) a rozmanité spojky."
+}

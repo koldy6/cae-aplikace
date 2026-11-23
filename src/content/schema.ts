@@ -333,6 +333,47 @@ export const lis4Schema = z
     }
   });
 
+// ---- Writing (ARCHITECTURE 5.4) -----------------------------------------------
+const noAngle = str.regex(/^[^<>]*$/, 'must not contain "<" or ">"');
+export const WRITING_TASK_TYPES = ['essay', 'letter', 'email', 'proposal', 'report', 'review'] as const;
+export const writingSchema = z
+  .strictObject({
+    ...common,
+    paper: z.literal('writing'),
+    part: z.union([z.literal(1), z.literal(2)]),
+    taskType: z.enum(WRITING_TASK_TYPES),
+    instructions: noAngle,
+    inputText: noAngle,
+    points: z.array(noAngle),
+    wordMin: z.number().int().positive(),
+    wordMax: z.number().int().positive(),
+    modelPlanCs: noAngle,
+  })
+  .superRefine((v, ctx) => {
+    checkSource(ctx, v);
+    if (v.part === 1 && v.taskType !== 'essay') fail(ctx, 'Part 1 must be an essay', ['taskType']);
+    if (v.part === 2 && v.taskType === 'essay') fail(ctx, 'Part 2 must not be an essay', ['taskType']);
+    if (v.part === 1 && (v.points.length < 2 || v.points.length > 3)) fail(ctx, 'Part 1 needs 2-3 points', ['points']);
+    if (v.part === 2 && v.points.length) fail(ctx, 'Part 2 has no points', ['points']);
+    if (v.wordMin > v.wordMax) fail(ctx, 'wordMin must not exceed wordMax', ['wordMin']);
+  });
+
+// ---- Reference: official format facts used by prompts (ARCHITECTURE 5.4) ----
+const criterion = z.strictObject({ name: str, descriptionEn: str, descriptionCs: str });
+export const referenceSchema = z.strictObject({
+  schemaVersion: z.literal(1),
+  id: common.id,
+  paper: z.literal('reference'),
+  label: z.literal('official-format-reference'),
+  source: z.strictObject({ url: z.url(), readOn: z.iso.date() }),
+  sources: z.array(z.strictObject({ url: z.url(), readOn: z.iso.date(), what: str })),
+  writingCriteria: z.array(criterion).length(4),
+  speakingCriteria: z.array(criterion).min(5),
+  timings: z.object({ writingMinutes: z.number(), speakingMinutes: z.number() }).catchall(z.number()),
+  notice: explanation,
+  notes: z.array(str),
+});
+
 // ---- lookup ---------------------------------------------------------------
 export const schemas = {
   'rue/1': rue1Schema,
@@ -347,6 +388,9 @@ export const schemas = {
   'listening/2': lis2Schema,
   'listening/3': lis3Schema,
   'listening/4': lis4Schema,
+  'writing/1': writingSchema,
+  'writing/2': writingSchema,
+  'reference/undefined': referenceSchema,
 } as const;
 export type SchemaKey = keyof typeof schemas;
 

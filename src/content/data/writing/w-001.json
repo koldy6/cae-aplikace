@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "w-001",
+  "paper": "writing",
+  "part": 1,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Cutting food waste",
+  "topic": "food waste and consumption",
+  "difficulty": 2,
+  "reviewed": true,
+  "taskType": "essay",
+  "instructions": "You must answer this question. Write your answer in 220-260 words in an appropriate style.\n\nYour class has watched a documentary about how much food is thrown away. You have made the notes below.\n\nWrite an essay discussing two of the areas in your notes. You should explain which area could make the bigger difference to food waste, giving reasons to support your view.\n\nYou may use the opinions from the documentary if you wish, but express them in your own words as far as possible.",
+  "inputText": "Where could food waste be reduced most?\n\nOpinions expressed in the documentary:\n'Families buy far more than they can eat because special offers tempt them.'\n'Shops reject fruit and vegetables just because they look strange.'\n'Restaurant portions are designed to impress, not to be finished.'",
+  "points": ["households", "supermarkets", "restaurants and cafes"],
+  "wordMin": 220,
+  "wordMax": 260,
+  "modelPlanCs": "- Úvod: krátce představ problém plýtvání jídlem a řekni, které dvě oblasti rozebereš.\n- 2. odstavec: první oblast (např. domácnosti) - příčiny a konkrétní řešení, použij názor z dokumentu vlastními slovy.\n- 3. odstavec: druhá oblast (např. supermarkety) - příčiny, řešení, příklad.\n- Závěr: jasně rozhodni, která oblast by měla větší dopad, a uveď hlavní důvod (ne jen shrnutí).\n- Styl: formální/neutrální, spojovací výrazy (whereas, by contrast, ultimately)."
+}

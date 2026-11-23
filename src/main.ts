@@ -6,6 +6,7 @@ import { drillScreen } from './screens/drill';
 import { listeningDrillScreen } from './screens/listening';
 import { homeScreen, partScreen, settingsScreen } from './screens/home';
 import { progressScreen, retryScreen, weakScreen } from './screens/progress';
+import { writingListScreen, writingScreen } from './screens/writing';
 import { reviewScreen } from './screens/review';
 import { footer } from './ui/components';
 import { h } from './ui/h';
@@ -25,6 +26,7 @@ store.onMemoryMode(showBanner);
 
 const nav = h('nav', { class: 'site-nav', 'aria-label': 'Hlavní' },
   h('a', { href: '#/', 'data-path': '/' }, 'Domů'),
+  h('a', { href: '#/writing', 'data-path': '/writing' }, 'Writing'),
   h('a', { href: '#/progress', 'data-path': '/progress' }, 'Pokrok'),
   h('a', { href: '#/weak', 'data-path': '/weak' }, 'Slabá místa'),
   h('a', { href: '#/retry', 'data-path': '/retry' }, 'Opakování'),
@@ -38,6 +40,8 @@ const routes: Route[] = [
   { pattern: /^\/part\/(\d+)$/, render: ([p]) => partScreen(store, p ?? '') },
   { pattern: /^\/drill\/([\w-]+)$/, render: ([id]) => { const ls = listeningById(id ?? ''); return ls ? listeningDrillScreen(store, ls) : drillScreen(store, id ?? ''); } },
   { pattern: /^\/listening\/(\d+)$/, render: ([p]) => partScreen(store, p ?? '', 'listening') },
+  { pattern: /^\/writing$/, render: () => writingListScreen(store) },
+  { pattern: /^\/writing\/([\w-]+)$/, render: ([id]) => writingScreen(store, id ?? '') },
   { pattern: /^\/progress$/, render: () => progressScreen(store) },
   { pattern: /^\/weak$/, render: () => weakScreen(store) },
   { pattern: /^\/retry$/, render: () => retryScreen(store) },

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "w-004",
+  "paper": "writing",
+  "part": 1,
+  "label": "ai-generated",
+  "source": null,
+  "title": "Skills for adult life",
+  "topic": "life skills in the school curriculum",
+  "difficulty": 2,
+  "reviewed": true,
+  "taskType": "essay",
+  "instructions": "You must answer this question. Write your answer in 220-260 words in an appropriate style.\n\nYour class has had a discussion about which practical skills secondary schools should teach. You have made the notes below.\n\nWrite an essay discussing two of the skills in your notes. You should explain which skill is more important for schools to teach, giving reasons to support your view.\n\nYou may use the opinions from the discussion if you wish, but express them in your own words as far as possible.",
+  "inputText": "Which practical skills should secondary schools teach?\n\nOpinions expressed in the discussion:\n'Too many young adults sign loan contracts they do not understand.'\n'Knowing how to cook cheaply is a matter of health, not just money.'\n'A few minutes of first aid training could save a life.'",
+  "points": ["managing money", "cooking healthy meals", "basic first aid"],
+  "wordMin": 220,
+  "wordMax": 260,
+  "modelPlanCs": "- Úvod: proč se mluví o praktických dovednostech ve škole; zmiň, které dvě rozebereš.\n- 2. odstavec: první dovednost - k čemu je, příklad z běžného života.\n- 3. odstavec: druhá dovednost - stejná hloubka jako první.\n- Závěr: jasně urči důležitější dovednost a zdůvodni (např. dlouhodobý dopad, kolika lidí se týká).\n- Nekopíruj názory ze zadání doslova - přeformuluj je."
+}
