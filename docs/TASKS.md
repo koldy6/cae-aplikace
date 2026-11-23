@@ -44,18 +44,18 @@ Depends on: T02 (format), T04 (to validate; can start drafting earlier).
 Depends on: T02, T04.
 - AC: 3 Part 3 texts, 3 Part 4 sets (18 items, each with 2 marked parts and at least 1 alternative where natural), 2 Part 7 texts (6 gaps + 1 extra paragraph). All pass `npm test` and are reviewed.
 
-### T07 Scoring module (dev)
+### T07 Scoring module (dev) — ✅ DONE 2026-11-23
 - Note from T06: KWT items with several variants per part — score the item against `fullAnswers` combinations, not each part independently, so unrelated variant combinations do not get 2 marks.
 Depends on: T03.
 - Write `src/domain/scoring.ts` with `normalise`, letter scoring, open answer scoring, `kwtScore` and per-part marks (1/0-2/2).
 - AC: `tests/scoring.test.ts` covers all cases in ARCHITECTURE section 10, including KWT 0/1/2, key word missing or changed, over 6 words, contractions and alternatives. Functions are pure (no DOM, no storage).
 
-### T08 Storage layer (dev)
+### T08 Storage layer (dev) — ✅ DONE 2026-11-23 (corrupt data kept under `cae-english:v1:corrupt`)
 Depends on: T01.
 - Write `store.ts`, `localAdapter.ts` and `memoryAdapter.ts`. Data model as in section 6. Defaults on empty or corrupt data. Quota and private-mode errors switch to in-memory mode with a flag. Debounced save. `storage.persist()` on start.
 - AC: `tests/store.test.ts` green (round-trip, corrupt JSON -> defaults with no throw, quota error -> flag set). The API is typed with no `any`.
 
-### T09 Visual design tokens and screen sketches (ui)
+### T09 Visual design tokens and screen sketches (ui) — ✅ DONE 2026-11-23 (class names in main.css header)
 Depends on: none (can run in parallel with T03-T08).
 - Produce `src/styles/main.css`: colour tokens at AA contrast, type scale, spacing, focus ring, buttons, badges (two label types), correct/incorrect styles with icon and text, mobile-first layout plus a 900 px breakpoint, `prefers-reduced-motion`. Add short text sketches of the home, drill, review and weak-area screens in `docs/CONTENT_GUIDE.md` or as comments in the CSS (no extra report file).
 - AC: contrast ratios are listed next to the tokens (all 4.5:1 or above). No external fonts or CDNs. Touch targets are 44 px or larger.
