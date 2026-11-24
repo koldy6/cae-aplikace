@@ -18,6 +18,7 @@ const cspPlugin = (): Plugin => ({
 });
 
 export default defineConfig({
+  base: './', // works both locally and under the GitHub Pages subpath
   plugins: [cspPlugin()],
   test: { environment: 'node', include: ['tests/**/*.test.ts'] },
 });

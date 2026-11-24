@@ -60,4 +60,12 @@ Pokrok je uložený jen v tomto prohlížeči. Vymazání dat prohlížeče ho s
 
 - **Mini mock** neopouštějte uprostřed – rozpracované odpovědi se neuloží.
 - Když najdete chybu v klíči, použijte u otázky **Nahlásit chybu** nebo **Myslím, že je to správně** (uzná odpověď).
-- Na telefonu přes domácí Wi-Fi nefunguje mikrofon ani automatické kopírování (prohlížeč to bez HTTPS nedovolí). Ostatní funguje, data z telefonu jsou ale oddělená od PC (přenos přes zálohu).
+## V mobilu
+
+Aplikace je zveřejněná na **https://koldy6.github.io/firma-na-aplikace/** (po každém pushi do `main` se sama nasadí přes GitHub Actions).
+
+- **Android (Chrome):** otevřete adresu → menu ⋮ → **Přidat na plochu / Instalovat aplikaci**.
+- **iPhone (Safari):** otevřete adresu → **Sdílet** → **Přidat na plochu**.
+- Po prvním otevření funguje i offline. Mikrofon a kopírování fungují (HTTPS).
+- Data v telefonu jsou oddělená od PC; přenos přes **Stáhnout zálohu / Obnovit ze zálohy**.
+- Repozitář je veřejný: kód a cvičení vidí kdokoli, vaše odpovědi a nahrávky zůstávají jen v zařízení.

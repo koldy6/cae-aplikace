@@ -77,3 +77,7 @@ startRouter(main, routes, (path) => {
     else a.removeAttribute('aria-current');
   });
 });
+
+// Offline/installable app; dev skips it so Vite's hot reload is never served from cache.
+if (import.meta.env.PROD && 'serviceWorker' in navigator)
+  navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`).catch(() => undefined);
