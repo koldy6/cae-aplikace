@@ -62,7 +62,7 @@ Pokrok je uložený jen v tomto prohlížeči. Vymazání dat prohlížeče ho s
 - Když najdete chybu v klíči, použijte u otázky **Nahlásit chybu** nebo **Myslím, že je to správně** (uzná odpověď).
 ## V mobilu
 
-Aplikace je zveřejněná na **https://koldy6.github.io/firma-na-aplikace/** (po každém pushi do `main` se sama nasadí přes GitHub Actions).
+Aplikace je zveřejněná na **https://koldy6.github.io/cae-aplikace/** (po každém pushi do `main` se sama nasadí přes GitHub Actions).
 
 - **Android (Chrome):** otevřete adresu → menu ⋮ → **Přidat na plochu / Instalovat aplikaci**.
 - **iPhone (Safari):** otevřete adresu → **Sdílet** → **Přidat na plochu**.
